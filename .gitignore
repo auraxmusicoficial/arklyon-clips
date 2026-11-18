@@ -1,0 +1,4 @@
+motor/modelos/
+__pycache__/
+*.pyc
+motor/fontes/Pricedown.otf
