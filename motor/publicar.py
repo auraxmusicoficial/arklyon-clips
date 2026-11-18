@@ -113,7 +113,15 @@ def agendar_short(job, s, base, due, dt, due_yt, privacidade="unlisted", instagr
         if s.get("primeiro_comentario_instagram"):
             ig["firstComment"] = s["primeiro_comentario_instagram"]
         if instagram:
-            ids["instagram"] = criar("instagram", tx["instagram"], url, due, {"instagram": ig}, capa_ms=capa)
+            try:
+                ids["instagram"] = criar("instagram", tx["instagram"], url, due, {"instagram": ig}, capa_ms=capa)
+            except RuntimeError as e:
+                if "firstComment" not in ig or "First comment" not in str(e):
+                    raise
+                # plano grátis do Buffer não aceita 1º comentário: põe 5 hashtags no fim da legenda
+                ig.pop("firstComment")
+                tags5 = " ".join(s["primeiro_comentario_instagram"].split()[:5])
+                ids["instagram"] = criar("instagram", tx["instagram"] + "\n\n" + tags5, url, due, {"instagram": ig}, capa_ms=capa)
         return {"tipo": "short", "quando": dt.isoformat(), "upload": (dt - ANTECEDENCIA_YT).isoformat(), "yt_title": s["yt_title"][:100], "descricao": tx["youtube"],
                       "tags": s["tags"], "thumb": f"{base}/thumb_{s['id']}.jpg", "buffer": ids, "ajustado": False,
                       "comentario": s.get("comentario_youtube", ""), "fb_textos": s.get("fb_textos", []),
