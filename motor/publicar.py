@@ -13,15 +13,20 @@ from comum import RAIZ, ler_json
 REPO = "auraxmusicoficial/arklyon-clips"
 CANAIS = {"tiktok": "6afb1f77ece6dfde5fe5b8ef", "youtube": "6afb1f5dece6dfde5fe5b797", "instagram": "6afb1f0fece6dfde5fe5b3b7"}
 SLOTS_SHORTS = ["13:00", "16:00", "21:00"]
-SLOTS_LANCAMENTO = ["10:00", "13:00", "16:00", "19:00", "21:00"]   # semana de lançamento do GTA 6: 5 Shorts por dia
+SLOTS_LANCAMENTO = ["09:00", "11:00", "13:00", "16:00", "18:00", "20:00", "22:00"]   # semana de lançamento do GTA 6: 7 Shorts por dia
+IG_LANCAMENTO = {"13:00", "18:00", "22:00"}   # no Instagram só os 3 melhores horários (mais que isso parece spam e derruba o alcance)
 LANCAMENTO = ("2026-11-19", "2026-11-25")
 
 
 def slots_shorts(data):
     return SLOTS_LANCAMENTO if LANCAMENTO[0] <= data <= LANCAMENTO[1] else SLOTS_SHORTS
+
+
+def vai_instagram(data, hh):
+    return hh in IG_LANCAMENTO if LANCAMENTO[0] <= data <= LANCAMENTO[1] else True
 SLOT_LONGO = "12:00"
 BRT = timezone(timedelta(hours=-3))
-ANTECEDENCIA_YT = timedelta(minutes=90)   # sobe no YouTube como não listado 90 min antes; o ajuste programa a estreia pública
+ANTECEDENCIA_YT = timedelta(hours=3)   # sobe no YouTube como não listado 3 h antes; o ajuste (8h52, 11h52, 15h52, 19h52) programa a estreia pública
 MUT = """mutation($input: CreatePostInput!) { createPost(input: $input) { __typename
  ... on PostActionSuccess { post { id dueAt status } } ... on InvalidInputError { message } ... on LimitReachedError { message }
  ... on UnexpectedError { message } ... on RestProxyError { message } ... on UnauthorizedError { message } } }"""
@@ -70,7 +75,7 @@ def main(job, data, sha, pular=(), urgente=False):
     livres = [h for h in slots_shorts(data) if h not in pular and quando(data, h)[1] > agora]
     for s, hh in zip(r["shorts"], livres):
         due, dt = quando(data, hh)
-        plano.append(agendar_short(job, s, base, due, dt, antes(dt)))
+        plano.append(agendar_short(job, s, base, due, dt, antes(dt), instagram=vai_instagram(data, hh)))
         print("agendado short", s["id"], dt)
     for s in r["shorts"][len(livres):]:
         print("SOBROU (sem horário livre hoje):", s["id"])
@@ -94,7 +99,7 @@ def agendar_longo(job, r, L0, data, base, agora, plano):
         print("agendado longo", dt)
 
 
-def agendar_short(job, s, base, due, dt, due_yt, privacidade="unlisted"):
+def agendar_short(job, s, base, due, dt, due_yt, privacidade="unlisted", instagram=True):
     if True:  # noqa
         url = f"{base}/short_{s['id']}.mp4"; ids = {}
         from comum import dur as _dur
@@ -107,7 +112,8 @@ def agendar_short(job, s, base, due, dt, due_yt, privacidade="unlisted"):
         ig = {"type": "reel", "shouldShareToFeed": True, "isAiGenerated": False}
         if s.get("primeiro_comentario_instagram"):
             ig["firstComment"] = s["primeiro_comentario_instagram"]
-        ids["instagram"] = criar("instagram", tx["instagram"], url, due, {"instagram": ig}, capa_ms=capa)
+        if instagram:
+            ids["instagram"] = criar("instagram", tx["instagram"], url, due, {"instagram": ig}, capa_ms=capa)
         return {"tipo": "short", "quando": dt.isoformat(), "upload": (dt - ANTECEDENCIA_YT).isoformat(), "yt_title": s["yt_title"][:100], "descricao": tx["youtube"],
                       "tags": s["tags"], "thumb": f"{base}/thumb_{s['id']}.jpg", "buffer": ids, "ajustado": False,
                       "comentario": s.get("comentario_youtube", ""), "fb_textos": s.get("fb_textos", []),
