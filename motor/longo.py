@@ -46,6 +46,16 @@ def main(job):
     (seg / "lista.txt").write_text("".join(f"file '{seg}/{o}.mp4'\n" for o in ordem))
     bruto = seg / "concat.mp4"
     run(["ffmpeg", "-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", seg / "lista.txt", "-c", "copy", bruto])
+    # trilha original (synthwave) + whoosh/impacto nas trocas de capítulo — se falhar, segue sem trilha
+    try:
+        from trilha import sonorizar
+        import zlib
+        com_som = seg / "concat_som.mp4"
+        sonorizar(bruto, com_som, marcas=[a for a, _ in caps[1:]], estilo=L0.get("trilha", "noite"),
+                  semente=zlib.crc32(L0.get("titulo", "").encode()) % 1000, volume_db=-17)
+        bruto = com_som; print("trilha ok")
+    except Exception as e:
+        print("AVISO trilha falhou, seguindo sem música:", e)
     # versão final abaixo de ~95 MB (limite de arquivo do GitHub é 100 MB)
     total = dur(bruto); vb = max(1200, min(4000, int((93 * 8 * 1024) / total) - 180))
     run(["ffmpeg", "-y", "-v", "error", "-i", bruto, "-c:v", "libx264", "-preset", "veryfast", "-b:v", f"{vb}k",

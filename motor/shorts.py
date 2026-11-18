@@ -55,6 +55,15 @@ def main(job, so=None):
         run(["ffmpeg", "-y", "-v", "error", *ent, "-filter_complex", fc, "-map", "[v]", "-map", "[a]",
              "-c:v", "libx264", "-preset", "veryfast", "-crf", "22", "-pix_fmt", "yuv420p",
              "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", out / f"short_{sid}.mp4"])
+        try:   # trilha original por baixo + impacto no gancho e "ding" no fim
+            from trilha import sonorizar
+            import zlib
+            final = out / f"short_{sid}.mp4"; tmp = seg / f"{sid}_som.mp4"
+            sonorizar(final, tmp, marcas=[0.5], ding=[conteudo - 2.6], estilo=s.get("trilha", "acao"),
+                      semente=zlib.crc32(sid.encode()) % 1000, volume_db=-15)
+            tmp.replace(final)
+        except Exception as e:
+            print("AVISO trilha falhou, seguindo sem música:", e)
         print("ok short", sid, round(total, 1), "s", flush=True)
 
 

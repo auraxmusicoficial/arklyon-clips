@@ -160,6 +160,33 @@ def mixar(voz, mus, saida, volume_db=-17):
     subprocess.run(cmd + [str(saida)], check=True)
 
 
+def sonorizar(video, saida, marcas=(), estilo="noite", semente=7, volume_db=-16, ding=()):
+    """Coloca a trilha original por baixo do vídeo (abaixa quando a voz fala) + whoosh/impacto nas `marcas`
+    (segundos: trocas de capítulo/gancho) e 'ding' nos tempos de `ding`. Mantém a imagem (copy)."""
+    import tempfile, json as _j
+    tmp = Path(tempfile.mkdtemp())
+    d = float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(video)],
+                             capture_output=True, text=True).stdout.strip())
+    salvar(tmp / "m.wav", musica(d + 1, semente, estilo))
+    fx = efeitos()
+    for k, v in fx.items():
+        salvar(tmp / f"{k}.wav", v)
+    ent = ["-i", str(video), "-i", str(tmp / "m.wav")]
+    fc = (f"[1:a]volume={volume_db}dB[m];[0:a]asplit=2[v][sc];"
+          "[m][sc]sidechaincompress=threshold=0.03:ratio=6:attack=20:release=350[md];")
+    mixs = ["[v]", "[md]"]; i = 2
+    for tm in [m for m in marcas if 0.3 < m < d - 1][:30]:
+        for nome, vol, desloc in (("whoosh", 0.45, -0.45), ("impacto", 0.35, 0.05)):
+            ent += ["-i", str(tmp / f"{nome}.wav")]; ms = max(0, int((tm + desloc) * 1000))
+            fc += f"[{i}:a]adelay={ms}|{ms},volume={vol}[f{i}];"; mixs.append(f"[f{i}]"); i += 1
+    for tm in [x for x in ding if 0 < x < d - 0.5][:10]:
+        ent += ["-i", str(tmp / "ding.wav")]; ms = int(tm * 1000)
+        fc += f"[{i}:a]adelay={ms}|{ms},volume=0.22[f{i}];"; mixs.append(f"[f{i}]"); i += 1
+    fc += "".join(mixs) + f"amix=inputs={len(mixs)}:duration=first:dropout_transition=0:normalize=0,alimiter=limit=0.95[a]"
+    subprocess.run(["ffmpeg", "-v", "error", "-y", *ent, "-filter_complex", fc, "-map", "0:v", "-map", "[a]",
+                    "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", str(saida)], check=True)
+
+
 if __name__ == "__main__":
     a = sys.argv[1:]
     if a[0] == "musica":

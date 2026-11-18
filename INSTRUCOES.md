@@ -8,6 +8,7 @@ Meta diária (horário de Brasília): **12h vídeo longo** + Shorts em **13h · 
 - Tema: **GTA 6** (hype). Vídeos-fonte **só com o jogo** (trailers, gameplay, extended look, compilações sem facecam/sem pessoa reagindo). React só se não houver outra fonte, e só para Shorts.
 - **Shorts/Reels/TikToks com mais de 60 s** (narração de 175–210 palavras + citação opcional).
 - **Vídeo longo de 8 a 10 min** (narração de 1.150–1.400 palavras), 16:9, roteiro **original** com análise/opinião — nunca só repostar.
+- **Trilha sonora**: o longo e os Shorts recebem automaticamente uma trilha ORIGINAL synthwave (motor/trilha.py, composta por código — sem direitos de terceiros) + whoosh/impacto nas trocas de capítulo. No roteiro, `longo.trilha` e `shorts[].trilha` = `noite` (padrão do longo), `acao` (padrão dos Shorts: perseguição, polícia, tiroteio) ou `sol` (praia, cidade, clima leve). Nunca use música de terceiros.
 - Visual inspirado em GTA/Vice City (rosa/ciano/laranja/roxo; capas com a fonte Pricedown e estrelas de procurado), sem usar o logo oficial da Rockstar.
 - **Conteúdo que as pessoas querem ver**: escolha o TEMA primeiro (MARKETING.md seção 1b — buscas do dia + nota de demanda/curiosidade/novidade/entrega) e só depois a fonte que serve para ilustrá-lo.
 - Títulos, descrições, tags e hashtags em inglês, pensados para SEO e clique (gancho forte, curiosidade, números, sem clickbait mentiroso).
