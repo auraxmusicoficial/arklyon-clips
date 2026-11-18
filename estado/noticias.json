@@ -1,5 +1,54 @@
 [
- {"quando": "2026-11-18T14:30:00-03:00", "noticia": "GTA 6 review embargo: Metascore 99 (100+ critic reviews), ties Zelda: Ocarina of Time as highest-rated game ever; beats GTA IV (98)", "fontes": ["https://www.forbes.com/sites/paultassi/2026/11/18/the-gta-6-metacritic-review-score-is-in-and-ties-an-all-time-record/", "https://www.notebookcheck.net/GTA-6-reviews-award-99-Metacritic-score-topping-GTA-4-to-become-Rockstar-s-top-rated.1453363.0.html"], "urgente": true, "short": "GTA 6 Just Tied the Highest Metacritic Score Ever 😳"},
- {"quando": "2026-11-18T14:30:00-03:00", "noticia": "Primeiras notas das análises (TechRadar 5/5, WCCF 9.6, etc.) e 30 FPS travado — já coberto pelo longo das 12h", "urgente": false},
- {"quando": "2026-11-18T14:30:00-03:00", "noticia": "GTA 6 já liberado na Nova Zelândia (meia-noite local); lançamento nos EUA/Brasil em 19/11 — coberto pelo calendário de 19/11", "urgente": false}
+  {
+    "quando": "2026-11-18T14:30:00-03:00",
+    "noticia": "GTA 6 review embargo: Metascore 99 (100+ critic reviews), ties Zelda: Ocarina of Time as highest-rated game ever; beats GTA IV (98)",
+    "fontes": [
+      "https://www.forbes.com/sites/paultassi/2026/11/18/the-gta-6-metacritic-review-score-is-in-and-ties-an-all-time-record/",
+      "https://www.notebookcheck.net/GTA-6-reviews-award-99-Metacritic-score-topping-GTA-4-to-become-Rockstar-s-top-rated.1453363.0.html"
+    ],
+    "urgente": true,
+    "short": "GTA 6 Just Tied the Highest Metacritic Score Ever 😳"
+  },
+  {
+    "quando": "2026-11-18T14:30:00-03:00",
+    "noticia": "Primeiras notas das análises (TechRadar 5/5, WCCF 9.6, etc.) e 30 FPS travado — já coberto pelo longo das 12h",
+    "urgente": false
+  },
+  {
+    "quando": "2026-11-18T14:30:00-03:00",
+    "noticia": "GTA 6 já liberado na Nova Zelândia (meia-noite local); lançamento nos EUA/Brasil em 19/11 — coberto pelo calendário de 19/11",
+    "urgente": false
+  },
+  {
+    "quando": "2026-11-18T18:30:00-03:00",
+    "noticia": "Queda da PSN (~4.000 relatos no Downdetector, ~13h–15h ET) horas antes do lançamento nos EUA; Sony não citou causa e o status já estava normal às 15h15 ET",
+    "fontes": [
+      "https://www.newsweek.com/playstation-users-report-access-issues-hours-before-gta-vi-launch-12736310"
+    ],
+    "urgente": false
+  },
+  {
+    "quando": "2026-11-18T18:30:00-03:00",
+    "noticia": "Atualização obrigatória no PS5 (1.002.x) para jogar; sem notas oficiais",
+    "fontes": [
+      "https://www.gamesradar.com/news/live/gta-6-release-day-live-coverage/"
+    ],
+    "urgente": false
+  },
+  {
+    "quando": "2026-11-18T18:30:00-03:00",
+    "noticia": "Indicações ao The Game Awards 2026 (inclui GOTY) — anunciadas em 17/11, não é nova; Sam Houser: 'we hope that you had fun' (declaração curta)",
+    "fontes": [
+      "https://www.gamesradar.com/news/live/gta-6-release-day-live-coverage/"
+    ],
+    "urgente": false
+  },
+  {
+    "quando": "2026-11-18T18:30:00-03:00",
+    "noticia": "Sensor Tower estima US$ 1,45 bi em receita, ~90% Ultimate Edition (estimativa de analista, >6 h)",
+    "fontes": [
+      "https://www.gamesradar.com/news/live/gta-6-release-day-live-coverage/"
+    ],
+    "urgente": false
+  }
 ]
