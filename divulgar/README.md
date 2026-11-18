@@ -3,6 +3,37 @@
 Regras para não ser bloqueado: leia as regras de cada grupo (muitos só aceitam divulgação em dias específicos), poste em no máximo 3–5 grupos por dia, use legendas diferentes e responda quem comentar.
 
 ---
+## GTA 6 Reviews Are In: A Masterpiece With One Big Catch
+_Publicado: 2026-11-18 12:00_
+
+![imagem](https://raw.githubusercontent.com/auraxmusicoficial/arklyon-clips/main/divulgar/img/P5dyUUPJh04.jpg)
+
+Toque e segure a imagem para salvar. Use uma legenda diferente em cada grupo:
+
+**Opção 1**
+```
+GTA 6 reviews just dropped and the first scores are wild: a 5/5, a 9.6 and a perfect 100. But nearly every critic mentioned the same catch. Do you care about 30 FPS?
+
+▶️ https://youtu.be/P5dyUUPJh04
+```
+
+**Opção 2**
+```
+Critics have played GTA 6 for up to 200 hours. Here is the spoiler-free breakdown of what they loved, what they hated and whether it is worth $79.99.
+
+▶️ https://youtu.be/P5dyUUPJh04
+```
+
+**Opção 3**
+```
+One day before launch, GTA 6 is being called a masterpiece. So why are some fans worried? Full breakdown of the first reviews here.
+
+▶️ https://youtu.be/P5dyUUPJh04
+```
+
+
+---
+
 ## GTA 6 Release Is 2 Days Away: Everything You Need to Know
 _Publicado: 2026-11-17 12:00_
 

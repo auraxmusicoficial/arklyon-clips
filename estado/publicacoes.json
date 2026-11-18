@@ -107,7 +107,7 @@
   "metricool": {
    "youtube": 432707555
   },
-  "ajustado": false,
+  "ajustado": true,
   "comentario": "Be honest: is a locked 30 FPS a deal breaker for GTA 6, yes or no?",
   "fb_textos": [
    "GTA 6 reviews just dropped and the first scores are wild: a 5/5, a 9.6 and a perfect 100. But nearly every critic mentioned the same catch. Do you care about 30 FPS?",
@@ -115,6 +115,10 @@
    "One day before launch, GTA 6 is being called a masterpiece. So why are some fans worried? Full breakdown of the first reviews here."
   ],
   "playlist": "news",
-  "obs": "Buffer recusa vídeo longo no YouTube (só Shorts); agendado via Metricool como público com capa e tags."
+  "obs": "Buffer recusa vídeo longo no YouTube (só Shorts); agendado via Metricool como público com capa e tags.",
+  "video_id": "P5dyUUPJh04",
+  "na_playlist": true,
+  "comentou": true,
+  "fb_feito": true
  }
 ]
