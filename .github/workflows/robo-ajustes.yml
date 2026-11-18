@@ -1,0 +1,30 @@
+name: Robô — YouTube, comentários e divulgação
+on:
+  schedule:
+    - cron: "40 0-2,9-23 * * *"   # de hora em hora, das 6h40 às 23h40 (Brasília)
+  workflow_dispatch:
+  push:
+    paths: [".github/workflows/robo-ajustes.yml"]
+permissions:
+  contents: write
+concurrency:
+  group: robo-ajustes
+  cancel-in-progress: false
+jobs:
+  ajustes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Segredos
+        env:
+          VAULT_SECRETS: ${{ secrets.VAULT_SECRETS }}
+        run: |
+          python3 -c "import json,os;[print('::add-mask::'+v) for v in json.loads(os.environ['VAULT_SECRETS']).values()]"
+      - run: pip install -q pillow
+      - name: Rodar o robô
+        env:
+          VAULT_SECRETS: ${{ secrets.VAULT_SECRETS }}
+        run: python3 motor/robo_github.py
