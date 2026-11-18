@@ -9,6 +9,8 @@ Escreva tudo em inglês americano natural. Nunca prometa o que o vídeo não ent
 - Escolha 1 palavra-chave principal por vídeo e 3–5 secundárias. A principal entra no título, na 1ª frase da descrição/legenda, nas tags e é falada na narração nos primeiros 15 s.
 - Evite repetir o mesmo ângulo de dias anteriores (veja estado/publicacoes.json).
 
+- **Link de inscrição**: em toda descrição (YouTube) use `https://www.youtube.com/@hqvaultclips?sub_confirmation=1` no lugar do link simples do canal — abre direto a janela "Inscrever-se".
+
 ## 1b. Escolha do TEMA — conteúdo que as pessoas realmente querem ver (mais importante que tudo)
 O vídeo-fonte é só a imagem; o que faz o vídeo crescer é o ASSUNTO. Escolha o tema ANTES da fonte:
 1. Faça 4–6 buscas na web: "GTA 6 news today", "GTA 6 reddit", "GTA 6 trending", "GTA 6" + o momento (preload, launch, reviews, patch, online, PC...). Anote as 5 perguntas/discussões mais quentes das últimas 48 h.
