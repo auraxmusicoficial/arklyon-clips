@@ -43,6 +43,11 @@ Meta diária (horário de Brasília): **12h vídeo longo** + Shorts em **13h · 
     `git checkout --orphan novo && git add -A && git commit -m "faxina" && git branch -D main && git branch -m main && git push -f origin main`.
 14. **Avisar o dono** (notificação curta, em português): o que foi agendado e os horários. **Às segundas-feiras**, acrescente 2–3 linhas do `estado/RELATORIO.md` (inscritos e views da semana, vídeo campeão e o que vai mudar).
 
+## Calendário editorial da semana de lançamento
+- **19/11 (lançamento):** tudo sobre o lançamento — "GTA 6 IS FINALLY HERE" (o que saber antes de jogar, horários, download, notas, recordes, reação dos fãs).
+- **20/11 (novidades reais):** o longo é o vídeo mais importante da semana — **10 a 12 minutos** sobre as NOVIDADES REAIS do jogo já lançado: o que dá pra fazer de verdade e impressiona (sistemas novos, mapa, missões, polícia, interações, detalhes que viralizaram nas primeiras horas, o que mudou em relação ao GTA 5) e primeiras impressões honestas. Título de curiosidade forte, ex.: "GTA 6 Lets You Do THINGS No GTA Ever Did" / "I Can't Believe You Can Do This In GTA 6". Use gameplay real do jogo lançado (só jogo). Os 7 Shorts do dia = uma novidade impressionante cada (1 recurso por Short, mostrando na tela).
+- **21 a 25/11:** segredos e easter eggs, dicas (dinheiro, carros, armas, configurações), rankings, comparações e o que a comunidade está descobrindo — sempre guiado pelo relatório e pelas buscas do dia.
+
 ## Short de notícia urgente (tarefa "vigia de notícias")
 1. Busque na web as notícias de GTA 6 das últimas 6 h (Rockstar Newswire, X/Twitter da Rockstar, sites de games, r/GTA6). Compare com `estado/noticias.json` (lista de notícias já cobertas).
 2. Só é URGENTE se for grande e nova: trailer/vídeo oficial novo, mudança de data/preço, anúncio oficial, patch/atualização importante, polêmica muito comentada, recorde (vendas, jogadores). Rumor fraco ou repetido → anote em `estado/noticias.json` com `"urgente": false` e encerre.
