@@ -1,10 +1,8 @@
 name: Robô — YouTube, comentários e divulgação
 on:
   schedule:
-    - cron: "40 0-2,9-23 * * *"   # de hora em hora, das 6h40 às 23h40 (Brasília)
+    - cron: "10,40 0-2,9-23 * * *"   # a cada 30 min, das 6h10 às 23h40 (Brasília) — o GitHub às vezes pula rodadas
   workflow_dispatch:
-  push:
-    paths: [".github/workflows/robo-ajustes.yml"]
 permissions:
   contents: write
 concurrency:
