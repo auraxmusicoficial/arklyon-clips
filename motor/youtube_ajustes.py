@@ -68,7 +68,7 @@ def main():
         st = it[0]["status"]
         if st.get("privacyStatus") != "public":
             rs = api(tok, "PUT", "videos?part=status", {"id": p["video_id"], "status": {
-                "privacyStatus": "public", "selfDeclaredMadeForKids": False, "embeddable": True}})
+                "privacyStatus": "public", "selfDeclaredMadeForKids": False, "embeddable": True, "publicStatsViewable": True}})
             avisos.append(f"'{p['yt_title']}' estava {st.get('privacyStatus')} depois do horário — "
                           + ("publiquei agora" if "error" not in rs else f"erro ao publicar: {rs['error'].get('message')}"))
         else:
@@ -98,10 +98,10 @@ def main():
             if bloqueio:
                 avisos.append(f"⚠️ '{p['yt_title']}' tem bloqueio por direitos autorais: {bloqueio}")
             estreia = datetime.fromisoformat(p["quando"])
-            status = {"privacyStatus": "public", "selfDeclaredMadeForKids": False, "embeddable": True}
+            status = {"privacyStatus": "public", "selfDeclaredMadeForKids": False, "embeddable": True, "publicStatsViewable": True}
             if estreia > agora + timedelta(minutes=10):
                 status = {"privacyStatus": "private", "publishAt": estreia.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z"),
-                          "selfDeclaredMadeForKids": False, "embeddable": True}
+                          "selfDeclaredMadeForKids": False, "embeddable": True, "publicStatsViewable": True}
             rs = api(tok, "PUT", "videos?part=status", {"id": vid, "status": status})
             p["ajustado"] = True; p["video_id"] = vid
             if not p.get("na_playlist"):
