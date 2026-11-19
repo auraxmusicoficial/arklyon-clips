@@ -3,6 +3,37 @@
 Regras para não ser bloqueado: leia as regras de cada grupo (muitos só aceitam divulgação em dias específicos), poste em no máximo 3–5 grupos por dia, use legendas diferentes e responda quem comentar.
 
 ---
+## 13 Years Later, GTA 6 Is Finally Here — Was It Worth The Wait?
+_Publicado: 2026-11-19 12:00_
+
+![imagem](https://raw.githubusercontent.com/auraxmusicoficial/arklyon-clips/main/divulgar/img/5kCCspaOdnE.jpg)
+
+Toque e segure a imagem para salvar. Use uma legenda diferente em cada grupo:
+
+**Opção 1**
+```
+GTA 6 is finally out after 13 years. 99 on Metacritic, $1.6B in pre-launch sales (est.)... but 30 FPS and no Online at launch. Was it worth the wait? Full launch-day breakdown:
+
+▶️ https://youtu.be/5kCCspaOdnE
+```
+
+**Opção 2**
+```
+13 years between GTA 5 and GTA 6. Here's everything launch day actually delivered — and what's dividing fans. Spoiler-free:
+
+▶️ https://youtu.be/5kCCspaOdnE
+```
+
+**Opção 3**
+```
+Is GTA 6 really a 99? We broke down the reviews, the records and the complaints on launch day. Curious what you all think:
+
+▶️ https://youtu.be/5kCCspaOdnE
+```
+
+
+---
+
 ## GTA 6 Reviews Are In: A Masterpiece With One Big Catch
 _Publicado: 2026-11-18 12:00_
 

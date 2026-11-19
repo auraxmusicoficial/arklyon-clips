@@ -226,7 +226,8 @@
   "urgente": false,
   "video_id": "kNzOszVFf70",
   "na_playlist": true,
-  "comentou": true
+  "comentou": true,
+  "publico_ok": true
  },
  {
   "tipo": "short",
@@ -363,7 +364,7 @@
   "metricool": {
    "youtube": 433906679
   },
-  "ajustado": false,
+  "ajustado": true,
   "comentario": "After 13 years: was GTA 6 worth the wait? YES, NO or TOO EARLY? 👇",
   "fb_textos": [
    "GTA 6 is finally out after 13 years. 99 on Metacritic, $1.6B in pre-launch sales (est.)... but 30 FPS and no Online at launch. Was it worth the wait? Full launch-day breakdown:",
@@ -371,6 +372,10 @@
    "Is GTA 6 really a 99? We broke down the reviews, the records and the complaints on launch day. Curious what you all think:"
   ],
   "playlist": "news",
-  "obs": "Agendado via Metricool (público, capa, tags, GAMING). Fonte nova YIoUvkRD8Gw chegou ao Drive mas não pôde ser compartilhada; usado o plano B (Extended Look)."
+  "obs": "Agendado via Metricool (público, capa, tags, GAMING). Fonte nova YIoUvkRD8Gw chegou ao Drive mas não pôde ser compartilhada; usado o plano B (Extended Look).",
+  "video_id": "5kCCspaOdnE",
+  "na_playlist": true,
+  "comentou": true,
+  "fb_feito": true
  }
 ]
