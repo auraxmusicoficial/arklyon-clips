@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-18T23:26:14.178958+00:00",
+ "atualizado": "2026-11-19T10:08:09.011308+00:00",
  "historico": [
   {
    "data": "2026-11-17",
@@ -18,6 +18,12 @@
    "inscritos": 4,
    "views": 21,
    "videos": 13
+  },
+  {
+   "data": "2026-11-19",
+   "inscritos": 7,
+   "views": 21,
+   "videos": 14
   }
  ],
  "videos": [
@@ -26,26 +32,26 @@
    "titulo": "GTA 6's Darkest Hint Yet 😶 \"These Are Your Glory Days\"",
    "tipo": "short",
    "dur": 36,
-   "views": 8,
-   "likes": 1,
-   "coments": 2,
-   "views_dia": 8.2,
-   "engaj": 37.5,
+   "views": 9,
+   "likes": 2,
+   "coments": 4,
+   "views_dia": 6.3,
+   "engaj": 66.7,
    "hora_brt": "21",
-   "dias": 1.0
+   "dias": 1.4
   },
   {
    "id": "pCJSmriKY50",
    "titulo": "GTA 6 Release Is 2 Days Away: Everything You Need to Know",
    "tipo": "longo",
    "dur": 543,
-   "views": 11,
-   "likes": 3,
-   "coments": 2,
-   "views_dia": 8.2,
-   "engaj": 45.5,
+   "views": 14,
+   "likes": 5,
+   "coments": 4,
+   "views_dia": 7.8,
+   "engaj": 64.3,
    "hora_brt": "12",
-   "dias": 1.3
+   "dias": 1.8
   },
   {
    "id": "GfJxx6e3jUY",
@@ -55,23 +61,23 @@
    "views": 10,
    "likes": 1,
    "coments": 0,
-   "views_dia": 6.8,
+   "views_dia": 5.2,
    "engaj": 10.0,
    "hora_brt": "09",
-   "dias": 1.5
+   "dias": 1.9
   },
   {
    "id": "Zrug6PtEZzo",
    "titulo": "GTA 6 Extended Look: Everything It Reveals About the Story",
    "tipo": "longo",
    "dur": 308,
-   "views": 7,
+   "views": 10,
    "likes": 3,
-   "coments": 2,
-   "views_dia": 3.5,
-   "engaj": 71.4,
+   "coments": 4,
+   "views_dia": 4.1,
+   "engaj": 70.0,
    "hora_brt": "21",
-   "dias": 2.0
+   "dias": 2.4
   },
   {
    "id": "5v79bZYpaZY",
@@ -81,10 +87,10 @@
    "views": 3,
    "likes": 1,
    "coments": 0,
-   "views_dia": 1.5,
+   "views_dia": 1.2,
    "engaj": 33.3,
    "hora_brt": "19",
-   "dias": 2.1
+   "dias": 2.5
   },
   {
    "id": "BZIopAaJ-4k",
@@ -94,10 +100,10 @@
    "views": 4,
    "likes": 1,
    "coments": 2,
-   "views_dia": 1.3,
+   "views_dia": 1.1,
    "engaj": 75.0,
    "hora_brt": "19",
-   "dias": 3.0
+   "dias": 3.5
   },
   {
    "id": "6bSau3WJl-Y",
@@ -107,88 +113,101 @@
    "views": 3,
    "likes": 1,
    "coments": 2,
-   "views_dia": 0.9,
+   "views_dia": 0.8,
    "engaj": 100.0,
    "hora_brt": "14",
-   "dias": 3.3
+   "dias": 3.7
   },
   {
    "id": "h-zUFcFzLfs",
    "titulo": "Reaction New GTA 6 #gta #gta6 #reaction",
    "tipo": "short",
    "dur": 37,
-   "views": 3,
+   "views": 2,
    "likes": 1,
    "coments": 0,
-   "views_dia": 0.9,
-   "engaj": 33.3,
+   "views_dia": 0.5,
+   "engaj": 50.0,
    "hora_brt": "11",
-   "dias": 3.4
+   "dias": 3.8
   },
   {
    "id": "6L_wWzXfH54",
    "titulo": "React New GTA 6  #gta #gta6 #reaction",
    "tipo": "short",
    "dur": 56,
-   "views": 4,
+   "views": 3,
    "likes": 1,
    "coments": 0,
-   "views_dia": 1.2,
-   "engaj": 25.0,
+   "views_dia": 0.8,
+   "engaj": 33.3,
    "hora_brt": "11",
-   "dias": 3.4
+   "dias": 3.8
   },
   {
    "id": "y99xw4Mmuvg",
    "titulo": "\"A Professional Adapts\" — Lucia Proves Herself in GTA 6 🔥",
    "tipo": "short",
    "dur": 39,
-   "views": 1,
-   "likes": 0,
-   "coments": 0,
-   "views_dia": 5.5,
-   "engaj": 0.0,
+   "views": 2,
+   "likes": 1,
+   "coments": 2,
+   "views_dia": 3.2,
+   "engaj": 150.0,
    "hora_brt": "16",
-   "dias": 0.2
+   "dias": 0.6
   },
   {
    "id": "ex3cGJ8APxQ",
    "titulo": "GTA 6 Just Tied the Highest Metacritic Score Ever 😳",
    "tipo": "short",
    "dur": 70,
-   "views": 1,
-   "likes": 0,
-   "coments": 1,
-   "views_dia": 4.3,
-   "engaj": 100.0,
+   "views": 2,
+   "likes": 1,
+   "coments": 3,
+   "views_dia": 3.0,
+   "engaj": 200.0,
    "hora_brt": "14",
-   "dias": 0.2
+   "dias": 0.7
   },
   {
    "id": "49tnnie3Jjo",
    "titulo": "6 Wanted Stars Are Back in GTA 6 (And Cops Are Smarter) 🚨",
    "tipo": "short",
    "dur": 55,
-   "views": 2,
-   "likes": 1,
-   "coments": 2,
-   "views_dia": 6.6,
-   "engaj": 150.0,
+   "views": 3,
+   "likes": 2,
+   "coments": 4,
+   "views_dia": 4.0,
+   "engaj": 200.0,
    "hora_brt": "13",
-   "dias": 0.3
+   "dias": 0.7
   },
   {
    "id": "P5dyUUPJh04",
    "titulo": "GTA 6 Reviews Are In: A Masterpiece With One Big Catch",
    "tipo": "longo",
    "dur": 546,
-   "views": 17,
-   "likes": 5,
-   "coments": 5,
-   "views_dia": 49.7,
-   "engaj": 58.8,
+   "views": 27,
+   "likes": 8,
+   "coments": 9,
+   "views_dia": 34.3,
+   "engaj": 63.0,
    "hora_brt": "12",
-   "dias": 0.3
+   "dias": 0.8
+  },
+  {
+   "id": "-_O8FyG6qYg",
+   "titulo": "The San Andreas Gym Is BACK in GTA 6 💪",
+   "tipo": "short",
+   "dur": 41,
+   "views": 17,
+   "likes": 2,
+   "coments": 6,
+   "views_dia": 40.5,
+   "engaj": 47.1,
+   "hora_brt": "21",
+   "dias": 0.4
   }
  ]
 }
