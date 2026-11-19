@@ -256,11 +256,13 @@
    "tiktok": "6afeb884bad67efd5ad73f99",
    "instagram": "6afeb8854a35072d027c6a99"
   },
-  "ajustado": false,
+  "ajustado": true,
   "comentario": "Did you pre-order GTA 6 or wait for launch day? 💸",
   "fb_textos": [],
   "playlist": "shorts",
-  "urgente": false
+  "urgente": false,
+  "video_id": "HHb635hzTLM",
+  "na_playlist": true
  },
  {
   "tipo": "short",
