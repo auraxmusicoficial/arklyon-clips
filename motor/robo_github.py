@@ -35,6 +35,30 @@ def etapa(nome, func):
         return None, saida
 
 
+def vigiar_buffer():
+    """Avisa (uma vez por post) quando um post do Buffer falhou."""
+    k = os.environ.get("BUFFER_KEY")
+    if not k:
+        return
+    def g(q, v=None):
+        r = urllib.request.Request("https://api.buffer.com", json.dumps({"query": q, "variables": v or {}}).encode(),
+                                   {"Authorization": "Bearer " + k, "Content-Type": "application/json", "User-Agent": "vault"})
+        return json.load(urllib.request.urlopen(r, timeout=30))
+    org = g("{ account { organizations { id } } }")["data"]["account"]["organizations"][0]["id"]
+    out = g("query($o:OrganizationId!){ posts(input:{organizationId:$o, filter:{status:[error]}}, first:30)"
+            "{ edges{ node{ id dueAt channelService text error { message } } } } }", {"o": org})
+    est = Path(__file__).resolve().parent.parent / "estado" / "buffer_falhas.json"
+    vistos = set(json.loads(est.read_text())) if est.exists() else set()
+    novos = [e["node"] for e in out.get("data", {}).get("posts", {}).get("edges", []) if e["node"]["id"] not in vistos]
+    for n in novos:
+        quando = datetime.fromisoformat(n["dueAt"].replace("Z", "+00:00")).astimezone(BRT).strftime("%d/%m %Hh%M")
+        motivo = (n.get("error") or {}).get("message", "")[:160]
+        avisos.append(f"Post do Buffer FALHOU ({n['channelService']}, {quando}): {n['text'][:60]}… — {motivo}")
+        vistos.add(n["id"])
+    est.write_text(json.dumps(sorted(vistos)))
+    print(len(novos), "falha(s) nova(s)")
+
+
 def main():
     s = json.loads(os.environ.get("VAULT_SECRETS", "{}"))
     for k, v in s.items():
@@ -53,6 +77,7 @@ def main():
     ultimo = json.loads(des.read_text()).get("historico", [{}])[-1].get("data") if des.exists() else None
     if ultimo != datetime.now(BRT).strftime("%Y-%m-%d") or hora == 20:   # 1x de manhã + 1x à noite
         etapa("Relatório", relatorio.main)
+    _, out = etapa("Buffer: posts com falha", vigiar_buffer)
     import sincronizar
     etapa("Salvar no GitHub", lambda: sincronizar.main(f"robô do GitHub: ajustes {datetime.now(BRT):%d/%m %Hh}"))
     if avisos:
