@@ -1,4 +1,4 @@
-"""Gera os Shorts/Reels/TikToks verticais (>60 s) com capa no primeiro frame.
+"""Gera os Shorts/Reels/TikToks verticais (>60 s) com capa no fim; com "rapido_youtube": true gera também short_<id>_yt.mp4 (20–40 s) só pro YouTube.
 Uso: python3 motor/shorts.py JOB_DIR   -> JOB_DIR/saida/short_<id>.mp4 e thumb_<id>.jpg"""
 import sys
 from pathlib import Path
@@ -64,7 +64,28 @@ def main(job, so=None):
             tmp.replace(final)
         except Exception as e:
             print("AVISO trilha falhou, seguindo sem música:", e)
+        if s.get("rapido_youtube"):
+            try:
+                corte_rapido(out / f"short_{sid}.mp4", out / f"short_{sid}_yt.mp4", info["palavras"], total)
+            except Exception as e:
+                print("AVISO versão rápida falhou (o YouTube recebe a completa):", e)
         print("ok short", sid, round(total, 1), "s", flush=True)
+
+
+def corte_rapido(final, saida, palavras, total, minimo=22.0, maximo=40.0):
+    """Versão curta pro YouTube (20–40 s): gancho + revelação principal, cortando no fim de uma frase da narração,
+    com a capa no fim. Mesmo vídeo, mesma narração — só mais curto."""
+    fins = [LEAD + w["e"] for w in palavras if w["w"].rstrip("\"'”’)").endswith((".", "!", "?"))]
+    ok = [f for f in fins if minimo <= f <= maximo]
+    corte = (ok[-1] if ok else min(maximo, total - CAPA_S)) + 0.35
+    fc = (f"[0:v]trim=0:{corte:.2f},setpts=PTS-STARTPTS[v1];[0:a]atrim=0:{corte:.2f},asetpts=PTS-STARTPTS,"
+          f"afade=t=out:st={corte - 0.4:.2f}:d=0.4[a1];"
+          f"[0:v]trim=start={total - CAPA_S:.2f},setpts=PTS-STARTPTS[v2];[0:a]atrim=start={total - CAPA_S:.2f},"
+          "asetpts=PTS-STARTPTS,volume=0[a2];[v1][a1][v2][a2]concat=n=2:v=1:a=1[v][a]")
+    run(["ffmpeg", "-y", "-v", "error", "-i", final, "-filter_complex", fc, "-map", "[v]", "-map", "[a]",
+         "-c:v", "libx264", "-preset", "veryfast", "-crf", "22", "-pix_fmt", "yuv420p",
+         "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", saida])
+    print(f"  versão rápida YouTube: {corte + CAPA_S:.1f}s")
 
 
 if __name__ == "__main__":

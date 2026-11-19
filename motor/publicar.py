@@ -110,11 +110,13 @@ def agendar_longo(job, r, L0, data, base, agora, plano):
 def agendar_short(job, s, base, due, dt, due_yt, privacidade="unlisted", instagram=True, youtube=True):
     if True:  # noqa
         url = f"{base}/short_{s['id']}.mp4"; ids = {}
+        rapido = (job / "saida" / f"short_{s['id']}_yt.mp4").exists()
+        url_yt = f"{base}/short_{s['id']}_yt.mp4" if rapido else url
         from comum import dur as _dur
         capa = max(100, int(_dur(job / "saida" / f"short_{s['id']}.mp4") * 1000) - 250)   # capa fica no fim do vídeo
         tx = {r_: s.get(f"texto_{r_}", s.get("texto_post", "")) for r_ in ("youtube", "tiktok", "instagram")}
         if youtube:
-            ids["youtube"] = criar("youtube", tx["youtube"], url, due_yt,
+            ids["youtube"] = criar("youtube", tx["youtube"], url_yt, due_yt,
                                    {"youtube": {"title": s["yt_title"][:100], "privacy": privacidade, "categoryId": "20", "madeForKids": False,
                                                 "isAiGenerated": False}})
         ids["tiktok"] = criar("tiktok", tx["tiktok"], url, due, {"tiktok": {"title": s["tt_title"][:90], "isAiGenerated": False}}, capa_ms=capa)
@@ -132,7 +134,7 @@ def agendar_short(job, s, base, due, dt, due_yt, privacidade="unlisted", instagr
                 tags5 = " ".join(s["primeiro_comentario_instagram"].split()[:5])
                 ids["instagram"] = criar("instagram", tx["instagram"] + "\n\n" + tags5, url, due, {"instagram": ig}, capa_ms=capa)
         return {"tipo": "short", "quando": dt.isoformat(), "upload": (dt - ANTECEDENCIA_YT).isoformat(), "yt_title": s["yt_title"][:100], "descricao": tx["youtube"],
-                      "tags": s["tags"], "thumb": f"{base}/thumb_{s['id']}.jpg", "buffer": ids, "ajustado": False if "youtube" in ids else True,
+                      "tags": s["tags"], "thumb": f"{base}/thumb_{s['id']}.jpg", "buffer": ids, "ajustado": False if "youtube" in ids else True, "formato_yt": "rapido" if rapido else "completo",
                       "comentario": s.get("comentario_youtube", ""), "fb_textos": s.get("fb_textos", []),
                 "playlist": "shorts", "urgente": privacidade == "public"}
 

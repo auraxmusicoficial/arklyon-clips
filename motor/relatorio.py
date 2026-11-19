@@ -65,6 +65,7 @@ def main():
          f"- Vídeos públicos: {len(lin)} ({len(sh)} Shorts, {len(lg)} longos)",
          f"- Média de views/dia: Shorts **{media(sh, 'views_dia')}** · longos **{media(lg, 'views_dia')}**",
          f"- Engajamento médio (curtidas+comentários / views): Shorts {media(sh, 'engaj')}% · longos {media(lg, 'engaj')}%", "",
+         f"- Teste de formato nos Shorts: rápidos (<45 s) **{media([x for x in sh if x['dur'] < 45], 'views_dia')}** views/dia · completos (≥45 s) **{media([x for x in sh if x['dur'] >= 45], 'views_dia')}** views/dia", "",
          "## Melhores vídeos (views por dia)", "| # | Tipo | Título | Views | Views/dia | Engaj. |", "|---|---|---|---|---|---|"]
     L += [f"| {i} | {x['tipo']} | {x['titulo'][:70]} | {x['views']} | {x['views_dia']} | {x['engaj']}% |" for i, x in enumerate(top[:10], 1)]
     L += ["", "## Piores (evite repetir o ângulo/estilo)"] + [f"- {x['titulo'][:80]} — {x['views_dia']} views/dia" for x in top[-5:][::-1] if len(top) > 5]
