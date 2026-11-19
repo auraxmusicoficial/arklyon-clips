@@ -2,7 +2,7 @@
 
 Canal: **HQ Vault Clips** (YouTube) · TikTok **@thevaultclipsof** · Instagram **@hqvaultclips**. Tudo em **inglês**.
 Meta diária (horário de Brasília): **12h vídeo longo** + Shorts em **13h · 16h · 21h**.
-**Semana de lançamento do GTA 6 (19 a 25/11/2026): 7 Shorts por dia — 9h · 11h · 13h · 16h · 18h · 20h · 22h** (no YouTube só os de 9h, 13h, 16h, 18h e 22h — o Buffer grátis limita os Shorts do YouTube por dia; no TikTok todos os 7; no Instagram só os de 13h, 18h e 22h: coloque os 3 Shorts mais fortes nessas posições do roteiro — 3ª, 5ª e 7ª). Confira com `python3 motor/publicar.py --slots <DATA>` quantos Shorts fazer.
+**Semana de lançamento do GTA 6 (19 a 25/11/2026): 7 Shorts por dia — 9h · 11h · 13h · 16h · 18h · 20h · 22h** (no YouTube só os de 9h, 16h, 18h e 22h — o canal só aceita ~5 envios por 24 h, contando o longo; no TikTok todos os 7; no Instagram só os de 13h, 18h e 22h: coloque os 3 Shorts mais fortes nessas posições do roteiro — 3ª, 5ª e 7ª). Confira com `python3 motor/publicar.py --slots <DATA>` quantos Shorts fazer.
 
 ## Regras de conteúdo (do dono do canal)
 - Tema: **GTA 6** (hype). Vídeos-fonte **só com o jogo** (trailers, gameplay, extended look, compilações sem facecam/sem pessoa reagindo). React só se não houver outra fonte, e só para Shorts.

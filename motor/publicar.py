@@ -22,7 +22,22 @@ def slots_shorts(data):
     return SLOTS_LANCAMENTO if LANCAMENTO[0] <= data <= LANCAMENTO[1] else SLOTS_SHORTS
 
 
-YT_LANCAMENTO = {"09:00", "13:00", "16:00", "18:00", "22:00"}   # Buffer grátis limita os Shorts do YouTube por dia: 5 no YouTube, 7 no TikTok
+# O YouTube só aceita ~5 envios por 24 h neste canal (contando o longo do Metricool): 4 Shorts + 1 longo por dia.
+YT_LANCAMENTO = {"09:00", "16:00", "18:00", "22:00"}
+YT_MAX_24H = 5
+
+
+def envios_youtube_24h():
+    """Quantos vídeos o canal publicou nas últimas 24 h (para não estourar o limite de envios)."""
+    try:
+        from youtube_ajustes import token, api
+        tok = token()
+        up = api(tok, "GET", "channels?part=contentDetails&mine=true")["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
+        it = api(tok, "GET", f"playlistItems?part=contentDetails&maxResults=15&playlistId={up}").get("items", [])
+        lim = datetime.now(timezone.utc) - timedelta(hours=24)
+        return sum(1 for i in it if datetime.fromisoformat(i["contentDetails"].get("videoPublishedAt", "1970-01-01T00:00:00Z").replace("Z", "+00:00")) > lim)
+    except Exception as e:
+        print("não consegui contar os envios do YouTube:", e); return 0
 
 
 def vai_youtube(data, hh):
@@ -143,7 +158,11 @@ def publicar_urgente(job, r, data, base):
     s = r["shorts"][0]
     dt = datetime.now(timezone.utc) + timedelta(minutes=10)
     due = dt.strftime("%Y-%m-%dT%H:%M:%S.000Z")
-    p = agendar_short(job, s, base, due, dt.astimezone(BRT), due, privacidade="public")
+    n = envios_youtube_24h()
+    yt = n < YT_MAX_24H - 1
+    if not yt:
+        print(f"YouTube já tem {n} envios nas últimas 24 h — Short urgente vai só pro TikTok/Instagram")
+    p = agendar_short(job, s, base, due, dt.astimezone(BRT), due, privacidade="public", youtube=yt)
     p["upload"] = dt.astimezone(BRT).isoformat()
     salvar([p])
     print("Short urgente publicado agora:", s["id"], "— rode motor/youtube_ajustes.py daqui a ~15 min para capa/tags")
