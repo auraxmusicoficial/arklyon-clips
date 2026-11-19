@@ -191,7 +191,8 @@
   "urgente": false,
   "video_id": "MI3JQ2je-FQ",
   "na_playlist": true,
-  "comentou": true
+  "comentou": true,
+  "publico_ok": true
  },
  {
   "tipo": "short",
@@ -218,11 +219,14 @@
    "youtube": "6afeb8824fb82a830a0ae367",
    "tiktok": "6afeb883bad67efd5ad73f32"
   },
-  "ajustado": false,
+  "ajustado": true,
   "comentario": "Story first or explore first? What's your plan? 👇",
   "fb_textos": [],
   "playlist": "shorts",
-  "urgente": false
+  "urgente": false,
+  "video_id": "kNzOszVFf70",
+  "na_playlist": true,
+  "comentou": true
  },
  {
   "tipo": "short",
