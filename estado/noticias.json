@@ -50,5 +50,23 @@
       "https://www.gamesradar.com/news/live/gta-6-release-day-live-coverage/"
     ],
     "urgente": false
+  },
+  {
+    "quando": "2026-11-19T14:30:00-03:00",
+    "noticia": "Estimativas de vendas no lançamento (Sensor Tower ~19 mi cópias; ~17 mi em 24h / US$1,65 bi) — estimativas de analistas, sem número oficial da Take-Two/Rockstar",
+    "fontes": [
+      "https://egw.news/gaming/news/38588/gta-6-has-officially-sold-19-million-copies-worldw-VX8OKa-0d",
+      "https://x.com/MotilalOswalLtd/status/2123307733453836522"
+    ],
+    "urgente": false
+  },
+  {
+    "quando": "2026-11-19T14:30:00-03:00",
+    "noticia": "Versão PC no 1º tri de 2027 — relato antigo (início de nov.), não confirmado oficialmente",
+    "fontes": [
+      "https://www.tweaktown.com/news/114065/report-gta-vi-pc-port-coming-jan-mar-2027/index.html",
+      "https://windowsforum.com/news/gta-6-pc-release-date-no-november-launch-q1-2027-report-unconfirmed.450530/"
+    ],
+    "urgente": false
   }
 ]
