@@ -11,6 +11,12 @@ Escreva tudo em inglês americano natural. Nunca prometa o que o vídeo não ent
 
 - **Link de inscrição**: em toda descrição (YouTube) use `https://www.youtube.com/@hqvaultclips?sub_confirmation=1` no lugar do link simples do canal — abre direto a janela "Inscrever-se".
 
+## 🏆 Fórmulas VENCEDORAS do canal (dados reais de 19/11/2026 — repetir!)
+1. **Alerta prático** — "Do This FIRST in GTA 6 (Before It's Too Late) ⚠️" → 1.080 views. Variações: "Don't Do This in GTA 6", "Mistakes Every Beginner Makes", "Turn This Setting OFF Now", "Stop Doing This...".
+2. **Número chocante** — "GTA 6 Made $1.6 BILLION Before Launch 🤯" → 505 views na 1ª hora. Variações: recordes, vendas, tamanho do mapa, horas de jogo, "X million players".
+3. **Mudança que todo fã quer saber** — "6 Wanted Stars Are Back (And Cops Are Smarter) 🚨" → 1.053 views. Variações: "X Is BACK in GTA 6", "GTA 6 Changed X Forever".
+Regras que se repetem nos vencedores: título com **gatilho forte** (FIRST, BILLION, BACK, Too Late), **1 emoji no fim** (⚠️ 🤯 🚨), promessa clara e verdadeira, assunto do momento. Os mais fracos foram teorias/história vagas ("Darkest Hint", "Glory Days") — evitar.
+
 ## Tags e hashtags (pesquisa de 19/11/2026 — 188 vídeos de GTA 6 com +50 mil views na semana)
 - **Tags do YouTube** (pesam pouco: 44 de 75 Shorts virais nem usam tags; longos usam ~16). Sempre incluir o núcleo usado pelos maiores: `gta 6`, `gta vi`, `grand theft auto 6`, `grand theft auto vi`, `gta 6 gameplay`, `rockstar games`, `grand theft auto`, `gta`, `gta6`, `gta 6 news` + quando fizer sentido `gta 5`, `gta online`, `ps5`, `gta 6 ps5`, `gta 6 ps5 pro`, `gta 6 vice city`, `vice city`, `jason`, `lucia`. Depois, 4–8 tags específicas do assunto do vídeo. Longo: 15–20 tags; Short: 8–12.
 - **Hashtags**: poucas e fortes (os virais usam 2–3). Short: `#GTA6 #GTAVI #Shorts` (+ no máximo 1 do assunto). Longo: `#GTA6 #GTAVI #GrandTheftAuto6`. Nada de lista enorme de hashtags.
