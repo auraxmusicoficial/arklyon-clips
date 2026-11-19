@@ -77,6 +77,8 @@ def main():
     ultimo = json.loads(des.read_text()).get("historico", [{}])[-1].get("data") if des.exists() else None
     if ultimo != datetime.now(BRT).strftime("%Y-%m-%d") or hora == 20:   # 1x de manhã + 1x à noite
         etapa("Relatório", relatorio.main)
+        import aprender
+        etapa("Aprendizados (IA grátis)", aprender.main)
     _, out = etapa("Buffer: posts com falha", vigiar_buffer)
     import sincronizar
     etapa("Salvar no GitHub", lambda: sincronizar.main(f"robô do GitHub: ajustes {datetime.now(BRT):%d/%m %Hh}"))

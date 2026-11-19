@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-19T10:08:09.011308+00:00",
+ "atualizado": "2026-11-19T22:25:03.644865+00:00",
  "historico": [
   {
    "data": "2026-11-17",
@@ -21,24 +21,141 @@
   },
   {
    "data": "2026-11-19",
-   "inscritos": 7,
-   "views": 21,
-   "videos": 14
+   "inscritos": 11,
+   "views": 53,
+   "videos": 18
   }
  ],
  "videos": [
+  {
+   "id": "HHb635hzTLM",
+   "titulo": "GTA 6 Made $1.6 BILLION Before Launch 🤯",
+   "tipo": "short",
+   "dur": 68,
+   "views": 550,
+   "likes": 32,
+   "coments": 2,
+   "views_dia": 9314.6,
+   "engaj": 6.2,
+   "hora_brt": "18",
+   "dias": 0.1
+  },
+  {
+   "id": "5kCCspaOdnE",
+   "titulo": "13 Years Later, GTA 6 Is Finally Here — Was It Worth The Wait?",
+   "tipo": "longo",
+   "dur": 503,
+   "views": 2,
+   "likes": 0,
+   "coments": 1,
+   "views_dia": 6.5,
+   "engaj": 50.0,
+   "hora_brt": "12",
+   "dias": 0.3
+  },
+  {
+   "id": "kNzOszVFf70",
+   "titulo": "Do This FIRST in GTA 6 (Before It's Too Late) ⚠️",
+   "tipo": "short",
+   "dur": 66,
+   "views": 1088,
+   "likes": 22,
+   "coments": 1,
+   "views_dia": 3147.7,
+   "engaj": 2.1,
+   "hora_brt": "11",
+   "dias": 0.3
+  },
+  {
+   "id": "MI3JQ2je-FQ",
+   "titulo": "GTA 6 Is Finally Out — Know This Before You Play 🎮",
+   "tipo": "short",
+   "dur": 65,
+   "views": 564,
+   "likes": 22,
+   "coments": 2,
+   "views_dia": 1309.5,
+   "engaj": 4.3,
+   "hora_brt": "09",
+   "dias": 0.4
+  },
+  {
+   "id": "-_O8FyG6qYg",
+   "titulo": "The San Andreas Gym Is BACK in GTA 6 💪",
+   "tipo": "short",
+   "dur": 41,
+   "views": 176,
+   "likes": 4,
+   "coments": 6,
+   "views_dia": 189.0,
+   "engaj": 5.7,
+   "hora_brt": "21",
+   "dias": 0.9
+  },
+  {
+   "id": "y99xw4Mmuvg",
+   "titulo": "\"A Professional Adapts\" — Lucia Proves Herself in GTA 6 🔥",
+   "tipo": "short",
+   "dur": 39,
+   "views": 124,
+   "likes": 3,
+   "coments": 2,
+   "views_dia": 108.9,
+   "engaj": 4.0,
+   "hora_brt": "16",
+   "dias": 1.1
+  },
+  {
+   "id": "ex3cGJ8APxQ",
+   "titulo": "GTA 6 Just Tied the Highest Metacritic Score Ever 😳",
+   "tipo": "short",
+   "dur": 70,
+   "views": 92,
+   "likes": 2,
+   "coments": 3,
+   "views_dia": 77.4,
+   "engaj": 5.4,
+   "hora_brt": "14",
+   "dias": 1.2
+  },
+  {
+   "id": "49tnnie3Jjo",
+   "titulo": "6 Wanted Stars Are Back in GTA 6 (And Cops Are Smarter) 🚨",
+   "tipo": "short",
+   "dur": 55,
+   "views": 1083,
+   "likes": 31,
+   "coments": 6,
+   "views_dia": 858.6,
+   "engaj": 3.4,
+   "hora_brt": "13",
+   "dias": 1.3
+  },
+  {
+   "id": "P5dyUUPJh04",
+   "titulo": "GTA 6 Reviews Are In: A Masterpiece With One Big Catch",
+   "tipo": "longo",
+   "dur": 546,
+   "views": 28,
+   "likes": 8,
+   "coments": 9,
+   "views_dia": 21.5,
+   "engaj": 60.7,
+   "hora_brt": "12",
+   "dias": 1.3
+  },
   {
    "id": "psqeW0oueVU",
    "titulo": "GTA 6's Darkest Hint Yet 😶 \"These Are Your Glory Days\"",
    "tipo": "short",
    "dur": 36,
-   "views": 9,
+   "views": 35,
    "likes": 2,
    "coments": 4,
-   "views_dia": 6.3,
-   "engaj": 66.7,
+   "views_dia": 18.1,
+   "engaj": 17.1,
    "hora_brt": "21",
-   "dias": 1.4
+   "dias": 1.9
   },
   {
    "id": "pCJSmriKY50",
@@ -48,23 +165,23 @@
    "views": 14,
    "likes": 5,
    "coments": 4,
-   "views_dia": 7.8,
+   "views_dia": 6.1,
    "engaj": 64.3,
    "hora_brt": "12",
-   "dias": 1.8
+   "dias": 2.3
   },
   {
    "id": "GfJxx6e3jUY",
    "titulo": "This Story Might Spoil GTA 6's Ending 😳",
    "tipo": "short",
    "dur": 37,
-   "views": 10,
+   "views": 11,
    "likes": 1,
    "coments": 0,
-   "views_dia": 5.2,
-   "engaj": 10.0,
+   "views_dia": 4.5,
+   "engaj": 9.1,
    "hora_brt": "09",
-   "dias": 1.9
+   "dias": 2.4
   },
   {
    "id": "Zrug6PtEZzo",
@@ -74,10 +191,10 @@
    "views": 10,
    "likes": 3,
    "coments": 4,
-   "views_dia": 4.1,
+   "views_dia": 3.4,
    "engaj": 70.0,
    "hora_brt": "21",
-   "dias": 2.4
+   "dias": 2.9
   },
   {
    "id": "5v79bZYpaZY",
@@ -87,10 +204,10 @@
    "views": 3,
    "likes": 1,
    "coments": 0,
-   "views_dia": 1.2,
+   "views_dia": 1.0,
    "engaj": 33.3,
    "hora_brt": "19",
-   "dias": 2.5
+   "dias": 3.0
   },
   {
    "id": "BZIopAaJ-4k",
@@ -100,10 +217,10 @@
    "views": 4,
    "likes": 1,
    "coments": 2,
-   "views_dia": 1.1,
+   "views_dia": 1.0,
    "engaj": 75.0,
    "hora_brt": "19",
-   "dias": 3.5
+   "dias": 4.0
   },
   {
    "id": "6bSau3WJl-Y",
@@ -113,10 +230,10 @@
    "views": 3,
    "likes": 1,
    "coments": 2,
-   "views_dia": 0.8,
+   "views_dia": 0.7,
    "engaj": 100.0,
    "hora_brt": "14",
-   "dias": 3.7
+   "dias": 4.2
   },
   {
    "id": "h-zUFcFzLfs",
@@ -129,7 +246,7 @@
    "views_dia": 0.5,
    "engaj": 50.0,
    "hora_brt": "11",
-   "dias": 3.8
+   "dias": 4.3
   },
   {
    "id": "6L_wWzXfH54",
@@ -139,75 +256,10 @@
    "views": 3,
    "likes": 1,
    "coments": 0,
-   "views_dia": 0.8,
+   "views_dia": 0.7,
    "engaj": 33.3,
    "hora_brt": "11",
-   "dias": 3.8
-  },
-  {
-   "id": "y99xw4Mmuvg",
-   "titulo": "\"A Professional Adapts\" — Lucia Proves Herself in GTA 6 🔥",
-   "tipo": "short",
-   "dur": 39,
-   "views": 2,
-   "likes": 1,
-   "coments": 2,
-   "views_dia": 3.2,
-   "engaj": 150.0,
-   "hora_brt": "16",
-   "dias": 0.6
-  },
-  {
-   "id": "ex3cGJ8APxQ",
-   "titulo": "GTA 6 Just Tied the Highest Metacritic Score Ever 😳",
-   "tipo": "short",
-   "dur": 70,
-   "views": 2,
-   "likes": 1,
-   "coments": 3,
-   "views_dia": 3.0,
-   "engaj": 200.0,
-   "hora_brt": "14",
-   "dias": 0.7
-  },
-  {
-   "id": "49tnnie3Jjo",
-   "titulo": "6 Wanted Stars Are Back in GTA 6 (And Cops Are Smarter) 🚨",
-   "tipo": "short",
-   "dur": 55,
-   "views": 3,
-   "likes": 2,
-   "coments": 4,
-   "views_dia": 4.0,
-   "engaj": 200.0,
-   "hora_brt": "13",
-   "dias": 0.7
-  },
-  {
-   "id": "P5dyUUPJh04",
-   "titulo": "GTA 6 Reviews Are In: A Masterpiece With One Big Catch",
-   "tipo": "longo",
-   "dur": 546,
-   "views": 27,
-   "likes": 8,
-   "coments": 9,
-   "views_dia": 34.3,
-   "engaj": 63.0,
-   "hora_brt": "12",
-   "dias": 0.8
-  },
-  {
-   "id": "-_O8FyG6qYg",
-   "titulo": "The San Andreas Gym Is BACK in GTA 6 💪",
-   "tipo": "short",
-   "dur": 41,
-   "views": 17,
-   "likes": 2,
-   "coments": 6,
-   "views_dia": 40.5,
-   "engaj": 47.1,
-   "hora_brt": "21",
-   "dias": 0.4
+   "dias": 4.3
   }
  ]
 }
