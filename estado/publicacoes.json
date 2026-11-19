@@ -184,11 +184,14 @@
    "youtube": "6afeb8814a35072d027c6888",
    "tiktok": "6afeb881fc3e30ab95b71a9c"
   },
-  "ajustado": false,
+  "ajustado": true,
   "comentario": "Be honest: how long did the 212 GB download take you? ⏳",
   "fb_textos": [],
   "playlist": "shorts",
-  "urgente": false
+  "urgente": false,
+  "video_id": "MI3JQ2je-FQ",
+  "na_playlist": true,
+  "comentou": true
  },
  {
   "tipo": "short",
