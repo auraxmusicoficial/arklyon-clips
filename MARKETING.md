@@ -11,6 +11,11 @@ Escreva tudo em inglês americano natural. Nunca prometa o que o vídeo não ent
 
 - **Link de inscrição**: em toda descrição (YouTube) use `https://www.youtube.com/@hqvaultclips?sub_confirmation=1` no lugar do link simples do canal — abre direto a janela "Inscrever-se".
 
+## Tags e hashtags (pesquisa de 19/11/2026 — 188 vídeos de GTA 6 com +50 mil views na semana)
+- **Tags do YouTube** (pesam pouco: 44 de 75 Shorts virais nem usam tags; longos usam ~16). Sempre incluir o núcleo usado pelos maiores: `gta 6`, `gta vi`, `grand theft auto 6`, `grand theft auto vi`, `gta 6 gameplay`, `rockstar games`, `grand theft auto`, `gta`, `gta6`, `gta 6 news` + quando fizer sentido `gta 5`, `gta online`, `ps5`, `gta 6 ps5`, `gta 6 ps5 pro`, `gta 6 vice city`, `vice city`, `jason`, `lucia`. Depois, 4–8 tags específicas do assunto do vídeo. Longo: 15–20 tags; Short: 8–12.
+- **Hashtags**: poucas e fortes (os virais usam 2–3). Short: `#GTA6 #GTAVI #Shorts` (+ no máximo 1 do assunto). Longo: `#GTA6 #GTAVI #GrandTheftAuto6`. Nada de lista enorme de hashtags.
+- **O que mais viraliza nos Shorts**: humor/situações com que todo fã se identifica (ex.: "apagar jogos pra caber o GTA 6", "30 FPS"), reações curtas e polêmicas do momento. Sempre que o tema permitir, abra o Short com uma situação engraçada/identificável antes da informação.
+
 ## 1b. Escolha do TEMA — conteúdo que as pessoas realmente querem ver (mais importante que tudo)
 O vídeo-fonte é só a imagem; o que faz o vídeo crescer é o ASSUNTO. Escolha o tema ANTES da fonte:
 1. Faça 4–6 buscas na web: "GTA 6 news today", "GTA 6 reddit", "GTA 6 trending", "GTA 6" + o momento (preload, launch, reviews, patch, online, PC...). Anote as 5 perguntas/discussões mais quentes das últimas 48 h.
