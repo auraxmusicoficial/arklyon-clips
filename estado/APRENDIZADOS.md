@@ -1,44 +1,41 @@
-# Aprendizados automáticos do canal — 19/11/2026 19:25
+# Aprendizados automáticos do canal — 19/11/2026 20:21
 
 _Gerado pelo robô a partir do desempenho real dos vídeos. A produção DEVE aplicar isto no longo e nos Shorts do dia._
 
 ## O que está funcionando  
-**Assuntos** – Dicas imediatas de “primeiros passos”, novidades de gameplay que afetam o jogador (cops, Wanted Stars, Gym).  
-**Palavras‑chave** – *First, Before, Know This, Tied, Highest, Back* → verbos de ação + urgência.  
-**Emoji** – ⚠️, 🚨, 💪, 🎮 – sempre 1‑2 emojis que reforçam a emoção (alerta, ação, força).  
-**Duração** – Shorts entre 55‑70 s geram > 800 vpd; < 40 s caem drasticamente.  
-**Horário de publicação** – Entre 09h‑14h BRT (pico de visualizações > 1 000 vpd).  
-**Engajamento** – Mesmo com 2‑5 % de taxa, o volume de visualizações compensa; foco maior em alcance que em likes.
+**Tipo de assunto** – Dicas imediatas, “primeiros passos” e novidades que afetam a jogabilidade (ex.: “Do This FIRST in GTA 6”, “GTA 6 Is Finally Out — Know This Before You Play”).  
+**Palavras‑chave do título** – verbos de ação (“Do This”, “Know This”, “Are Back”), termos de urgência (“FIRST”, “Before It’s Too Late”, “⚠️”).  
+**Emoji** – Sempre 1‑2 emojis que reforcem a emoção (⚠️, 🚨, 💪, 😳). Eles aparecem nos 3 Shorts com maior visualização.  
+**Duração** – Entre 55 s e 70 s. O melhor Short tem 66 s; os demais entre 55‑65 s mantêm alta retenção.  
+**Horário de postagem** – Manhã‑tarde (09 h‑13 h BRT) gera mais visualizações por dia. O short das 09 h tem 1 316 views/dia, o das 13 h tem 1 060 views/dia.  
 
 ## O que evitar  
-- **Temas genéricos** (“Is Crazy in GTA 6”, “Reaction”) – < 5 vpd.  
-- **Duração < 40 s** – perda de retenção.  
-- **Postagens tarde da noite (≥ 16h BRT)** – queda de > 70 % nas visualizações.  
-- **Título sem verbo de ação ou urgência** – “The San Andreas Gym Is BACK” (bom, mas baixa por horário).  
-- **Vídeos longos sem hook forte** – 503 s com 2 views, provavelmente falta de curiosidade inicial.
+- **Longos** (>5 min) ainda não ganharam tração; o único com boa taxa de engajamento tem <30 views.  
+- **Postagens tarde da noite** (21 h‑22 h) apresentam baixa views/dia, mesmo com boa taxa de engajamento.  
+- **Títulos genéricos** sem verbo de ação ou urgência (“Is Crazy in GTA 6”, “React New GTA 6”) geram <5 views totais.  
+- **Falta de emoji** nos títulos dos piores resultados.  
 
 ## Fórmulas de título para amanhã  
 
 ### Shorts (INGLÊS)  
-1. **“[X] MUST DO FIRST in GTA 6 – Don’t Miss This! ⚠️”**  
-2. **“How [X] Changed GTA 6 Gameplay – Play Smarter 🚀”**  
-3. **“Top 3 Secrets About [X] You Didn’t Know! 🔥”**  
-4. **“Why [X] Is the Biggest Meta Shift in GTA 6 🎮”**  
-5. **“[X] Is BACK! What It Means for Your Heist 💰”**  
-6. **“Quick Guide: Master [X] in Under 60 Seconds ⏱️”**  
+1. “[X] MUST DO FIRST in GTA 6 – Don’t Miss It! ⚡️”  
+2. “Unlock the NEW [X] Feature in GTA 6 – Quick Guide 🚀”  
+3. “Why Everyone Is Talking About [X] in GTA 6 (2024) 🔥”  
+4. “Avoid This BIG Mistake in GTA 6 – [X] Explained 😱”  
+5. “Top 3 Secrets About [X] You Didn’t Know! 🎮”  
+6. “How to Get [X] Instantly in GTA 6 – 60‑Second Hack ⏱️”  
 
-### Vídeo longo (INGLÊS)  
-1. **“GTA 6 Deep Dive: Everything You Need to Know About [X] (Full Guide)”**  
-2. **“The Ultimate [X] Strategy – From Beginner to Pro in GTA 6”**  
+### Vídeos longos (INGLÊS)  
+1. “The Complete Guide to [X] in GTA 6 – Everything You Need to Know”  
+2. “GTA 6 Deep Dive: How [X] Changes the Game Forever (Full Analysis)”
 
-*Substitua **[X]** pelo fato ou recurso do dia (ex.: “The New Nightclub”, “Dynamic Weather”, “AI Police Patrol”).*
+*(Substitua **[X]** pelo fato/atualização do dia – ex.: “New Heist Mission”, “Dynamic Weather System”, “Hidden Map Area”)*  
 
 ## Ajustes no vídeo longo  
-1. **Título** – Adote a mesma estrutura de urgência/ação dos Shorts, ex.: “Master the New Nightclub in GTA 6 – Full Walkthrough”.  
-2. **Thumbnail** – Use imagem de alta‑contraste com 1 emoji grande (⚠️ ou 🚨) e texto curto (≤ 3 palavras).  
-3. **Gancho (primeiros 30 s)** – Comece com uma pergunta impactante (“Ever wondered why the new nightclub breaks the game?”) seguida de um teaser visual do que será revelado nos 2‑3 minutos seguintes.  
-4. **Divida o conteúdo** – Insira “chapters” de 1‑2 min cada, replicando o ritmo dos Shorts (título rápido, demonstração, call‑to‑action).  
+- **Título**: adotar a mesma estrutura de urgência/ação dos Shorts, ex.: “How to Master the NEW [X] in GTA 6 – First‑Play Tips”.  
+- **Thumbnail**: use imagem grande do elemento X, texto em caixa‑alta com 2‑3 palavras (“NEW FEATURE!”) + emoji. Cores vibrantes (vermelho/ amarelo).  
+- **Gancho 0‑30 s**: reproduzir o hook dos Shorts – abrir com “Você acabou de entrar em GTA 6 e já pode fazer isso…”. Mostrar rapidamente o benefício (ex.: “Ganhe 5 mil dólares em 2 minutos”).  
 
 ## O que testar a seguir  
-1. **Horário de pico** – Publique 3 Shorts às 09h, 11h e 13h BRT em dias consecutivos; compare VPD.  
-2. **Formato de hook** – No próximo vídeo longo, experimente começar com um “teaser de 5 s” (clipe de ação + texto “Watch this before you start”). Meça retenção nos primeiros 30 s versus o padrão atual.
+1. **Postar Shorts às 09 h e 13 h** por 3 dias seguidos, medindo views/dia e taxa de retenção.  
+2. **Converter um Short de alta performance** (ex.: “6 Wanted Stars Are Back…”) em um vídeo de 4‑5 min, mantendo título/thumbnail semelhantes, para avaliar se a audiência acompanha formatos mais longos.
