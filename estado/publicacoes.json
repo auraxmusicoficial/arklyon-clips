@@ -262,7 +262,9 @@
   "playlist": "shorts",
   "urgente": false,
   "video_id": "HHb635hzTLM",
-  "na_playlist": true
+  "na_playlist": true,
+  "publico_ok": true,
+  "comentou": true
  },
  {
   "tipo": "short",
