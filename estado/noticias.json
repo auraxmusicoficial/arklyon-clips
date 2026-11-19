@@ -68,5 +68,22 @@
       "https://windowsforum.com/news/gta-6-pc-release-date-no-november-launch-q1-2027-report-unconfirmed.450530/"
     ],
     "urgente": false
+  },
+  {
+    "quando": "2026-11-19T18:25:00-03:00",
+    "noticia": "Nova estimativa de receita: ~US$ 1,84 bi até o dia do lançamento (mais que o dobro do recorde do GTA V) — estimativa de analistas, ainda sem número oficial da Take-Two; já coberto pelo Short de US$1,6 bi",
+    "fontes": [
+      "https://www.fox5ny.com/news/gta-vi-pulls-estimated-1-84-billion-release-day-more-than-double-gta-vs-launch-record"
+    ],
+    "urgente": false
+  },
+  {
+    "quando": "2026-11-19T18:25:00-03:00",
+    "noticia": "Relatos de jogadores sobre bugs/crashes/áudio no lançamento; atualizações sem notas oficiais — sem patch ou declaração oficial da Rockstar",
+    "fontes": [
+      "https://www.pcgameshardware.de/GTA-6-Spiel-55239/News/GTA-6-Top-scores-but-players-report-plenty-of-bugs-1560609/",
+      "https://gtaexp.com/news/gta-6-launch-crashes-audio-player-reports"
+    ],
+    "urgente": false
   }
 ]
