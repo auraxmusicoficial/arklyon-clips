@@ -22,6 +22,13 @@ def slots_shorts(data):
     return SLOTS_LANCAMENTO if LANCAMENTO[0] <= data <= LANCAMENTO[1] else SLOTS_SHORTS
 
 
+YT_LANCAMENTO = {"09:00", "13:00", "16:00", "18:00", "22:00"}   # Buffer grátis limita os Shorts do YouTube por dia: 5 no YouTube, 7 no TikTok
+
+
+def vai_youtube(data, hh):
+    return hh in YT_LANCAMENTO if LANCAMENTO[0] <= data <= LANCAMENTO[1] else True
+
+
 def vai_instagram(data, hh):
     return hh in IG_LANCAMENTO if LANCAMENTO[0] <= data <= LANCAMENTO[1] else True
 SLOT_LONGO = "12:00"
@@ -75,7 +82,8 @@ def main(job, data, sha, pular=(), urgente=False):
     livres = [h for h in slots_shorts(data) if h not in pular and quando(data, h)[1] > agora]
     for s, hh in zip(r["shorts"], livres):
         due, dt = quando(data, hh)
-        plano.append(agendar_short(job, s, base, due, dt, antes(dt), instagram=vai_instagram(data, hh)))
+        plano.append(agendar_short(job, s, base, due, dt, antes(dt), instagram=vai_instagram(data, hh),
+                                   youtube=vai_youtube(data, hh)))
         print("agendado short", s["id"], dt)
     for s in r["shorts"][len(livres):]:
         print("SOBROU (sem horário livre hoje):", s["id"])
@@ -99,15 +107,16 @@ def agendar_longo(job, r, L0, data, base, agora, plano):
         print("agendado longo", dt)
 
 
-def agendar_short(job, s, base, due, dt, due_yt, privacidade="unlisted", instagram=True):
+def agendar_short(job, s, base, due, dt, due_yt, privacidade="unlisted", instagram=True, youtube=True):
     if True:  # noqa
         url = f"{base}/short_{s['id']}.mp4"; ids = {}
         from comum import dur as _dur
         capa = max(100, int(_dur(job / "saida" / f"short_{s['id']}.mp4") * 1000) - 250)   # capa fica no fim do vídeo
         tx = {r_: s.get(f"texto_{r_}", s.get("texto_post", "")) for r_ in ("youtube", "tiktok", "instagram")}
-        ids["youtube"] = criar("youtube", tx["youtube"], url, due_yt,
-                               {"youtube": {"title": s["yt_title"][:100], "privacy": privacidade, "categoryId": "20", "madeForKids": False,
-                                            "isAiGenerated": False}})
+        if youtube:
+            ids["youtube"] = criar("youtube", tx["youtube"], url, due_yt,
+                                   {"youtube": {"title": s["yt_title"][:100], "privacy": privacidade, "categoryId": "20", "madeForKids": False,
+                                                "isAiGenerated": False}})
         ids["tiktok"] = criar("tiktok", tx["tiktok"], url, due, {"tiktok": {"title": s["tt_title"][:90], "isAiGenerated": False}}, capa_ms=capa)
         ig = {"type": "reel", "shouldShareToFeed": True, "isAiGenerated": False}
         if s.get("primeiro_comentario_instagram"):
@@ -123,7 +132,7 @@ def agendar_short(job, s, base, due, dt, due_yt, privacidade="unlisted", instagr
                 tags5 = " ".join(s["primeiro_comentario_instagram"].split()[:5])
                 ids["instagram"] = criar("instagram", tx["instagram"] + "\n\n" + tags5, url, due, {"instagram": ig}, capa_ms=capa)
         return {"tipo": "short", "quando": dt.isoformat(), "upload": (dt - ANTECEDENCIA_YT).isoformat(), "yt_title": s["yt_title"][:100], "descricao": tx["youtube"],
-                      "tags": s["tags"], "thumb": f"{base}/thumb_{s['id']}.jpg", "buffer": ids, "ajustado": False,
+                      "tags": s["tags"], "thumb": f"{base}/thumb_{s['id']}.jpg", "buffer": ids, "ajustado": False if "youtube" in ids else True,
                       "comentario": s.get("comentario_youtube", ""), "fb_textos": s.get("fb_textos", []),
                 "playlist": "shorts", "urgente": privacidade == "public"}
 
