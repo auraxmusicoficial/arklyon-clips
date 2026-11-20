@@ -1,0 +1,22 @@
+name: Teste do acesso ao Drive
+on: workflow_dispatch
+jobs:
+  teste:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Listar a pasta Clipador e avisar no celular
+        env:
+          RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
+          VAULT_SECRETS: ${{ secrets.VAULT_SECRETS }}
+        run: |
+          curl -s https://rclone.org/install.sh | sudo bash >/dev/null 2>&1 || sudo apt-get install -y rclone >/dev/null
+          mkdir -p ~/.config/rclone && printf '%s\n' "$RCLONE_CONF" > ~/.config/rclone/rclone.conf
+          REMOTO=$(rclone listremotes | head -1)
+          echo "remoto: $REMOTO"
+          LISTA=$(rclone lsf "${REMOTO}Clipador" --max-depth 2 2>&1 | head -20)
+          N=$(echo "$LISTA" | grep -c . || true)
+          echo "$LISTA" | sed 's/^/  /'
+          TOPICO=$(python3 -c "import json,os;print(json.loads(os.environ['VAULT_SECRETS'])['NTFY_TOPIC'])")
+          if rclone lsd "${REMOTO}" >/dev/null 2>&1; then MSG="Acesso ao Drive funcionando ✅ — pasta Clipador com $N itens"; else MSG="⚠️ Acesso ao Drive FALHOU: $(echo "$LISTA" | tail -1 | cut -c1-150)"; fi
+          curl -s -H "Title: HQ Vault Clips" -d "$MSG" "https://ntfy.sh/$TOPICO" >/dev/null
+          echo "$MSG"
