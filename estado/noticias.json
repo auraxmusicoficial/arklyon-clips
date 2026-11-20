@@ -85,5 +85,22 @@
       "https://gtaexp.com/news/gta-6-launch-crashes-audio-player-reports"
     ],
     "urgente": false
+  },
+  {
+    "quando": "2026-11-20T14:30:00-03:00",
+    "noticia": "Nova estimativa de analistas: ~US$ 2,36 bi em receita e quase 25 mi de cópias; número oficial da Take-Two pode sair até 23/11 — ainda estimativa, mesmo tema dos Shorts de vendas já feitos",
+    "fontes": [
+      "https://www.gamesradar.com/games/grand-theft-auto/gta-6-sales-are-almost-at-25-million-as-rockstar-earns-usd2-36-billion-in-revenue-analysts-estimate/",
+      "https://www.nacionale.com/en/articles/when-will-rockstar-reveal-gta-6-sales-official-numbers-records-to-beat-gta-5"
+    ],
+    "urgente": false
+  },
+  {
+    "quando": "2026-11-20T14:30:00-03:00",
+    "noticia": "Sem patch novo nem anúncio oficial da Rockstar nas últimas 6 h (só os patches do dia 1 já conhecidos)",
+    "fontes": [
+      "https://www.forbes.com/sites/brianmazique/2026/11/17/gta-6-just-got-a-second-update-before-anyone-can-play-it-and-rockstar-still-isnt-saying-what-it-changes/"
+    ],
+    "urgente": false
   }
 ]
