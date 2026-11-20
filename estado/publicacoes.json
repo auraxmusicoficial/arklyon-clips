@@ -505,13 +505,15 @@
    "tiktok": "6b0008920f5eda1a57d59b63",
    "youtube": "6b0008910f5eda1a57d59aa4"
   },
-  "ajustado": false,
+  "ajustado": true,
   "formato_yt": "rapido",
   "comentario": "Hat, glasses or Pay 'n' Spray — what's your GTA 6 escape plan? 👇",
   "fb_textos": [],
   "playlist": "shorts",
   "urgente": false,
-  "yt_direto": "BOQeEsESTug"
+  "yt_direto": "BOQeEsESTug",
+  "video_id": "BOQeEsESTug",
+  "na_playlist": true
  },
  {
   "tipo": "short",
