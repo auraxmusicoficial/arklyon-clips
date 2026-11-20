@@ -1,0 +1,33 @@
+name: Robô — estudo diário (Gemini assiste, Groq julga)
+on:
+  schedule:
+    - cron: "20 4 * * *"   # 1h20 de Brasília — fica pronto antes da produção das 4h47
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: robo-estudo
+  cancel-in-progress: false
+jobs:
+  estudo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Segredos
+        env:
+          VAULT_SECRETS: ${{ secrets.VAULT_SECRETS }}
+          GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
+        run: |
+          python3 -c "import json,os;[print('::add-mask::'+v) for v in json.loads(os.environ['VAULT_SECRETS']).values()]"
+          echo "::add-mask::$GEMINI_KEY"
+      - name: Estudar
+        env:
+          VAULT_SECRETS: ${{ secrets.VAULT_SECRETS }}
+          GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
+        run: python3 motor/estudo.py
+      - name: Salvar no GitHub
+        if: always()
+        run: cd motor && python3 -c "import sincronizar; sincronizar.main('robô: estudo do dia')"
