@@ -1,54 +1,41 @@
-# Aprendizados automáticos do canal — 20/11/2026 07:04
+# Aprendizados automáticos do canal — 20/11/2026 20:23
 
 _Gerado pelo robô a partir do desempenho real dos vídeos. A produção DEVE aplicar isto no longo e nos Shorts do dia._
 
-**## O que está funcionando (padrões dos melhores)**  
+## O que está funcionando  
+**Assuntos:** primeiras dicas “What to do first”, mecânicas novas (wanted stars, cops mais inteligentes), curiosidades de lançamento (bilhões antes do lançamento).  
+**Palavras‑chave do título:** verbos de ação (“Do This FIRST”, “Know This Before You Play”), números (“$1.6 BILLION”, “6 Wanted Stars”), termos de urgência/alerta (⚠️ 🚨).  
+**Emoji:** ⚠️ 🚨 💪 🔥 👀 – sempre no início ou final, reforçam a chamada.  
+**Duração:**  Shorts entre 55 – 70 s geram mais visualizações diárias; o pico está em 66 s (1183 views).  
+**Horário de postagem:** entre 09h – 18h BRT (principalmente 09h, 13h, 14h). Esses horários coincidem com o pico de tráfego de gamers no Brasil.  
+**Engajamento:** Mesmo com 1‑2 % de taxa de engajamento, os vídeos de maior visualização têm 3‑5 % – indica que chamadas fortes (“Before It’s Too Late”) geram cliques e retenção.
 
-| Métrica | Shorts Top 3 | Shorts 4‑6 |
-|---------|--------------|-----------|
-| **Duração** | 65‑68 s (ideal para retenção) | 55‑70 s ainda bom |
-| **Horário de postagem** | 09 h‑13 h BRT (pico de audiência) | 14 h‑21 h menos eficaz |
-| **Título** | • Começa com verbo de ação (“Do This FIRST…”, “Know This Before You Play”)  <br>• Usa números/estatísticas (“$1.6 BILLION”, “6 Wanted Stars”)  <br>• Emoji ⚠️ 🚨 🤯 para chamar atenção | • Ainda usa verbos, mas menor impacto (“Just Tied…”) |
-| **Palavras‑chave** | “GTA 6”, “Before”, “First”, “$1.6 BILLION”, “Wanted Stars”, “Cops” – termos que prometem benefício imediato ou curiosidade. |
-| **Engajamento** | 2‑5 % (bom) – indica chamada para ação clara nos primeiros segundos. |
-| **Thumbnail** | Texto grande + emoji + visual do jogo (cenas de ação ou números grandes). |
+## O que evitar  
+- **Temas genéricos** (“Highest Metacritic Score”, “Gym is BACK”) – baixa visualização diária.  
+- **Duração curta demais** (<45 s) ou muito longa (>5 min) – queda drástica de views.  
+- **Títulos sem número ou urgência** – menos cliques.  
+- **Postagens muito tarde (21h‑23h)** – performance ruim nos últimos dias.  
+- **Conteúdo já saturado** (spoil de história) – gera poucos views e alto “bounce”.
 
-**## O que evitar (padrões dos piores)**  
+## Fórmulas de título para amanhã  
 
-- **Duração > 1 min** nos Shorts (queda drástica de visualizações).  
-- **Postagens depois das 14 h** (ex.: 16 h, 21 h) apresentam < 100 vpd.  
-- **Títulos genéricos** (“Is Crazy in GTA 6”) ou sem benefício claro.  
-- **Uso excessivo de “Reaction”** sem promessa de informação nova.  
-- **Longos (≥ 5 min)** têm quase zero visualizações; precisam de hook imediato.
+**Shorts (INGLÊS)**  
+1. “Do This FIRST in GTA 6 – [X] Trick You’re Missing ⚠️”  
+2. “GTA 6’s New Police AI: How to Outsmart Them Today 🚨”  
+3. “Earn $[X] in 24 h – GTA 6 Money‑Making Secret 💰”  
+4. “6 Wanted Stars Are Back – What Changes in GTA 6? 🔥”  
+5. “[X] Hidden Easter Egg You’ll Never Find Without This Guide 👀”  
+6. “GTA 6 Speedrun Tip: Cut Your Time by [X]% ⏱️”
 
-**## Fórmulas de título para amanhã**  
+**Vídeo longo (INGLÊS)**  
+1. “GTA 6 Day 1 Secrets – Everything You Need to Know [X]”  
+2. “The Biggest GTA 6 Mistake New Players Make – Avoid It Now [X]”
 
-*Shorts (INGLÊS)*  
+## Ajustes no vídeo longo  
+- **Título:** usar mesma estrutura de urgência e número (“Day 1 Secrets”, “Biggest Mistake”).  
+- **Thumbnail:** imagem de ação + número grande + emoji (⚠️ 🚨). Ex.: “Day 1 ❗ [X] Secrets”.  
+- **Gancho 0‑30 s:** abrir com uma pergunta de alto impacto (“Did you know you can earn $[X] in the first hour?”) seguida de um rápido teaser da dica principal, mantendo ritmo de 2‑3 s por corte, como nos Shorts.
 
-1. “[X] GTA 6 Secret You Must Use Today 🔥”  
-2. “How to Earn $[X] in 5 Minutes – GTA 6 Money Hack 💰”  
-3. “Why Everyone Is Getting Banned After [X] – GTA 6 Tips ⚠️”  
-4. “[X] New Weapon Unlocked – Dominate GTA 6 Now 🚀”  
-5. “The Fastest Way to Reach Level [X] – GTA 6 Guide 📈”  
-6. “[X] Hidden Easter Egg You Missed in GTA 6 🐰”
-
-*Vídeo longo (INGLÊS)*  
-
-1. “GTA 6 First‑Week Review: What’s Amazing & What’s Broken – [X] Highlights”  
-2. “Complete GTA 6 Guide: All Secrets, Glitches & Money‑Making Strategies – Updated [X]”
-
-*(Substitua **[X]** pelo dado do dia: número de visualizações, valor de dinheiro, nível, etc.)*
-
-**## Ajustes no vídeo longo**  
-
-1. **Título** – Adote a estrutura “Verb + GTA 6 + Benefit + [X]”. Ex.: “Unlock Every GTA 6 Secret in 30 Min – [X] Hacks”.  
-2. **Thumbnail** – Use foto de ação + texto grande (“ALL SECRETS”) + emoji de explosão.  
-3. **Gancho 0‑30 s** – Comece com uma pergunta de impacto (“Quer ganhar $1 milhão nas primeiras 2 horas?”) seguida de um teaser do ponto mais forte (ex.: “Vou mostrar o glitch que ninguém encontrou ainda”).  
-4. **Divida o longo em blocos de 2‑3 min** (cada bloco tem mini‑título estilo Shorts) para manter retenção.
-
-**## O que testar a seguir**  
-
-1. **Postar Shorts às 10 h BRT** por 7 dias consecutivos e comparar VPD vs. 13 h.  
-2. **Adicionar CTA de “Inscreva‑se para mais hacks”** nos primeiros 5 s dos Shorts e medir mudança no CTR de inscrição.  
-
-Esses testes vão validar horário ideal e eficácia de chamadas rápidas para aumentar inscritos.
+## O que testar a seguir  
+1. **Teste de horário:** publicar dois Shorts semelhantes às fórmulas acima, um às 09h e outro às 16h BRT; comparar visualizações/dia e taxa de retenção.  
+2. **Teste de mini‑serie:** lançar uma sequência de 3 Shorts diários (“Day 1 Tip 1”, “Day 1 Tip 2”, “Day 1 Tip 3”) usando a mesma branding (emoji, cor da thumbnail) e medir crescimento de inscritos nos 48 h.

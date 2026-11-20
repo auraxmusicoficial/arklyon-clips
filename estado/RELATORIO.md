@@ -2,42 +2,42 @@
 
 - Inscritos: **11** (desde 2026-11-17: +11)
 - Visualizações totais: **3703** (desde 2026-11-17: +3682)
-- Vídeos públicos: 18 (14 Shorts, 4 longos)
-- Média de views/dia: Shorts **344.8** · longos **5.8**
-- Engajamento médio (curtidas+comentários / views): Shorts 31.7% · longos 80.8%
+- Vídeos públicos: 22 (17 Shorts, 5 longos)
+- Média de views/dia: Shorts **175.3** · longos **2.6**
+- Engajamento médio (curtidas+comentários / views): Shorts 39.6% · longos 118.3%
 
-- Teste de formato nos Shorts: rápidos (<45 s) **49.3** views/dia · completos (≥45 s) **509.0** views/dia
+- Teste de formato nos Shorts: rápidos (<45 s) **28.2** views/dia · completos (≥45 s) **278.4** views/dia
 
 ## Melhores vídeos (views por dia)
 | # | Tipo | Título | Views | Views/dia | Engaj. |
 |---|---|---|---|---|---|
-| 1 | short | GTA 6 Made $1.6 BILLION Before Launch 🤯 | 776 | 1425.3 | 4.9% |
-| 2 | short | Do This FIRST in GTA 6 (Before It's Too Late) ⚠️ | 1177 | 1416.3 | 2.0% |
-| 3 | short | GTA 6 Is Finally Out — Know This Before You Play 🎮 | 792 | 864.6 | 3.4% |
-| 4 | short | 6 Wanted Stars Are Back in GTA 6 (And Cops Are Smarter) 🚨 | 1404 | 803.8 | 2.7% |
-| 5 | short | The San Andreas Gym Is BACK in GTA 6 💪 | 189 | 133.4 | 5.3% |
-| 6 | short | "A Professional Adapts" — Lucia Proves Herself in GTA 6 🔥 | 152 | 93.6 | 3.3% |
-| 7 | short | GTA 6 Just Tied the Highest Metacritic Score Ever 😳 | 115 | 68.7 | 4.3% |
-| 8 | short | GTA 6's Darkest Hint Yet 😶 "These Are Your Glory Days" | 42 | 17.4 | 14.3% |
-| 9 | longo | GTA 6 Reviews Are In: A Masterpiece With One Big Catch | 28 | 15.7 | 60.7% |
-| 10 | longo | GTA 6 Release Is 2 Days Away: Everything You Need to Know | 8 | 2.9 | 112.5% |
+| 1 | short | Do This FIRST in GTA 6 (Before It's Too Late) ⚠️ | 1183 | 853.2 | 1.9% |
+| 2 | short | GTA 6 Made $1.6 BILLION Before Launch 🤯 | 783 | 711.9 | 4.9% |
+| 3 | short | 6 Wanted Stars Are Back in GTA 6 (And Cops Are Smarter) 🚨 | 1405 | 610.3 | 2.6% |
+| 4 | short | GTA 6 Is Finally Out — Know This Before You Play 🎮 | 794 | 539.6 | 3.4% |
+| 5 | short | The San Andreas Gym Is BACK in GTA 6 💪 | 185 | 93.8 | 5.4% |
+| 6 | short | "A Professional Adapts" — Lucia Proves Herself in GTA 6 🔥 | 152 | 69.7 | 3.3% |
+| 7 | short | GTA 6 Just Tied the Highest Metacritic Score Ever 😳 | 114 | 51.1 | 4.4% |
+| 8 | short | GTA 6 Made $3.79 BILLION in ONE Day (Official) 🤯 | 1 | 15.3 | 100.0% |
+| 9 | short | GTA 6 Is Secretly Judging How You Play 👀 | 7 | 14.7 | 14.3% |
+| 10 | short | GTA 6's Darkest Hint Yet 😶 "These Are Your Glory Days" | 36 | 12.1 | 16.7% |
 
 ## Piores (evite repetir o ângulo/estilo)
 - Reaction New GTA 6 #gta #gta6 #reaction — 0.4 views/dia
 - Is Crazy in GTA 6 #gta6 #gta #gta6trailer — 0.4 views/dia
+- Stealing Cars in GTA 6 Changed Everything 🚗 — 0.5 views/dia
 - React New GTA 6  #gta #gta6 #reaction — 0.6 views/dia
-- Stealing Cars in GTA 6 Changed Everything 🚗 — 0.6 views/dia
-- Jason & Lucia: Romance Is YOUR Choice in GTA 6 ❤️ #GTA6 #JasonAndLucia #Shorts — 0.7 views/dia
+- Jason & Lucia: Romance Is YOUR Choice in GTA 6 ❤️ #GTA6 #JasonAndLucia #Shorts — 0.6 views/dia
 
 ## Horário de publicação (BRT) × views/dia
-- 18h: 1425.3 views/dia (1 vídeos)
-- 13h: 803.8 views/dia (1 vídeos)
-- 11h: 472.4 views/dia (3 vídeos)
-- 09h: 433.2 views/dia (2 vídeos)
-- 16h: 93.6 views/dia (1 vídeos)
-- 21h: 50.9 views/dia (3 vídeos)
-- 14h: 34.6 views/dia (2 vídeos)
-- 12h: 7.0 views/dia (3 vídeos)
+- 13h: 610.3 views/dia (1 vídeos)
+- 18h: 363.6 views/dia (2 vídeos)
+- 11h: 284.7 views/dia (3 vídeos)
+- 09h: 185.1 views/dia (3 vídeos)
+- 16h: 37.6 views/dia (2 vídeos)
+- 21h: 35.7 views/dia (3 vídeos)
+- 14h: 25.8 views/dia (2 vídeos)
+- 12h: 3.0 views/dia (4 vídeos)
 
 ## Como usar (robô)
 - Antes de escolher o tema: repita o ASSUNTO/formato dos 3 melhores (com ângulo novo) e evite o que está entre os piores.

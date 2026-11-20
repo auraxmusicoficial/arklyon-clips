@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-20T10:04:00.691889+00:00",
+ "atualizado": "2026-11-20T23:23:50.690848+00:00",
  "historico": [
   {
    "data": "2026-11-17",
@@ -30,6 +30,12 @@
    "inscritos": 11,
    "views": 3703,
    "videos": 18
+  },
+  {
+   "data": "2026-11-20",
+   "inscritos": 11,
+   "views": 3703,
+   "videos": 22
   }
  ],
  "videos": [
@@ -38,13 +44,13 @@
    "titulo": "GTA 6 Made $1.6 BILLION Before Launch 🤯",
    "tipo": "short",
    "dur": 68,
-   "views": 776,
+   "views": 783,
    "likes": 34,
    "coments": 4,
-   "views_dia": 1425.3,
+   "views_dia": 711.9,
    "engaj": 4.9,
    "hora_brt": "18",
-   "dias": 0.5
+   "dias": 1.1
   },
   {
    "id": "5kCCspaOdnE",
@@ -54,49 +60,49 @@
    "views": 2,
    "likes": 0,
    "coments": 1,
-   "views_dia": 2.5,
+   "views_dia": 1.5,
    "engaj": 50.0,
    "hora_brt": "12",
-   "dias": 0.8
+   "dias": 1.3
   },
   {
    "id": "kNzOszVFf70",
    "titulo": "Do This FIRST in GTA 6 (Before It's Too Late) ⚠️",
    "tipo": "short",
    "dur": 66,
-   "views": 1177,
+   "views": 1183,
    "likes": 22,
    "coments": 1,
-   "views_dia": 1416.3,
-   "engaj": 2.0,
+   "views_dia": 853.2,
+   "engaj": 1.9,
    "hora_brt": "11",
-   "dias": 0.8
+   "dias": 1.4
   },
   {
    "id": "MI3JQ2je-FQ",
    "titulo": "GTA 6 Is Finally Out — Know This Before You Play 🎮",
    "tipo": "short",
    "dur": 65,
-   "views": 792,
+   "views": 794,
    "likes": 23,
    "coments": 4,
-   "views_dia": 864.6,
+   "views_dia": 539.6,
    "engaj": 3.4,
    "hora_brt": "09",
-   "dias": 0.9
+   "dias": 1.5
   },
   {
    "id": "-_O8FyG6qYg",
    "titulo": "The San Andreas Gym Is BACK in GTA 6 💪",
    "tipo": "short",
    "dur": 41,
-   "views": 189,
+   "views": 185,
    "likes": 4,
    "coments": 6,
-   "views_dia": 133.4,
-   "engaj": 5.3,
+   "views_dia": 93.8,
+   "engaj": 5.4,
    "hora_brt": "21",
-   "dias": 1.4
+   "dias": 2.0
   },
   {
    "id": "y99xw4Mmuvg",
@@ -106,101 +112,101 @@
    "views": 152,
    "likes": 3,
    "coments": 2,
-   "views_dia": 93.6,
+   "views_dia": 69.7,
    "engaj": 3.3,
    "hora_brt": "16",
-   "dias": 1.6
+   "dias": 2.2
   },
   {
    "id": "ex3cGJ8APxQ",
    "titulo": "GTA 6 Just Tied the Highest Metacritic Score Ever 😳",
    "tipo": "short",
    "dur": 70,
-   "views": 115,
+   "views": 114,
    "likes": 2,
    "coments": 3,
-   "views_dia": 68.7,
-   "engaj": 4.3,
+   "views_dia": 51.1,
+   "engaj": 4.4,
    "hora_brt": "14",
-   "dias": 1.7
+   "dias": 2.2
   },
   {
    "id": "49tnnie3Jjo",
    "titulo": "6 Wanted Stars Are Back in GTA 6 (And Cops Are Smarter) 🚨",
    "tipo": "short",
    "dur": 55,
-   "views": 1404,
-   "likes": 32,
+   "views": 1405,
+   "likes": 31,
    "coments": 6,
-   "views_dia": 803.8,
-   "engaj": 2.7,
+   "views_dia": 610.3,
+   "engaj": 2.6,
    "hora_brt": "13",
-   "dias": 1.7
+   "dias": 2.3
   },
   {
    "id": "P5dyUUPJh04",
    "titulo": "GTA 6 Reviews Are In: A Masterpiece With One Big Catch",
    "tipo": "longo",
    "dur": 546,
-   "views": 28,
+   "views": 14,
    "likes": 8,
    "coments": 9,
-   "views_dia": 15.7,
-   "engaj": 60.7,
+   "views_dia": 6.0,
+   "engaj": 121.4,
    "hora_brt": "12",
-   "dias": 1.8
+   "dias": 2.3
   },
   {
    "id": "psqeW0oueVU",
    "titulo": "GTA 6's Darkest Hint Yet 😶 \"These Are Your Glory Days\"",
    "tipo": "short",
    "dur": 36,
-   "views": 42,
+   "views": 36,
    "likes": 2,
    "coments": 4,
-   "views_dia": 17.4,
-   "engaj": 14.3,
+   "views_dia": 12.1,
+   "engaj": 16.7,
    "hora_brt": "21",
-   "dias": 2.4
+   "dias": 3.0
   },
   {
    "id": "pCJSmriKY50",
    "titulo": "GTA 6 Release Is 2 Days Away: Everything You Need to Know",
    "tipo": "longo",
    "dur": 543,
-   "views": 8,
+   "views": 5,
    "likes": 5,
    "coments": 4,
-   "views_dia": 2.9,
-   "engaj": 112.5,
+   "views_dia": 1.5,
+   "engaj": 180.0,
    "hora_brt": "12",
-   "dias": 2.8
+   "dias": 3.3
   },
   {
    "id": "GfJxx6e3jUY",
    "titulo": "This Story Might Spoil GTA 6's Ending 😳",
    "tipo": "short",
    "dur": 37,
-   "views": 5,
+   "views": 3,
    "likes": 1,
    "coments": 0,
-   "views_dia": 1.7,
-   "engaj": 20.0,
+   "views_dia": 0.9,
+   "engaj": 33.3,
    "hora_brt": "09",
-   "dias": 2.9
+   "dias": 3.5
   },
   {
    "id": "Zrug6PtEZzo",
    "titulo": "GTA 6 Extended Look: Everything It Reveals About the Story",
    "tipo": "longo",
    "dur": 308,
-   "views": 7,
+   "views": 5,
    "likes": 3,
    "coments": 4,
-   "views_dia": 2.0,
-   "engaj": 100.0,
+   "views_dia": 1.3,
+   "engaj": 140.0,
    "hora_brt": "21",
-   "dias": 3.4
+   "dias": 4.0
   },
   {
    "id": "5v79bZYpaZY",
@@ -210,10 +216,10 @@
    "views": 2,
    "likes": 1,
    "coments": 0,
-   "views_dia": 0.6,
+   "views_dia": 0.5,
    "engaj": 50.0,
    "hora_brt": "19",
-   "dias": 3.5
+   "dias": 4.1
   },
   {
    "id": "BZIopAaJ-4k",
@@ -223,10 +229,10 @@
    "views": 3,
    "likes": 1,
    "coments": 2,
-   "views_dia": 0.7,
+   "views_dia": 0.6,
    "engaj": 100.0,
    "hora_brt": "19",
-   "dias": 4.5
+   "dias": 5.0
   },
   {
    "id": "6bSau3WJl-Y",
@@ -239,7 +245,7 @@
    "views_dia": 0.4,
    "engaj": 150.0,
    "hora_brt": "14",
-   "dias": 4.7
+   "dias": 5.3
   },
   {
    "id": "h-zUFcFzLfs",
@@ -252,7 +258,7 @@
    "views_dia": 0.4,
    "engaj": 50.0,
    "hora_brt": "11",
-   "dias": 4.8
+   "dias": 5.4
   },
   {
    "id": "6L_wWzXfH54",
@@ -265,7 +271,59 @@
    "views_dia": 0.6,
    "engaj": 33.3,
    "hora_brt": "11",
-   "dias": 4.8
+   "dias": 5.4
+  },
+  {
+   "id": "Vm5YUmBRys0",
+   "titulo": "GTA 6 Made $3.79 BILLION in ONE Day (Official) 🤯",
+   "tipo": "short",
+   "dur": 78,
+   "views": 1,
+   "likes": 0,
+   "coments": 1,
+   "views_dia": 15.3,
+   "engaj": 100.0,
+   "hora_brt": "18",
+   "dias": 0.1
+  },
+  {
+   "id": "BOQeEsESTug",
+   "titulo": "Cops REMEMBER Your Face in GTA 6 — Do This 🚨",
+   "tipo": "short",
+   "dur": 39,
+   "views": 1,
+   "likes": 0,
+   "coments": 1,
+   "views_dia": 5.5,
+   "engaj": 100.0,
+   "hora_brt": "16",
+   "dias": 0.2
+  },
+  {
+   "id": "xJacJXth4ac",
+   "titulo": "GTA 6 Lets You Do Things No GTA Ever Did (Day 1 Discoveries)",
+   "tipo": "longo",
+   "dur": 588,
+   "views": 1,
+   "likes": 0,
+   "coments": 1,
+   "views_dia": 2.9,
+   "engaj": 100.0,
+   "hora_brt": "12",
+   "dias": 0.3
+  },
+  {
+   "id": "JMY5qf_Pubg",
+   "titulo": "GTA 6 Is Secretly Judging How You Play 👀",
+   "tipo": "short",
+   "dur": 39,
+   "views": 7,
+   "likes": 0,
+   "coments": 1,
+   "views_dia": 14.7,
+   "engaj": 14.3,
+   "hora_brt": "09",
+   "dias": 0.5
   }
  ]
 }
