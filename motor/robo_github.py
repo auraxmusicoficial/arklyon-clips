@@ -57,6 +57,57 @@ def vigiar_buffer():
         vistos.add(n["id"])
     est.write_text(json.dumps(sorted(vistos)))
     print(len(novos), "falha(s) nova(s)")
+    yt = [n for n in novos if n["channelService"] == "youtube" and "limit" in ((n.get("error") or {}).get("message", "").lower())]
+    if yt:
+        plano_b_youtube(yt)
+
+
+def subir_direto(p):
+    """Plano B quando o Buffer recusa um Short no YouTube: envia direto pela API do YouTube (grátis)."""
+    import youtube_ajustes as ya
+    m = p["thumb"].rsplit("/", 1)
+    sid = m[1].replace("thumb_", "").replace(".jpg", "")
+    url = f"{m[0]}/short_{sid}{'_yt' if p.get('formato_yt') == 'rapido' else ''}.mp4"
+    arq = "/tmp/plano_b.mp4"
+    subprocess.run(["curl", "-sSfL", "-o", arq, url], check=True)
+    quando = datetime.fromisoformat(p["quando"])
+    agora = datetime.now(timezone.utc)
+    status = {"privacyStatus": "private", "selfDeclaredMadeForKids": False, "publicStatsViewable": True}
+    if quando > agora + timedelta(minutes=15):
+        status["publishAt"] = quando.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    else:
+        status["privacyStatus"] = "public"
+    meta = {"snippet": {"title": p["yt_title"], "description": p["descricao"][:4900], "tags": p.get("tags", []),
+                        "categoryId": "20", "defaultLanguage": "en", "defaultAudioLanguage": "en"}, "status": status}
+    tok = ya.token(); tam = os.path.getsize(arq)
+    h = subprocess.run(["curl", "-sS", "-D", "-", "-o", "/dev/null", "-X", "POST",
+                        "https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status",
+                        "-H", f"Authorization: Bearer {tok}", "-H", "Content-Type: application/json; charset=UTF-8",
+                        "-H", "X-Upload-Content-Type: video/mp4", "-H", f"X-Upload-Content-Length: {tam}",
+                        "-d", json.dumps(meta)], capture_output=True, text=True).stdout
+    loc = [l.split(":", 1)[1].strip() for l in h.splitlines() if l.lower().startswith("location:")][0]
+    r = json.loads(subprocess.run(["curl", "-sS", "-X", "PUT", loc, "-H", "Content-Type: video/mp4", "--data-binary", f"@{arq}"],
+                                  capture_output=True, text=True).stdout)
+    return r["id"]
+
+
+def plano_b_youtube(falhas):
+    est = Path(__file__).resolve().parent.parent / "estado" / "publicacoes.json"
+    plano = json.loads(est.read_text())
+    mudou = False
+    for n in falhas:
+        p = next((x for x in plano if isinstance(x, dict) and x.get("tipo") == "short"
+                  and (x.get("buffer") or {}).get("youtube") == n["id"]), None)
+        if not p or p.get("yt_direto"):
+            continue
+        try:
+            vid = subir_direto(p)
+            p["yt_direto"] = vid; mudou = True
+            avisos.append(f"✅ Plano B: '{p['yt_title'][:50]}' foi enviado direto pro YouTube (sem o Buffer).")
+        except Exception as e:
+            avisos.append(f"Plano B falhou para '{p['yt_title'][:50]}': {str(e)[:120]}")
+    if mudou:
+        est.write_text(json.dumps(plano, ensure_ascii=False, indent=1))
 
 
 def main():
