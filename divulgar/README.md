@@ -3,6 +3,37 @@
 Regras para não ser bloqueado: leia as regras de cada grupo (muitos só aceitam divulgação em dias específicos), poste em no máximo 3–5 grupos por dia, use legendas diferentes e responda quem comentar.
 
 ---
+## GTA 6 Lets You Do Things No GTA Ever Did (Day 1 Discoveries)
+_Publicado: 2026-11-20 12:00_
+
+![imagem](https://raw.githubusercontent.com/auraxmusicoficial/arklyon-clips/main/divulgar/img/xJacJXth4ac.jpg)
+
+Toque e segure a imagem para salvar. Use uma legenda diferente em cada grupo:
+
+**Opção 1**
+```
+GTA 6 is out and players are finding systems no GTA ever had — a Criminal Profile that judges your playstyle, cops that remember your face, bodies that change when you eat. Full day-one breakdown:
+
+▶️ https://youtu.be/xJacJXth4ac
+```
+
+**Opção 2**
+```
+24 hours into GTA 6: here's everything that's actually NEW compared to GTA 5 (spoiler-free). Which one surprised you most?
+
+▶️ https://youtu.be/xJacJXth4ac
+```
+
+**Opção 3**
+```
+Your car is now your armory, your character gets out of shape, and you can switch to Jason at the worst possible moment. The craziest GTA 6 discoveries so far:
+
+▶️ https://youtu.be/xJacJXth4ac
+```
+
+
+---
+
 ## 13 Years Later, GTA 6 Is Finally Here — Was It Worth The Wait?
 _Publicado: 2026-11-19 12:00_
 
