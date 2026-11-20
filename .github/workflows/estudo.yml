@@ -1,4 +1,4 @@
-name: Robô — estudo diário (Gemini assiste, Groq julga)
+name: "Robô — estudo diário (Gemini assiste, Groq julga)"
 on:
   schedule:
     - cron: "20 4 * * *"   # 1h20 de Brasília — fica pronto antes da produção das 4h47
@@ -30,4 +30,5 @@ jobs:
         run: python3 motor/estudo.py
       - name: Salvar no GitHub
         if: always()
-        run: cd motor && python3 -c "import sincronizar; sincronizar.main('robô: estudo do dia')"
+        run: |
+          cd motor && python3 -c "import sincronizar; sincronizar.main('robô - estudo do dia')"
