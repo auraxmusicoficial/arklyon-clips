@@ -108,7 +108,7 @@ def main():
     # escolher vídeos do nicho (longos e Shorts, últimas ~48 h, por views/hora)
     depois = (agora - timedelta(hours=48)).strftime("%Y-%m-%dT%H:%M:%SZ")
     cand = buscar(tok, api, "GTA 6", depois) + buscar(tok, api, "GTA 6", depois, extra="&videoDuration=short")
-    unicos = {c["id"]: c for c in cand if c["canal_id"] != meu and c["seg"] > 0
+    unicos = {c["id"]: c for c in cand if c["canal_id"] != meu and 0 < c["seg"] <= 1800
               and re.search(r"gta\s*(6|vi)\b", c["titulo"], re.I)}
     nicho = sorted(unicos.values(), key=lambda c: -c["views_hora"])[:N_NICHO]
 
