@@ -407,12 +407,14 @@
    "tiktok": "6b00088dca85ebefb00c445f",
    "youtube": "6b00088c4c1afd05de069106"
   },
-  "ajustado": false,
+  "ajustado": true,
   "formato_yt": "rapido",
   "comentario": "Professional or violent — what's your GTA 6 Criminal Profile right now? 👇",
   "fb_textos": [],
   "playlist": "shorts",
-  "urgente": false
+  "urgente": false,
+  "video_id": "JMY5qf_Pubg",
+  "na_playlist": true
  },
  {
   "tipo": "short",
