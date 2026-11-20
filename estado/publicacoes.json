@@ -689,11 +689,14 @@
    "tiktok": "6b00bdf320a2d09a0ab15deb",
    "instagram": "6b00bdf4dd205ed7799a5617"
   },
-  "ajustado": false,
+  "ajustado": true,
   "formato_yt": "completo",
   "comentario": "Will GTA 6 be the first game to hit $10 BILLION? 👇",
   "fb_textos": [],
   "playlist": "shorts",
-  "urgente": true
+  "urgente": true,
+  "video_id": "Vm5YUmBRys0",
+  "na_playlist": true,
+  "comentou": true
  }
 ]
