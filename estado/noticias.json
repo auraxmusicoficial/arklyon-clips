@@ -1,116 +1,125 @@
 [
- {
-  "quando": "2026-11-18T14:30:00-03:00",
-  "noticia": "GTA 6 review embargo: Metascore 99 (100+ critic reviews), ties Zelda: Ocarina of Time as highest-rated game ever; beats GTA IV (98)",
-  "fontes": [
-   "https://www.forbes.com/sites/paultassi/2026/11/18/the-gta-6-metacritic-review-score-is-in-and-ties-an-all-time-record/",
-   "https://www.notebookcheck.net/GTA-6-reviews-award-99-Metacritic-score-topping-GTA-4-to-become-Rockstar-s-top-rated.1453363.0.html"
-  ],
-  "urgente": true,
-  "short": "GTA 6 Just Tied the Highest Metacritic Score Ever 😳"
- },
- {
-  "quando": "2026-11-18T14:30:00-03:00",
-  "noticia": "Primeiras notas das análises (TechRadar 5/5, WCCF 9.6, etc.) e 30 FPS travado — já coberto pelo longo das 12h",
-  "urgente": false
- },
- {
-  "quando": "2026-11-18T14:30:00-03:00",
-  "noticia": "GTA 6 já liberado na Nova Zelândia (meia-noite local); lançamento nos EUA/Brasil em 19/11 — coberto pelo calendário de 19/11",
-  "urgente": false
- },
- {
-  "quando": "2026-11-18T18:30:00-03:00",
-  "noticia": "Queda da PSN (~4.000 relatos no Downdetector, ~13h–15h ET) horas antes do lançamento nos EUA; Sony não citou causa e o status já estava normal às 15h15 ET",
-  "fontes": [
-   "https://www.newsweek.com/playstation-users-report-access-issues-hours-before-gta-vi-launch-12736310"
-  ],
-  "urgente": false
- },
- {
-  "quando": "2026-11-18T18:30:00-03:00",
-  "noticia": "Atualização obrigatória no PS5 (1.002.x) para jogar; sem notas oficiais",
-  "fontes": [
-   "https://www.gamesradar.com/news/live/gta-6-release-day-live-coverage/"
-  ],
-  "urgente": false
- },
- {
-  "quando": "2026-11-18T18:30:00-03:00",
-  "noticia": "Indicações ao The Game Awards 2026 (inclui GOTY) — anunciadas em 17/11, não é nova; Sam Houser: 'we hope that you had fun' (declaração curta)",
-  "fontes": [
-   "https://www.gamesradar.com/news/live/gta-6-release-day-live-coverage/"
-  ],
-  "urgente": false
- },
- {
-  "quando": "2026-11-18T18:30:00-03:00",
-  "noticia": "Sensor Tower estima US$ 1,45 bi em receita, ~90% Ultimate Edition (estimativa de analista, >6 h)",
-  "fontes": [
-   "https://www.gamesradar.com/news/live/gta-6-release-day-live-coverage/"
-  ],
-  "urgente": false
- },
- {
-  "quando": "2026-11-19T14:30:00-03:00",
-  "noticia": "Estimativas de vendas no lançamento (Sensor Tower ~19 mi cópias; ~17 mi em 24h / US$1,65 bi) — estimativas de analistas, sem número oficial da Take-Two/Rockstar",
-  "fontes": [
-   "https://egw.news/gaming/news/38588/gta-6-has-officially-sold-19-million-copies-worldw-VX8OKa-0d",
-   "https://x.com/MotilalOswalLtd/status/2123307733453836522"
-  ],
-  "urgente": false
- },
- {
-  "quando": "2026-11-19T14:30:00-03:00",
-  "noticia": "Versão PC no 1º tri de 2027 — relato antigo (início de nov.), não confirmado oficialmente",
-  "fontes": [
-   "https://www.tweaktown.com/news/114065/report-gta-vi-pc-port-coming-jan-mar-2027/index.html",
-   "https://windowsforum.com/news/gta-6-pc-release-date-no-november-launch-q1-2027-report-unconfirmed.450530/"
-  ],
-  "urgente": false
- },
- {
-  "quando": "2026-11-19T18:25:00-03:00",
-  "noticia": "Nova estimativa de receita: ~US$ 1,84 bi até o dia do lançamento (mais que o dobro do recorde do GTA V) — estimativa de analistas, ainda sem número oficial da Take-Two; já coberto pelo Short de US$1,6 bi",
-  "fontes": [
-   "https://www.fox5ny.com/news/gta-vi-pulls-estimated-1-84-billion-release-day-more-than-double-gta-vs-launch-record"
-  ],
-  "urgente": false
- },
- {
-  "quando": "2026-11-19T18:25:00-03:00",
-  "noticia": "Relatos de jogadores sobre bugs/crashes/áudio no lançamento; atualizações sem notas oficiais — sem patch ou declaração oficial da Rockstar",
-  "fontes": [
-   "https://www.pcgameshardware.de/GTA-6-Spiel-55239/News/GTA-6-Top-scores-but-players-report-plenty-of-bugs-1560609/",
-   "https://gtaexp.com/news/gta-6-launch-crashes-audio-player-reports"
-  ],
-  "urgente": false
- },
- {
-  "quando": "2026-11-20T14:30:00-03:00",
-  "noticia": "Nova estimativa de analistas: ~US$ 2,36 bi em receita e quase 25 mi de cópias; número oficial da Take-Two pode sair até 23/11 — ainda estimativa, mesmo tema dos Shorts de vendas já feitos",
-  "fontes": [
-   "https://www.gamesradar.com/games/grand-theft-auto/gta-6-sales-are-almost-at-25-million-as-rockstar-earns-usd2-36-billion-in-revenue-analysts-estimate/",
-   "https://www.nacionale.com/en/articles/when-will-rockstar-reveal-gta-6-sales-official-numbers-records-to-beat-gta-5"
-  ],
-  "urgente": false
- },
- {
-  "quando": "2026-11-20T14:30:00-03:00",
-  "noticia": "Sem patch novo nem anúncio oficial da Rockstar nas últimas 6 h (só os patches do dia 1 já conhecidos)",
-  "fontes": [
-   "https://www.forbes.com/sites/brianmazique/2026/11/17/gta-6-just-got-a-second-update-before-anyone-can-play-it-and-rockstar-still-isnt-saying-what-it-changes/"
-  ],
-  "urgente": false
- },
- {
-  "quando": "2026-11-20T18:45:00-03:00",
-  "noticia": "OFICIAL (Rockstar, 20/11): GTA 6 fez US$ 3,79 bi em vendas no varejo no 1º dia — maior lançamento de entretenimento da história; 32,5 mi de unidades vendidas antes do lançamento (recorde). Short urgente u1 publicado.",
-  "fontes": [
-   "https://www.wcvb.com/article/grand-theft-auto-vi-launch-sales-record/74493950",
-   "https://noisypixel.net/gta-6-first-day-sales-3-79-billion-record/",
-   "https://variety.com/2026/gaming/news/gta-6-sales-billions-first-day-1236954198/"
-  ],
-  "urgente": true
- }
+  {
+    "quando": "2026-11-18T14:30:00-03:00",
+    "noticia": "GTA 6 review embargo: Metascore 99 (100+ critic reviews), ties Zelda: Ocarina of Time as highest-rated game ever; beats GTA IV (98)",
+    "fontes": [
+      "https://www.forbes.com/sites/paultassi/2026/11/18/the-gta-6-metacritic-review-score-is-in-and-ties-an-all-time-record/",
+      "https://www.notebookcheck.net/GTA-6-reviews-award-99-Metacritic-score-topping-GTA-4-to-become-Rockstar-s-top-rated.1453363.0.html"
+    ],
+    "urgente": true,
+    "short": "GTA 6 Just Tied the Highest Metacritic Score Ever 😳"
+  },
+  {
+    "quando": "2026-11-18T14:30:00-03:00",
+    "noticia": "Primeiras notas das análises (TechRadar 5/5, WCCF 9.6, etc.) e 30 FPS travado — já coberto pelo longo das 12h",
+    "urgente": false
+  },
+  {
+    "quando": "2026-11-18T14:30:00-03:00",
+    "noticia": "GTA 6 já liberado na Nova Zelândia (meia-noite local); lançamento nos EUA/Brasil em 19/11 — coberto pelo calendário de 19/11",
+    "urgente": false
+  },
+  {
+    "quando": "2026-11-18T18:30:00-03:00",
+    "noticia": "Queda da PSN (~4.000 relatos no Downdetector, ~13h–15h ET) horas antes do lançamento nos EUA; Sony não citou causa e o status já estava normal às 15h15 ET",
+    "fontes": [
+      "https://www.newsweek.com/playstation-users-report-access-issues-hours-before-gta-vi-launch-12736310"
+    ],
+    "urgente": false
+  },
+  {
+    "quando": "2026-11-18T18:30:00-03:00",
+    "noticia": "Atualização obrigatória no PS5 (1.002.x) para jogar; sem notas oficiais",
+    "fontes": [
+      "https://www.gamesradar.com/news/live/gta-6-release-day-live-coverage/"
+    ],
+    "urgente": false
+  },
+  {
+    "quando": "2026-11-18T18:30:00-03:00",
+    "noticia": "Indicações ao The Game Awards 2026 (inclui GOTY) — anunciadas em 17/11, não é nova; Sam Houser: 'we hope that you had fun' (declaração curta)",
+    "fontes": [
+      "https://www.gamesradar.com/news/live/gta-6-release-day-live-coverage/"
+    ],
+    "urgente": false
+  },
+  {
+    "quando": "2026-11-18T18:30:00-03:00",
+    "noticia": "Sensor Tower estima US$ 1,45 bi em receita, ~90% Ultimate Edition (estimativa de analista, >6 h)",
+    "fontes": [
+      "https://www.gamesradar.com/news/live/gta-6-release-day-live-coverage/"
+    ],
+    "urgente": false
+  },
+  {
+    "quando": "2026-11-19T14:30:00-03:00",
+    "noticia": "Estimativas de vendas no lançamento (Sensor Tower ~19 mi cópias; ~17 mi em 24h / US$1,65 bi) — estimativas de analistas, sem número oficial da Take-Two/Rockstar",
+    "fontes": [
+      "https://egw.news/gaming/news/38588/gta-6-has-officially-sold-19-million-copies-worldw-VX8OKa-0d",
+      "https://x.com/MotilalOswalLtd/status/2123307733453836522"
+    ],
+    "urgente": false
+  },
+  {
+    "quando": "2026-11-19T14:30:00-03:00",
+    "noticia": "Versão PC no 1º tri de 2027 — relato antigo (início de nov.), não confirmado oficialmente",
+    "fontes": [
+      "https://www.tweaktown.com/news/114065/report-gta-vi-pc-port-coming-jan-mar-2027/index.html",
+      "https://windowsforum.com/news/gta-6-pc-release-date-no-november-launch-q1-2027-report-unconfirmed.450530/"
+    ],
+    "urgente": false
+  },
+  {
+    "quando": "2026-11-19T18:25:00-03:00",
+    "noticia": "Nova estimativa de receita: ~US$ 1,84 bi até o dia do lançamento (mais que o dobro do recorde do GTA V) — estimativa de analistas, ainda sem número oficial da Take-Two; já coberto pelo Short de US$1,6 bi",
+    "fontes": [
+      "https://www.fox5ny.com/news/gta-vi-pulls-estimated-1-84-billion-release-day-more-than-double-gta-vs-launch-record"
+    ],
+    "urgente": false
+  },
+  {
+    "quando": "2026-11-19T18:25:00-03:00",
+    "noticia": "Relatos de jogadores sobre bugs/crashes/áudio no lançamento; atualizações sem notas oficiais — sem patch ou declaração oficial da Rockstar",
+    "fontes": [
+      "https://www.pcgameshardware.de/GTA-6-Spiel-55239/News/GTA-6-Top-scores-but-players-report-plenty-of-bugs-1560609/",
+      "https://gtaexp.com/news/gta-6-launch-crashes-audio-player-reports"
+    ],
+    "urgente": false
+  },
+  {
+    "quando": "2026-11-20T14:30:00-03:00",
+    "noticia": "Nova estimativa de analistas: ~US$ 2,36 bi em receita e quase 25 mi de cópias; número oficial da Take-Two pode sair até 23/11 — ainda estimativa, mesmo tema dos Shorts de vendas já feitos",
+    "fontes": [
+      "https://www.gamesradar.com/games/grand-theft-auto/gta-6-sales-are-almost-at-25-million-as-rockstar-earns-usd2-36-billion-in-revenue-analysts-estimate/",
+      "https://www.nacionale.com/en/articles/when-will-rockstar-reveal-gta-6-sales-official-numbers-records-to-beat-gta-5"
+    ],
+    "urgente": false
+  },
+  {
+    "quando": "2026-11-20T14:30:00-03:00",
+    "noticia": "Sem patch novo nem anúncio oficial da Rockstar nas últimas 6 h (só os patches do dia 1 já conhecidos)",
+    "fontes": [
+      "https://www.forbes.com/sites/brianmazique/2026/11/17/gta-6-just-got-a-second-update-before-anyone-can-play-it-and-rockstar-still-isnt-saying-what-it-changes/"
+    ],
+    "urgente": false
+  },
+  {
+    "quando": "2026-11-20T18:45:00-03:00",
+    "noticia": "OFICIAL (Rockstar, 20/11): GTA 6 fez US$ 3,79 bi em vendas no varejo no 1º dia — maior lançamento de entretenimento da história; 32,5 mi de unidades vendidas antes do lançamento (recorde). Short urgente u1 publicado.",
+    "fontes": [
+      "https://www.wcvb.com/article/grand-theft-auto-vi-launch-sales-record/74493950",
+      "https://noisypixel.net/gta-6-first-day-sales-3-79-billion-record/",
+      "https://variety.com/2026/gaming/news/gta-6-sales-billions-first-day-1236954198/"
+    ],
+    "urgente": true
+  },
+  {
+    "quando": "2026-11-21T14:35:00-03:00",
+    "noticia": "Sem notícia grande nova nas últimas 6 h: repercussão dos US$ 3,79 bi / 32,5 mi (já coberto pelo Short u1); sem patch novo, sem anúncio de Online ou PC",
+    "fontes": [
+      "https://www.take2games.com/ir/news/grand-theft-auto-vi-shatters-entertainment-box-office-records",
+      "https://happygamer.com/gta-6-day-3-live-updates-177471/"
+    ],
+    "urgente": false
+  }
 ]
