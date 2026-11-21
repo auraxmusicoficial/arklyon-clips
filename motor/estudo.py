@@ -15,6 +15,7 @@ EST = RAIZ / "estado"
 BRT = timezone(timedelta(hours=-3))
 MODELOS_GEMINI = ["gemini-3.8-flash", "gemini-flash-latest", "gemini-3-flash-preview"]
 LIMITE_SEG_DIA = 7 * 3600          # o grátis aceita ~8 h de vídeo do YouTube por dia; deixamos folga
+REFERENCIAS = {"UCDcsKrsuHgy55hH8V4_elOQ": "COLETHEMAN GTA"}   # canais do nicho que provaram a fórmula (conferidos de verdade)
 N_NICHO, N_ESTUDO = int(os.environ.get("N_NICHO", 15)), int(os.environ.get("N_ESTUDO", 5))
 BUSCAS_ESTUDO = [
     "how to go viral on youtube shorts 2026", "youtube algorithm explained 2026", "how to get 4000 watch hours fast",
@@ -147,6 +148,27 @@ def main():
         c["forca"] = round(c["views"] / max(c["inscritos"], 1000), 2)   # views ÷ inscritos: vídeo que furou a bolha do canal
     medios = [c for c in unicos.values() if 1000 <= c["inscritos"] <= 500_000]
     nicho = sorted(medios, key=lambda c: (-c["forca"], -c["views_hora"]))[:N_NICHO]
+    # canais de referência: os vídeos novos deles que mais cresceram entram sempre (até 3 por dia)
+    try:
+        ref_ids = []
+        for cid in REFERENCIAS:
+            upl = "UU" + cid[2:]
+            ref_ids += [i["contentDetails"]["videoId"] for i in
+                        api(tok, "GET", f"playlistItems?part=contentDetails&maxResults=10&playlistId={upl}").get("items", [])]
+        if ref_ids:
+            ref = []
+            for v in api(tok, "GET", "videos?part=snippet,statistics,contentDetails&id=" + ",".join(ref_ids)).get("items", []):
+                pub = datetime.fromisoformat(v["snippet"]["publishedAt"].replace("Z", "+00:00"))
+                horas = max((agora - pub).total_seconds() / 3600, 1); views = int(v["statistics"].get("viewCount", 0))
+                c = {"id": v["id"], "titulo": v["snippet"]["title"], "canal": v["snippet"]["channelTitle"] + " (referência)",
+                     "canal_id": v["snippet"]["channelId"], "views": views, "views_hora": round(views / horas),
+                     "seg": segundos(v["contentDetails"]["duration"]), "horas": round(horas), "inscritos": 0}
+                if c["id"] not in vistos and 0 < c["seg"] <= 1800:
+                    ref.append(c)
+            nicho = sorted(ref, key=lambda c: -c["views_hora"])[:3] + [c for c in nicho if c["id"] not in {r["id"] for r in ref}]
+            nicho = nicho[:N_NICHO]
+    except Exception as e:
+        print("referências falharam:", e)
     if len(nicho) < N_NICHO:   # completa com o resto se faltar
         resto = [c for c in sorted(unicos.values(), key=lambda c: -c["views_hora"]) if c not in nicho]
         nicho += resto[:N_NICHO - len(nicho)]
