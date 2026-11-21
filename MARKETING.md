@@ -57,6 +57,8 @@ O vídeo-fonte é só a imagem; o que faz o vídeo crescer é o ASSUNTO. Escolha
 - "Every subscriber gets a free getaway car. Not really, but subscribe anyway."
 Regras: humor leve, nunca ameaça real, nunca prometer prêmio/dinheiro de verdade, nunca pedir like/inscrição em troca de algo (isso é contra as regras do YouTube).
 
+**Monetização x violência (regra oficial do YouTube, atualizada em set/2026):** violência GRÁFICA de jogo (morte com sangue, corpos em foco, tortura) nos **primeiros 7 segundos** do vídeo ou na **capa** = vídeo SEM anúncio. Entre 8 e 15 s ganha anúncio limitado; depois de 15 s, normal. Explosões, perseguições, polícia e tiroteio sem sangue são permitidos. Então: abertura (gancho) e capas de longos e Shorts sem cena gráfica; missão violenta só depois dos 15 s. Rádio do jogo (músicas licenciadas) sempre muda — dá reivindicação de direitos autorais.
+
 ## 2. YouTube — vídeo longo
 - **Título** (50–70 caracteres): palavra-chave principal no começo + gatilho (curiosidade, número, novidade, conflito). Fórmulas:
   "GTA 6: 12 Details Everyone Missed in the New Trailer" · "GTA 6 Map Is BIGGER Than We Thought (Here's Proof)" · "GTA 6 Just Confirmed What Fans Feared" · "Everything We Know About GTA 6 Before Launch".

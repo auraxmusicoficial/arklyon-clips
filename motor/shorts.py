@@ -24,6 +24,11 @@ def main(job, so=None):
             from impacto import momento_forte
             forte = momento_forte(src, s["broll"], SHOT)
             if forte is not None:
+                from impacto import violento
+                if violento(src, forte, SHOT):   # violência gráfica nos primeiros 7 s = Short sem anúncio
+                    print(f"  {sid}: cena de impacto em {forte:.1f}s tem violência gráfica — não vou abrir com ela")
+                    forte = None
+            if forte is not None:
                 tk = [forte] + [x for x in tk if abs(x - forte) >= SHOT][: len(tk) - 1]
                 print(f"  {sid}: abre com a cena de impacto em {forte:.1f}s")
         except Exception as e:

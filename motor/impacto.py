@@ -58,3 +58,35 @@ def momento_forte(src, ranges, take=3.6, janela=2.0):
         if janela_nota[i] > nota_max:
             nota_max, melhor = float(janela_nota[i]), a + i * PASSO
     return melhor
+
+
+def violento(src, inicio, dur=3.6):
+    """Pergunta ao Gemini (grátis) se o trecho de abertura mostra violência GRÁFICA (morte, sangue, tortura).
+    Regra do YouTube: violência gráfica de jogo nos primeiros 7 s = vídeo sem anúncio. Explosão, perseguição e tiroteio
+    sem sangue são permitidos. Sem chave/erro → devolve False (não bloqueia a montagem)."""
+    import base64, json, os, urllib.request
+    k = os.environ.get("GEMINI_KEY")
+    if not k:
+        return False
+    partes = []
+    for frac in (0.15, 0.5, 0.85):
+        jpg = subprocess.run(["ffmpeg", "-v", "error", "-ss", f"{inicio + dur * frac:.2f}", "-i", str(src), "-frames:v", "1",
+                              "-vf", "scale=640:-2", "-f", "image2", "-c:v", "mjpeg", "-"], capture_output=True).stdout
+        if jpg:
+            partes.append({"inline_data": {"mime_type": "image/jpeg", "data": base64.b64encode(jpg).decode()}})
+    if not partes:
+        return False
+    partes.append({"text": "These are frames from the first seconds of a GTA video. Under YouTube's advertiser-friendly rules, is there GRAPHIC "
+                           "violence (a person being killed or shot with visible blood/gore, dead bodies in focus, torture, dismemberment)? "
+                           "Explosions, car chases, police chases and gunfights without visible blood are NOT graphic. "
+                           'Reply ONLY JSON: {"grafico": true|false}'})
+    corpo = {"contents": [{"parts": partes}], "generationConfig": {"responseMimeType": "application/json", "maxOutputTokens": 200}}
+    for m in ("gemini-3.8-flash", "gemini-flash-latest"):
+        try:
+            req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent?key={k}",
+                                         json.dumps(corpo).encode(), {"Content-Type": "application/json"})
+            d = json.load(urllib.request.urlopen(req, timeout=90))
+            return bool(json.loads(d["candidates"][0]["content"]["parts"][0]["text"]).get("grafico"))
+        except Exception:
+            continue
+    return False
