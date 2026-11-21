@@ -964,6 +964,8 @@
   "via": "api",
   "notificar": false,
   "na_playlist": true,
-  "fb_feito": true
+  "fb_feito": true,
+  "publico_ok": true,
+  "comentou": true
  }
 ]
