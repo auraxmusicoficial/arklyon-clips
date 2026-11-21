@@ -111,6 +111,17 @@ def main():
             if "error" in res:  # se o local for recusado, salva ao menos os metadados
                 corpo.pop("recordingDetails")
                 res = api(tok, "PUT", "videos?part=snippet", corpo)
+            # título e descrição em espanhol e português (recurso oficial "Idiomas" — quem é de fora vê na língua dele)
+            try:
+                if "traducoes" not in p:
+                    import traduzir
+                    p["traducoes"] = traduzir.titulo_desc(p["yt_title"], p["descricao"])
+                if p.get("traducoes"):
+                    rl = api(tok, "PUT", "videos?part=localizations", {"id": vid, "localizations": p["traducoes"]})
+                    if "error" in rl:
+                        print("AVISO traduções recusadas:", str(rl)[:200])
+            except Exception as e:
+                print("AVISO traduções falharam:", e)
             ok_capa, msg = enviar_capa(tok, vid, p["thumb"])
             bloqueio = v.get("contentDetails", {}).get("regionRestriction")
             if bloqueio:

@@ -54,6 +54,20 @@ def main(job, data, sha, hora="12:00"):
         subprocess.run(["curl", "-sS", "-X", "POST", f"https://www.googleapis.com/upload/youtube/v3/thumbnails/set?videoId={vid}",
                         "-H", f"Authorization: Bearer {tok}", "-H", "Content-Type: image/jpeg", "--data-binary", f"@{capa}"],
                        capture_output=True, text=True)
+    # legendas: inglês (texto exato da narração) + espanhol e português traduzidos — alcance fora dos EUA
+    leg = job / "saida" / "legenda_en.srt"
+    if leg.exists():
+        try:
+            import traduzir
+            en = leg.read_text(encoding="utf-8")
+            traduzir.enviar_legenda(tok, vid, "en", en)
+            for lg in traduzir.LINGUAS:
+                try:
+                    traduzir.enviar_legenda(tok, vid, lg, traduzir.srt(en, lg)); print("legenda", lg, "ok")
+                except Exception as e:
+                    print("AVISO legenda", lg, "falhou:", e)
+        except Exception as e:
+            print("AVISO legendas falharam:", e)
     base = f"https://raw.githubusercontent.com/auraxmusicoficial/arklyon-clips/{sha}/publicar/{data}"
     entrada = {"tipo": "longo", "quando": quando.isoformat(), "upload": datetime.now(BRT).isoformat(), "yt_title": L["titulo"][:100],
                "descricao": desc, "tags": L.get("tags", []), "thumb": f"{base}/thumb_longo.jpg", "video_id": vid,

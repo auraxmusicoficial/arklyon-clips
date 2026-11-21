@@ -14,6 +14,7 @@ def main(job):
     seg = job / "seg"; seg.mkdir(exist_ok=True)
     out = job / "saida"; out.mkdir(exist_ok=True)
     ordem, caps, ncap, tempo = [], [], 0, 0.0
+    srt = []   # legenda em inglês com tempo global (vira base para as traduções)
     for i, s in enumerate(L0["secoes"]):
         sid = s["id"]; info = T[sid]
         d = LEAD + info["dur"] + TAIL
@@ -33,6 +34,13 @@ def main(job):
             L.append(rf"Dialogue: 1,{t(info['dur']*0.45)},{t(d)},Hook,,0,0,0,,{{\pos(960,420)\fad(250,0)}}SUBSCRIBE")
             L.append(rf"Dialogue: 1,{t(info['dur']*0.45+0.3)},{t(d)},Sub,,0,0,0,,{{\pos(960,560)\fad(250,0)}}FOR EVERY GTA 6 DETAIL")
         ass = seg / f"{sid}.ass"; ass.write_text(cab() + "\n".join(L) + "\n", encoding="utf-8")
+        grupo = []
+        for k, w in enumerate(info["palavras"]):
+            grupo.append(w)
+            prox = info["palavras"][k + 1] if k + 1 < len(info["palavras"]) else None
+            if len(grupo) >= 9 or prox is None or w["w"].strip()[-1:] in ".!?" or prox["s"] - w["e"] > 0.6:
+                srt.append((tempo + LEAD + grupo[0]["s"], tempo + LEAD + grupo[-1]["e"] + 0.15,
+                            " ".join(x["w"].strip() for x in grupo))); grupo = []
         render_segmento(src, seg / f"{sid}.mp4", takes(s["broll"], d), d, ass, job / "voz" / f"{sid}.wav", LEAD)
         ordem.append(sid); tempo += d
         print("ok", sid, round(d, 1), flush=True)
@@ -56,11 +64,14 @@ def main(job):
         bruto = com_som; print("trilha ok")
     except Exception as e:
         print("AVISO trilha falhou, seguindo sem música:", e)
-    # versão final abaixo de ~95 MB (limite de arquivo do GitHub é 100 MB)
-    total = dur(bruto); vb = max(1200, min(4000, int((93 * 8 * 1024) / total) - 180))
+    # o longo sobe direto pela API do YouTube (não vai pro GitHub), então pode ter qualidade boa
+    total = dur(bruto); vb = 3000
     run(["ffmpeg", "-y", "-v", "error", "-i", bruto, "-c:v", "libx264", "-preset", "veryfast", "-b:v", f"{vb}k",
          "-maxrate", f"{int(vb*1.2)}k", "-bufsize", f"{vb*2}k", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k",
          "-movflags", "+faststart", out / "longo.mp4"])
+    ts = lambda x: f"{int(x//3600):02d}:{int(x%3600//60):02d}:{int(x%60):02d},{int(round(x%1*1000)) % 1000:03d}"
+    (out / "legenda_en.srt").write_text("".join(f"{i}\n{ts(a)} --> {ts(b)}\n{txt}\n\n" for i, (a, b, txt) in enumerate(srt, 1)),
+                                        encoding="utf-8")
     (out / "capitulos.txt").write_text("".join(f"{int(a//60)}:{int(a%60):02d} {n}\n" for a, n in caps), encoding="utf-8")
     print(f"longo pronto: {total/60:.1f} min, {(out/'longo.mp4').stat().st_size/1e6:.0f} MB")
 
