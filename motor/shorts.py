@@ -44,6 +44,22 @@ def main(job, so=None):
             raise SystemExit(f"Short {sid} tem {total:.1f}s — precisa passar de 60 s. Aumente a narração e rode de novo.")
         L.append(rf"Dialogue: 2,{t(0)},{t(conteudo)},Tit,,0,0,0,,{{\pos(540,400)}}{s['titulo_tela']}")
         L.append(rf"Dialogue: 2,{t(conteudo-2.6)},{t(conteudo)},End,,0,0,0,,{{\pos(540,1690)\fad(250,0)}}FULL BREAKDOWN ON THE CHANNEL")
+        if s.get("ranking"):   # Short de ranking: selo grande "#5", "#4"... aparece quando a narração chega em cada item
+            import re as _re
+            nz = lambda w: _re.sub(r"[^a-z0-9]", "", w.lower())
+            pw = [nz(w["w"]) for w in info["palavras"]]
+            marcas = []
+            for it in s["ranking"]:
+                alvo = [nz(x) for x in str(it.get("inicio", "")).split()[:3] if nz(x)]
+                for i in range(len(pw) - len(alvo) + 1):
+                    if alvo and pw[i:i + len(alvo)] == alvo:
+                        marcas.append((LEAD + info["palavras"][i]["s"], str(it["n"]))); break
+                else:
+                    print(f"AVISO ranking {sid}: não achei o item #{it.get('n')} na narração")
+            marcas.sort()
+            for k, (ini, num) in enumerate(marcas):
+                fim = marcas[k + 1][0] if k + 1 < len(marcas) else conteudo - 2.6
+                L.append(rf"Dialogue: 3,{t(ini)},{t(max(fim, ini + 0.5))},Tit,,0,0,0,,{{\pos(540,640)\fs190\c&H00A5FF&\fad(120,0)}}#{num}")
         ass = seg / f"{sid}_v.ass"; ass.write_text(cab(1080, 1920, vertical=True) + "\n".join(L) + "\n", encoding="utf-8")
         capa = out / f"thumb_{sid}.jpg"
         th = s["thumb"]
