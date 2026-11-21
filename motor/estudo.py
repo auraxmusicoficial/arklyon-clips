@@ -82,10 +82,11 @@ def buscar(tok, api, q, depois, n=25, extra="", ordem="viewCount"):
 
 
 PED_NICHO = """Responda em português do Brasil, direto, em tópicos curtos. Este é um vídeo de GTA 6 que está crescendo muito.
-Título: {titulo} | Canal: {canal} | {views} views ({views_hora}/hora) | duração {seg}s.
+Título: {titulo} | Canal: {canal} ({inscritos} inscritos) | {views} views ({views_hora}/hora) | duração {seg}s.
 Assista e anote: 1) gancho dos primeiros 3 segundos (o que aparece/é dito); 2) assunto e ângulo; 3) formato (vertical/horizontal,
 gameplay/trailer/notícia/lista/reação, tem rosto?); 4) ritmo de cortes; 5) texto na tela e legendas; 6) narração (voz, tom, velocidade);
-7) música/efeitos; 8) como pede like/inscrição; 9) por que você acha que viralizou; 10) uma ideia que um canal automático de cortes
+7) música/efeitos; 8) como pede like/inscrição; 9) loops de curiosidade (o que promete no começo e só entrega no fim);
+10) quanto é análise/opinião própria vs só mostrar imagem; 11) por que você acha que viralizou num canal desse tamanho; 12) uma ideia que um canal automático de cortes
 de GTA 6 pode copiar no FORMATO (sem copiar o conteúdo)."""
 
 PED_ESTUDO = """Responda em português do Brasil, direto, em tópicos curtos. Assista este vídeo sobre crescer no YouTube.
@@ -108,9 +109,24 @@ def main():
     # escolher vídeos do nicho (longos e Shorts, últimas ~48 h, por views/hora)
     depois = (agora - timedelta(hours=48)).strftime("%Y-%m-%dT%H:%M:%SZ")
     cand = buscar(tok, api, "GTA 6", depois) + buscar(tok, api, "GTA 6", depois, extra="&videoDuration=short")
+    for q in ("GTA 6 tips", "GTA 6 secrets", "GTA 6 news"):   # mais variedade de canais médios
+        cand += buscar(tok, api, q, depois)
     unicos = {c["id"]: c for c in cand if c["canal_id"] != meu and 0 < c["seg"] <= 1800
               and re.search(r"gta\s*(6|vi)\b", c["titulo"], re.I)}
-    nicho = sorted(unicos.values(), key=lambda c: -c["views_hora"])[:N_NICHO]
+    # tamanho dos canais: o que importa é o que funciona para canais MÉDIOS/PEQUENOS (gigantes não servem de modelo)
+    ids_canal = list({c["canal_id"] for c in unicos.values()})
+    inscritos = {}
+    for i in range(0, len(ids_canal), 50):
+        for ch in api(tok, "GET", "channels?part=statistics&id=" + ",".join(ids_canal[i:i + 50])).get("items", []):
+            inscritos[ch["id"]] = int(ch["statistics"].get("subscriberCount", 0) or 0)
+    for c in unicos.values():
+        c["inscritos"] = inscritos.get(c["canal_id"], 0)
+        c["forca"] = round(c["views"] / max(c["inscritos"], 1000), 2)   # views ÷ inscritos: vídeo que furou a bolha do canal
+    medios = [c for c in unicos.values() if 1000 <= c["inscritos"] <= 500_000]
+    nicho = sorted(medios, key=lambda c: (-c["forca"], -c["views_hora"]))[:N_NICHO]
+    if len(nicho) < N_NICHO:   # completa com o resto se faltar
+        resto = [c for c in sorted(unicos.values(), key=lambda c: -c["views_hora"]) if c not in nicho]
+        nicho += resto[:N_NICHO - len(nicho)]
 
     # escolher vídeos de estudo (populares nos últimos 120 dias, ainda não vistos)
     dia = int(agora.strftime("%j"))
@@ -146,7 +162,7 @@ def main():
     # o Groq julga e transforma em ações para o nosso canal
     from ia import gerar
     aprend = (EST / "APRENDIZADOS.md").read_text()[:3000] if (EST / "APRENDIZADOS.md").exists() else ""
-    bloco = lambda ns: "\n\n".join(f"### {c['titulo']} — {c['canal']} ({c['views']} views, {c['views_hora']}/h, {c['seg']}s)\n{t[:2500]}" for c, t in ns)
+    bloco = lambda ns: "\n\n".join(f"### {c['titulo']} — {c['canal']} ({c.get('inscritos', '?')} inscritos, {c['views']} views, {c['views_hora']}/h, {c['seg']}s)\n{t[:2500]}" for c, t in ns)
     sintese = gerar(
         f"{REGRAS}\n\nO QUE JÁ SABEMOS DO NOSSO CANAL:\n{aprend}\n\nVÍDEOS DO NICHO QUE MAIS CRESCERAM (análise de quem assistiu):\n{bloco(notas_nicho)}"
         f"\n\nVÍDEOS DE ESTUDO SOBRE CRESCER NO YOUTUBE:\n{bloco(notas_estudo)}\n\n"

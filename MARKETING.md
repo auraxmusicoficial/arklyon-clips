@@ -31,6 +31,21 @@ O vídeo-fonte é só a imagem; o que faz o vídeo crescer é o ASSUNTO. Escolha
 5. No roteiro, cumpra a promessa do título/capa nos primeiros 60 s (parcialmente) e guarde a melhor revelação para o final do vídeo (recompensa quem fica).
 6. Momento atual: o GTA 6 lança em **19/11/2026** — semana de lançamento é o pico do ano. Prioridade total para o que as pessoas pesquisam agora (horário de liberação, tamanho do download, preço/edições, notas das análises, primeiras horas, mapa, segredos, dicas). Depois do lançamento, use gameplay real e foque em dicas, segredos, rankings e "coisas que você não sabia".
 
+## 1c. Roteiro que prende + proteção da monetização (obrigatório — longo e Shorts)
+**Loops de curiosidade** (o que mais segura a pessoa até o fim):
+- Abra o loop cedo e feche tarde: logo no gancho prometa algo que só vem no fim ("…and the last one is the one Rockstar never mentioned"). No longo, abra um loop novo antes de fechar o anterior ("but that's nothing compared to what happens in the next mission…").
+- Em listas, anuncie quantos itens são e guarde o melhor para o final; a cada item, um mini-gancho para o próximo.
+- Nos Shorts: 1 loop só — promessa no 1º segundo, entrega nos últimos 5 s, frase final que conecta com o começo.
+
+**Análise e opinião próprias (proteção contra "conteúdo reutilizado")** — o YouTube recusa monetização de canal que só junta trailer/gameplay dos outros com voz de IA descrevendo a imagem:
+- Pelo menos **40% da narração** deve ser NOSSA leitura: por que isso importa, o que muda para quem joga, comparação (GTA 5/RDR2/vida real), opinião clara ("this is the best change in the series, and here's why"), dica prática, previsão/teoria com argumento.
+- Nunca só narre o que aparece na tela ("Jason walks into the store…"). Cada cena mostrada precisa servir a um argumento ou dica do roteiro.
+- Varie a imagem: corte, zoom, marcação/círculo, texto na tela, congelar quadro para apontar detalhe — a edição também precisa transformar o material.
+- Toda informação factual com fonte (Rockstar, Newswire, sites grandes); rumor sempre como rumor.
+- Nunca use vídeo vazado/leak não oficial (a Take-Two derruba e dá strike).
+
+**Validação do tema pelo nicho certo:** para decidir assunto e formato, use os vídeos que bombaram em **canais médios e pequenos** de GTA 6 (o `estado/ESTUDO.md` já traz isso) — o que funciona para canal gigante (MrBeast, IGN) não se repete num canal novo. Pegue o TEMA validado e traga um ÂNGULO próprio; nunca copie o vídeo.
+
 ## 2. YouTube — vídeo longo
 - **Título** (50–70 caracteres): palavra-chave principal no começo + gatilho (curiosidade, número, novidade, conflito). Fórmulas:
   "GTA 6: 12 Details Everyone Missed in the New Trailer" · "GTA 6 Map Is BIGGER Than We Thought (Here's Proof)" · "GTA 6 Just Confirmed What Fans Feared" · "Everything We Know About GTA 6 Before Launch".
