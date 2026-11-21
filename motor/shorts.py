@@ -44,6 +44,36 @@ def main(job, so=None):
             raise SystemExit(f"Short {sid} tem {total:.1f}s — precisa passar de 60 s. Aumente a narração e rode de novo.")
         L.append(rf"Dialogue: 2,{t(0)},{t(conteudo)},Tit,,0,0,0,,{{\pos(540,400)}}{s['titulo_tela']}")
         L.append(rf"Dialogue: 2,{t(conteudo-2.6)},{t(conteudo)},End,,0,0,0,,{{\pos(540,1690)\fad(250,0)}}FULL BREAKDOWN ON THE CHANNEL")
+        # números e palavras-chave "pulam" na tela no momento exato da fala (dado chocante prende quem está rolando o feed)
+        try:
+            import re as _re2
+            NUM = {"two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "twelve", "fifteen", "twenty",
+                   "fifty", "hundred", "thousand", "million", "billion", "first", "1st", "#1"}
+            UNID = {"billion", "million", "thousand", "hundred", "stars", "star", "hours", "years", "dollars", "percent",
+                    "players", "copies", "miles", "minutes", "days", "times", "%"}
+            ws = info["palavras"]; limpa = lambda w: _re2.sub(r"[^\w$%.#]", "", w).strip(".")
+            alvo = [x.lower() for x in s.get("destaques", [])]
+            pops, ult = [], -9.0
+            i = 0
+            while i < len(ws):
+                w0 = limpa(ws[i]["w"]); low = w0.lower(); txt = None
+                for frase in alvo:   # destaques escolhidos no roteiro têm prioridade
+                    p = frase.split()
+                    if [limpa(x["w"]).lower() for x in ws[i:i + len(p)]] == [limpa(x).lower() for x in p]:
+                        txt = frase.upper(); break
+                depois_gta = i > 0 and limpa(ws[i - 1]["w"]).lower() in {"gta", "gtas"}   # "GTA 6"/"GTA Six" não é dado
+                if not txt and not depois_gta and (any(c.isdigit() for c in w0) or low in NUM) and low != "first":
+                    txt = w0.upper()
+                    if i + 1 < len(ws) and limpa(ws[i + 1]["w"]).lower() in UNID:
+                        txt += " " + limpa(ws[i + 1]["w"]).upper()
+                if txt and ws[i]["s"] - ult >= 1.3 and len(pops) < 6:
+                    a = LEAD + ws[i]["s"]; pops.append((a, txt)); ult = ws[i]["s"]
+                i += 1
+            for a, txt in pops:
+                L.append(rf"Dialogue: 3,{t(a)},{t(a + 1.1)},Tit,,0,0,0,,{{\pos(540,1160)\fs150\c&H00D7FF&\fscx60\fscy60"
+                         rf"\t(0,120,\fscx112\fscy112)\t(120,220,\fscx100\fscy100)\fad(0,180)}}{txt}")
+        except Exception as e:
+            print("AVISO destaques na tela falharam:", e)
         if s.get("ranking"):   # Short de ranking: selo grande "#5", "#4"... aparece quando a narração chega em cada item
             import re as _re
             nz = lambda w: _re.sub(r"[^a-z0-9]", "", w.lower())
