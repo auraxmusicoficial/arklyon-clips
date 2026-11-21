@@ -46,6 +46,8 @@ O vídeo-fonte é só a imagem; o que faz o vídeo crescer é o ASSUNTO. Escolha
 
 **Validação do tema pelo nicho certo:** para decidir assunto e formato, use os vídeos que bombaram em **canais médios e pequenos** de GTA 6 (o `estado/ESTUDO.md` já traz isso) — o que funciona para canal gigante (MrBeast, IGN) não se repete num canal novo. Pegue o TEMA validado e traga um ÂNGULO próprio; nunca copie o vídeo.
 
+**Spoilers (jogo já lançado):** finais, mortes, reviravoltas e personagens surpresa (ex.: quem volta de jogos antigos) são temas fortíssimos, mas título e capa NUNCA revelam o spoiler: use "SPOILERS" na capa/início do título e deixe a revelação para dentro do vídeo, depois de um aviso falado nos primeiros 3 s ("spoiler warning — skip now if you haven't finished the story"). Ex.: "GTA 6 Has a SECRET True Ending (Spoilers) — How To Get It", "EVERY Returning GTA Character In GTA 6 (Spoilers)". Quem é spoilado pela capa clica em "não recomendar".
+
 ## 2. YouTube — vídeo longo
 - **Título** (50–70 caracteres): palavra-chave principal no começo + gatilho (curiosidade, número, novidade, conflito). Fórmulas:
   "GTA 6: 12 Details Everyone Missed in the New Trailer" · "GTA 6 Map Is BIGGER Than We Thought (Here's Proof)" · "GTA 6 Just Confirmed What Fans Feared" · "Everything We Know About GTA 6 Before Launch".

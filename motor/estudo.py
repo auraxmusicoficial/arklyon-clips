@@ -137,6 +137,9 @@ def main():
         cand += buscar(tok, api, q, depois)
     unicos = {c["id"]: c for c in cand if c["canal_id"] != meu and 0 < c["seg"] <= 1800
               and re.search(r"gta\s*(6|vi)\b", c["titulo"], re.I)}
+    # temas quentes: o que mais cresceu em QUALQUER canal (inclusive gigantes) — só os títulos, sinal de demanda
+    quentes = sorted({c["id"]: c for c in cand if c["canal_id"] != meu and re.search(r"gta\s*(6|vi)\b", c["titulo"], re.I)}.values(),
+                     key=lambda c: -c["views_hora"])[:15]
     # tamanho dos canais: o que importa é o que funciona para canais MÉDIOS/PEQUENOS (gigantes não servem de modelo)
     ids_canal = list({c["canal_id"] for c in unicos.values()})
     inscritos = {}
@@ -240,9 +243,13 @@ def main():
     hoje = datetime.now(BRT).strftime("%d/%m/%Y")
     cab = (f"# Estudo do dia — {hoje}\n\nGerado pelo robô (Gemini assistiu {len(notas_nicho)} vídeos do nicho e "
            f"{len(notas_estudo)} de estudo, ~{usado // 60} min de vídeo; Groq julgou). A produção deve ler isto junto com APRENDIZADOS.md.\n\n")
+    tab_quentes = ("\n\n## Temas quentes (o que mais cresceu nas últimas 48 h em qualquer canal — sinal de DEMANDA)\n"
+                   "Use como ideia de ASSUNTO (com ângulo e análise nossos). Nunca use esses vídeos como fonte de imagem. "
+                   "Se for spoiler (finais, mortes, personagens surpresa), avise no título/capa sem revelar.\n\n"
+                   + "\n".join(f"- {c['titulo']} — {c['canal']} · {c['views']:,} views · {c['views_hora']:,}/h".replace(",", ".") for c in quentes)) if quentes else ""
     fontes = "\n\n---\n### Vídeos analisados\n" + "\n".join(
         f"- [{c['titulo']}](https://youtu.be/{c['id']}) — {c['canal']} · {c['views_hora']}/h" for c, _ in notas_nicho + notas_estudo)
-    (EST / "ESTUDO.md").write_text(cab + sintese + tabela + fontes)
+    (EST / "ESTUDO.md").write_text(cab + sintese + tab_quentes + tabela + fontes)
 
     m = re.search(r"##\s*3 descobertas principais(.*)", sintese, re.S | re.I)
     resumo = (m.group(1).strip() if m else sintese[:500])[:900]
