@@ -47,6 +47,19 @@ def norm(s):
     return "".join(c for c in s.lower() if c.isalnum())
 
 
+def teia(plano, p, agora):
+    """'Teia de vídeos': Shorts apontam para o guia longo mais recente já público; o longo aponta para os guias anteriores."""
+    longos = sorted([x for x in plano if x.get("tipo") == "longo" and x.get("video_id") and x is not p
+                     and datetime.fromisoformat(x["quando"]) <= agora], key=lambda x: x["quando"], reverse=True)
+    if not longos:
+        return "", ""
+    if p.get("tipo") == "short":
+        link = f"https://youtu.be/{longos[0]['video_id']}"
+        return f"\n\n🎬 Full guide 👉 {link}", f" Full guide here 👉 {link}"
+    linhas = "\n".join(f"▶ {x['yt_title']}: https://youtu.be/{x['video_id']}" for x in longos[:3])
+    return f"\n\nMore GTA 6 guides:\n{linhas}", ""
+
+
 def main():
     if not EST.exists():
         print("nada a ajustar"); return
@@ -84,6 +97,11 @@ def main():
             print("ainda não apareceu:", p["yt_title"]); continue
         if p["ajustado"] is not True:
             v = api(tok, "GET", f"videos?part=status,contentDetails&id={vid}")["items"][0]
+            extra_desc, extra_com = teia(plano, p, agora)
+            if extra_desc and "youtu.be/" not in p["descricao"]:
+                p["descricao"] = p["descricao"] + extra_desc
+            if extra_com and p.get("comentario") and "youtu.be/" not in p["comentario"]:
+                p["comentario"] = p["comentario"] + extra_com
             corpo = {"id": vid,
                      "snippet": {"title": p["yt_title"], "description": p["descricao"][:4900],
                                  "tags": [t[:30] for t in p["tags"]][:30], "categoryId": "20",
