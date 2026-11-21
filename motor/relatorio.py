@@ -54,6 +54,9 @@ def main():
     aviso = {p["video_id"]: p["notificar"] for p in (json.loads(pub_f.read_text()) if pub_f.exists() else [])
              if isinstance(p, dict) and p.get("video_id") and "notificar" in p}
 
+    rf = Path(__file__).resolve().parent.parent / "estado" / "resgates.json"
+    resg = json.loads(rf.read_text()) if rf.exists() else {}
+
     def caps(titulo):
         """Título 'em CAIXA ALTA': as 2 primeiras palavras (fora GTA/6/VI) todas maiúsculas."""
         ws = [w for w in re.findall(r"[A-Za-z']+", titulo) if w.upper() not in ("GTA", "VI")]
@@ -80,6 +83,9 @@ def main():
          f"- Teste do aviso aos inscritos nos longos (dica do Lucas Roudi): COM aviso **{media([x for x in lg if aviso.get(x['id']) is True], 'views_dia')}** views/dia "
          f"({sum(1 for x in lg if aviso.get(x['id']) is True)}) · SEM aviso **{media([x for x in lg if aviso.get(x['id']) is False], 'views_dia')}** views/dia "
          f"({sum(1 for x in lg if aviso.get(x['id']) is False)})", "",
+         *([f"- Resgates (título trocado nos flops, dica do Alan): " + "; ".join(
+             f"{r['titulo_novo'][:40]}… {r['views_dia_antes']}→{r.get('views_dia_agora', '?')} views/dia"
+             for r in list(resg.values())[-5:])] if resg else []), "",
          "## Melhores vídeos (views por dia)", "| # | Tipo | Título | Views | Views/dia | Engaj. |", "|---|---|---|---|---|---|"]
     L += [f"| {i} | {x['tipo']} | {x['titulo'][:70]} | {x['views']} | {x['views_dia']} | {x['engaj']}% |" for i, x in enumerate(top[:10], 1)]
     L += ["", "## Piores (evite repetir o ângulo/estilo)"] + [f"- {x['titulo'][:80]} — {x['views_dia']} views/dia" for x in top[-5:][::-1] if len(top) > 5]

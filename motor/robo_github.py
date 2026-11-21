@@ -130,6 +130,9 @@ def main():
         etapa("Relatório", relatorio.main)
         import aprender
         etapa("Aprendizados (IA grátis)", aprender.main)
+        if hora < 20:   # resgate de flops 1x por dia (de manhã)
+            import resgate
+            _, out_r = etapa("Resgate de vídeos flopados (título novo)", resgate.main)
     _, out = etapa("Buffer: posts com falha", vigiar_buffer)
     import sincronizar
     etapa("Salvar no GitHub", lambda: sincronizar.main(f"robô do GitHub: ajustes {datetime.now(BRT):%d/%m %Hh}"))
