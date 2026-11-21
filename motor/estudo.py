@@ -281,7 +281,7 @@ def main():
     if topico:
         try:
             urllib.request.urlopen(urllib.request.Request("https://ntfy.sh/" + topico, f"📚 Estudo do dia:\n{resumo}".encode(),
-                                                         {"Title": "HQ Vault Clips — estudo"}), timeout=20)
+                                                         {"Title": "HQ Vault Clips - estudo"}), timeout=20)
         except Exception as e:
             print("ntfy falhou:", e)
     print(cab + sintese)
