@@ -31,7 +31,7 @@ Meta diária (horário de Brasília): **12h vídeo longo** + Shorts em **13h · 
 5. **Transcrever**: `python3 motor/transcrever.py $JOB/video.mp4 $JOB/transc.json` (gera também `transc.txt` com tempos).
 6. **Escrever o roteiro** em `$JOB/roteiro.json` (formato abaixo), lendo `transc.txt` e olhando quadros do vídeo
    (`ffmpeg -ss T -i video.mp4 -frames:v 1 -vf scale=640:-2 f.png`) para escolher b-roll e capas.
-   - **Teste de formato (YouTube):** marque `"rapido_youtube": true` em 2 Shorts que vão pro YouTube (na semana de lançamento: o 1º e o 4º; nos dias normais: o 1º). O `shorts.py` gera também `short_<id>_yt.mp4` (20–40 s, corta no fim de uma frase — então a narração precisa trazer o gancho e a revelação principal nos primeiros ~30 s) e o `publicar.py` manda essa versão curta pro YouTube; TikTok e Instagram continuam com a completa (>60 s). Suba os `_yt.mp4` junto em publicar/<DATA>/.
+   - **Teste de formato encerrado (20/11):** os cortes rápidos de 20–40 s no YouTube renderam ~10x menos que os completos. **NÃO use `"rapido_youtube"`** — todos os Shorts vão completos (>60 s) para YouTube, TikTok e Instagram.
    - Faça **N Shorts** (N = `python3 motor/publicar.py --slots <DATA>`), cada um com um gancho/ângulo diferente (fatos diferentes, nada repetido entre eles). Em `longo.playlist` escolha: `news`, `secrets`, `tips` ou `theories` (o robô coloca o vídeo na playlist certa).
 7. **Narrar**: `python3 motor/narrar.py $JOB` — confira que o longo tem ≥ 8 min e cada Short ≥ 58 s de narração; se não, aumente o texto e rode de novo.
 8. **Montar**: `python3 motor/longo.py $JOB` e `python3 motor/shorts.py $JOB`.
