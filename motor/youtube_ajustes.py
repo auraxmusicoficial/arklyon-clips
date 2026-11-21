@@ -116,8 +116,9 @@ def main():
                 if "traducoes" not in p:
                     import traduzir
                     p["traducoes"] = traduzir.titulo_desc(p["yt_title"], p["descricao"])
-                if p.get("traducoes"):
-                    rl = api(tok, "PUT", "videos?part=localizations", {"id": vid, "localizations": p["traducoes"]})
+                if p.get("traducoes"):   # manda junto com o snippet (o YouTube exige o idioma padrão na mesma chamada)
+                    rl = api(tok, "PUT", "videos?part=snippet,localizations",
+                             {"id": vid, "snippet": corpo["snippet"], "localizations": p["traducoes"]})
                     if "error" in rl:
                         print("AVISO traduções recusadas:", str(rl)[:200])
             except Exception as e:
