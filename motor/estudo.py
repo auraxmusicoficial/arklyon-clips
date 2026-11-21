@@ -81,6 +81,29 @@ def buscar(tok, api, q, depois, n=25, extra="", ordem="viewCount"):
     return out
 
 
+def brechas(tok, api, termos):
+    """Para cada termo, olha o topo da busca do YouTube (últimos 30 dias): se canais pequenos/médios aparecem com
+    muita visualização, o tema tem BRECHA; se só tem gigante, é concorrido. Versão grátis do 'volume x concorrência' do vidIQ."""
+    depois = (datetime.now(timezone.utc) - timedelta(days=30)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    linhas = []
+    for t in termos[:6]:
+        try:
+            vs = buscar(tok, api, t, depois, n=10, ordem="relevance")
+        except Exception as e:
+            print("busca falhou:", t, e); continue
+        if not vs:
+            linhas.append((t, 0, 0, 0, "sem vídeos recentes (pouca demanda ou termo ruim)")); continue
+        ids = list({v["canal_id"] for v in vs})
+        ins = {ch["id"]: int(ch["statistics"].get("subscriberCount", 0) or 0)
+               for ch in api(tok, "GET", "channels?part=statistics&id=" + ",".join(ids)).get("items", [])}
+        pequenos = [v for v in vs if ins.get(v["canal_id"], 0) < 100_000 and v["views"] >= 20_000]
+        gigantes = sum(1 for v in vs if ins.get(v["canal_id"], 0) >= 1_000_000)
+        media = sum(v["views"] for v in vs) // len(vs)
+        nota = min(10, round(len(pequenos) * 1.5 + min(media / 100_000, 4) - gigantes * 0.5, 1))
+        linhas.append((t, max(nota, 0), media, gigantes, f"{len(pequenos)} canais pequenos com 20 mil+ views no topo"))
+    return sorted(linhas, key=lambda l: -l[1])
+
+
 PED_NICHO = """Responda em português do Brasil, direto, em tópicos curtos. Este é um vídeo de GTA 6 que está crescendo muito.
 Título: {titulo} | Canal: {canal} ({inscritos} inscritos) | {views} views ({views_hora}/hora) | duração {seg}s.
 Assista e anote: 1) gancho dos primeiros 3 segundos (o que aparece/é dito); 2) assunto e ângulo; 3) formato (vertical/horizontal,
@@ -177,12 +200,27 @@ def main():
         "dinheiro real, hacks ou trapaças. Nossos próprios dados (APRENDIZADOS) valem mais que o que funciona para outros canais.",
         sistema="Você é o estrategista de um canal automático de GTA 6 em inglês. Seja honesto e prático. Nunca recomende nada contra as regras.",
         max_tokens=3000)
+    tabela = ""
+    try:
+        sug = json.loads(gerar(
+            "Com base nestas anotações de vídeos de GTA 6 que bombaram, proponha 6 termos de busca em inglês, específicos "
+            "(cauda longa, 3–6 palavras, como as pessoas digitam no YouTube), sobre assuntos que um canal de cortes/dicas/notícias "
+            f"de GTA 6 poderia fazer amanhã. Responda só JSON: {{\"termos\": [..]}}\n\n{bloco(notas_nicho)[:6000]}",
+            json_saida=True, max_tokens=600)).get("termos", [])
+        bs = brechas(tok, api, [t for t in sug if isinstance(t, str)])
+        if bs:
+            tabela = ("\n\n## Brechas de tema (topo da busca do YouTube, últimos 30 dias)\nNota alta = canais pequenos conseguem "
+                      "aparecer e ter views (brecha boa). Nota baixa = só gigantes (concorrido). Use os de nota alta como assunto.\n\n"
+                      "| Termo | Nota (0–10) | Média de views no topo | Canais gigantes no topo | Observação |\n|---|---|---|---|---|\n"
+                      + "\n".join(f"| {t} | {n} | {m:,} | {g} | {o} |".replace(f"{m:,}", f"{m:,}".replace(",", ".")) for t, n, m, g, o in bs))
+    except Exception as e:
+        print("brechas falharam:", e)
     hoje = datetime.now(BRT).strftime("%d/%m/%Y")
     cab = (f"# Estudo do dia — {hoje}\n\nGerado pelo robô (Gemini assistiu {len(notas_nicho)} vídeos do nicho e "
            f"{len(notas_estudo)} de estudo, ~{usado // 60} min de vídeo; Groq julgou). A produção deve ler isto junto com APRENDIZADOS.md.\n\n")
     fontes = "\n\n---\n### Vídeos analisados\n" + "\n".join(
         f"- [{c['titulo']}](https://youtu.be/{c['id']}) — {c['canal']} · {c['views_hora']}/h" for c, _ in notas_nicho + notas_estudo)
-    (EST / "ESTUDO.md").write_text(cab + sintese + fontes)
+    (EST / "ESTUDO.md").write_text(cab + sintese + tabela + fontes)
 
     m = re.search(r"##\s*3 descobertas principais(.*)", sintese, re.S | re.I)
     resumo = (m.group(1).strip() if m else sintese[:500])[:900]
