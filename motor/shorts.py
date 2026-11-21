@@ -3,7 +3,7 @@ Uso: python3 motor/shorts.py JOB_DIR   -> JOB_DIR/saida/short_<id>.mp4 e thumb_<
 import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
-from comum import (CIANO, FONTES, LEAD, ROSA, TAIL, cab, dur, legendas, ler_json, render_segmento, run, t, takes)
+from comum import (CIANO, FONTES, LEAD, ROSA, SHOT, TAIL, cab, dur, legendas, ler_json, render_segmento, run, t, takes)
 from thumb import thumb
 
 CAPA_S = 0.5   # segundos de capa no FIM do vídeo (vira a capa no TikTok/Instagram sem atrasar o gancho)
@@ -19,7 +19,16 @@ def main(job, so=None):
             continue
         info = T[sid]; d0 = LEAD + info["dur"] + TAIL
         partes = [seg / f"{sid}_n.mp4"]
-        render_segmento(src, partes[0], takes(s["broll"], d0), d0, None, job / "voz" / f"{sid}.wav", LEAD)
+        tk = takes(s["broll"], d0)
+        try:   # abre o Short com a cena de maior impacto (pico de áudio + movimento) dentro do b-roll
+            from impacto import momento_forte
+            forte = momento_forte(src, s["broll"], SHOT)
+            if forte is not None:
+                tk = [forte] + [x for x in tk if abs(x - forte) >= SHOT][: len(tk) - 1]
+                print(f"  {sid}: abre com a cena de impacto em {forte:.1f}s")
+        except Exception as e:
+            print("AVISO impacto falhou, seguindo com a ordem normal:", e)
+        render_segmento(src, partes[0], tk, d0, None, job / "voz" / f"{sid}.wav", LEAD)
         L = legendas(info["palavras"], LEAD, n=3, estilo="Cap", dest=ROSA, pos=(540, 1430))
         total = d0
         if s.get("quote"):

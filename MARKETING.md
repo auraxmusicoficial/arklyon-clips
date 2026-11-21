@@ -59,6 +59,7 @@ O vídeo-fonte é só a imagem; o que faz o vídeo crescer é o ASSUNTO. Escolha
 
 ## 3. YouTube Shorts
 - **Título** (até 60 caracteres, 1 emoji no fim no máximo) com a palavra-chave + gancho. Ex.: "GTA 6's Map Has a Secret Nobody Noticed 😳".
+- **Teste A/B de título (dica do Rayel)**: nos Shorts de posição ímpar do roteiro (1º, 3º, 5º, 7º) comece o título com as **2–3 palavras-gancho em CAIXA ALTA** (só o começo aparece no feed). Ex.: "COPS REMEMBER Your Face in GTA 6 🚨", "SECRET MONEY Trick in GTA 6 💰". Nos de posição par, mantenha o padrão (no máximo 1 palavra em caixa alta). O relatório compara os dois grupos — quando um ganhar com folga por 7 dias, adote só ele.
 - **Descrição** (`texto_youtube`): 1 frase com palavra-chave + pergunta + 3–4 hashtags (#GTA6 #GTAVI #Shorts + tema).
 - **Tags**: 10–15, mesma lógica do longo.
 - **Vídeo**: primeiros 2 s com a frase mais forte (texto na tela + narração); fim que "loopa" para o começo quando possível.

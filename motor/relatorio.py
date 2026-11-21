@@ -50,6 +50,15 @@ def main():
                                                      "views": int(st.get("viewCount", 0)), "videos": int(st.get("videoCount", 0))}]
     DES.write_text(json.dumps({"atualizado": agora.isoformat(), "historico": hist[-60:], "videos": lin}, ensure_ascii=False, indent=1))
 
+    pub_f = Path(__file__).resolve().parent.parent / "estado" / "publicacoes.json"
+    aviso = {p["video_id"]: p["notificar"] for p in (json.loads(pub_f.read_text()) if pub_f.exists() else [])
+             if isinstance(p, dict) and p.get("video_id") and "notificar" in p}
+
+    def caps(titulo):
+        """Título 'em CAIXA ALTA': as 2 primeiras palavras (fora GTA/6/VI) todas maiúsculas."""
+        ws = [w for w in re.findall(r"[A-Za-z']+", titulo) if w.upper() not in ("GTA", "VI")]
+        return len(ws) >= 2 and all(w.isupper() and len(w) > 1 for w in ws[:2])
+
     def media(xs, k):
         return round(sum(x[k] for x in xs) / len(xs), 1) if xs else 0
     sh = [x for x in lin if x["tipo"] == "short"]; lg = [x for x in lin if x["tipo"] == "longo"]
@@ -66,6 +75,11 @@ def main():
          f"- Média de views/dia: Shorts **{media(sh, 'views_dia')}** · longos **{media(lg, 'views_dia')}**",
          f"- Engajamento médio (curtidas+comentários / views): Shorts {media(sh, 'engaj')}% · longos {media(lg, 'engaj')}%", "",
          f"- Teste de formato nos Shorts: rápidos (<45 s) **{media([x for x in sh if x['dur'] < 45], 'views_dia')}** views/dia · completos (≥45 s) **{media([x for x in sh if x['dur'] >= 45], 'views_dia')}** views/dia", "",
+         f"- Teste de título nos Shorts (dica do Rayel): começo em CAIXA ALTA **{media([x for x in sh if caps(x['titulo'])], 'views_dia')}** views/dia "
+         f"({sum(1 for x in sh if caps(x['titulo']))} vídeos) · padrão **{media([x for x in sh if not caps(x['titulo'])], 'views_dia')}** views/dia",
+         f"- Teste do aviso aos inscritos nos longos (dica do Lucas Roudi): COM aviso **{media([x for x in lg if aviso.get(x['id']) is True], 'views_dia')}** views/dia "
+         f"({sum(1 for x in lg if aviso.get(x['id']) is True)}) · SEM aviso **{media([x for x in lg if aviso.get(x['id']) is False], 'views_dia')}** views/dia "
+         f"({sum(1 for x in lg if aviso.get(x['id']) is False)})", "",
          "## Melhores vídeos (views por dia)", "| # | Tipo | Título | Views | Views/dia | Engaj. |", "|---|---|---|---|---|---|"]
     L += [f"| {i} | {x['tipo']} | {x['titulo'][:70]} | {x['views']} | {x['views_dia']} | {x['engaj']}% |" for i, x in enumerate(top[:10], 1)]
     L += ["", "## Piores (evite repetir o ângulo/estilo)"] + [f"- {x['titulo'][:80]} — {x['views_dia']} views/dia" for x in top[-5:][::-1] if len(top) > 5]
