@@ -731,7 +731,8 @@
   "playlist": "shorts",
   "urgente": false,
   "video_id": "jBavJjK9HI8",
-  "na_playlist": true
+  "na_playlist": true,
+  "comentou": true
  },
  {
   "tipo": "short",
