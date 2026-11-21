@@ -845,7 +845,7 @@
   "quando": "2026-11-21T18:00:00-03:00",
   "upload": "2026-11-21T15:00:00-03:00",
   "yt_title": "CUT THE ALARM First When You Rob a Store in GTA 6 🚨",
-  "descricao": "GTA 6 store robbery tip: cut the alarm and wipe the tapes, or the cops get called. Did you know this? #GTA6 #GTAVI #Shorts #GTA6Tips",
+  "descricao": "GTA 6 store robbery tip: cut the alarm and wipe the tapes, or the cops get called. Did you know this? #GTA6 #GTAVI #Shorts #GTA6Tips\n\n🎬 Full guide 👉 https://youtu.be/bKvMl3uqXt0",
   "tags": [
    "gta 6",
    "gta vi",
@@ -864,14 +864,25 @@
    "tiktok": "6b015ef69ffbc8503c10b45e",
    "instagram": "6b015ef751027662450d44b3"
   },
-  "ajustado": false,
+  "ajustado": true,
   "formato_yt": "completo",
-  "comentario": "Be honest: did you set off the alarm on your first robbery? 🚨",
+  "comentario": "Be honest: did you set off the alarm on your first robbery? 🚨 Full guide here 👉 https://youtu.be/bKvMl3uqXt0",
   "fb_textos": [],
   "playlist": "shorts",
   "urgente": false,
   "video_id": "xNhkjNYSKL0",
-  "yt_direto": "xNhkjNYSKL0"
+  "yt_direto": "xNhkjNYSKL0",
+  "traducoes": {
+   "es": {
+    "title": "CORTA LA ALARMA al Robar una Tienda en GTA 6 🚨",
+    "description": "Consejo de robo en tiendas de GTA 6: corta la alarma y elimina las cintas, o la policía llegará. ¿Lo sabías? #GTA6 #GTAVI #Shorts #GTA6Tips 🎬 Guía completa 👉 https://youtu.be/bKvMl3uqXt0"
+   },
+   "pt": {
+    "title": "DESLIGUE O ALARME ao Roubar uma Loja em GTA 6 🚨",
+    "description": "Dica de roubo em lojas no GTA 6: desligue o alarme e apague as fitas, ou a polícia será chamada. Você sabia? #GTA6 #GTAVI #Shorts #GTA6Tips 🎬 Guia completa 👉 https://youtu.be/bKvMl3uqXt0"
+   }
+  },
+  "na_playlist": true
  },
  {
   "tipo": "short",
