@@ -838,7 +838,9 @@
    }
   },
   "video_id": "I4Ne3Avq8FY",
-  "na_playlist": true
+  "na_playlist": true,
+  "publico_ok": true,
+  "comentou": true
  },
  {
   "tipo": "short",
