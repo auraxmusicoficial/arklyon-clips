@@ -48,6 +48,15 @@ O vídeo-fonte é só a imagem; o que faz o vídeo crescer é o ASSUNTO. Escolha
 
 **Spoilers (jogo já lançado):** finais, mortes, reviravoltas e personagens surpresa (ex.: quem volta de jogos antigos) são temas fortíssimos, mas título e capa NUNCA revelam o spoiler: use "SPOILERS" na capa/início do título e deixe a revelação para dentro do vídeo, depois de um aviso falado nos primeiros 3 s ("spoiler warning — skip now if you haven't finished the story"). Ex.: "GTA 6 Has a SECRET True Ending (Spoilers) — How To Get It", "EVERY Returning GTA Character In GTA 6 (Spoilers)". Quem é spoilado pela capa clica em "não recomendar".
 
+**Pedido de inscrição criativo (Shorts — narração e/ou texto final):** nada de "subscribe" seco. Use uma frase curta, divertida e no clima do GTA, nos últimos 3–4 s (antes da frase que fecha o loop). Varie SEMPRE (não repita a mesma frase no mesmo dia nem em dias seguidos; confira estado/publicacoes.json). Exemplos — crie novas no mesmo estilo:
+- "Subscribe, or the GTA 6 cops will remember YOUR face."
+- "Rockstar took 13 years. You just need one second — subscribe."
+- "Hit subscribe before Lucia does it for you."
+- "Five stars wanted level if you scroll without subscribing."
+- "Jason and Lucia split the loot. You split nothing — unless you subscribe."
+- "Every subscriber gets a free getaway car. Not really, but subscribe anyway."
+Regras: humor leve, nunca ameaça real, nunca prometer prêmio/dinheiro de verdade, nunca pedir like/inscrição em troca de algo (isso é contra as regras do YouTube).
+
 ## 2. YouTube — vídeo longo
 - **Título** (50–70 caracteres): palavra-chave principal no começo + gatilho (curiosidade, número, novidade, conflito). Fórmulas:
   "GTA 6: 12 Details Everyone Missed in the New Trailer" · "GTA 6 Map Is BIGGER Than We Thought (Here's Proof)" · "GTA 6 Just Confirmed What Fans Feared" · "Everything We Know About GTA 6 Before Launch".
