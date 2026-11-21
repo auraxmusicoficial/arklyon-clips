@@ -154,6 +154,22 @@ def agendar_short(job, s, base, due, dt, due_yt, privacidade="unlisted", instagr
                 "playlist": "shorts", "urgente": privacidade == "public"}
 
 
+def instagram_perto(dt, horas=2):
+    """True se já existe post do Instagram agendado/feito a menos de `horas` de dt."""
+    est = RAIZ / "estado" / "publicacoes.json"
+    if not est.exists():
+        return False
+    for p in json.loads(est.read_text()):
+        if isinstance(p, dict) and "instagram" in (p.get("buffer") or {}):
+            try:
+                q = datetime.fromisoformat(p["quando"])
+            except (KeyError, ValueError):
+                continue
+            if abs((q - dt).total_seconds()) < horas * 3600:
+                return True
+    return False
+
+
 def publicar_urgente(job, r, data, base):
     s = r["shorts"][0]
     dt = datetime.now(timezone.utc) + timedelta(minutes=10)
@@ -162,7 +178,10 @@ def publicar_urgente(job, r, data, base):
     yt = n < YT_MAX_24H - 1
     if not yt:
         print(f"YouTube já tem {n} envios nas últimas 24 h — Short urgente vai só pro TikTok/Instagram")
-    p = agendar_short(job, s, base, due, dt.astimezone(BRT), due, privacidade="public", youtube=yt)
+    ig = not instagram_perto(dt)
+    if not ig:
+        print("Já tem post no Instagram a menos de 2 h desse horário — Short urgente vai só pro YouTube/TikTok (evita 2 posts colados)")
+    p = agendar_short(job, s, base, due, dt.astimezone(BRT), due, privacidade="public", youtube=yt, instagram=ig)
     p["upload"] = dt.astimezone(BRT).isoformat()
     salvar([p])
     print("Short urgente publicado agora:", s["id"], "— rode motor/youtube_ajustes.py daqui a ~15 min para capa/tags")
