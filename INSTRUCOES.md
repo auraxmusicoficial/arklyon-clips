@@ -6,7 +6,7 @@ Meta diária (horário de Brasília): **12h vídeo longo** + Shorts em **13h · 
 
 ## Regras de conteúdo (do dono do canal)
 - Tema: **GTA 6** (hype). Vídeos-fonte **só com o jogo** (trailers, gameplay, extended look, compilações sem facecam/sem pessoa reagindo). React só se não houver outra fonte, e só para Shorts.
-- **Shorts/Reels/TikToks com mais de 60 s** (narração de 175–210 palavras + citação opcional).
+- **Shorts/Reels/TikToks com mais de 60 s** (narração de 210–240 palavras (a voz Charon do Gemini é mais rápida; o Short precisa passar de 60 s) + citação opcional).
 - **Vídeo longo = GUIA COMPLETO de 15 a 20 min** (narração de 2.300–3.000 palavras), 16:9, roteiro **original** com análise/opinião — nunca só repostar. Motivo (dados reais conferidos em 20/11): no nosso nicho, os longos que fazem milhões são guias grandes — GrandGecko "GTA 6 - Everything You Need To Know Before You Play!" (36 min, 3,4 mi), "GTA 6 Can Do Things GTA 5 NEVER Could" (33 min, 1,3 mi); COLETHEMAN GTA "Everything You NEED To Know Before You Play GTA 6" (21 min, 1,8 mi). Formatos: "Everything You Need To Know About ___", "50+/100+ Things GTA 6 Does That GTA 5 Never Could", "Every Secret/Mechanic of ___ Explained", "Complete Beginner's Guide", "How ___ Actually Works (Full Breakdown)". Capítulos a cada 1–2 min (vira lista navegável), loops de curiosidade entre capítulos, melhor item no fim. **Imagens:** para não repetir cena, junte 2–3 vídeos-fonte do Drive num só `video.mp4` antes de montar (`ffmpeg -f concat`, mesma resolução — reencode 1920x1080 30 fps se precisar) e marque o b-roll de cada capítulo em trechos diferentes. Se o tempo de render ficar apertado, faça 15 min.
 - **Trilha sonora**: o longo e os Shorts recebem automaticamente uma trilha ORIGINAL synthwave (motor/trilha.py, composta por código — sem direitos de terceiros) + whoosh/impacto nas trocas de capítulo. No roteiro, `longo.trilha` e `shorts[].trilha` = `noite` (padrão do longo), `acao` (padrão dos Shorts: perseguição, polícia, tiroteio) ou `sol` (praia, cidade, clima leve). Nunca use música de terceiros.
 - Visual inspirado em GTA/Vice City (rosa/ciano/laranja/roxo; capas com a fonte Pricedown e estrelas de procurado), sem usar o logo oficial da Rockstar.
@@ -85,7 +85,7 @@ Meta diária (horário de Brasília): **12h vídeo longo** + Shorts em **13h · 
      "primeiro_comentario_instagram": "8–15 hashtags do Instagram",
      "comentario_youtube": "pergunta curta que o canal posta como 1º comentário no YouTube",
      "tags": ["10 a 15 tags do YouTube"],
-     "broll": [[590, 660]], "narracao": "175–210 palavras, gancho nos 3 primeiros segundos", "quote": [738, 744],
+     "broll": [[590, 660]], "narracao": "210–240 palavras (a voz Charon do Gemini é mais rápida; o Short precisa passar de 60 s), gancho nos 3 primeiros segundos", "quote": [738, 744],
      "thumb": {"t": 600, "linhas": ["LINHA 1", "LINHA 2", "LINHA 3"], "selo": "", "foco": [0.5, 0.6], "zoom": 1.3, "estrelas": 0},
      "fb_textos": []}
   ]
