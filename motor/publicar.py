@@ -40,12 +40,53 @@ def envios_youtube_24h():
         print("não consegui contar os envios do YouTube:", e); return 0
 
 
+CANDIDATOS = ["09:00", "11:00", "13:00", "16:00", "18:00", "20:00", "22:00"]
+MIN_AMOSTRAS = 12   # só confia nos dados de horário de uma rede com pelo menos isso de Shorts medidos
+
+
+def melhores_horas(rede, candidatos, n):
+    """Os n melhores horários da rede (dados de estado/horarios_redes.json, gerado pelo robô), com 2 h de folga entre eles.
+    Devolve None se ainda não há dados suficientes."""
+    try:
+        d = json.loads((RAIZ / "estado" / "horarios_redes.json").read_text())[rede]
+    except Exception:
+        return None
+    if d.get("amostras", 0) < MIN_AMOSTRAS:
+        return None
+    media = {f"{h:02d}:00": m for h, m, _ in d["horas"]}
+    base = sorted(media.values())[len(media) // 2] if media else 0
+    ordem = sorted(candidatos, key=lambda c: -media.get(c, base))
+    esc = []
+    for c in ordem:
+        if all(abs(int(c[:2]) - int(e[:2])) >= 2 for e in esc):
+            esc.append(c)
+        if len(esc) == n:
+            break
+    return set(esc) if len(esc) == n else None
+
+
 def vai_youtube(data, hh):
-    return hh in YT_LANCAMENTO if LANCAMENTO[0] <= data <= LANCAMENTO[1] else True
+    if LANCAMENTO[0] <= data <= LANCAMENTO[1]:
+        return hh in (melhores_horas("youtube", SLOTS_LANCAMENTO, len(YT_LANCAMENTO)) or YT_LANCAMENTO)
+    return True
 
 
 def vai_instagram(data, hh):
-    return hh in IG_LANCAMENTO if LANCAMENTO[0] <= data <= LANCAMENTO[1] else True
+    if LANCAMENTO[0] <= data <= LANCAMENTO[1]:
+        return hh in (melhores_horas("instagram", SLOTS_LANCAMENTO, len(IG_LANCAMENTO)) or IG_LANCAMENTO)
+    return True
+
+
+def horario_rede(rede, data, i, n, hh):
+    """Fora da semana de lançamento: o i-ésimo Short do dia vai, nesta rede, no i-ésimo melhor horário dela (se houver dados
+    e se ainda não passou); senão fica no horário do slot."""
+    if LANCAMENTO[0] <= data <= LANCAMENTO[1]:
+        return hh
+    m = melhores_horas(rede, CANDIDATOS, n)
+    if not m:
+        return hh
+    h = sorted(m)[i]
+    return h if quando(data, h)[1] > datetime.now(BRT) + timedelta(minutes=20) else hh
 SLOT_LONGO = "12:00"
 BRT = timezone(timedelta(hours=-3))
 ANTECEDENCIA_YT = timedelta(hours=3)   # sobe no YouTube como não listado 3 h antes; o ajuste (8h52, 11h52, 15h52, 19h52) programa a estreia pública
@@ -95,11 +136,15 @@ def main(job, data, sha, pular=(), urgente=False):
         agendar_longo(job, r, L0, data, base, agora, plano)
     # shorts (YouTube, TikTok, Instagram)
     livres = [h for h in slots_shorts(data) if h not in pular and quando(data, h)[1] > agora]
-    for s, hh in zip(r["shorts"], livres):
+    for i, (s, hh) in enumerate(zip(r["shorts"], livres)):
         due, dt = quando(data, hh)
-        plano.append(agendar_short(job, s, base, due, dt, antes(dt), instagram=vai_instagram(data, hh),
-                                   youtube=vai_youtube(data, hh)))
-        print("agendado short", s["id"], dt)
+        h_tt, h_ig = horario_rede("tiktok", data, i, len(livres), hh), horario_rede("instagram", data, i, len(livres), hh)
+        p = agendar_short(job, s, base, due, dt, antes(dt), instagram=vai_instagram(data, hh), youtube=vai_youtube(data, hh),
+                          due_tt=quando(data, h_tt)[0], due_ig=quando(data, h_ig)[0])
+        if (h_tt, h_ig) != (hh, hh):
+            p["quando_redes"] = {"tiktok": h_tt, "instagram": h_ig}
+        plano.append(p)
+        print("agendado short", s["id"], dt, f"(TikTok {h_tt}, Instagram {h_ig})" if (h_tt, h_ig) != (hh, hh) else "")
     for s in r["shorts"][len(livres):]:
         print("SOBROU (sem horário livre hoje):", s["id"])
     salvar(plano)
@@ -122,7 +167,7 @@ def agendar_longo(job, r, L0, data, base, agora, plano):
         print("agendado longo", dt)
 
 
-def agendar_short(job, s, base, due, dt, due_yt, privacidade="unlisted", instagram=True, youtube=True):
+def agendar_short(job, s, base, due, dt, due_yt, privacidade="unlisted", instagram=True, youtube=True, due_tt=None, due_ig=None):
     if True:  # noqa
         url = f"{base}/short_{s['id']}.mp4"; ids = {}
         rapido = (job / "saida" / f"short_{s['id']}_yt.mp4").exists()
@@ -134,20 +179,20 @@ def agendar_short(job, s, base, due, dt, due_yt, privacidade="unlisted", instagr
             ids["youtube"] = criar("youtube", tx["youtube"], url_yt, due_yt,
                                    {"youtube": {"title": s["yt_title"][:100], "privacy": privacidade, "categoryId": "20", "madeForKids": False,
                                                 "isAiGenerated": False}})
-        ids["tiktok"] = criar("tiktok", tx["tiktok"], url, due, {"tiktok": {"title": s["tt_title"][:90], "isAiGenerated": False}}, capa_ms=capa)
+        ids["tiktok"] = criar("tiktok", tx["tiktok"], url, due_tt or due, {"tiktok": {"title": s["tt_title"][:90], "isAiGenerated": False}}, capa_ms=capa)
         ig = {"type": "reel", "shouldShareToFeed": True, "isAiGenerated": False}
         if s.get("primeiro_comentario_instagram"):
             ig["firstComment"] = s["primeiro_comentario_instagram"]
         if instagram:
             try:
-                ids["instagram"] = criar("instagram", tx["instagram"], url, due, {"instagram": ig}, capa_ms=capa)
+                ids["instagram"] = criar("instagram", tx["instagram"], url, due_ig or due, {"instagram": ig}, capa_ms=capa)
             except RuntimeError as e:
                 if "firstComment" not in ig or "First comment" not in str(e):
                     raise
                 # plano grátis do Buffer não aceita 1º comentário: põe 5 hashtags no fim da legenda
                 ig.pop("firstComment")
                 tags5 = " ".join(s["primeiro_comentario_instagram"].split()[:5])
-                ids["instagram"] = criar("instagram", tx["instagram"] + "\n\n" + tags5, url, due, {"instagram": ig}, capa_ms=capa)
+                ids["instagram"] = criar("instagram", tx["instagram"] + "\n\n" + tags5, url, due_ig or due, {"instagram": ig}, capa_ms=capa)
         return {"tipo": "short", "quando": dt.isoformat(), "upload": (dt - ANTECEDENCIA_YT).isoformat(), "yt_title": s["yt_title"][:100], "descricao": tx["youtube"],
                       "tags": s["tags"], "thumb": f"{base}/thumb_{s['id']}.jpg", "buffer": ids, "ajustado": False if "youtube" in ids else True, "formato_yt": "rapido" if rapido else "completo",
                       "comentario": s.get("comentario_youtube", ""), "fb_textos": s.get("fb_textos", []),

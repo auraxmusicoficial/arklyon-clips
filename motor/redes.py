@@ -55,7 +55,8 @@ def main():
         dias = (agora - q).total_seconds() / 86400
         if dias < 1:
             continue   # muito cedo para julgar
-        reg = {"titulo": p.get("yt_title", "")[:70], "dias": round(dias, 1), "hora": q.astimezone(BRT).hour}
+        reg = {"titulo": p.get("yt_title", "")[:70], "dias": round(dias, 1), "hora": q.astimezone(BRT).hour,
+               "quando": p["quando"], "redes_postadas": sorted((p.get("buffer") or {}).keys())}
         y = yt_id.get(p.get("video_id") or p.get("yt_direto") or "") or yt_tit.get(p.get("yt_title", "").lower())
         if y:
             reg["youtube"] = y["views"]
@@ -83,6 +84,16 @@ def main():
                 por_h.setdefault(l["hora"], []).append(l[r])
         if por_h:
             hora[r] = sorted(((h, round(statistics.mean(v))) for h, v in por_h.items()), key=lambda x: -x[1])[:3]
+    hr = {}
+    for r in redes:
+        por_h = {}
+        for l in linhas:
+            if r in l:
+                por_h.setdefault(l["hora"], []).append(l[r])
+        hr[r] = {"amostras": sum(len(v) for v in por_h.values()),
+                 "horas": sorted(([h, round(statistics.mean(v)), len(v)] for h, v in por_h.items()), key=lambda x: -x[1])}
+    (EST / "horarios_redes.json").write_text(json.dumps(hr, indent=1))
+    (EST / "redes_dados.json").write_text(json.dumps({"medianas": med, "linhas": linhas}, ensure_ascii=False, indent=1))
     tabela = "| Short | YouTube | TikTok | Instagram |\n|---|---|---|---|\n" + "\n".join(
         f"| {l['titulo']} | {l.get('youtube', '—')} | {l.get('tiktok', '—')} | {l.get('instagram', '—')} |"
         for l in sorted(linhas, key=lambda l: -max(l.get(r, 0) for r in redes))[:25])

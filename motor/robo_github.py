@@ -135,6 +135,13 @@ def main():
         if hora < 20:   # resgate de flops 1x por dia (de manhã)
             import resgate
             _, out_r = etapa("Resgate de vídeos flopados (título novo)", resgate.main)
+    sc_f = Path(__file__).resolve().parent.parent / "estado" / "segunda_chance_dia.txt"
+    if 9 <= hora <= 11 and (not sc_f.exists() or sc_f.read_text().strip() != datetime.now(BRT).strftime("%Y-%m-%d")):
+        import segunda_chance   # 1x por dia, de manhã (depois que a produção agendou o dia)
+        msgs_sc, _ = etapa("Segunda chance (vídeo que bombou numa rede vai pras outras)", segunda_chance.main)
+        sc_f.write_text(datetime.now(BRT).strftime("%Y-%m-%d"))
+        if msgs_sc:
+            avisos.extend(msgs_sc)
     _, out = etapa("Buffer: posts com falha", vigiar_buffer)
     import sincronizar
     etapa("Salvar no GitHub", lambda: sincronizar.main(f"robô do GitHub: ajustes {datetime.now(BRT):%d/%m %Hh}"))
