@@ -801,7 +801,7 @@
   "quando": "2026-11-21T16:00:00-03:00",
   "upload": "2026-11-21T13:00:00-03:00",
   "yt_title": "This GTA 6 Bank Job Paid $140,000 in 10 Minutes 🤯",
-  "descricao": "GTA 6 bank robbery: one early run reportedly paid about $140,000 in 10 minutes. Would you risk 4 stars? #GTA6 #GTAVI #Shorts #GTA6Money",
+  "descricao": "GTA 6 bank robbery: one early run reportedly paid about $140,000 in 10 minutes. Would you risk 4 stars? #GTA6 #GTAVI #Shorts #GTA6Money\n\n🎬 Full guide 👉 https://youtu.be/bKvMl3uqXt0",
   "tags": [
    "gta 6",
    "gta vi",
@@ -820,13 +820,25 @@
    "youtube": "6b015ebe9ffbc8503c1095d0",
    "tiktok": "6b015ebfd9cbb430a132bcc8"
   },
-  "ajustado": false,
+  "ajustado": true,
   "formato_yt": "completo",
-  "comentario": "Would you risk a 4-star wanted level for $140K? 💰",
+  "comentario": "Would you risk a 4-star wanted level for $140K? 💰 Full guide here 👉 https://youtu.be/bKvMl3uqXt0",
   "fb_textos": [],
   "playlist": "shorts",
   "urgente": false,
-  "yt_direto": "I4Ne3Avq8FY"
+  "yt_direto": "I4Ne3Avq8FY",
+  "traducoes": {
+   "es": {
+    "title": "Este atraco en GTA 6 paga $140,000 en 10 minutos 🤯",
+    "description": "Robo a banco en GTA 6: una primera partida pagó alrededor de $140,000 en 10 minutos. ¿Te arriesgarías con 4 estrellas? #GTA6 #GTAVI #Shorts #GTA6Money\n\n🎬 Guía completa 👉 https://youtu.be/bKvMl3uqXt0"
+   },
+   "pt": {
+    "title": "Este assalto em GTA 6 pagou $140.000 em 10 minutos 🤯",
+    "description": "Roubo a banco em GTA 6: uma corrida inicial pagou cerca de $140,000 em 10 minutos. Você arriscaria 4 estrelas? #GTA6 #GTAVI #Shorts #GTA6Money\n\n🎬 Guia completa 👉 https://youtu.be/bKvMl3uqXt0"
+   }
+  },
+  "video_id": "I4Ne3Avq8FY",
+  "na_playlist": true
  },
  {
   "tipo": "short",
