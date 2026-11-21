@@ -243,13 +243,37 @@ def main():
     hoje = datetime.now(BRT).strftime("%d/%m/%Y")
     cab = (f"# Estudo do dia — {hoje}\n\nGerado pelo robô (Gemini assistiu {len(notas_nicho)} vídeos do nicho e "
            f"{len(notas_estudo)} de estudo, ~{usado // 60} min de vídeo; Groq julgou). A produção deve ler isto junto com APRENDIZADOS.md.\n\n")
+    # títulos que já provaram no GTA 5 (dica do Carl's Hustle): fórmulas testadas para adaptar a GTA 6 quando for verdade no jogo novo
+    tab_gta5 = ""
+    try:
+        f5 = EST / "titulos_gta5.json"
+        lista5 = json.loads(f5.read_text()) if f5.exists() else []
+        if not lista5 or agora.weekday() == 0:   # atualiza 1x por semana (segunda)
+            lista5 = []
+            for q in ("GTA 5", "GTA 5 secrets", "GTA 5 easter eggs", "GTA 5 tips", "GTA 5 vs"):
+                p5 = urllib.parse.urlencode({"part": "snippet", "q": q, "type": "video", "order": "viewCount", "maxResults": 15})
+                ids5 = [i["id"]["videoId"] for i in api(tok, "GET", f"search?{p5}").get("items", [])]
+                if ids5:
+                    for v in api(tok, "GET", "videos?part=snippet,statistics&id=" + ",".join(ids5)).get("items", []):
+                        lista5.append({"titulo": v["snippet"]["title"], "canal": v["snippet"]["channelTitle"],
+                                       "views": int(v["statistics"].get("viewCount", 0))})
+            unic = {x["titulo"]: x for x in lista5 if re.search(r"gta\s*(5|v)\b", x["titulo"], re.I)}
+            lista5 = sorted(unic.values(), key=lambda x: -x["views"])[:40]
+            f5.write_text(json.dumps(lista5, ensure_ascii=False, indent=1))
+        if lista5:
+            tab_gta5 = ("\n\n## Títulos validados do GTA 5 (fórmulas que já fizeram milhões)\n"
+                        "Adapte a FÓRMULA para GTA 6 só quando o conteúdo for verdade no jogo novo (ex.: \"50 GTA 5 Easter Eggs You Didn't Know About\" → "
+                        "\"50 GTA 6 Easter Eggs You Didn't Know About\"). Nunca copie o vídeo, só a estrutura do título.\n\n"
+                        + "\n".join(f"- {x['titulo']} — {x['canal']} · {x['views']:,} views".replace(",", ".") for x in lista5[:25]))
+    except Exception as e:
+        print("títulos do GTA 5 falharam:", e)
     tab_quentes = ("\n\n## Temas quentes (o que mais cresceu nas últimas 48 h em qualquer canal — sinal de DEMANDA)\n"
                    "Use como ideia de ASSUNTO (com ângulo e análise nossos). Nunca use esses vídeos como fonte de imagem. "
                    "Se for spoiler (finais, mortes, personagens surpresa), avise no título/capa sem revelar.\n\n"
                    + "\n".join(f"- {c['titulo']} — {c['canal']} · {c['views']:,} views · {c['views_hora']:,}/h".replace(",", ".") for c in quentes)) if quentes else ""
     fontes = "\n\n---\n### Vídeos analisados\n" + "\n".join(
         f"- [{c['titulo']}](https://youtu.be/{c['id']}) — {c['canal']} · {c['views_hora']}/h" for c, _ in notas_nicho + notas_estudo)
-    (EST / "ESTUDO.md").write_text(cab + sintese + tab_quentes + tabela + fontes)
+    (EST / "ESTUDO.md").write_text(cab + sintese + tab_quentes + tabela + tab_gta5 + fontes)
 
     m = re.search(r"##\s*3 descobertas principais(.*)", sintese, re.S | re.I)
     resumo = (m.group(1).strip() if m else sintese[:500])[:900]
