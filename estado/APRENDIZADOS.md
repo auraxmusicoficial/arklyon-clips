@@ -1,41 +1,66 @@
-# Aprendizados automáticos do canal — 20/11/2026 20:23
+# Aprendizados automáticos do canal — 21/11/2026 06:50
 
 _Gerado pelo robô a partir do desempenho real dos vídeos. A produção DEVE aplicar isto no longo e nos Shorts do dia._
 
-## O que está funcionando  
-**Assuntos:** primeiras dicas “What to do first”, mecânicas novas (wanted stars, cops mais inteligentes), curiosidades de lançamento (bilhões antes do lançamento).  
-**Palavras‑chave do título:** verbos de ação (“Do This FIRST”, “Know This Before You Play”), números (“$1.6 BILLION”, “6 Wanted Stars”), termos de urgência/alerta (⚠️ 🚨).  
-**Emoji:** ⚠️ 🚨 💪 🔥 👀 – sempre no início ou final, reforçam a chamada.  
-**Duração:**  Shorts entre 55 – 70 s geram mais visualizações diárias; o pico está em 66 s (1183 views).  
-**Horário de postagem:** entre 09h – 18h BRT (principalmente 09h, 13h, 14h). Esses horários coincidem com o pico de tráfego de gamers no Brasil.  
-**Engajamento:** Mesmo com 1‑2 % de taxa de engajamento, os vídeos de maior visualização têm 3‑5 % – indica que chamadas fortes (“Before It’s Too Late”) geram cliques e retenção.
+**## O que está funcionando (padrões dos melhores)**  
 
-## O que evitar  
-- **Temas genéricos** (“Highest Metacritic Score”, “Gym is BACK”) – baixa visualização diária.  
-- **Duração curta demais** (<45 s) ou muito longa (>5 min) – queda drástica de views.  
-- **Títulos sem número ou urgência** – menos cliques.  
-- **Postagens muito tarde (21h‑23h)** – performance ruim nos últimos dias.  
-- **Conteúdo já saturado** (spoil de história) – gera poucos views e alto “bounce”.
+| Métrica | Valor típico dos tops |
+|---|---|
+| **Tipo de assunto** | “Primeiro passo / dica essencial”, “Novidade que afeta o gameplay imediato” (ex.: 6 estrelas de procura, mudança de IA). |
+| **Palavras‑chave do título** | *Do This FIRST*, *Back*, *Made $X*, *Are Back*, *Before You Play*, *⚠️ / 🚨* – verbos de ação + urgência. |
+| **Emoji** | ⚠️, 🚨, 🤯, 🎮 – emojis de alerta ou surpresa que ocupam a primeira posição. |
+| **Duração** | Shorts entre **55 s e 70 s** (ponto ideal: ~60 s). |
+| **Horário de postagem** | Entre **09 h e 13 h BRT** – picos de visualização diurna + 1 h antes do almoço. |
+| **Engajamento** | 2 %‑5 % de likes/coments → boa retenção sem precisar de CTR alta. |
+| **Formato** | “X [verb] Y [benefício] 🚨” – título curto, direto, com número ou valor (ex.: “$1.6 BILLION”). |
 
-## Fórmulas de título para amanhã  
+---
 
-**Shorts (INGLÊS)**  
-1. “Do This FIRST in GTA 6 – [X] Trick You’re Missing ⚠️”  
-2. “GTA 6’s New Police AI: How to Outsmart Them Today 🚨”  
-3. “Earn $[X] in 24 h – GTA 6 Money‑Making Secret 💰”  
-4. “6 Wanted Stars Are Back – What Changes in GTA 6? 🔥”  
-5. “[X] Hidden Easter Egg You’ll Never Find Without This Guide 👀”  
-6. “GTA 6 Speedrun Tip: Cut Your Time by [X]% ⏱️”
+**## O que evitar (padrões dos piores)**  
 
-**Vídeo longo (INGLÊS)**  
-1. “GTA 6 Day 1 Secrets – Everything You Need to Know [X]”  
-2. “The Biggest GTA 6 Mistake New Players Make – Avoid It Now [X]”
+* **Duração > 70 s** ou **< 40 s** – vídeos muito curtos perdem o algoritmo; muito longos perdem a atenção nos primeiros segundos.  
+* **Títulos vagos / sem número** (“The San Andreas Gym Is BACK”) – geram menos cliques que títulos com valor numérico ou urgência.  
+* **Postagens tarde da noite (≥ 16 h)** – queda de visualizações diárias.  
+* **Conteúdo “pré‑lançamento” ou “contagem regressiva”** – já não interessa depois do dia 19/11.  
+* **Thumbs sem contraste ou sem texto** – os Shorts com capa “padrão” (sem destaque) têm < 1 % de visualizações.  
 
-## Ajustes no vídeo longo  
-- **Título:** usar mesma estrutura de urgência e número (“Day 1 Secrets”, “Biggest Mistake”).  
-- **Thumbnail:** imagem de ação + número grande + emoji (⚠️ 🚨). Ex.: “Day 1 ❗ [X] Secrets”.  
-- **Gancho 0‑30 s:** abrir com uma pergunta de alto impacto (“Did you know you can earn $[X] in the first hour?”) seguida de um rápido teaser da dica principal, mantendo ritmo de 2‑3 s por corte, como nos Shorts.
+---
 
-## O que testar a seguir  
-1. **Teste de horário:** publicar dois Shorts semelhantes às fórmulas acima, um às 09h e outro às 16h BRT; comparar visualizações/dia e taxa de retenção.  
-2. **Teste de mini‑serie:** lançar uma sequência de 3 Shorts diários (“Day 1 Tip 1”, “Day 1 Tip 2”, “Day 1 Tip 3”) usando a mesma branding (emoji, cor da thumbnail) e medir crescimento de inscritos nos 48 h.
+**## Fórmulas de título para amanhã**  
+
+### Shorts (INGLÊS)  
+1. `⚠️ DO THIS FIRST in GTA 6 – [X] Must‑Know Tip!`  
+2. `🚨 6 Wanted Stars ARE BACK – How It Changes Your Chase!`  
+3. `🤯 GTA 6 Made $[X] MILLION Today – What It Means for Players`  
+4. `🎮 GTA 6 IS OUT – [X] Secrets You Need Right Now!`  
+5. `💪 The San Andreas Gym Returns – [X] New Workout Trick`  
+6. `👀 GTA 6 Is Secretly Judging You – [X] Warning!`
+
+### Vídeos longos (INGLÊS)  
+1. `GTA 6 DAY‑1 DISCOVERIES – [X] Things You Can Do Now!`  
+2. `GTA 6 REVIEW: Masterpiece with ONE BIG Catch – [X] Explained`
+
+*Substitua **[X]** pelo dado do dia (ex.: “$3.79 BILLION”, “5 New Weapons”, “3 Hidden Routes”).  
+
+---
+
+**## Ajustes no vídeo longo**  
+
+1. **Título** – Adote a mesma estrutura de urgência e número:  
+   *Antes:* “GTA 6 Reviews Are In: A Masterpiece With One Big Catch”  
+   *Depois:* `⚠️ GTA 6 REVIEW – [X] Reason It’s Still Controversial!`  
+
+2. **Capa** – Use foto de alta contraste (personagem em ação + número grande em amarelo). Inclua um emoji de alerta no canto superior esquerdo.  
+
+3. **Gancho (0‑30 s)** – Comece com um “cliffhanger” numérico:  
+   “Você sabia que GTA 6 já faturou **$[X]** em 24 h? E tem um detalhe que a Rockstar não quer que você descubra…”  
+   Em seguida, mostre rapidamente a estatística e o benefício ao espectador (ex.: “Isso afeta a economia do jogo e pode dobrar seu dinheiro”).  
+
+---
+
+**## O que testar a seguir**  
+
+1. **Teste A/B de horário** – publique dois Shorts semelhantes (mesmo título/thumbnail) às 10 h e às 15 h BRT por 3 dias; compare views/day e engajamento.  
+2. **Thumbnail com texto vs. sem texto** – para Shorts de 60 s, crie duas versões da capa (uma só imagem, outra com “$[X] BILLION” em fonte bold). Avalie CTR nos primeiros 12 h.  
+
+Esses ajustes devem converter a alta taxa de engajamento dos Shorts em crescimento consistente de inscritos e melhorar o desempenho dos vídeos longos. Boa sorte!
