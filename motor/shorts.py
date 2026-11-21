@@ -29,9 +29,19 @@ def main(job, so=None):
         except Exception as e:
             print("AVISO impacto falhou, seguindo com a ordem normal:", e)
         render_segmento(src, partes[0], tk, d0, None, job / "voz" / f"{sid}.wav", LEAD)
-        L = legendas(info["palavras"], LEAD, n=3, estilo="Cap", dest=ROSA, pos=(540, 1430))
+        comp = s.get("comparar")   # Short de COMPARAÇÃO lado a lado: GTA 6 em cima, outro jogo embaixo
+        parte2 = None
+        if comp:
+            try:
+                src2 = job / comp.get("fonte", "video2.mp4")
+                parte2 = seg / f"{sid}_n2.mp4"
+                render_segmento(src2, parte2, takes(comp["broll"], d0), d0, None, None, vol_orig=0.0)
+            except Exception as e:
+                print("AVISO comparação falhou, Short sai no formato normal:", e); comp = None; parte2 = None
+        Y_CAP, Y_TIT, Y_END, Y_POP = (1690, 210, 1835, 945) if comp else (1430, 400, 1690, 1160)
+        L = legendas(info["palavras"], LEAD, n=3, estilo="Cap", dest=ROSA, pos=(540, Y_CAP))
         total = d0
-        if s.get("quote"):
+        if s.get("quote") and not comp:
             a, b = s["quote"]; a -= 0.3; b += 0.5
             render_segmento(src, seg / f"{sid}_q.mp4", [a], b - a, None, vol_orig=1.0, take=b - a)
             partes.append(seg / f"{sid}_q.mp4")
@@ -42,8 +52,12 @@ def main(job, so=None):
         total += CAPA_S
         if total < 61:
             raise SystemExit(f"Short {sid} tem {total:.1f}s — precisa passar de 60 s. Aumente a narração e rode de novo.")
-        L.append(rf"Dialogue: 2,{t(0)},{t(conteudo)},Tit,,0,0,0,,{{\pos(540,400)}}{s['titulo_tela']}")
-        L.append(rf"Dialogue: 2,{t(conteudo-2.6)},{t(conteudo)},End,,0,0,0,,{{\pos(540,1690)\fad(250,0)}}FULL BREAKDOWN ON THE CHANNEL")
+        L.append(rf"Dialogue: 2,{t(0)},{t(conteudo)},Tit,,0,0,0,,{{\pos(540,{Y_TIT})}}{s['titulo_tela']}")
+        L.append(rf"Dialogue: 2,{t(conteudo-2.6)},{t(conteudo)},End,,0,0,0,,{{\pos(540,{Y_END})\fad(250,0)}}FULL BREAKDOWN ON THE CHANNEL")
+        if comp:
+            r1, r2 = (comp.get("rotulos") or ["GTA 6", "GTA 5"])[:2]
+            L.append(rf"Dialogue: 3,{t(0)},{t(conteudo)},Tit,,0,0,0,,{{\an7\pos(36,352)\fs76\c&H00D7FF&}}{r1}")
+            L.append(rf"Dialogue: 3,{t(0)},{t(conteudo)},Tit,,0,0,0,,{{\an7\pos(36,980)\fs76\c&HFFFFFF&}}{r2}")
         # números e palavras-chave "pulam" na tela no momento exato da fala (dado chocante prende quem está rolando o feed)
         try:
             import re as _re2
@@ -70,7 +84,7 @@ def main(job, so=None):
                     a = LEAD + ws[i]["s"]; pops.append((a, txt)); ult = ws[i]["s"]
                 i += 1
             for a, txt in pops:
-                L.append(rf"Dialogue: 3,{t(a)},{t(a + 1.1)},Tit,,0,0,0,,{{\pos(540,1160)\fs150\c&H00D7FF&\fscx60\fscy60"
+                L.append(rf"Dialogue: 3,{t(a)},{t(a + 1.1)},Tit,,0,0,0,,{{\pos(540,{Y_POP})\fs150\c&H00D7FF&\fscx60\fscy60"
                          rf"\t(0,120,\fscx112\fscy112)\t(120,220,\fscx100\fscy100)\fad(0,180)}}{txt}")
         except Exception as e:
             print("AVISO destaques na tela falharam:", e)
@@ -102,9 +116,15 @@ def main(job, so=None):
         for p in partes:
             ent += ["-i", str(p)]
         fc = "".join(f"[{i+2}:v][{i+2}:a]" for i in range(n)) + f"concat=n={n}:v=1:a=1[vc][ac];"
-        fc += ("[vc]split[x][y];[x]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=28:3,"
-               "eq=brightness=-0.12[bg];[y]scale=1300:-2,crop=1080:731[fg];[bg][fg]overlay=0:(H-h)/2-40,setsar=1,fps=30[vb];"
-               "[0:v]scale=1080:1920,setsar=1,fps=30,format=yuv420p[cap];[vb]format=yuv420p[vb2];"
+        if parte2:   # tela dividida: GTA 6 em cima (330–938), comparação embaixo (958–1566)
+            ent += ["-i", str(parte2)]
+            fc += (f"[vc]split[x][y];[x]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=28:3,"
+                   f"eq=brightness=-0.18[bg];[y]scale=1080:608[t1];[{n+2}:v]scale=1080:608,setsar=1[t2];"
+                   "[bg][t1]overlay=0:330[b1];[b1][t2]overlay=0:958,setsar=1,fps=30[vb];")
+        else:
+            fc += ("[vc]split[x][y];[x]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=28:3,"
+                   "eq=brightness=-0.12[bg];[y]scale=1300:-2,crop=1080:731[fg];[bg][fg]overlay=0:(H-h)/2-40,setsar=1,fps=30[vb];")
+        fc += ("[0:v]scale=1080:1920,setsar=1,fps=30,format=yuv420p[cap];[vb]format=yuv420p[vb2];"
                f"[vb2]ass='{ass}':fontsdir={FONTES}[vt];"
                "[vt][ac][cap][1:a]concat=n=2:v=1:a=1[v][a]")
         run(["ffmpeg", "-y", "-v", "error", *ent, "-filter_complex", fc, "-map", "[v]", "-map", "[a]",

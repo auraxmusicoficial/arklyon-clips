@@ -14,7 +14,7 @@ VOZ_GEMINI = os.environ.get("VOZ_GEMINI", "Charon")
 MODELOS_TTS = ["gemini-3.8-flash-tts", "gemini-3.1-flash-tts-preview", "gemini-2.5-flash-preview-tts"]
 PAUSA_API = 21          # o grátis aceita poucas chamadas por minuto
 MAX_PALAVRAS_BLOCO = 650
-MIN_SHORT = 58.5        # segundos de narração mínimos num Short (com abertura/fim passa de 60 s)
+MIN_SHORT = 59.8        # segundos de narração mínimos num Short (com abertura, fim e capa passa de 61 s)
 _ultima = [0.0]
 
 
