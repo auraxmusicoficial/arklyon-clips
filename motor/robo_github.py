@@ -132,6 +132,8 @@ def main():
         etapa("Aprendizados (IA grátis)", aprender.main)
         import redes
         etapa("Desempenho por rede (YouTube x TikTok x Instagram)", redes.main)
+        import controle
+        etapa("Controle diário (posts de ontem)", controle.main)
         if hora < 20:   # resgate de flops 1x por dia (de manhã)
             import resgate
             _, out_r = etapa("Resgate de vídeos flopados (título novo)", resgate.main)
