@@ -217,7 +217,8 @@
   "thumb": "https://raw.githubusercontent.com/auraxmusicoficial/arklyon-clips/b7e69d525b6cb305fd5ce2af52fc87e83609a8d5/publicar/2026-11-19/thumb_s2.jpg",
   "buffer": {
    "youtube": "6afeb8824fb82a830a0ae367",
-   "tiktok": "6afeb883bad67efd5ad73f32"
+   "tiktok": "6afeb883bad67efd5ad73f32",
+   "instagram": "6b02e616d864a01105c39031"
   },
   "ajustado": true,
   "comentario": "Story first or explore first? What's your plan? 👇",
@@ -1050,7 +1051,9 @@
    }
   },
   "video_id": "NZstdWK7tMk",
-  "na_playlist": true
+  "na_playlist": true,
+  "publico_ok": true,
+  "comentou": true
  },
  {
   "tipo": "short",
