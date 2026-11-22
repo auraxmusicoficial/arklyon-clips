@@ -474,7 +474,7 @@
    "tiktok": "6b00088f7b0a126cebbf0bb6",
    "instagram": "6b0008900f5eda1a57d59a31"
   },
-  "ajustado": true,
+  "ajustado": "nao_encontrado",
   "formato_yt": "completo",
   "comentario": "Are you keeping Jason and Lucia fit or letting them go? 👇",
   "fb_textos": [],
@@ -1121,7 +1121,7 @@
   "quando": "2026-11-22T16:00:00-03:00",
   "upload": "2026-11-22T13:00:00-03:00",
   "yt_title": "GTA 6 vs GTA 5 Police: The Difference Is Insane 🚔",
-  "descricao": "GTA 6 vs GTA 5 police side by side: witnesses, 6 stars, no minimap cops and heat icons. Which is better? #GTA6 #GTAVI #Shorts #GTA5",
+  "descricao": "GTA 6 vs GTA 5 police side by side: witnesses, 6 stars, no minimap cops and heat icons. Which is better? #GTA6 #GTAVI #Shorts #GTA5\n\n🎬 Full guide 👉 https://youtu.be/uAr8e1CuA6k",
   "tags": [
    "gta 6",
    "gta vi",
@@ -1141,12 +1141,24 @@
    "youtube": "6b02b0b1846b0ee90772771f",
    "tiktok": "6b02b0b2c72676f5e91741d3"
   },
-  "ajustado": false,
+  "ajustado": true,
   "formato_yt": "completo",
-  "comentario": "GTA 5 police or GTA 6 police — which one is actually more fun? 🚔",
+  "comentario": "GTA 5 police or GTA 6 police — which one is actually more fun? 🚔 Full guide here 👉 https://youtu.be/uAr8e1CuA6k",
   "fb_textos": [],
   "playlist": "shorts",
-  "urgente": false
+  "urgente": false,
+  "traducoes": {
+   "es": {
+    "title": "GTA 6 vs GTA 5 Policía: La diferencia es una locura 🚔",
+    "description": "GTA 6 vs GTA 5 policía lado a lado: testigos, 6 estrellas, sin policías en el minimapa y iconos de calor. ¿Cuál es mejor? #GTA6 #GTAVI #Shorts #GTA5\n\n🎬 Guía completa 👉 https://youtu.be/uAr8e1CuA6k"
+   },
+   "pt": {
+    "title": "GTA 6 vs GTA 5 Polícia: A diferença é insana 🚔",
+    "description": "GTA 6 vs GTA 5 polícia lado a lado: testemunhas, 6 estrelas, sem policiais no minimapa e ícones de calor. Qual é melhor? #GTA6 #GTAVI #Shorts #GTA5\n\n🎬 Guia completa 👉 https://youtu.be/uAr8e1CuA6k"
+   }
+  },
+  "video_id": "Kw5tDGk_Xv4",
+  "na_playlist": true
  },
  {
   "tipo": "short",
