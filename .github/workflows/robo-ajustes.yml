@@ -27,4 +27,5 @@ jobs:
         env:
           VAULT_SECRETS: ${{ secrets.VAULT_SECRETS }}
           GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
         run: python3 motor/robo_github.py

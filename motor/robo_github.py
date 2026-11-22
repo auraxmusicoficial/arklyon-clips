@@ -121,6 +121,9 @@ def main():
     if "AVISOS:" in out:
         avisos.append(out.split("AVISOS:", 1)[1].strip())
     n, _ = etapa("Comentários (IA grátis)", comentarios.auto)
+    if os.environ.get("IG_TOKEN"):
+        import comentarios_ig
+        etapa("Comentários do Instagram (IA grátis)", comentarios_ig.auto)
     _, out = etapa("Kit de divulgação", divulgar.main)
     if "adicionados" in out:
         avisar("Kit de divulgação atualizado: github.com/auraxmusicoficial/arklyon-clips/blob/main/divulgar/README.md")
