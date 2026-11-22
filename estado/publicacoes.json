@@ -1158,7 +1158,9 @@
    }
   },
   "video_id": "Kw5tDGk_Xv4",
-  "na_playlist": true
+  "na_playlist": true,
+  "publico_ok": true,
+  "comentou": true
  },
  {
   "tipo": "short",
