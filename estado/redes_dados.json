@@ -1,13 +1,13 @@
 {
  "medianas": {
-  "youtube": 112,
-  "tiktok": 116,
-  "instagram": 132
+  "youtube": 83.5,
+  "tiktok": 164,
+  "instagram": 133.5
  },
  "linhas": [
   {
    "titulo": "GTA 6 Just Tied the Highest Metacritic Score Ever 😳",
-   "dias": 3.7,
+   "dias": 4.2,
    "hora": 14,
    "quando": "2026-11-18T14:52:00.530862-03:00",
    "redes_postadas": [
@@ -20,7 +20,7 @@
   },
   {
    "titulo": "GTA 6 Is Finally Out — Know This Before You Play 🎮",
-   "dias": 2.9,
+   "dias": 3.5,
    "hora": 9,
    "quando": "2026-11-19T09:00:00-03:00",
    "redes_postadas": [
@@ -33,20 +33,23 @@
   },
   {
    "titulo": "Do This FIRST in GTA 6 (Before It's Too Late) ⚠️",
-   "dias": 2.8,
+   "dias": 3.4,
    "hora": 11,
    "quando": "2026-11-19T11:00:00-03:00",
    "redes_postadas": [
     "tiktok",
-    "youtube"
+    "youtube",
+    "instagram"
    ],
    "youtube": 1149,
    "tiktok": 100,
-   "tiktok_tempo": 10.7
+   "tiktok_tempo": 10.7,
+   "instagram": 0,
+   "instagram_tempo": 0
   },
   {
    "titulo": "GTA 6 Made $1.6 BILLION Before Launch 🤯",
-   "dias": 2.5,
+   "dias": 3.1,
    "hora": 18,
    "quando": "2026-11-19T18:00:00-03:00",
    "redes_postadas": [
@@ -54,7 +57,7 @@
     "tiktok",
     "youtube"
    ],
-   "youtube": 759,
+   "youtube": 760,
    "tiktok": 813,
    "tiktok_tempo": 7.8,
    "instagram": 116,
@@ -62,7 +65,7 @@
   },
   {
    "titulo": "GTA 6 vs GTA 5: What Actually Changed After 13 Years 🔥",
-   "dias": 2.5,
+   "dias": 3.0,
    "hora": 20,
    "quando": "2026-11-19T20:00:00-03:00",
    "redes_postadas": [
@@ -74,7 +77,7 @@
   },
   {
    "titulo": "GTA 6 Got a 99... Then One Player Gave It 2/10 😳",
-   "dias": 2.4,
+   "dias": 2.9,
    "hora": 22,
    "quando": "2026-11-19T22:00:00-03:00",
    "redes_postadas": [
@@ -89,20 +92,20 @@
   },
   {
    "titulo": "GTA 6 Is Secretly Judging How You Play 👀",
-   "dias": 1.9,
+   "dias": 2.5,
    "hora": 9,
    "quando": "2026-11-20T09:00:00-03:00",
    "redes_postadas": [
     "tiktok",
     "youtube"
    ],
-   "youtube": 2,
+   "youtube": 1,
    "tiktok": 40,
    "tiktok_tempo": 8.4
   },
   {
    "titulo": "2 Hidden GTA 6 Tools Nobody Told You About 😳",
-   "dias": 1.8,
+   "dias": 2.4,
    "hora": 11,
    "quando": "2026-11-20T11:00:00-03:00",
    "redes_postadas": [
@@ -113,7 +116,7 @@
   },
   {
    "titulo": "Eat Too Much in GTA 6 and THIS Happens 😳",
-   "dias": 1.7,
+   "dias": 2.3,
    "hora": 13,
    "quando": "2026-11-20T13:00:00-03:00",
    "redes_postadas": [
@@ -122,25 +125,25 @@
    ],
    "tiktok": 116,
    "tiktok_tempo": 7.6,
-   "instagram": 241,
-   "instagram_tempo": 32.2
+   "instagram": 256,
+   "instagram_tempo": 30.9
   },
   {
    "titulo": "Cops REMEMBER Your Face in GTA 6 — Do This 🚨",
-   "dias": 1.6,
+   "dias": 2.2,
    "hora": 16,
    "quando": "2026-11-20T16:00:00-03:00",
    "redes_postadas": [
     "tiktok",
     "youtube"
    ],
-   "youtube": 1,
+   "youtube": 0,
    "tiktok": 34,
    "tiktok_tempo": 11.8
   },
   {
    "titulo": "Switch to Jason at the Wrong Time in GTA 6... 😳",
-   "dias": 1.5,
+   "dias": 2.1,
    "hora": 18,
    "quando": "2026-11-20T18:00:00-03:00",
    "redes_postadas": [
@@ -154,7 +157,7 @@
   },
   {
    "titulo": "Never Lose Your Guns in GTA 6 — Do This ⚠️",
-   "dias": 1.5,
+   "dias": 2.0,
    "hora": 20,
    "quando": "2026-11-20T20:00:00-03:00",
    "redes_postadas": [
@@ -165,7 +168,7 @@
   },
   {
    "titulo": "GTA 6 Made $3.79 BILLION in ONE Day (Official) 🤯",
-   "dias": 1.5,
+   "dias": 2.1,
    "hora": 18,
    "quando": "2026-11-20T18:48:57.525085-03:00",
    "redes_postadas": [
@@ -173,7 +176,7 @@
     "tiktok",
     "youtube"
    ],
-   "youtube": 1,
+   "youtube": 0,
    "tiktok": 347,
    "tiktok_tempo": 6.8,
    "instagram": 127,
@@ -181,7 +184,7 @@
   },
   {
    "titulo": "GTA 6 Sold an Estimated 24 MILLION in 1 Day 🤯",
-   "dias": 1.4,
+   "dias": 1.9,
    "hora": 22,
    "quando": "2026-11-20T22:00:00-03:00",
    "redes_postadas": [
@@ -192,6 +195,83 @@
    "tiktok_tempo": 6.7,
    "instagram": 143,
    "instagram_tempo": 11.0
+  },
+  {
+   "titulo": "FREE MONEY Is Hiding in GTA 6 Car Trunks 💰",
+   "dias": 1.5,
+   "hora": 9,
+   "quando": "2026-11-21T09:00:00-03:00",
+   "redes_postadas": [
+    "tiktok",
+    "youtube"
+   ],
+   "youtube": 250,
+   "tiktok": 239,
+   "tiktok_tempo": 10.4
+  },
+  {
+   "titulo": "This GTA 6 Money Mistake Can Lock Your Missions ⚠️",
+   "dias": 1.4,
+   "hora": 11,
+   "quando": "2026-11-21T11:00:00-03:00",
+   "redes_postadas": [
+    "tiktok"
+   ],
+   "tiktok": 164,
+   "tiktok_tempo": 14.3
+  },
+  {
+   "titulo": "STEAL THESE CARS First in GTA 6 for Fast Cash 🚗",
+   "dias": 1.3,
+   "hora": 13,
+   "quando": "2026-11-21T13:00:00-03:00",
+   "redes_postadas": [
+    "instagram",
+    "tiktok"
+   ],
+   "tiktok": 381,
+   "tiktok_tempo": 10.8,
+   "instagram": 2002,
+   "instagram_tempo": 24
+  },
+  {
+   "titulo": "This GTA 6 Bank Job Paid $140,000 in 10 Minutes 🤯",
+   "dias": 1.2,
+   "hora": 16,
+   "quando": "2026-11-21T16:00:00-03:00",
+   "redes_postadas": [
+    "tiktok",
+    "youtube"
+   ],
+   "youtube": 20,
+   "tiktok": 47,
+   "tiktok_tempo": 7.9
+  },
+  {
+   "titulo": "CUT THE ALARM First When You Rob a Store in GTA 6 🚨",
+   "dias": 1.1,
+   "hora": 18,
+   "quando": "2026-11-21T18:00:00-03:00",
+   "redes_postadas": [
+    "instagram",
+    "tiktok"
+   ],
+   "youtube": 55,
+   "tiktok": 210,
+   "tiktok_tempo": 20.9,
+   "instagram": 1841,
+   "instagram_tempo": 29.0
+  },
+  {
+   "titulo": "Stop Mugging People in GTA 6 — Do This Instead 💰",
+   "dias": 1.0,
+   "hora": 20,
+   "quando": "2026-11-21T20:00:00-03:00",
+   "redes_postadas": [
+    "tiktok"
+   ],
+   "tiktok": 31,
+   "tiktok_tempo": 5.3
   }
  ]
 }

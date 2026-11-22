@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-22T09:49:53.456229+00:00",
+ "atualizado": "2026-11-22T23:44:37.655296+00:00",
  "historico": [
   {
    "data": "2026-11-17",
@@ -54,6 +54,12 @@
    "inscritos": 11,
    "views": 4590,
    "videos": 27
+  },
+  {
+   "data": "2026-11-22",
+   "inscritos": 11,
+   "views": 4596,
+   "videos": 31
   }
  ],
  "videos": [
@@ -62,17 +68,17 @@
    "titulo": "GTA 6 Made $1.6 BILLION Before Launch 🤯",
    "tipo": "short",
    "dur": 68,
-   "views": 759,
+   "views": 760,
    "likes": 34,
    "coments": 4,
-   "views_dia": 299.5,
+   "views_dia": 244.0,
    "engaj": 5.0,
    "hora_brt": "18",
-   "dias": 2.5
+   "dias": 3.1
   },
   {
    "id": "5kCCspaOdnE",
-   "titulo": "13 Years Later, GTA 6 Is Finally Here — Was It Worth The Wait?",
+   "titulo": "GTA 6 BROKE ME: 3 Things You Must Know Before Playing 🎮",
    "tipo": "longo",
    "dur": 503,
    "views": 0,
@@ -81,7 +87,7 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "12",
-   "dias": 2.8
+   "dias": 3.4
   },
   {
    "id": "kNzOszVFf70",
@@ -91,10 +97,10 @@
    "views": 1149,
    "likes": 22,
    "coments": 1,
-   "views_dia": 407.3,
+   "views_dia": 337.9,
    "engaj": 2.0,
    "hora_brt": "11",
-   "dias": 2.8
+   "dias": 3.4
   },
   {
    "id": "MI3JQ2je-FQ",
@@ -104,10 +110,10 @@
    "views": 773,
    "likes": 23,
    "coments": 4,
-   "views_dia": 266.0,
+   "views_dia": 221.7,
    "engaj": 3.5,
    "hora_brt": "09",
-   "dias": 2.9
+   "dias": 3.5
   },
   {
    "id": "-_O8FyG6qYg",
@@ -117,10 +123,10 @@
    "views": 176,
    "likes": 4,
    "coments": 6,
-   "views_dia": 51.7,
+   "views_dia": 44.2,
    "engaj": 5.7,
    "hora_brt": "21",
-   "dias": 3.4
+   "dias": 4.0
   },
   {
    "id": "y99xw4Mmuvg",
@@ -130,10 +136,10 @@
    "views": 147,
    "likes": 3,
    "coments": 2,
-   "views_dia": 40.7,
+   "views_dia": 35.0,
    "engaj": 3.4,
    "hora_brt": "16",
-   "dias": 3.6
+   "dias": 4.2
   },
   {
    "id": "ex3cGJ8APxQ",
@@ -143,10 +149,10 @@
    "views": 112,
    "likes": 2,
    "coments": 3,
-   "views_dia": 30.6,
+   "views_dia": 26.4,
    "engaj": 4.5,
    "hora_brt": "14",
-   "dias": 3.7
+   "dias": 4.2
   },
   {
    "id": "49tnnie3Jjo",
@@ -156,10 +162,10 @@
    "views": 1400,
    "likes": 31,
    "coments": 6,
-   "views_dia": 374.6,
+   "views_dia": 324.3,
    "engaj": 2.6,
    "hora_brt": "13",
-   "dias": 3.7
+   "dias": 4.3
   },
   {
    "id": "P5dyUUPJh04",
@@ -169,23 +175,23 @@
    "views": 13,
    "likes": 8,
    "coments": 9,
-   "views_dia": 3.4,
+   "views_dia": 3.0,
    "engaj": 130.8,
    "hora_brt": "12",
-   "dias": 3.8
+   "dias": 4.4
   },
   {
    "id": "psqeW0oueVU",
    "titulo": "GTA 6's Darkest Hint Yet 😶 \"These Are Your Glory Days\"",
    "tipo": "short",
    "dur": 36,
-   "views": 36,
+   "views": 37,
    "likes": 2,
    "coments": 4,
-   "views_dia": 8.2,
-   "engaj": 16.7,
+   "views_dia": 7.4,
+   "engaj": 16.2,
    "hora_brt": "21",
-   "dias": 4.4
+   "dias": 5.0
   },
   {
    "id": "pCJSmriKY50",
@@ -195,10 +201,10 @@
    "views": 5,
    "likes": 5,
    "coments": 4,
-   "views_dia": 1.0,
+   "views_dia": 0.9,
    "engaj": 180.0,
    "hora_brt": "12",
-   "dias": 4.8
+   "dias": 5.4
   },
   {
    "id": "GfJxx6e3jUY",
@@ -208,10 +214,10 @@
    "views": 3,
    "likes": 1,
    "coments": 0,
-   "views_dia": 0.6,
+   "views_dia": 0.5,
    "engaj": 33.3,
    "hora_brt": "09",
-   "dias": 4.9
+   "dias": 5.5
   },
   {
    "id": "Zrug6PtEZzo",
@@ -221,10 +227,10 @@
    "views": 5,
    "likes": 3,
    "coments": 4,
-   "views_dia": 0.9,
+   "views_dia": 0.8,
    "engaj": 140.0,
    "hora_brt": "21",
-   "dias": 5.4
+   "dias": 6.0
   },
   {
    "id": "5v79bZYpaZY",
@@ -234,10 +240,10 @@
    "views": 2,
    "likes": 1,
    "coments": 0,
-   "views_dia": 0.4,
+   "views_dia": 0.3,
    "engaj": 50.0,
    "hora_brt": "19",
-   "dias": 5.5
+   "dias": 6.1
   },
   {
    "id": "BZIopAaJ-4k",
@@ -247,14 +253,14 @@
    "views": 3,
    "likes": 1,
    "coments": 2,
-   "views_dia": 0.5,
+   "views_dia": 0.4,
    "engaj": 100.0,
    "hora_brt": "19",
-   "dias": 6.5
+   "dias": 7.1
   },
   {
    "id": "6bSau3WJl-Y",
-   "titulo": "Is Crazy in GTA 6 #gta6 #gta #gta6trailer",
+   "titulo": "STOP: GTA 6's 'Crazy' Mode Is Actually a Trap 🚫",
    "tipo": "short",
    "dur": 48,
    "views": 2,
@@ -263,11 +269,11 @@
    "views_dia": 0.3,
    "engaj": 150.0,
    "hora_brt": "14",
-   "dias": 6.7
+   "dias": 7.3
   },
   {
    "id": "h-zUFcFzLfs",
-   "titulo": "Reaction New GTA 6 #gta #gta6 #reaction",
+   "titulo": "SHOCKING: GTA 6 Physics Break Reality 🤯",
    "tipo": "short",
    "dur": 37,
    "views": 2,
@@ -276,7 +282,7 @@
    "views_dia": 0.3,
    "engaj": 50.0,
    "hora_brt": "11",
-   "dias": 6.8
+   "dias": 7.4
   },
   {
    "id": "6L_wWzXfH54",
@@ -289,71 +295,71 @@
    "views_dia": 0.4,
    "engaj": 33.3,
    "hora_brt": "11",
-   "dias": 6.8
+   "dias": 7.4
   },
   {
    "id": "Vm5YUmBRys0",
    "titulo": "GTA 6 Made $3.79 BILLION in ONE Day (Official) 🤯",
    "tipo": "short",
    "dur": 78,
-   "views": 1,
+   "views": 0,
    "likes": 1,
    "coments": 1,
-   "views_dia": 0.7,
-   "engaj": 200.0,
+   "views_dia": 0.0,
+   "engaj": 0.0,
    "hora_brt": "18",
-   "dias": 1.5
+   "dias": 2.1
   },
   {
    "id": "BOQeEsESTug",
    "titulo": "Cops REMEMBER Your Face in GTA 6 — Do This 🚨",
    "tipo": "short",
    "dur": 39,
-   "views": 1,
+   "views": 0,
    "likes": 1,
    "coments": 1,
-   "views_dia": 0.6,
-   "engaj": 200.0,
+   "views_dia": 0.0,
+   "engaj": 0.0,
    "hora_brt": "16",
-   "dias": 1.6
+   "dias": 2.2
   },
   {
    "id": "xJacJXth4ac",
    "titulo": "GTA 6 Lets You Do Things No GTA Ever Did (Day 1 Discoveries)",
    "tipo": "longo",
    "dur": 588,
-   "views": 2,
+   "views": 0,
    "likes": 0,
    "coments": 1,
-   "views_dia": 1.1,
-   "engaj": 50.0,
+   "views_dia": 0.0,
+   "engaj": 0.0,
    "hora_brt": "12",
-   "dias": 1.8
+   "dias": 2.4
   },
   {
    "id": "JMY5qf_Pubg",
    "titulo": "GTA 6 Is Secretly Judging How You Play 👀",
    "tipo": "short",
    "dur": 39,
-   "views": 2,
+   "views": 1,
    "likes": 1,
    "coments": 1,
-   "views_dia": 1.0,
-   "engaj": 100.0,
+   "views_dia": 0.4,
+   "engaj": 200.0,
    "hora_brt": "09",
-   "dias": 1.9
+   "dias": 2.5
   },
   {
    "id": "SS0zYQhOJ_w",
    "titulo": "🔴 GTA 6 LIVE — Every Secret, Tip & Hidden Detail So Far",
    "tipo": "longo",
-   "dur": 1503,
-   "views": 2,
+   "dur": 1496,
+   "views": 1,
    "likes": 1,
    "coments": 0,
-   "views_dia": 4.3,
-   "engaj": 50.0,
-   "hora_brt": "19",
+   "views_dia": 1.9,
+   "engaj": 100.0,
+   "hora_brt": "08",
    "dias": 0.5
   },
   {
@@ -361,65 +367,104 @@
    "titulo": "CUT THE ALARM First When You Rob a Store in GTA 6 🚨",
    "tipo": "short",
    "dur": 73,
-   "views": 41,
+   "views": 55,
    "likes": 1,
    "coments": 1,
-   "views_dia": 76.7,
-   "engaj": 4.9,
+   "views_dia": 49.4,
+   "engaj": 3.6,
    "hora_brt": "18",
-   "dias": 0.5
+   "dias": 1.1
   },
   {
    "id": "I4Ne3Avq8FY",
    "titulo": "This GTA 6 Bank Job Paid $140,000 in 10 Minutes 🤯",
    "tipo": "short",
    "dur": 71,
-   "views": 15,
+   "views": 20,
    "likes": 1,
    "coments": 1,
-   "views_dia": 24.3,
-   "engaj": 13.3,
+   "views_dia": 16.7,
+   "engaj": 10.0,
    "hora_brt": "16",
-   "dias": 0.6
+   "dias": 1.2
   },
   {
    "id": "bKvMl3uqXt0",
    "titulo": "How To Make Money FAST in GTA 6 (Complete Beginner's Guide)",
    "tipo": "longo",
    "dur": 943,
-   "views": 12,
+   "views": 3,
    "likes": 1,
    "coments": 1,
-   "views_dia": 15.3,
-   "engaj": 16.7,
+   "views_dia": 2.2,
+   "engaj": 66.7,
    "hora_brt": "12",
-   "dias": 0.8
+   "dias": 1.4
   },
   {
    "id": "jBavJjK9HI8",
    "titulo": "FREE MONEY Is Hiding in GTA 6 Car Trunks 💰",
    "tipo": "short",
    "dur": 71,
-   "views": 122,
+   "views": 250,
    "likes": 1,
    "coments": 1,
-   "views_dia": 134.2,
-   "engaj": 1.6,
+   "views_dia": 167.9,
+   "engaj": 0.8,
    "hora_brt": "09",
-   "dias": 0.9
+   "dias": 1.5
   },
   {
    "id": "8ENKRnmz-9o",
    "titulo": "STEAL ATMs in GTA 6? 168 of Them Can Be Towed 😳",
    "tipo": "short",
    "dur": 74,
-   "views": 9,
+   "views": 17,
    "likes": 1,
    "coments": 1,
-   "views_dia": 24.5,
-   "engaj": 22.2,
+   "views_dia": 17.9,
+   "engaj": 11.8,
    "hora_brt": "22",
+   "dias": 0.9
+  },
+  {
+   "id": "Kw5tDGk_Xv4",
+   "titulo": "GTA 6 vs GTA 5 Police: The Difference Is Insane 🚔",
+   "tipo": "short",
+   "dur": 73,
+   "views": 2,
+   "likes": 1,
+   "coments": 1,
+   "views_dia": 10.1,
+   "engaj": 100.0,
+   "hora_brt": "16",
+   "dias": 0.2
+  },
+  {
+   "id": "uAr8e1CuA6k",
+   "titulo": "GTA 6 Wanted System Explained: How To Escape Cops EVERY Time",
+   "tipo": "longo",
+   "dur": 907,
+   "views": 4,
+   "likes": 1,
+   "coments": 1,
+   "views_dia": 11.0,
+   "engaj": 50.0,
+   "hora_brt": "12",
    "dias": 0.4
+  },
+  {
+   "id": "NZstdWK7tMk",
+   "titulo": "HOLLOW STARS Mean Cops Don't Know You Yet in GTA 6 🚨",
+   "tipo": "short",
+   "dur": 68,
+   "views": 14,
+   "likes": 0,
+   "coments": 1,
+   "views_dia": 28.6,
+   "engaj": 7.1,
+   "hora_brt": "09",
+   "dias": 0.5
   }
  ]
 }
