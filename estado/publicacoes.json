@@ -324,7 +324,7 @@
    "tiktok": "6afeb8884a35072d027c6b93",
    "instagram": "6afeb8894a35072d027c6c1e"
   },
-  "ajustado": false,
+  "ajustado": "nao_encontrado",
   "comentario": "Rate GTA 6 out of 10 in one number 👇",
   "fb_textos": [],
   "playlist": "shorts",
@@ -960,7 +960,9 @@
     "description": "ATMs de GTA 6: 454 em Leonida e 168 podem ser rebocados com caminhão de guincho. Você tentaria? #GTA6 #GTAVI #Shorts #GTA6Secrets\n\n🎬 Guia completa 👉 https://youtu.be/bKvMl3uqXt0"
    }
   },
-  "na_playlist": true
+  "na_playlist": true,
+  "publico_ok": true,
+  "comentou": true
  },
  {
   "tipo": "longo",
