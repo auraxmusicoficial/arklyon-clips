@@ -1,77 +1,83 @@
-# Desempenho por rede — 21/11/2026 20:40
+# Desempenho por rede — 22/11/2026 06:49
 
-Shorts com 1+ dia (13). Views: YouTube (API) e TikTok/Instagram (Buffer).
+Shorts com 1+ dia (14). Views: YouTube (API) e TikTok/Instagram (Buffer).
 
 ## Bombou numa rede só (conteúdo que combina com aquele público)
 - (nenhum ainda)
 
 ## Melhor horário por rede
 - Youtube: 11h (1149 views em média), 9h (388 views em média), 18h (380 views em média)
-- Tiktok: 18h (382 views em média), 20h (268 views em média), 9h (264 views em média)
-- Instagram: 13h (183 views em média), 22h (135 views em média), 18h (125 views em média)
+- Tiktok: 20h (568 views em média), 18h (391 views em média), 9h (268 views em média)
+- Instagram: 13h (241 views em média), 22h (139 views em média), 18h (125 views em média)
 
-### Youtube (mediana 114 views)
+### Youtube (mediana 112 views)
 - Melhores: Do This FIRST in GTA 6 (Before It's Too Late) ⚠️ (1149); GTA 6 Is Finally Out — Know This Before You Play 🎮 (773); GTA 6 Made $1.6 BILLION Before Launch 🤯 (759)
 - Piores: GTA 6 Is Secretly Judging How You Play 👀 (2); Cops REMEMBER Your Face in GTA 6 — Do This 🚨 (1); GTA 6 Made $3.79 BILLION in ONE Day (Official) 🤯 (1)
-### Tiktok (mediana 86 views)
-- Melhores: GTA 6 Made $1.6 BILLION Before Launch 🤯 (811); Never Lose Your Guns in GTA 6 — Do This ⚠️ (510); GTA 6 Is Finally Out — Know This Before You Play 🎮 (495)
-- Piores: GTA 6 vs GTA 5: What Actually Changed After 13 Years 🔥 (27); Cops REMEMBER Your Face in GTA 6 — Do This 🚨 (23); Switch to Jason at the Wrong Time in GTA 6... 😳 (11)
-### Instagram (mediana 129 views)
-- Melhores: Eat Too Much in GTA 6 and THIS Happens 😳 (183); GTA 6 Got a 99... Then One Player Gave It 2/10 😳 (135); Switch to Jason at the Wrong Time in GTA 6... 😳 (132)
-- Piores: GTA 6 Made $3.79 BILLION in ONE Day (Official) 🤯 (126); GTA 6 Just Tied the Highest Metacritic Score Ever 😳 (122); GTA 6 Made $1.6 BILLION Before Launch 🤯 (116)
+### Tiktok (mediana 116 views)
+- Melhores: Never Lose Your Guns in GTA 6 — Do This ⚠️ (1109); GTA 6 Made $1.6 BILLION Before Launch 🤯 (813); GTA 6 Is Finally Out — Know This Before You Play 🎮 (495)
+- Piores: Cops REMEMBER Your Face in GTA 6 — Do This 🚨 (34); GTA 6 vs GTA 5: What Actually Changed After 13 Years 🔥 (27); Switch to Jason at the Wrong Time in GTA 6... 😳 (14)
+### Instagram (mediana 132 views)
+- Melhores: Eat Too Much in GTA 6 and THIS Happens 😳 (241); GTA 6 Sold an Estimated 24 MILLION in 1 Day 🤯 (143); GTA 6 Got a 99... Then One Player Gave It 2/10 😳 (135)
+- Piores: GTA 6 Made $3.79 BILLION in ONE Day (Official) 🤯 (127); GTA 6 Just Tied the Highest Metacritic Score Ever 😳 (122); GTA 6 Made $1.6 BILLION Before Launch 🤯 (116)
 
 ## 📊 O que cada rede prefere (com base nos dados)
 
-| Rede | Assuntos que mais rendem | Tipo de título/gancho que funciona | Duração típica (tempo de visualização) |
-|------|--------------------------|-------------------------------------|----------------------------------------|
-| **YouTube Shorts** | • Notícias “big‑hit” (ex.: Metacritic record, lançamento) <br>• Dados de faturamento (billion‑dollar) | **Superlativo + número chocante** (“Just Tied the Highest Metacritic Score Ever”, “Made $1.6 BILLION Before Launch”) | Poucos dados (apenas 5 publicações). Nos 3 vídeos com números, a visualização ficou entre **1 – 2 mil** – não há padrão de tempo. |
-| **TikTok** | • “Como fazer” rápido (ex.: “Do This FIRST”, “Never Lose Your Guns”) <br>• Curiosidades chocantes (ex.: “GTA 6 Got a 99… Then One Player Gave It 2/10”) | **Emoji + promessa de ação imediata** (“⚠️ Do This FIRST”, “👀 Is Secretly Judging How You Play”) | Tempo médio de visualização: **≈ 12 s** (variando 3‑30 s). Os vídeos com “tool/secret” e “first‑step” ficam perto de 10‑13 s. |
-| **Instagram Reels** | • Reações/explosões de números (ex.: “$1.6 BILLION”, “$3.79 BILLION in ONE Day”) <br>• Conteúdo visualmente “impactante” (ex.: “Eat Too Much … THIS Happens”) | **Título curto + número grande + emoji** (“🤯”, “😳”) | Poucos dados (5 reels). Quando há número grande, o tempo de visualização é maior (≈ 15‑35 s). |
+| Rede       | Tema que mais rende visualizações | Tipo de título/gancho que funciona melhor | Duração típica do short (segundos) | Observação sobre a quantidade de dados |
+|------------|-----------------------------------|--------------------------------------------|-----------------------------------|----------------------------------------|
+| **YouTube**| Notícias / “primeiras impressões” (ex.: *“GTA 6 Is Finally Out — Know This Before You Play”*) | Promessa de informação nova + emoji de game 🎮 | 13‑15 s (ex.: 13.9 s) | Poucos shorts publicados (4‑5), então a tendência ainda é incerta. |
+| **TikTok** | Curiosidades e “segredos” (ex.: *“2 Hidden GTA 6 Tools Nobody Told You About”*, *“Never Lose Your Guns in GTA 6 — Do This ⚠️”*) | Gatilho de surpresa/emoticon de alerta ⚠️/😳 + número ou “FIRST” | 7‑12 s (média ≈ 9 s) | Dados mais consistentes (≈ 12 shorts), tendência mais clara. |
+| **Instagram** | Dados de vendas/impacto financeiro (ex.: *“GTA 6 Made $1.6 BILLION Before Launch”*, *“GTA 6 Sold an Estimated 24 MILLION in 1 Day”*) | Título com números grandes + emoji de explosão 🤯 | 13‑32 s (média ≈ 20 s) | Só 6 shorts – ainda limitado, mas a ênfase em números parece ser a chave. |
 
-> **Aviso:** O conjunto de dados é pequeno (≤ 15 publicações por rede) e cobre apenas 3‑4 dias; as conclusões são tendências preliminares, não regras definitivas.
+> **Nota:** Quando há poucos registros (YouTube < 6, Instagram < 7) a conclusão é menos robusta; recomenda‑se validar com mais publicações.
 
 ---
 
 ## 🚀 O que fazer diferente a partir de amanhã (3‑5 ações por rede)
 
 ### YouTube Shorts
-1. **Priorizar headlines de “recorde” ou “milhão/bilhão”** – são os únicos que geraram > 700 views.
-2. Testar **mini‑teasers de 15‑20 s** (não há dados de duração, mas Shorts costuma reter até 30 s).
-3. Inserir **call‑to‑action visual** (ex.: “Assista até o fim para o número final”) para melhorar retenção.
-4. Publicar preferencialmente **entre 14 h‑20 h** (os vídeos com mais views foram postados às 14h, 18h e 20h).
-5. Experimente **legendas em destaque** (texto grande) para captar quem assiste sem áudio.
+1. **Aumentar a frequência** – publique pelo menos 2 × por dia para gerar mais dados e validar tendências.  
+2. **Testar títulos “lista”** (ex.: “Top 5 secrets in GTA 6”) para ver se geram mais cliques que os atuais “news‑style”.  
+3. **Inserir emojis de surpresa** (😳, 🤯) nos títulos, já que funcionam bem no TikTok/IG.  
+4. **Manter a duração entre 12‑16 s** – a única métrica disponível indica que isso agrada.  
+5. **Adicionar chamada para ação curta** (“watch till the end”) para melhorar retenção.
 
 ### TikTok
-1. **Manter o formato “faça isso agora”** – títulos com “FIRST”, “DO THIS”, “NEVER” dão > 500 views.
-2. **Limitar a duração entre 8‑14 s** – a maioria dos hits fica nesse intervalo.
-3. Usar **emoji + número chocante** nos primeiros 3 s (ex.: “😳 99 → 2/10”).
-4. Postar **entre 9 h‑13 h** (picos de 9h, 11h, 13h nos dados).
-5. Experimentar **duas‑cenas rápidas**: 1ª cena de “problema”, 2ª de “solução”, para reforçar o gancho.
+1. **Priorizar “segredos” e “primeiras vezes”** – continue com ganchos como *“Do This FIRST”* ou *“Hidden tools”*.  
+2. **Usar emojis de alerta** (⚠️, 😳) no início do título para captar atenção nos feeds.  
+3. **Manter vídeos entre 7‑12 s** – a maioria dos hits está nessa faixa.  
+4. **Explorar formatos de “antes e depois”** (ex.: “What happens if you eat too much”) para ampliar o repertório.  
+5. **Experimentar trilhas sonoras virais** (sons trending do TikTok) para melhorar o algoritmo de descoberta.
 
 ### Instagram Reels
-1. **Focar em números gigantes** (bilhões, percentuais) como ponto central do título.
-2. **Aumentar a duração para 20‑30 s** quando houver “efeito visual” (ex.: “Eat Too Much … THIS Happens” chegou a 35 s).
-3. Publicar **entre 14 h‑18 h** – os reels com maior engajamento foram postados às 14h e 18h.
-4. Utilizar **legendas animadas** que destacam o número/emoji logo no início.
-5. Testar **formato “antes‑depois”** (ex.: “Cops REMEMBER Your Face …”) para gerar curiosidade visual.
+1. **Focar em números impactantes** – continue destacando valores de faturamento, vendas ou recordes.  
+2. **Usar emojis de explosão/mente (🤯, 🔥)** logo no título para reforçar o impacto visual.  
+3. **Aumentar a duração para 15‑25 s** (até 30 s) – a média atual é mais alta que nas outras redes e parece funcionar.  
+4. **Adicionar texto overlay grande** que destaque o número principal (ex.: “$1.6 BILLION”).  
+5. **Testar formatos “comparativo”** (ex.: “GTA 6 vs GTA 5”) para diversificar além de apenas números.
 
 ---  
 
-> **Próximos passos:** colecione mais métricas (retenção por segundo, likes, shares) nas próximas duas semanas para validar ou refinar essas hipóteses.
+**Resumo rápido:**  
+- **TikTok** → curtas, segredos, emojis de alerta.  
+- **YouTube** → notícias rápidas, emojis de surpresa, 13‑15 s.  
+- **Instagram** → números grandes, emojis explosivos, 15‑25 s.  
+
+Ajuste o calendário de publicações e monitore os novos resultados para refinar ainda mais as estratégias. Boa sorte!
 
 ## Tabela
 | Short | YouTube | TikTok | Instagram |
 |---|---|---|---|
-| Do This FIRST in GTA 6 (Before It's Too Late) ⚠️ | 1149 | 91 | — |
-| GTA 6 Made $1.6 BILLION Before Launch 🤯 | 759 | 811 | 116 |
+| Do This FIRST in GTA 6 (Before It's Too Late) ⚠️ | 1149 | 100 | — |
+| Never Lose Your Guns in GTA 6 — Do This ⚠️ | — | 1109 | — |
+| GTA 6 Made $1.6 BILLION Before Launch 🤯 | 759 | 813 | 116 |
 | GTA 6 Is Finally Out — Know This Before You Play 🎮 | 773 | 495 | — |
-| Never Lose Your Guns in GTA 6 — Do This ⚠️ | — | 510 | — |
-| GTA 6 Made $3.79 BILLION in ONE Day (Official) 🤯 | 1 | 324 | 126 |
-| Eat Too Much in GTA 6 and THIS Happens 😳 | — | 40 | 183 |
-| GTA 6 Got a 99... Then One Player Gave It 2/10 😳 | — | 80 | 135 |
-| Switch to Jason at the Wrong Time in GTA 6... 😳 | — | 11 | 132 |
-| GTA 6 Just Tied the Highest Metacritic Score Ever 😳 | 114 | — | 122 |
-| 2 Hidden GTA 6 Tools Nobody Told You About 😳 | — | 98 | — |
-| GTA 6 Is Secretly Judging How You Play 👀 | 2 | 34 | — |
+| GTA 6 Made $3.79 BILLION in ONE Day (Official) 🤯 | 1 | 347 | 127 |
+| Eat Too Much in GTA 6 and THIS Happens 😳 | — | 116 | 241 |
+| GTA 6 Sold an Estimated 24 MILLION in 1 Day 🤯 | — | 223 | 143 |
+| 2 Hidden GTA 6 Tools Nobody Told You About 😳 | — | 202 | — |
+| GTA 6 Got a 99... Then One Player Gave It 2/10 😳 | — | 88 | 135 |
+| Switch to Jason at the Wrong Time in GTA 6... 😳 | — | 14 | 132 |
+| GTA 6 Just Tied the Highest Metacritic Score Ever 😳 | 112 | — | 122 |
+| GTA 6 Is Secretly Judging How You Play 👀 | 2 | 40 | — |
+| Cops REMEMBER Your Face in GTA 6 — Do This 🚨 | 1 | 34 | — |
 | GTA 6 vs GTA 5: What Actually Changed After 13 Years 🔥 | — | 27 | — |
-| Cops REMEMBER Your Face in GTA 6 — Do This 🚨 | 1 | 23 | — |

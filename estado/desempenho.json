@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-21T23:40:48.414846+00:00",
+ "atualizado": "2026-11-22T09:49:53.456229+00:00",
  "historico": [
   {
    "data": "2026-11-17",
@@ -48,6 +48,12 @@
    "inscritos": 11,
    "views": 4693,
    "videos": 26
+  },
+  {
+   "data": "2026-11-22",
+   "inscritos": 11,
+   "views": 4590,
+   "videos": 27
   }
  ],
  "videos": [
@@ -59,10 +65,10 @@
    "views": 759,
    "likes": 34,
    "coments": 4,
-   "views_dia": 359.4,
+   "views_dia": 299.5,
    "engaj": 5.0,
    "hora_brt": "18",
-   "dias": 2.1
+   "dias": 2.5
   },
   {
    "id": "5kCCspaOdnE",
@@ -75,7 +81,7 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "12",
-   "dias": 2.4
+   "dias": 2.8
   },
   {
    "id": "kNzOszVFf70",
@@ -85,10 +91,10 @@
    "views": 1149,
    "likes": 22,
    "coments": 1,
-   "views_dia": 479.1,
+   "views_dia": 407.3,
    "engaj": 2.0,
    "hora_brt": "11",
-   "dias": 2.4
+   "dias": 2.8
   },
   {
    "id": "MI3JQ2je-FQ",
@@ -98,10 +104,10 @@
    "views": 773,
    "likes": 23,
    "coments": 4,
-   "views_dia": 311.3,
+   "views_dia": 266.0,
    "engaj": 3.5,
    "hora_brt": "09",
-   "dias": 2.5
+   "dias": 2.9
   },
   {
    "id": "-_O8FyG6qYg",
@@ -111,10 +117,10 @@
    "views": 176,
    "likes": 4,
    "coments": 6,
-   "views_dia": 59.0,
+   "views_dia": 51.7,
    "engaj": 5.7,
    "hora_brt": "21",
-   "dias": 3.0
+   "dias": 3.4
   },
   {
    "id": "y99xw4Mmuvg",
@@ -124,23 +130,23 @@
    "views": 147,
    "likes": 3,
    "coments": 2,
-   "views_dia": 46.1,
+   "views_dia": 40.7,
    "engaj": 3.4,
    "hora_brt": "16",
-   "dias": 3.2
+   "dias": 3.6
   },
   {
    "id": "ex3cGJ8APxQ",
    "titulo": "GTA 6 Just Tied the Highest Metacritic Score Ever 😳",
    "tipo": "short",
    "dur": 70,
-   "views": 114,
+   "views": 112,
    "likes": 2,
    "coments": 3,
-   "views_dia": 35.2,
-   "engaj": 4.4,
+   "views_dia": 30.6,
+   "engaj": 4.5,
    "hora_brt": "14",
-   "dias": 3.2
+   "dias": 3.7
   },
   {
    "id": "49tnnie3Jjo",
@@ -150,23 +156,23 @@
    "views": 1400,
    "likes": 31,
    "coments": 6,
-   "views_dia": 422.5,
+   "views_dia": 374.6,
    "engaj": 2.6,
    "hora_brt": "13",
-   "dias": 3.3
+   "dias": 3.7
   },
   {
    "id": "P5dyUUPJh04",
    "titulo": "GTA 6 Reviews Are In: A Masterpiece With One Big Catch",
    "tipo": "longo",
    "dur": 546,
-   "views": 14,
+   "views": 13,
    "likes": 8,
    "coments": 9,
-   "views_dia": 4.2,
-   "engaj": 121.4,
+   "views_dia": 3.4,
+   "engaj": 130.8,
    "hora_brt": "12",
-   "dias": 3.4
+   "dias": 3.8
   },
   {
    "id": "psqeW0oueVU",
@@ -176,10 +182,10 @@
    "views": 36,
    "likes": 2,
    "coments": 4,
-   "views_dia": 9.0,
+   "views_dia": 8.2,
    "engaj": 16.7,
    "hora_brt": "21",
-   "dias": 4.0
+   "dias": 4.4
   },
   {
    "id": "pCJSmriKY50",
@@ -189,10 +195,10 @@
    "views": 5,
    "likes": 5,
    "coments": 4,
-   "views_dia": 1.1,
+   "views_dia": 1.0,
    "engaj": 180.0,
    "hora_brt": "12",
-   "dias": 4.4
+   "dias": 4.8
   },
   {
    "id": "GfJxx6e3jUY",
@@ -202,10 +208,10 @@
    "views": 3,
    "likes": 1,
    "coments": 0,
-   "views_dia": 0.7,
+   "views_dia": 0.6,
    "engaj": 33.3,
    "hora_brt": "09",
-   "dias": 4.5
+   "dias": 4.9
   },
   {
    "id": "Zrug6PtEZzo",
@@ -215,10 +221,10 @@
    "views": 5,
    "likes": 3,
    "coments": 4,
-   "views_dia": 1.0,
+   "views_dia": 0.9,
    "engaj": 140.0,
    "hora_brt": "21",
-   "dias": 5.0
+   "dias": 5.4
   },
   {
    "id": "5v79bZYpaZY",
@@ -231,7 +237,7 @@
    "views_dia": 0.4,
    "engaj": 50.0,
    "hora_brt": "19",
-   "dias": 5.1
+   "dias": 5.5
   },
   {
    "id": "BZIopAaJ-4k",
@@ -244,7 +250,7 @@
    "views_dia": 0.5,
    "engaj": 100.0,
    "hora_brt": "19",
-   "dias": 6.0
+   "dias": 6.5
   },
   {
    "id": "6bSau3WJl-Y",
@@ -257,7 +263,7 @@
    "views_dia": 0.3,
    "engaj": 150.0,
    "hora_brt": "14",
-   "dias": 6.3
+   "dias": 6.7
   },
   {
    "id": "h-zUFcFzLfs",
@@ -270,7 +276,7 @@
    "views_dia": 0.3,
    "engaj": 50.0,
    "hora_brt": "11",
-   "dias": 6.4
+   "dias": 6.8
   },
   {
    "id": "6L_wWzXfH54",
@@ -280,10 +286,10 @@
    "views": 3,
    "likes": 1,
    "coments": 0,
-   "views_dia": 0.5,
+   "views_dia": 0.4,
    "engaj": 33.3,
    "hora_brt": "11",
-   "dias": 6.4
+   "dias": 6.8
   },
   {
    "id": "Vm5YUmBRys0",
@@ -293,10 +299,10 @@
    "views": 1,
    "likes": 1,
    "coments": 1,
-   "views_dia": 0.9,
+   "views_dia": 0.7,
    "engaj": 200.0,
    "hora_brt": "18",
-   "dias": 1.1
+   "dias": 1.5
   },
   {
    "id": "BOQeEsESTug",
@@ -306,10 +312,10 @@
    "views": 1,
    "likes": 1,
    "coments": 1,
-   "views_dia": 0.8,
+   "views_dia": 0.6,
    "engaj": 200.0,
    "hora_brt": "16",
-   "dias": 1.2
+   "dias": 1.6
   },
   {
    "id": "xJacJXth4ac",
@@ -319,10 +325,10 @@
    "views": 2,
    "likes": 0,
    "coments": 1,
-   "views_dia": 1.5,
+   "views_dia": 1.1,
    "engaj": 50.0,
    "hora_brt": "12",
-   "dias": 1.4
+   "dias": 1.8
   },
   {
    "id": "JMY5qf_Pubg",
@@ -332,10 +338,10 @@
    "views": 2,
    "likes": 1,
    "coments": 1,
-   "views_dia": 1.3,
+   "views_dia": 1.0,
    "engaj": 100.0,
    "hora_brt": "09",
-   "dias": 1.5
+   "dias": 1.9
   },
   {
    "id": "SS0zYQhOJ_w",
@@ -345,62 +351,75 @@
    "views": 2,
    "likes": 1,
    "coments": 0,
-   "views_dia": 48.0,
+   "views_dia": 4.3,
    "engaj": 50.0,
    "hora_brt": "19",
-   "dias": 0.0
+   "dias": 0.5
   },
   {
    "id": "xNhkjNYSKL0",
    "titulo": "CUT THE ALARM First When You Rob a Store in GTA 6 🚨",
    "tipo": "short",
    "dur": 73,
-   "views": 16,
+   "views": 41,
    "likes": 1,
    "coments": 1,
-   "views_dia": 143.8,
-   "engaj": 12.5,
+   "views_dia": 76.7,
+   "engaj": 4.9,
    "hora_brt": "18",
-   "dias": 0.1
+   "dias": 0.5
   },
   {
    "id": "I4Ne3Avq8FY",
    "titulo": "This GTA 6 Bank Job Paid $140,000 in 10 Minutes 🤯",
    "tipo": "short",
    "dur": 71,
-   "views": 6,
+   "views": 15,
    "likes": 1,
    "coments": 1,
-   "views_dia": 30.8,
-   "engaj": 33.3,
+   "views_dia": 24.3,
+   "engaj": 13.3,
    "hora_brt": "16",
-   "dias": 0.2
+   "dias": 0.6
   },
   {
    "id": "bKvMl3uqXt0",
    "titulo": "How To Make Money FAST in GTA 6 (Complete Beginner's Guide)",
    "tipo": "longo",
    "dur": 943,
-   "views": 10,
+   "views": 12,
    "likes": 1,
    "coments": 1,
-   "views_dia": 27.7,
-   "engaj": 20.0,
+   "views_dia": 15.3,
+   "engaj": 16.7,
    "hora_brt": "12",
-   "dias": 0.4
+   "dias": 0.8
   },
   {
    "id": "jBavJjK9HI8",
    "titulo": "FREE MONEY Is Hiding in GTA 6 Car Trunks 💰",
    "tipo": "short",
    "dur": 71,
-   "views": 30,
+   "views": 122,
    "likes": 1,
    "coments": 1,
-   "views_dia": 61.7,
-   "engaj": 6.7,
+   "views_dia": 134.2,
+   "engaj": 1.6,
    "hora_brt": "09",
-   "dias": 0.5
+   "dias": 0.9
+  },
+  {
+   "id": "8ENKRnmz-9o",
+   "titulo": "STEAL ATMs in GTA 6? 168 of Them Can Be Towed 😳",
+   "tipo": "short",
+   "dur": 74,
+   "views": 9,
+   "likes": 1,
+   "coments": 1,
+   "views_dia": 24.5,
+   "engaj": 22.2,
+   "hora_brt": "22",
+   "dias": 0.4
   }
  ]
 }

@@ -3,6 +3,37 @@
 Regras para não ser bloqueado: leia as regras de cada grupo (muitos só aceitam divulgação em dias específicos), poste em no máximo 3–5 grupos por dia, use legendas diferentes e responda quem comentar.
 
 ---
+## GTA 6 Wanted System Explained: How To Escape Cops EVERY Time
+_Publicado: 2026-11-22 12:00_
+
+![imagem](https://raw.githubusercontent.com/auraxmusicoficial/arklyon-clips/main/divulgar/img/uAr8e1CuA6k.jpg)
+
+Toque e segure a imagem para salvar. Use uma legenda diferente em cada grupo:
+
+**Opção 1**
+```
+GTA 6's police remember your outfit, your car and even your partner. I broke down every heat icon and how to clear each one 🚨
+
+▶️ https://youtu.be/uAr8e1CuA6k
+```
+
+**Opção 2**
+```
+Still waiting for the stars to fade like in GTA 5? That doesn't work anymore. Here's the full GTA 6 wanted system guide.
+
+▶️ https://youtu.be/uAr8e1CuA6k
+```
+
+**Opção 3**
+```
+Hollow, solid, flashing, red — your GTA 6 wanted stars are telling you something. Complete escape guide here.
+
+▶️ https://youtu.be/uAr8e1CuA6k
+```
+
+
+---
+
 ## How To Make Money FAST in GTA 6 (Complete Beginner's Guide)
 _Publicado: 2026-11-21 12:00_
 
