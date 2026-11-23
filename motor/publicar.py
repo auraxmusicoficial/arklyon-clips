@@ -89,6 +89,7 @@ def horario_rede(rede, data, i, n, hh):
     return h if quando(data, h)[1] > datetime.now(BRT) + timedelta(minutes=20) else hh
 SLOT_LONGO = "12:00"
 SLOT_CARROSSEL = "19:00"
+SLOTS_POSTS = ["19:00", "10:30"]   # até 2 posts de imagem por dia (carrossel/estático)
 BRT = timezone(timedelta(hours=-3))
 ANTECEDENCIA_YT = timedelta(hours=3)   # sobe no YouTube como não listado 3 h antes; o ajuste (8h52, 11h52, 15h52, 19h52) programa a estreia pública
 MUT = """mutation($input: CreatePostInput!) { createPost(input: $input) { __typename
@@ -154,8 +155,13 @@ def main(job, data, sha, pular=(), urgente=False):
         dados = ler_json(job / "carrossel.json")
         if not list((job / "saida").glob("car_*.jpg")):
             gerar(job)
-        for c in dados.get("carrosseis", [])[:1]:
-            hh = SLOT_CARROSSEL if quando(data, SLOT_CARROSSEL)[1] > agora + timedelta(minutes=20) else (agora + timedelta(minutes=30)).strftime("%H:%M")
+        for n_post, c in enumerate(dados.get("carrosseis", [])[:2]):
+            slot = SLOTS_POSTS[n_post]
+            if quando(data, slot)[1] <= agora + timedelta(minutes=20):
+                if n_post > 0:
+                    print("SOBROU post de imagem (horário passou):", c["id"]); continue
+                slot = (agora + timedelta(minutes=30)).strftime("%H:%M")
+            hh = slot
             due, dt = quando(data, hh)
             p = agendar_carrossel(job, c, base, due)
             p["quando"] = dt.isoformat(); plano.append(p)

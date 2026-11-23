@@ -114,6 +114,143 @@ def capa(c, job, total):
     return img
 
 
+def imagem(job, spec):
+    """spec = {"video": "video.mp4", "t": 12.3} (quadro do vídeo) ou {"arquivo": "img.jpg"} (imagem na pasta do job)."""
+    if not spec or job is None:
+        return None
+    if spec.get("arquivo"):
+        p = Path(job) / spec["arquivo"]
+        return Image.open(p) if p.exists() else None
+    return quadro(Path(job), spec.get("video", "video.mp4"), spec.get("t", 10))
+
+
+def setas(img, seq, y, larg_max=960):
+    """Desenha a sequência do D-pad (U/D/L/R) como setas próprias, em até 2 linhas."""
+    d = ImageDraw.Draw(img, "RGBA"); seq = [x.strip().upper()[0] for x in seq if x.strip()]
+    por_linha = 5 if len(seq) > 5 else len(seq); tam = min(150, int(larg_max / max(1, por_linha) - 24))
+    linhas = [seq[i:i + por_linha] for i in range(0, len(seq), por_linha)]
+    for li, linha in enumerate(linhas):
+        x = 540 - (len(linha) * (tam + 24) - 24) / 2; yy = y + li * (tam + 30)
+        for k, dirc in enumerate(linha):
+            cx, cy, r = x + tam / 2, yy + tam / 2, tam / 2
+            d.rounded_rectangle((x, yy, x + tam, yy + tam), 24, fill=(10, 0, 30, 235), outline=AMARELO, width=6)
+            a = r * 0.55
+            pts = {"U": [(cx, cy - a), (cx - a, cy + a * 0.6), (cx + a, cy + a * 0.6)],
+                   "D": [(cx, cy + a), (cx - a, cy - a * 0.6), (cx + a, cy - a * 0.6)],
+                   "L": [(cx - a, cy), (cx + a * 0.6, cy - a), (cx + a * 0.6, cy + a)],
+                   "R": [(cx + a, cy), (cx - a * 0.6, cy - a), (cx - a * 0.6, cy + a)]}.get(dirc)
+            if pts:
+                d.polygon(pts, fill=AMARELO)
+            d.text((x + 16, yy + 10), str(li * por_linha + k + 1), font=fonte(F_TXT, 30), fill=(200, 200, 230))
+            x += tam + 24
+    return y + len(linhas) * (tam + 30)
+
+
+def colar(img, foto, caixa, borda=ROSA, vazio=None):
+    """Cola a foto preenchendo a caixa (corta o excesso) com moldura."""
+    if foto is None:
+        if vazio:
+            d = ImageDraw.Draw(img, "RGBA"); d.rounded_rectangle([int(v) for v in caixa], 18, fill=(10, 0, 30, 220), outline=borda, width=6)
+            d.text(((caixa[0] + caixa[2]) / 2, (caixa[1] + caixa[3]) / 2), vazio, font=fonte(F_GTA, 90), fill=borda, anchor="mm")
+        return
+    x0, y0, x1, y1 = [int(v) for v in caixa]; w, h = x1 - x0, y1 - y0
+    f = foto.convert("RGB"); r = max(w / f.width, h / f.height)
+    f = f.resize((int(f.width * r) + 1, int(f.height * r) + 1))
+    f = f.crop(((f.width - w) // 2, (f.height - h) // 2, (f.width - w) // 2 + w, (f.height - h) // 2 + h))
+    ImageDraw.Draw(img).rounded_rectangle((x0 - 7, y0 - 7, x1 + 7, y1 + 7), 18, fill=borda)
+    img.paste(f, (x0, y0))
+
+
+def multilinha(img, d, centro_y, txt, path, maxw, n0, cor=(255, 255, 255), larg=6, max_linhas=4, chars=18):
+    linhas = textwrap.wrap(txt, chars)[:max_linhas] or [txt]
+    f = min((caber(d, ln, path, maxw, n0) for ln in linhas), key=lambda x: x.size)
+    alt = f.size * 1.08; y = centro_y - alt * (len(linhas) - 1) / 2
+    for ln in linhas:
+        texto_contorno(d, (540, y), ln, f, cor, larg=larg); y += alt
+    return y
+
+
+# ---------- formato "vs": GTA V x GTA VI (curtir = um, comentar = outro) ----------
+def vs_capa(c, job, total):
+    img = base(); d = ImageDraw.Draw(img, "RGBA"); marca(d, 1, total)
+    colar(img, imagem(job, c.get("img_a")), (40, 300, 530, 900), CIANO, vazio=c.get("rotulo_a", "GTA V"))
+    colar(img, imagem(job, c.get("img_b")), (550, 300, 1040, 900), ROSA, vazio=c.get("rotulo_b", "GTA VI"))
+    d = ImageDraw.Draw(img, "RGBA")
+    texto_contorno(d, (285, 250), c.get("rotulo_a", "GTA V"), fonte(F_GTA, 110), CIANO)
+    texto_contorno(d, (795, 250), c.get("rotulo_b", "GTA VI"), fonte(F_GTA, 110), ROSA)
+    d.ellipse((470, 530, 610, 670), fill=AMARELO, outline=(0, 0, 0), width=6)
+    d.text((540, 602), "VS", font=fonte(F_GTA, 90), fill=(0, 0, 0), anchor="mm")
+    multilinha(img, d, 1010, c["capa"][0].upper(), F_TXT, 980, 96, chars=22, max_linhas=2)
+    texto_contorno(d, (540, 1150), c.get("acao", "LIKE = GTA V   •   COMMENT = GTA VI"), fonte(F_TXT, 54), AMARELO, larg=5)
+    if total > 2:
+        texto_contorno(d, (540, H - 70), "SWIPE  →", fonte(F_TXT, 56), (255, 255, 255), larg=5)
+    return img
+
+
+def vs_item(c, it, k, total, job):
+    img = base(); d = ImageDraw.Draw(img, "RGBA"); marca(d, k + 2, total)
+    multilinha(img, d, 170, it["titulo"].upper(), F_GTA, 980, 120, AMARELO, chars=16, max_linhas=2)
+    for lado, (x0, cor, rot) in enumerate(((40, CIANO, c.get("rotulo_a", "GTA V")), (550, ROSA, c.get("rotulo_b", "GTA VI")))):
+        chave = "a" if lado == 0 else "b"
+        colar(img, imagem(job, it.get(f"img_{chave}")), (x0, 330, x0 + 490, 700), cor, vazio=rot)
+        d = ImageDraw.Draw(img, "RGBA")
+        texto_contorno(d, (x0 + 245, 760), rot, fonte(F_GTA, 80), cor)
+        yy = 840
+        for ln in textwrap.wrap(str(it.get(chave, "")), 14)[:5]:
+            texto_contorno(d, (x0 + 245, yy), ln, caber(d, ln, F_TXT, 470, 58), (255, 255, 255), larg=4); yy += 70
+    return img
+
+
+def vs_final(c, total):
+    img = base(); d = ImageDraw.Draw(img, "RGBA"); marca(d, total, total)
+    texto_contorno(d, (540, 380), "WHO WINS?", fonte(F_GTA, 170), AMARELO, larg=10)
+    multilinha(img, d, 620, c.get("pergunta", "Comment V or VI and defend your pick"), F_TXT, 960, 76, chars=22)
+    d = ImageDraw.Draw(img, "RGBA")
+    texto_contorno(d, (540, 900), "Send this to the friend who disagrees", fonte(F_TXT, 54), CIANO, larg=4)
+    texto_contorno(d, (540, 1050), "@hqvaultclips", fonte(F_TXT, 70), ROSA, larg=5)
+    return img
+
+
+# ---------- formato "tag": marque um amigo ----------
+def tag_slide(c, it, k, total, job, capa=False):
+    img = base(imagem(job, it.get("img"))); d = ImageDraw.Draw(img, "RGBA"); marca(d, k + 1, total)
+    if capa:
+        texto_contorno(d, (540, 330), c.get("chamada", "TAG YOUR"), fonte(F_GTA, 130), (255, 255, 255))
+        degrade_texto(img, (540, 520), c["capa"][1].upper() if len(c["capa"]) > 1 else "PARTNER", caber(d, c["capa"][1] if len(c["capa"]) > 1 else "PARTNER", F_GTA, 980, 210))
+        d = ImageDraw.Draw(img, "RGBA")
+        multilinha(img, d, 1060, it["texto"], F_TXT, 960, 70, chars=24)
+    else:
+        multilinha(img, d, 1000, it["texto"].upper(), F_TXT, 960, 84, chars=20)
+    texto_contorno(d, (540, H - 70), it.get("rodape", "TAG THEM 👇").replace("👇", "BELOW"), fonte(F_TXT, 56), AMARELO, larg=5)
+    return img
+
+
+# ---------- formato "unico" / "teaser": post de 1 ou 2 páginas ----------
+def unico(c, job, i=1, total=1, texto=None, rodape=None):
+    img = base(imagem(job, c.get("img"))); d = ImageDraw.Draw(img, "RGBA"); marca(d, i, total)
+    linhas = c["capa"] if texto is None else [texto]
+    blocos = []
+    for k, ln in enumerate(linhas):
+        if texto is None and k == 1:
+            blocos.append(("grad", ln, caber(d, ln, F_GTA, 980, 190)))
+        else:
+            path, n0, ch = (F_GTA, 120, 16) if texto is None else (F_TXT, 80, 22)
+            for sub in textwrap.wrap(ln.upper() if texto is None else ln, ch)[:7]:
+                blocos.append(("txt", sub, caber(d, sub, path, 980, n0 if k == 0 or texto else 84)))
+    altura = sum(f.size * 1.1 for _, _, f in blocos)
+    y = (H - altura) / 2 + 40
+    for tipo, ln, f in blocos:
+        yc = int(y + f.size * 0.55)
+        if tipo == "grad":
+            degrade_texto(img, (540, yc), ln, f); d = ImageDraw.Draw(img, "RGBA")
+        else:
+            texto_contorno(d, (540, yc), ln, f, (255, 255, 255), larg=6)
+        y += f.size * 1.1
+    if rodape or c.get("rodape"):
+        texto_contorno(d, (540, H - 80), (rodape or c["rodape"]).upper(), fonte(F_TXT, 58), AMARELO, larg=5)
+    return img
+
+
 def quadro(job, video, t):
     import subprocess, tempfile
     tmp = Path(tempfile.mkstemp(suffix=".jpg")[1])
@@ -139,6 +276,8 @@ def item(c, it, k, n_itens, total, job=None):
         d.rounded_rectangle(caixa, 30, fill=(10, 0, 30, 230), outline=AMARELO, width=8)
         degrade_texto(img, (540, (caixa[1] + caixa[3]) // 2), v, f, cores=(AMARELO, AMARELO, LARANJA), larg=8)
         d = ImageDraw.Draw(img, "RGBA"); y = caixa[3] + 60
+    if it.get("setas"):   # código de controle (D-pad): ["Up", "Right", ...]
+        y = setas(img, it["setas"], y) + 20; d = ImageDraw.Draw(img, "RGBA")
     if it.get("texto"):
         f = fonte(F_TXT, 60)
         for ln in textwrap.wrap(it["texto"], 26)[:6]:
@@ -175,8 +314,22 @@ def gerar(job):
     job = Path(job); dados = json.loads((job / "carrossel.json").read_text())
     out = job / "saida"; out.mkdir(exist_ok=True); feitos = []
     for c in dados["carrosseis"]:
-        itens = c["itens"][:8]; total = len(itens) + 2
-        slides = [capa(c, job, total)] + [item(c, it, k, len(itens), total, job) for k, it in enumerate(itens)] + [final(c, total)]
+        fmt = c.get("formato", "lista"); itens = c.get("itens", [])[:8]
+        if fmt == "vs":
+            total = len(itens) + 2
+            slides = [vs_capa(c, job, total)] + [vs_item(c, it, k, total, job) for k, it in enumerate(itens)] + [vs_final(c, total)]
+            if not itens:   # versão de 1 página: só a capa "curtir x comentar"
+                slides = [vs_capa(c, job, 1)]
+        elif fmt == "tag":
+            total = len(itens)
+            slides = [tag_slide(c, it, k, total, job, capa=(k == 0)) for k, it in enumerate(itens)]
+        elif fmt == "teaser":   # 2 páginas: pergunta/gancho -> resposta
+            slides = [unico(c, job, 1, 2, rodape="SWIPE FOR THE ANSWER  →"), unico(c, job, 2, 2, texto=c["resposta"], rodape="SAVE THIS")]
+        elif fmt == "unico":
+            slides = [unico(c, job)]
+        else:
+            total = len(itens) + 2
+            slides = [capa(c, job, total)] + [item(c, it, k, len(itens), total, job) for k, it in enumerate(itens)] + [final(c, total)]
         nomes = []
         for i, s in enumerate(slides, 1):
             p = out / f"car_{c['id']}_{i:02d}.jpg"; s.save(p, quality=92); nomes.append(p.name)
