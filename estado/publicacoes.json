@@ -1459,7 +1459,7 @@
   "quando": "2026-11-23T21:00:00-03:00",
   "upload": "2026-11-23T18:00:00-03:00",
   "yt_title": "LEAVE LUCIA BEHIND in GTA 6 and She Remembers 😳",
-  "descricao": "In GTA 6 Jason can leave Lucia behind after a robbery — and the game remembers. Would you wait for her? #GTA6 #GTAVI #Shorts #JasonAndLucia",
+  "descricao": "In GTA 6 Jason can leave Lucia behind after a robbery — and the game remembers. Would you wait for her? #GTA6 #GTAVI #Shorts #JasonAndLucia\n\n🎬 Full guide 👉 https://youtu.be/uAr8e1CuA6k",
   "tags": [
    "gta 6",
    "gta vi",
@@ -1480,14 +1480,25 @@
    "instagram": "6b04284d82bb5ae3b372591f",
    "youtube_api": "7g3X5Y8aYp8"
   },
-  "ajustado": false,
+  "ajustado": true,
   "formato_yt": "completo",
-  "comentario": "Team Jason or Team Lucia? 👇",
+  "comentario": "Team Jason or Team Lucia? 👇 Full guide here 👉 https://youtu.be/uAr8e1CuA6k",
   "fb_textos": [],
   "playlist": "shorts",
   "urgente": false,
   "video_id": "7g3X5Y8aYp8",
-  "via_yt": "api"
+  "via_yt": "api",
+  "traducoes": {
+   "es": {
+    "title": "DEJA A LUCIA ATRÁS en GTA 6 y ella lo recuerda 😳",
+    "description": "En GTA 6, Jason puede dejar a Lucia atrás después de un robo — y el juego lo recuerda. ¿Esperarías por ella? #GTA6 #GTAVI #Shorts #JasonAndLucia\n\n🎬 Guía completa 👉 https://youtu.be/uAr8e1CuA6k"
+   },
+   "pt": {
+    "title": "DEIXE LÚCIA PARA TRÁS em GTA 6 e ela lembra 😳",
+    "description": "Em GTA 6, Jason pode deixar Lúcia para trás depois de um roubo — e o jogo lembra. Você esperaria por ela? #GTA6 #GTAVI #Shorts #JasonAndLucia\n\n🎬 Guia completa 👉 https://youtu.be/uAr8e1CuA6k"
+   }
+  },
+  "na_playlist": true
  },
  {
   "tipo": "carrossel",
