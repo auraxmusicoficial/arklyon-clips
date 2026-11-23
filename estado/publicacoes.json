@@ -791,7 +791,7 @@
    "tiktok": "6b015ebc20a2d09a0ae8925f",
    "instagram": "6b015ebddd205ed779d1e2f5"
   },
-  "ajustado": true,
+  "ajustado": "nao_encontrado",
   "formato_yt": "completo",
   "comentario": "Moses or Randy: who's the better buyer? 🚗",
   "fb_textos": [],
@@ -1402,14 +1402,15 @@
    }
   },
   "video_id": "uvfhpIXMkX4",
-  "na_playlist": true
+  "na_playlist": true,
+  "comentou": true
  },
  {
   "tipo": "short",
   "quando": "2026-11-23T16:00:00-03:00",
   "upload": "2026-11-23T13:00:00-03:00",
   "yt_title": "Top 5 Things GTA 6 Does That GTA 5 Never Could 🤯",
-  "descricao": "Top 5 things GTA 6 does that GTA 5 never could — #1 changes the story. Agree with my #1? #GTA6 #GTAVI #Shorts #GTA6vsGTA5",
+  "descricao": "Top 5 things GTA 6 does that GTA 5 never could — #1 changes the story. Agree with my #1? #GTA6 #GTAVI #Shorts #GTA6vsGTA5\n\n🎬 Full guide 👉 https://youtu.be/uAr8e1CuA6k",
   "tags": [
    "gta 6",
    "gta vi",
@@ -1430,14 +1431,25 @@
    "instagram": "6b04284b742f9b7fc9a5170d",
    "youtube_api": "5xh1bWqi2nw"
   },
-  "ajustado": false,
+  "ajustado": true,
   "formato_yt": "completo",
-  "comentario": "What should have been #1? 👇",
+  "comentario": "What should have been #1? 👇 Full guide here 👉 https://youtu.be/uAr8e1CuA6k",
   "fb_textos": [],
   "playlist": "shorts",
   "urgente": false,
   "video_id": "5xh1bWqi2nw",
-  "via_yt": "api"
+  "via_yt": "api",
+  "traducoes": {
+   "es": {
+    "title": "Top 5 cosas que GTA 6 hace y GTA 5 nunca pudo 🤯",
+    "description": "Top 5 cosas que GTA 6 hace y GTA 5 nunca pudo — #1 cambia la historia. ¿Estás de acuerdo con mi #1? #GTA6 #GTAVI #Shorts #GTA6vsGTA5\n\n🎬 Guía completa 👉 https://youtu.be/uAr8e1CuA6k"
+   },
+   "pt": {
+    "title": "Top 5 coisas que GTA 6 faz e GTA 5 nunca pôde 🤯",
+    "description": "Top 5 coisas que GTA 6 faz e GTA 5 nunca pôde — #1 muda a história. Concorda com meu #1? #GTA6 #GTAVI #Shorts #GTA6vsGTA5\n\n🎬 Guia completa 👉 https://youtu.be/uAr8e1CuA6k"
+   }
+  },
+  "na_playlist": true
  },
  {
   "tipo": "short",
