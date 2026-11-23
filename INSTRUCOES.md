@@ -4,6 +4,9 @@ Canal: **HQ Vault Clips** (YouTube) · TikTok **@thevaultclipsof** · Instagram 
 Meta diária (horário de Brasília): **12h vídeo longo** + Shorts em **13h · 16h · 21h**.
 **A partir de 23/11/2026: 3 Shorts por dia (13h · 16h · 21h, nas 3 redes) + 1 CARROSSEL por dia (19h, Instagram + TikTok modo foto). Vídeo longo em dias alternados** (o robô sabe o dia: faça longo se o último foi há 2+ dias). Confira com `python3 motor/publicar.py --slots <DATA>`.
 
+## 🇺🇸 IDIOMA: TUDO QUE É PUBLICADO É EM INGLÊS
+Público principal = Estados Unidos e Reino Unido (dados do Instagram, 23/11). Narração, cartões, títulos, capas, slides do carrossel, legendas do TikTok/Instagram/YouTube, hashtags e primeiro comentário: **inglês americano, natural**. Português só nas notificações para o Felipe. Antes de agendar, releia legendas e slides: nada de rótulos como "Hook:", markdown ou palavras em português.
+
 ## ⚠️ ORIGINALIDADE (regra nº 1 desde 23/11 — leia antes de tudo)
 O TikTok marcou nossos vídeos como **"conteúdo não original, de baixa qualidade"** (fora do Para Você), o Instagram bloqueou a monetização por política de conteúdo e o YouTube (algoritmo de 1º/10/2026) corta o alcance de Shorts com imagem copiada de outros canais. Por isso:
 - **Layout "estúdio" é o padrão** (motor/shorts.py e motor/longo.py já fazem): fundo próprio estilo Vice City, gameplay numa JANELA com moldura neon e um **PAINEL com cartões nossos**. Não use `"layout": "classico"`.

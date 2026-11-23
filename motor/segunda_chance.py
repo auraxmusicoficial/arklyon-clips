@@ -30,9 +30,14 @@ def candidatos():
 def legenda_ig(p):
     from ia import gerar
     try:
-        return gerar(f"Write an Instagram Reels caption in English for this GTA 6 video. Hook line first, 1–2 short lines, a question to "
-                     f"drive comments, then 5 hashtags (#gta6 first). Max 2 emojis. No links.\nTitle: {p['yt_title']}\n"
-                     f"Description: {p.get('descricao', '')[:800]}", max_tokens=300).strip()
+        import re
+        txt = gerar(f"Write an Instagram Reels caption in ENGLISH ONLY for this GTA 6 video (audience: USA/UK). Hook line first, "
+                    f"1–2 short lines, a question to drive comments, then 5 hashtags (#gta6 first). Max 2 emojis. No links. "
+                    f"Output ONLY the caption text: no labels like 'Hook:', no markdown, no quotes.\nTitle: {p['yt_title']}\n"
+                    f"Description: {p.get('descricao', '')[:800]}", max_tokens=300).strip()
+        txt = re.sub(r"\*\*?([^*]+)\*\*?", r"\1", txt)                       # tira negrito/itálico de markdown
+        txt = re.sub(r"(?im)^\s*(hook|caption|cta|question|hashtags)\s*:\s*", "", txt).strip().strip('"')
+        return txt
     except Exception:
         return f"{p['yt_title']}\n\nWould you try this? 👇\n\n#gta6 #gta #gtavi #gaming #rockstargames"
 
