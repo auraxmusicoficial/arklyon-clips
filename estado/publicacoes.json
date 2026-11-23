@@ -760,7 +760,7 @@
   "buffer": {
    "tiktok": "6b015ebbdd205ed779d1e19c"
   },
-  "ajustado": true,
+  "ajustado": "nao_encontrado",
   "formato_yt": "completo",
   "comentario": "Do you keep your cash in the bank or in your pocket? 💸",
   "fb_textos": [],
@@ -1362,7 +1362,7 @@
   "quando": "2026-11-23T13:00:00-03:00",
   "upload": "2026-11-23T10:00:00-03:00",
   "yt_title": "NEVER BLOW UP a Safe in GTA 6 — Do This Instead 💰",
-  "descricao": "GTA 6 safes pay way more if you skip the explosives. Combination or fuse? #GTA6 #GTAVI #Shorts #GTA6Money",
+  "descricao": "GTA 6 safes pay way more if you skip the explosives. Combination or fuse? #GTA6 #GTAVI #Shorts #GTA6Money\n\n🎬 Full guide 👉 https://youtu.be/uAr8e1CuA6k",
   "tags": [
    "gta 6",
    "gta vi",
@@ -1383,14 +1383,26 @@
    "tiktok": "6b0428487eae78cd9a966918",
    "instagram": "6b042849742f9b7fc9a5165f"
   },
-  "ajustado": false,
+  "ajustado": true,
   "formato_yt": "completo",
-  "comentario": "Be honest: how many safes did you blow up before knowing this? 💥",
+  "comentario": "Be honest: how many safes did you blow up before knowing this? 💥 Full guide here 👉 https://youtu.be/uAr8e1CuA6k",
   "fb_textos": [],
   "playlist": "shorts",
   "urgente": false,
   "yt_pendente": false,
-  "yt_direto": "uvfhpIXMkX4"
+  "yt_direto": "uvfhpIXMkX4",
+  "traducoes": {
+   "es": {
+    "title": "NUNCA EXPLOTES una caja fuerte en GTA 6 — Haz esto en su lugar 💰",
+    "description": "Las cajas fuertes de GTA 6 pagan mucho más si evitas los explosivos. ¿Combinación o fusible? #GTA6 #GTAVI #Shorts #GTA6Money\n\n🎬 Guía completa 👉 https://youtu.be/uAr8e1CuA6k"
+   },
+   "pt": {
+    "title": "NUNCA EXPLODA um cofre em GTA 6 — Faça isso ao invés 💰",
+    "description": "Os cofres de GTA 6 pagam muito mais se você pular os explosivos. Combinação ou fusível? #GTA6 #GTAVI #Shorts #GTA6Money\n\n🎬 Guia completa 👉 https://youtu.be/uAr8e1CuA6k"
+   }
+  },
+  "video_id": "uvfhpIXMkX4",
+  "na_playlist": true
  },
  {
   "tipo": "short",
