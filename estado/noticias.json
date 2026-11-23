@@ -159,5 +159,14 @@
       "https://www.playstationlifestyle.net/2026/11/23/gta-6-update-1002002-november-23-2026-patch-notes"
     ],
     "urgente": true
+  },
+  {
+    "quando": "2026-11-23T18:30:00-03:00",
+    "noticia": "Sem notícia grande nova nas últimas horas: só repercussão do patch 1.002.002 (já coberto pelo Short urgente das 14:50); sem trailer, Online ou PC anunciados, sem número oficial novo",
+    "fontes": [
+      "https://kotaku.com/gta-6s-first-post-launch-update-fixes-7-bugs-2000759480",
+      "https://www.pushsquare.com/news/2026/11/first-gta-6-ps5-patch-live-now-get-all-the-details-here"
+    ],
+    "urgente": false
   }
 ]
