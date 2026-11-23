@@ -182,7 +182,8 @@
   "thumb": "https://raw.githubusercontent.com/auraxmusicoficial/arklyon-clips/b7e69d525b6cb305fd5ce2af52fc87e83609a8d5/publicar/2026-11-19/thumb_s1.jpg",
   "buffer": {
    "youtube": "6afeb8814a35072d027c6888",
-   "tiktok": "6afeb881fc3e30ab95b71a9c"
+   "tiktok": "6afeb881fc3e30ab95b71a9c",
+   "instagram": "6b04337b7e433fe9caca58a8"
   },
   "ajustado": true,
   "comentario": "Be honest: how long did the 212 GB download take you? ⏳",
@@ -1352,7 +1353,9 @@
    }
   },
   "video_id": "Xz2vUTiSlk4",
-  "na_playlist": true
+  "na_playlist": true,
+  "publico_ok": true,
+  "comentou": true
  },
  {
   "tipo": "short",
