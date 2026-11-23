@@ -1309,5 +1309,37 @@
   "fb_feito": true,
   "publico_ok": true,
   "comentou": true
+ },
+ {
+  "tipo": "short",
+  "quando": "2026-11-23T09:00:00-03:00",
+  "upload": "2026-11-23T06:00:00-03:00",
+  "yt_title": "DEAD EYE AIMING Is in GTA 6 — Aim for the Hands 🎯",
+  "descricao": "GTA 6 has Dead Eye style slow motion aiming — and the smart move isn't a headshot. Would you disarm or go loud? #GTA6 #GTAVI #Shorts #GTA6Tips",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "grand theft auto 6",
+   "gta 6 gameplay",
+   "rockstar games",
+   "gta6",
+   "gta 6 news",
+   "gta 6 dead eye",
+   "gta 6 combat",
+   "gta 6 slow motion",
+   "gta 6 tips",
+   "red dead redemption 2"
+  ],
+  "thumb": "https://raw.githubusercontent.com/auraxmusicoficial/arklyon-clips/906931cd7ac3377cb194e64ede492107ad114388/publicar/2026-11-23/thumb_s1.jpg",
+  "buffer": {
+   "youtube": "6b041b635c07874ce5ebc6f2",
+   "tiktok": "6b041b635c07874ce5ebc7c4"
+  },
+  "ajustado": false,
+  "formato_yt": "completo",
+  "comentario": "Headshot or disarm — what's your style? 🎯",
+  "fb_textos": [],
+  "playlist": "shorts",
+  "urgente": false
  }
 ]
