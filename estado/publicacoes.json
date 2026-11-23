@@ -1353,5 +1353,136 @@
   },
   "video_id": "Xz2vUTiSlk4",
   "na_playlist": true
+ },
+ {
+  "tipo": "short",
+  "quando": "2026-11-23T13:00:00-03:00",
+  "upload": "2026-11-23T10:00:00-03:00",
+  "yt_title": "NEVER BLOW UP a Safe in GTA 6 — Do This Instead 💰",
+  "descricao": "GTA 6 safes pay way more if you skip the explosives. Combination or fuse? #GTA6 #GTAVI #Shorts #GTA6Money",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "grand theft auto 6",
+   "gta 6 gameplay",
+   "rockstar games",
+   "gta6",
+   "gta 6 news",
+   "gta 6 money",
+   "gta 6 safe",
+   "gta 6 robbery",
+   "gta 6 money guide",
+   "gta 6 tips"
+  ],
+  "thumb": "https://raw.githubusercontent.com/auraxmusicoficial/arklyon-clips/7317a19bfdc0b95325e6ccbf6d8ea126fbc3ffa5/publicar/2026-11-23/thumb_s2.jpg",
+  "buffer": {
+   "youtube": "6b04284782bb5ae3b37256ab",
+   "tiktok": "6b0428487eae78cd9a966918",
+   "instagram": "6b042849742f9b7fc9a5165f"
+  },
+  "ajustado": false,
+  "formato_yt": "completo",
+  "comentario": "Be honest: how many safes did you blow up before knowing this? 💥",
+  "fb_textos": [],
+  "playlist": "shorts",
+  "urgente": false,
+  "yt_pendente": false
+ },
+ {
+  "tipo": "short",
+  "quando": "2026-11-23T16:00:00-03:00",
+  "upload": "2026-11-23T13:00:00-03:00",
+  "yt_title": "Top 5 Things GTA 6 Does That GTA 5 Never Could 🤯",
+  "descricao": "Top 5 things GTA 6 does that GTA 5 never could — #1 changes the story. Agree with my #1? #GTA6 #GTAVI #Shorts #GTA6vsGTA5",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "grand theft auto 6",
+   "gta 6 gameplay",
+   "rockstar games",
+   "gta6",
+   "gta 6 news",
+   "gta 6 vs gta 5",
+   "gta 6 crazy things",
+   "gta 6 things you can do",
+   "gta 5",
+   "gta 6 features"
+  ],
+  "thumb": "https://raw.githubusercontent.com/auraxmusicoficial/arklyon-clips/7317a19bfdc0b95325e6ccbf6d8ea126fbc3ffa5/publicar/2026-11-23/thumb_s3.jpg",
+  "buffer": {
+   "tiktok": "6b04284a82bb5ae3b37257c5",
+   "instagram": "6b04284b742f9b7fc9a5170d",
+   "youtube_api": "5xh1bWqi2nw"
+  },
+  "ajustado": false,
+  "formato_yt": "completo",
+  "comentario": "What should have been #1? 👇",
+  "fb_textos": [],
+  "playlist": "shorts",
+  "urgente": false,
+  "video_id": "5xh1bWqi2nw",
+  "via_yt": "api"
+ },
+ {
+  "tipo": "short",
+  "quando": "2026-11-23T21:00:00-03:00",
+  "upload": "2026-11-23T18:00:00-03:00",
+  "yt_title": "LEAVE LUCIA BEHIND in GTA 6 and She Remembers 😳",
+  "descricao": "In GTA 6 Jason can leave Lucia behind after a robbery — and the game remembers. Would you wait for her? #GTA6 #GTAVI #Shorts #JasonAndLucia",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "grand theft auto 6",
+   "gta 6 gameplay",
+   "rockstar games",
+   "gta6",
+   "gta 6 news",
+   "jason and lucia",
+   "gta 6 lucia",
+   "gta 6 jason",
+   "gta 6 relationship",
+   "gta 6 choices"
+  ],
+  "thumb": "https://raw.githubusercontent.com/auraxmusicoficial/arklyon-clips/7317a19bfdc0b95325e6ccbf6d8ea126fbc3ffa5/publicar/2026-11-23/thumb_s5.jpg",
+  "buffer": {
+   "tiktok": "6b04284cde8febe8905575db",
+   "instagram": "6b04284d82bb5ae3b372591f",
+   "youtube_api": "7g3X5Y8aYp8"
+  },
+  "ajustado": false,
+  "formato_yt": "completo",
+  "comentario": "Team Jason or Team Lucia? 👇",
+  "fb_textos": [],
+  "playlist": "shorts",
+  "urgente": false,
+  "video_id": "7g3X5Y8aYp8",
+  "via_yt": "api"
+ },
+ {
+  "tipo": "carrossel",
+  "id": "c1",
+  "capa": [
+   "GTA 6",
+   "ROBBERY RULES",
+   "SAVE THIS"
+  ],
+  "yt_title": "GTA 6 ROBBERY RULES SAVE THIS",
+  "buffer": {
+   "instagram": "6b04284dde8febe89055767a",
+   "tiktok": "6b04284e82bb5ae3b3725962"
+  },
+  "imagens": [
+   "car_c1_01.jpg",
+   "car_c1_02.jpg",
+   "car_c1_03.jpg",
+   "car_c1_04.jpg",
+   "car_c1_05.jpg",
+   "car_c1_06.jpg",
+   "car_c1_07.jpg",
+   "car_c1_08.jpg",
+   "car_c1_09.jpg"
+  ],
+  "ajustado": true,
+  "quando": "2026-11-23T19:00:00-03:00"
  }
 ]
