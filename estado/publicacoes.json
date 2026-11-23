@@ -1315,7 +1315,7 @@
   "quando": "2026-11-23T09:00:00-03:00",
   "upload": "2026-11-23T06:00:00-03:00",
   "yt_title": "DEAD EYE AIMING Is in GTA 6 — Aim for the Hands 🎯",
-  "descricao": "GTA 6 has Dead Eye style slow motion aiming — and the smart move isn't a headshot. Would you disarm or go loud? #GTA6 #GTAVI #Shorts #GTA6Tips",
+  "descricao": "GTA 6 has Dead Eye style slow motion aiming — and the smart move isn't a headshot. Would you disarm or go loud? #GTA6 #GTAVI #Shorts #GTA6Tips\n\n🎬 Full guide 👉 https://youtu.be/uAr8e1CuA6k",
   "tags": [
    "gta 6",
    "gta vi",
@@ -1335,12 +1335,24 @@
    "youtube": "6b041b635c07874ce5ebc6f2",
    "tiktok": "6b041b635c07874ce5ebc7c4"
   },
-  "ajustado": false,
+  "ajustado": true,
   "formato_yt": "completo",
-  "comentario": "Headshot or disarm — what's your style? 🎯",
+  "comentario": "Headshot or disarm — what's your style? 🎯 Full guide here 👉 https://youtu.be/uAr8e1CuA6k",
   "fb_textos": [],
   "playlist": "shorts",
-  "urgente": false
+  "urgente": false,
+  "traducoes": {
+   "es": {
+    "title": "DEAD EYE AIMING está en GTA 6 — Apunta a las manos 🎯",
+    "description": "GTA 6 tiene apuntado en cámara lenta al estilo Dead Eye — y la jugada inteligente no es un disparo a la cabeza. ¿Desarmas o vas a lo grande? #GTA6 #GTAVI #Shorts #GTA6Tips\n\n🎬 Guía completa 👉 https://youtu.be/uAr8e1CuA6k"
+   },
+   "pt": {
+    "title": "DEAD EYE AIMING está em GTA 6 — Mire nas mãos 🎯",
+    "description": "GTA 6 tem mira em câmera lenta estilo Dead Eye — e o movimento inteligente não é dar um tiro na cabeça. Você prefere desarmar ou ser barulhento? #GTA6 #GTAVI #Shorts #GTA6Tips\n\n🎬 Guia completa 👉 https://youtu.be/uAr8e1CuA6k"
+   }
+  },
+  "video_id": "Xz2vUTiSlk4",
+  "na_playlist": true
  },
  {
   "tipo": "short",
