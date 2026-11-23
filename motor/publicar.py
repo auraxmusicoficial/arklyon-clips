@@ -15,7 +15,7 @@ CANAIS = {"tiktok": "6afb1f77ece6dfde5fe5b8ef", "youtube": "6afb1f5dece6dfde5fe5
 SLOTS_SHORTS = ["13:00", "16:00", "21:00"]
 SLOTS_LANCAMENTO = ["09:00", "11:00", "13:00", "16:00", "18:00", "20:00", "22:00"]   # semana de lançamento do GTA 6: 7 Shorts por dia
 IG_LANCAMENTO = {"13:00", "18:00", "22:00"}   # no Instagram só os 3 melhores horários (mais que isso parece spam e derruba o alcance)
-LANCAMENTO = ("2026-11-19", "2026-11-25")
+LANCAMENTO = ("2026-11-19", "2026-11-22")   # 23/11: fim do volume alto (8/dia derrubou alcance e parecia produção em massa)
 
 
 def slots_shorts(data):
@@ -88,6 +88,7 @@ def horario_rede(rede, data, i, n, hh):
     h = sorted(m)[i]
     return h if quando(data, h)[1] > datetime.now(BRT) + timedelta(minutes=20) else hh
 SLOT_LONGO = "12:00"
+SLOT_CARROSSEL = "19:00"
 BRT = timezone(timedelta(hours=-3))
 ANTECEDENCIA_YT = timedelta(hours=3)   # sobe no YouTube como não listado 3 h antes; o ajuste (8h52, 11h52, 15h52, 19h52) programa a estreia pública
 MUT = """mutation($input: CreatePostInput!) { createPost(input: $input) { __typename
@@ -147,6 +148,18 @@ def main(job, data, sha, pular=(), urgente=False):
         print("agendado short", s["id"], dt, f"(TikTok {h_tt}, Instagram {h_ig})" if (h_tt, h_ig) != (hh, hh) else "")
     for s in r["shorts"][len(livres):]:
         print("SOBROU (sem horário livre hoje):", s["id"])
+    # carrossel do dia (Instagram + TikTok modo foto)
+    if (job / "carrossel.json").exists():
+        from carrossel import gerar
+        dados = ler_json(job / "carrossel.json")
+        if not list((job / "saida").glob("car_*.jpg")):
+            gerar(job)
+        for c in dados.get("carrosseis", [])[:1]:
+            hh = SLOT_CARROSSEL if quando(data, SLOT_CARROSSEL)[1] > agora + timedelta(minutes=20) else (agora + timedelta(minutes=30)).strftime("%H:%M")
+            due, dt = quando(data, hh)
+            p = agendar_carrossel(job, c, base, due)
+            p["quando"] = dt.isoformat(); plano.append(p)
+            print("agendado carrossel", c["id"], dt, p["buffer"])
     salvar(plano)
 
 
@@ -197,6 +210,27 @@ def agendar_short(job, s, base, due, dt, due_yt, privacidade="unlisted", instagr
                       "tags": s["tags"], "thumb": f"{base}/thumb_{s['id']}.jpg", "buffer": ids, "ajustado": False if "youtube" in ids else True, "formato_yt": "rapido" if rapido else "completo",
                       "comentario": s.get("comentario_youtube", ""), "fb_textos": s.get("fb_textos", []),
                 "playlist": "shorts", "urgente": privacidade == "public"}
+
+
+def agendar_carrossel(job, c, base, due_ig, due_tt=None, rascunho=False):
+    """Carrossel de imagens: Instagram (type carousel) e TikTok (modo foto). Imagens em saida/car_<id>_NN.jpg."""
+    nomes = sorted(p.name for p in (job / "saida").glob(f"car_{c['id']}_*.jpg"))[:10]
+    imgs = [{"image": {"url": f"{base}/{n}"}} for n in nomes]
+    leg = c.get("legenda", "") + ("\n\n" + c["hashtags"] if c.get("hashtags") else "")
+    ids = {}
+    for rede, meta, due in (("instagram", {"instagram": {"type": "post", "shouldShareToFeed": True, "isAiGenerated": False}}, due_ig),
+                            ("tiktok", {"tiktok": {"title": c.get("tt_title", c["capa"][1])[:90], "isAiGenerated": False}}, due_tt or due_ig)):
+        inp = {"channelId": CANAIS[rede], "text": leg, "assets": imgs, "metadata": meta, "needsApproval": False}
+        if rascunho:
+            inp.update({"saveToDraft": True, "mode": "addToQueue", "schedulingType": "automatic"})
+        else:
+            inp.update({"mode": "customScheduled", "dueAt": due, "schedulingType": "automatic"})
+        res = gql(MUT, {"input": inp})["data"]["createPost"]
+        if res["__typename"] != "PostActionSuccess":
+            print(f"AVISO carrossel {rede} recusado: {res}"); continue
+        ids[rede] = res["post"]["id"]
+    return {"tipo": "carrossel", "id": c["id"], "capa": c["capa"], "yt_title": " ".join(c["capa"]), "buffer": ids, "imagens": nomes,
+            "ajustado": True}
 
 
 def publicar_urgente(job, r, data, base):

@@ -43,22 +43,48 @@ def main(job, so=None):
                 render_segmento(src2, parte2, takes(comp["broll"], d0), d0, None, None, vol_orig=0.0)
             except Exception as e:
                 print("AVISO comparação falhou, Short sai no formato normal:", e); comp = None; parte2 = None
-        Y_CAP, Y_TIT, Y_END, Y_POP = (1690, 210, 1835, 945) if comp else (1430, 400, 1690, 1160)
-        L = legendas(info["palavras"], LEAD, n=3, estilo="Cap", dest=ROSA, pos=(540, Y_CAP))
+        estudio = s.get("layout", "estudio") != "classico"   # layout original (padrão desde 23/11)
+        if comp:
+            Y_CAP, Y_TIT, Y_END, Y_POP = (1690, 210, 1835, 945)
+        elif estudio:
+            Y_CAP, Y_TIT, Y_END, Y_POP = (1650, 218, 1800, 860)
+        else:
+            Y_CAP, Y_TIT, Y_END, Y_POP = (1430, 400, 1690, 1160)
+        cartoes = cartoes_do_roteiro(s, info["palavras"]) if (estudio and not comp) else []
+        sem_karaoke = estudio and not comp and not s.get("cartoes")   # cartões automáticos já mostram a frase inteira
+        L = [] if sem_karaoke else legendas(info["palavras"], LEAD, n=3, estilo="Cap", dest=ROSA, pos=(540, Y_CAP))
         total = d0
         if s.get("quote") and not comp:
             a, b = s["quote"]; a -= 0.3; b += 0.5
             render_segmento(src, seg / f"{sid}_q.mp4", [a], b - a, None, vol_orig=1.0, take=b - a)
             partes.append(seg / f"{sid}_q.mp4")
             ws = [dict(w, s=w["s"] - a, e=w["e"] - a) for w in fonte if a <= w["s"] < b]
-            L += legendas(ws, total, n=3, estilo="Quote", dest=CIANO, pos=(540, 1430))
+            L += legendas(ws, total, n=3, estilo="Quote", dest=CIANO, pos=(540, Y_CAP if estudio else 1430))
             total += dur(partes[-1])
         conteudo = total
         total += CAPA_S
         if total < 61:
             raise SystemExit(f"Short {sid} tem {total:.1f}s — precisa passar de 60 s. Aumente a narração e rode de novo.")
         L.append(rf"Dialogue: 2,{t(0)},{t(conteudo)},Tit,,0,0,0,,{{\pos(540,{Y_TIT})}}{s['titulo_tela']}")
-        L.append(rf"Dialogue: 2,{t(conteudo-2.6)},{t(conteudo)},End,,0,0,0,,{{\pos(540,{Y_END})\fad(250,0)}}FULL BREAKDOWN ON THE CHANNEL")
+        fim_txt = "FOLLOW FOR MORE GTA 6 SECRETS" if estudio else "FULL BREAKDOWN ON THE CHANNEL"
+        if not (estudio and not comp):
+            L.append(rf"Dialogue: 2,{t(conteudo-2.6)},{t(conteudo)},End,,0,0,0,,{{\pos(540,{Y_END})\fad(250,0)}}{fim_txt}")
+        if estudio and not comp:   # chamada para seguir dentro do painel, depois do último cartão
+            ult = cartoes[-1][1] if cartoes else conteudo - 2.6
+            ini_cta = min(ult, conteudo - 2.6)
+            L.append(rf"Dialogue: 3,{t(ini_cta)},{t(conteudo)},Cap,,0,0,0,,{{\pos(540,1240)\fs104\c&H00D7FF&\fad(150,0)}}"
+                     rf"FOLLOW FOR\NMORE SECRETS")
+        if estudio:
+            L.append(rf"Dialogue: 3,{t(0)},{t(conteudo)},End,,0,0,0,,{{\pos(540,50)\fs46\c&HFFE500&}}HQ VAULT  •  GTA 6 SECRETS")
+            for k, (ini, fim, txt) in enumerate(cartoes):
+                fim = min(fim, conteudo - 2.6) if k == len(cartoes) - 1 else fim
+                if fim - ini < 0.4:
+                    continue
+                if s.get("cartoes"):
+                    L.append(rf"Dialogue: 3,{t(ini)},{t(fim)},End,,0,0,0,,{{\pos(540,1040)\fs52\c&HFFE500&\fad(150,0)}}"
+                             rf"TIP {k + 1}/{len(cartoes)}")
+                L.append(rf"Dialogue: 3,{t(ini)},{t(fim)},Cap,,0,0,0,,{{\pos(540,{1250 if s.get('cartoes') else 1240})"
+                         rf"\fs{108 if s.get('cartoes') else 84}\fscx70\fscy70\t(0,140,\fscx100\fscy100)\fad(120,0)}}{txt}")
         if comp:
             r1, r2 = (comp.get("rotulos") or ["GTA 6", "GTA 5"])[:2]
             L.append(rf"Dialogue: 3,{t(0)},{t(conteudo)},Tit,,0,0,0,,{{\an7\pos(36,352)\fs76\c&H00D7FF&}}{r1}")
@@ -123,9 +149,18 @@ def main(job, so=None):
         fc = "".join(f"[{i+2}:v][{i+2}:a]" for i in range(n)) + f"concat=n={n}:v=1:a=1[vc][ac];"
         if parte2:   # tela dividida: GTA 6 em cima (330–938), comparação embaixo (958–1566)
             ent += ["-i", str(parte2)]
-            fc += (f"[vc]split[x][y];[x]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=28:3,"
-                   f"eq=brightness=-0.18[bg];[y]scale=1080:608[t1];[{n+2}:v]scale=1080:608,setsar=1[t2];"
-                   "[bg][t1]overlay=0:330[b1];[b1][t2]overlay=0:958,setsar=1,fps=30[vb];")
+            from estudio import fundo
+            fpng = fundo(seg / "estudio_cmp.png", comparar=True)
+            ent += ["-loop", "1", "-framerate", "30", "-t", f"{conteudo:.2f}", "-i", str(fpng)]
+            fc += (f"[{n+3}:v]scale=1080:1920,setsar=1,fps=30[bg];[vc]scale=1080:608[t1];[{n+2}:v]scale=1080:608,setsar=1[t2];"
+                   "[bg][t1]overlay=0:330:shortest=1[b1];[b1][t2]overlay=0:958:shortest=1,setsar=1,fps=30[vb];")
+        elif estudio:   # fundo próprio + gameplay numa janela com moldura (a moldura e o painel já estão no fundo)
+            from estudio import fundo, JANELA
+            fpng = fundo(seg / "estudio.png")
+            ent += ["-loop", "1", "-framerate", "30", "-t", f"{conteudo:.2f}", "-i", str(fpng)]
+            x, y, w, h = JANELA
+            fc += (f"[{n+2}:v]scale=1080:1920,setsar=1,fps=30[bg];[vc]scale={w}:{h},setsar=1[fg];"
+                   f"[bg][fg]overlay={x}:{y}:shortest=1,fps=30[vb];")
         else:
             fc += ("[vc]split[x][y];[x]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,boxblur=28:3,"
                    "eq=brightness=-0.12[bg];[y]scale=1300:-2,crop=1080:731[fg];[bg][fg]overlay=0:(H-h)/2-40,setsar=1,fps=30[vb];")
@@ -150,6 +185,36 @@ def main(job, so=None):
             except Exception as e:
                 print("AVISO versão rápida falhou (o YouTube recebe a completa):", e)
         print("ok short", sid, round(total, 1), "s", flush=True)
+
+
+def cartoes_do_roteiro(s, palavras):
+    """Cartões do painel: [(inicio, fim, texto)]. Usa s["cartoes"] = [{"quando": "primeiras palavras da frase", "texto": "..."}];
+    sem isso, cada frase da narração vira um cartão (texto na tela estilo 'kinetic typography')."""
+    import re
+    nz = lambda w: re.sub(r"[^a-z0-9]", "", w.lower())
+    pw = [nz(w["w"]) for w in palavras]
+    marcas = []
+    if s.get("cartoes"):
+        for c in s["cartoes"]:
+            alvo = [nz(x) for x in str(c.get("quando", "")).split()[:4] if nz(x)]
+            for i in range(len(pw) - len(alvo) + 1):
+                if alvo and pw[i:i + len(alvo)] == alvo:
+                    marcas.append((LEAD + palavras[i]["s"], c["texto"].upper())); break
+            else:
+                print(f"AVISO cartão não achado na narração: {c.get('quando')!r}")
+    else:
+        frase, ini = [], None
+        for w in palavras:
+            if ini is None:
+                ini = LEAD + w["s"]
+            frase.append(w["w"])
+            if w["w"].rstrip("\"'”’)").endswith((".", "!", "?")) or len(frase) >= 16:
+                marcas.append((ini, " ".join(frase))); frase, ini = [], None
+        if frase:
+            marcas.append((ini, " ".join(frase)))
+    marcas.sort()
+    fim_total = LEAD + palavras[-1]["e"] + 0.4 if palavras else 0
+    return [(a, marcas[k + 1][0] if k + 1 < len(marcas) else fim_total, txt) for k, (a, txt) in enumerate(marcas)]
 
 
 def corte_rapido(final, saida, palavras, total, minimo=22.0, maximo=40.0):
