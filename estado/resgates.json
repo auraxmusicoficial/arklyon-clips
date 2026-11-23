@@ -5,7 +5,8 @@
   "titulo_antigo": "13 Years Later, GTA 6 Is Finally Here — Was It Worth The Wait?",
   "titulo_novo": "GTA 6 BROKE ME: 3 Things You Must Know Before Playing 🎮",
   "views_dia_antes": 0.0,
-  "mediana_tipo": 1.1
+  "mediana_tipo": 1.1,
+  "views_dia_agora": 0.0
  },
  "6bSau3WJl-Y": {
   "tipo": "short",
@@ -13,7 +14,8 @@
   "titulo_antigo": "Is Crazy in GTA 6 #gta6 #gta #gta6trailer",
   "titulo_novo": "STOP: GTA 6's 'Crazy' Mode Is Actually a Trap 🚫",
   "views_dia_antes": 0.3,
-  "mediana_tipo": 24.3
+  "mediana_tipo": 24.3,
+  "views_dia_agora": 0.3
  },
  "h-zUFcFzLfs": {
   "tipo": "short",
@@ -21,6 +23,31 @@
   "titulo_antigo": "Reaction New GTA 6 #gta #gta6 #reaction",
   "titulo_novo": "SHOCKING: GTA 6 Physics Break Reality 🤯",
   "views_dia_antes": 0.3,
-  "mediana_tipo": 24.3
+  "mediana_tipo": 24.3,
+  "views_dia_agora": 0.3
+ },
+ "xJacJXth4ac": {
+  "tipo": "longo",
+  "quando": "2026-11-23T00:33:58.593923-03:00",
+  "titulo_antigo": "GTA 6 Lets You Do Things No GTA Ever Did (Day 1 Discoveries)",
+  "titulo_novo": "GTA 6 HIDDEN FEATURE Most Players Missed On Day 1 🤫",
+  "views_dia_antes": 0.0,
+  "mediana_tipo": 1.5
+ },
+ "Vm5YUmBRys0": {
+  "tipo": "short",
+  "quando": "2026-11-23T00:33:59.941372-03:00",
+  "titulo_antigo": "GTA 6 Made $3.79 BILLION in ONE Day (Official) 🤯",
+  "titulo_novo": "GTA 6: Unlock Hidden $500k Car Trunk Loot – No Cheats Needed 💰",
+  "views_dia_antes": 0.0,
+  "mediana_tipo": 14.7
+ },
+ "BOQeEsESTug": {
+  "tipo": "short",
+  "quando": "2026-11-23T00:34:01.797965-03:00",
+  "titulo_antigo": "Cops REMEMBER Your Face in GTA 6 — Do This 🚨",
+  "titulo_novo": "STOP! GTA 6 Cops Track You Like This 👮",
+  "views_dia_antes": 0.0,
+  "mediana_tipo": 14.7
  }
 }
