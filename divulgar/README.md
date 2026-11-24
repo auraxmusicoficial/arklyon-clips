@@ -3,6 +3,37 @@
 Regras para não ser bloqueado: leia as regras de cada grupo (muitos só aceitam divulgação em dias específicos), poste em no máximo 3–5 grupos por dia, use legendas diferentes e responda quem comentar.
 
 ---
+## GTA 6 Cheats: All 18 Working Codes & How To Unlock Them (PS5 & Xbox)
+_Publicado: 2026-11-24 12:00_
+
+![imagem](https://raw.githubusercontent.com/auraxmusicoficial/arklyon-clips/main/divulgar/img/eckKOgpnLrg.jpg)
+
+Toque e segure a imagem para salvar. Use uma legenda diferente em cada grupo:
+
+**Opção 1**
+```
+GTA 6 cheats finally work, but only after the story. Here are all 18 confirmed codes for PS5 and Xbox and how to unlock each one.
+
+▶️ https://youtu.be/eckKOgpnLrg
+```
+
+**Opção 2**
+```
+Before you type a cheat in GTA 6, read this: cheats block saving for the session. Full guide with every confirmed code.
+
+▶️ https://youtu.be/eckKOgpnLrg
+```
+
+**Opção 3**
+```
+Infinite Ammo, No Reload, Body Armor, $250,000... every GTA 6 cheat confirmed so far, with the challenge that unlocks it.
+
+▶️ https://youtu.be/eckKOgpnLrg
+```
+
+
+---
+
 ## GTA 6 Wanted System Explained: How To Escape Cops EVERY Time
 _Publicado: 2026-11-22 12:00_
 
