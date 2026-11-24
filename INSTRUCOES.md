@@ -7,6 +7,9 @@ Meta diária (horário de Brasília): **12h vídeo longo** + Shorts em **13h · 
 ## 🇺🇸 IDIOMA: TUDO QUE É PUBLICADO É EM INGLÊS
 Público principal = Estados Unidos e Reino Unido (dados do Instagram, 23/11). Narração, cartões, títulos, capas, slides do carrossel, legendas do TikTok/Instagram/YouTube, hashtags e primeiro comentário: **inglês americano, natural**. Português só nas notificações para o Felipe. Antes de agendar, releia legendas e slides: nada de rótulos como "Hook:", markdown ou palavras em português.
 
+## ⚠️ YOUTUBE: SHORT COM MENOS DE 60 s (24/11)
+No YouTube, **Short de 1 a 3 min com qualquer reivindicação de Content ID é BLOQUEADO no mundo todo** (0 views), e desde 22/11 há uma onda de reivindicações em gameplay de GTA 6. O motor/shorts.py agora gera sozinho `short_<id>_yt.mp4` com menos de 60 s (acelera até 12% ou corta no fim de uma frase) e o publicar.py manda essa versão para o YouTube. TikTok e Instagram continuam recebendo a versão completa (>60 s). Copie também os `short_*_yt.mp4` para `publicar/<DATA>/`. Música do rádio do jogo: NUNCA.
+
 ## ⚠️ ORIGINALIDADE (regra nº 1 desde 23/11 — leia antes de tudo)
 O TikTok marcou nossos vídeos como **"conteúdo não original, de baixa qualidade"** (fora do Para Você), o Instagram bloqueou a monetização por política de conteúdo e o YouTube (algoritmo de 1º/10/2026) corta o alcance de Shorts com imagem copiada de outros canais. Por isso:
 - **Layout "estúdio" é o padrão** (motor/shorts.py e motor/longo.py já fazem): fundo próprio estilo Vice City, gameplay numa JANELA com moldura neon e um **PAINEL com cartões nossos**. Não use `"layout": "classico"`.

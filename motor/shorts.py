@@ -179,11 +179,11 @@ def main(job, so=None):
             tmp.replace(final)
         except Exception as e:
             print("AVISO trilha falhou, seguindo sem música:", e)
-        if s.get("rapido_youtube"):
+        if total > YT_MAX:   # YouTube: Short de 1–3 min com QUALQUER reivindicação Content ID é BLOQUEADO no mundo todo
             try:
-                corte_rapido(out / f"short_{sid}.mp4", out / f"short_{sid}_yt.mp4", info["palavras"], total)
+                versao_yt(out / f"short_{sid}.mp4", out / f"short_{sid}_yt.mp4", info["palavras"], total)
             except Exception as e:
-                print("AVISO versão rápida falhou (o YouTube recebe a completa):", e)
+                print("AVISO versão YouTube (<60 s) falhou:", e)
         print("ok short", sid, round(total, 1), "s", flush=True)
 
 
@@ -215,6 +215,23 @@ def cartoes_do_roteiro(s, palavras):
     marcas.sort()
     fim_total = LEAD + palavras[-1]["e"] + 0.4 if palavras else 0
     return [(a, marcas[k + 1][0] if k + 1 < len(marcas) else fim_total, txt) for k, (a, txt) in enumerate(marcas)]
+
+
+YT_MAX = 59.0   # 24/11: Shorts acima de 1 min com reivindicação de Content ID ficam bloqueados (e a onda de claims de GTA 6 começou)
+
+
+def versao_yt(final, saida, palavras, total):
+    """Versão do YouTube com MENOS de 60 s. Até 12% mais rápido acelera o vídeo todo (fala ainda natural);
+    acima disso, corta no fim de uma frase (35–57 s) e põe a capa no fim."""
+    f = total / (YT_MAX - 0.4)
+    if f <= 1.12:
+        run(["ffmpeg", "-y", "-v", "error", "-i", final, "-filter_complex",
+             f"[0:v]setpts=PTS/{f:.4f}[v];[0:a]atempo={f:.4f}[a]", "-map", "[v]", "-map", "[a]",
+             "-c:v", "libx264", "-preset", "veryfast", "-crf", "22", "-pix_fmt", "yuv420p",
+             "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", saida])
+        print(f"  versão YouTube: {total / f:.1f}s (acelerada {f:.2f}x)")
+    else:
+        corte_rapido(final, saida, palavras, total, minimo=35.0, maximo=YT_MAX - CAPA_S - 1.0)
 
 
 def corte_rapido(final, saida, palavras, total, minimo=22.0, maximo=40.0):
