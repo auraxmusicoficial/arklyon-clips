@@ -1110,7 +1110,7 @@
    "tiktok": "6b02b0afcc364169c13f4185",
    "instagram": "6b02b0b0d5eabfb8cc9655ac"
   },
-  "ajustado": true,
+  "ajustado": "nao_encontrado",
   "formato_yt": "completo",
   "comentario": "Which escape is your #1 — hiding, Focus, ditching the car or splitting up? 👇",
   "fb_textos": [],
@@ -1604,14 +1604,15 @@
    }
   },
   "video_id": "vKYDSJ4UI7o",
-  "na_playlist": true
+  "na_playlist": true,
+  "comentou": true
  },
  {
   "tipo": "short",
   "quando": "2026-11-24T16:00:00-03:00",
   "upload": "2026-11-24T13:00:00-03:00",
   "yt_title": "These GTA 6 Safe Codes Never Change 💰",
-  "descricao": "GTA 6 safe codes for the Illegal Operations hideouts are fixed for everyone. Which safe gave you the most cash? #GTA6 #GTAVI #Shorts #GTA6SafeCodes",
+  "descricao": "GTA 6 safe codes for the Illegal Operations hideouts are fixed for everyone. Which safe gave you the most cash? #GTA6 #GTAVI #Shorts #GTA6SafeCodes\n\n🎬 Full guide 👉 https://youtu.be/eckKOgpnLrg",
   "tags": [
    "gta 6 safe codes",
    "gta 6 safe code",
@@ -1632,16 +1633,28 @@
    "tiktok": "6b054ba80daa3d149f22291e",
    "instagram": "6b054ba908d2a2149eac90d2"
   },
-  "ajustado": false,
+  "ajustado": true,
   "formato_yt": "completo",
-  "comentario": "Do you crack safes or look up the code? No judgment 👀",
+  "comentario": "Do you crack safes or look up the code? No judgment 👀 Full guide here 👉 https://youtu.be/eckKOgpnLrg",
   "fb_textos": [],
   "playlist": "shorts",
   "urgente": false,
   "quando_redes": {
    "tiktok": "18:00",
    "instagram": "16:00"
-  }
+  },
+  "traducoes": {
+   "es": {
+    "title": "Estos códigos de cajas fuertes de GTA 6 nunca cambian 💰",
+    "description": "Los códigos de cajas fuertes de GTA 6 para los escondites de Operaciones Ilegales son fijos para todos. ¿Qué caja fuerte te dio más dinero? #GTA6 #GTAVI #Shorts #GTA6SafeCodes\n\n🎬 Guía completa 👉 https://youtu.be/eckKOgpnLrg"
+   },
+   "pt": {
+    "title": "Esses códigos de cofres do GTA 6 nunca mudam 💰",
+    "description": "Os códigos de cofres do GTA 6 para os esconderijos de Operações Ilegais são fixos para todos. Qual cofre te deu mais grana? #GTA6 #GTAVI #Shorts #GTA6SafeCodes\n\n🎬 Guia completa 👉 https://youtu.be/eckKOgpnLrg"
+   }
+  },
+  "video_id": "xkyk5UYDW3M",
+  "na_playlist": true
  },
  {
   "tipo": "short",
@@ -1785,6 +1798,7 @@
   },
   "na_playlist": true,
   "fb_feito": true,
-  "comentou": true
+  "comentou": true,
+  "publico_ok": true
  }
 ]
