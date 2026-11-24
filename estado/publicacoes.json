@@ -1079,7 +1079,7 @@
   "buffer": {
    "tiktok": "6b02b0ae846b0ee907727658"
   },
-  "ajustado": true,
+  "ajustado": "nao_encontrado",
   "formato_yt": "completo",
   "comentario": "Be honest: did you ever check for cameras before a robbery? 📹",
   "fb_textos": [],
@@ -1784,6 +1784,7 @@
    }
   },
   "na_playlist": true,
-  "fb_feito": true
+  "fb_feito": true,
+  "comentou": true
  }
 ]
