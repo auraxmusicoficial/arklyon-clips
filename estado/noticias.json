@@ -178,5 +178,15 @@
       "https://www.engadget.com/2326351/grand-theft-auto-6-is-the-biggest-playstation-launch-of-all-time/"
     ],
     "urgente": true
+  },
+  {
+    "quando": "2026-11-24T18:35:00-03:00",
+    "noticia": "Sem notícia grande nova nas últimas 6 h. Visto: suposto vazamento do executável do GTA 6 de Xbox (Cyberleek, 23/11) e port não oficial para PC que só chegou às telas iniciais; projeto 'Leonida' encerrado e Rockstar supostamente derrubou o Discord — tudo de 23/11, baseado em posts de redes sociais, sem declaração oficial de Rockstar/Take-Two (rumor + pirataria, não vale Short). Sem trailer, Online ou PC oficial.",
+    "fontes": [
+      "https://www.gamesradar.com/games/grand-theft-auto/unofficial-gta-6-pc-port-scrapped-as-rockstar-allegedly-takes-down-discord-server-hours-after-devs-managed-to-get-the-game-booting/",
+      "https://www.tweaktown.com/news/114839/gta-6-boots-on-pc-only-3-hours-after-xbox-executable-leaked/index.html",
+      "https://www.notebookcheck.net/Cyberleek-releases-GTA-6-Xbox-build-making-playable-PC-port-more-realistic.1454770.0.html"
+    ],
+    "urgente": false
   }
 ]
