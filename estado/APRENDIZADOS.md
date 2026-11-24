@@ -1,47 +1,42 @@
-# Aprendizados automáticos do canal — 23/11/2026 20:53
+# Aprendizados automáticos do canal — 24/11/2026 00:31
 
 _Gerado pelo robô a partir do desempenho real dos vídeos. A produção DEVE aplicar isto no longo e nos Shorts do dia._
 
 ## O que está funcionando  
-| Padrão | Detalhe |
-|--------|---------|
-| **Tipo de assunto** | *Novidades imediatas* (ex.: “6 Wanted Stars Are Back”, “Do This FIRST”, “Cops Are Smarter”). Tudo que o jogador pode aplicar **hoje**. |
-| **Palavras‑chave** | “FIRST”, “BACK”, “SMAR­TER”, “FREE MONEY”, “SECRET”, “$1.6 BILLION”, “TIED THE HIGHEST”. Verbos de ação + números ou valores chamam atenção. |
-| **Emoji** | 🚨 ⚠️ 💰 🎮 🔥 – sempre no início ou logo antes da frase de impacto. |
-| **Duração** | Shorts entre **55 s e 71 s**. O pico de visualizações/dia está em 55‑66 s. |
-| **Horário de postagem** | Entre **09h e 13h BRT** – maior “views/day”. 09h aparece nas 4 melhores. |
-| **Engajamento** | Mesmo com 2‑5 % de engajamento, vídeos curtos têm alta retenção. O que importa é o “click‑through” do título + thumbnail. |
+**Assuntos** – Dicas rápidas, segredos de dinheiro, mudanças de IA/polícia e “primeiro passo” no jogo.  
+**Palavras‑chave** – “FIRST”, “FREE MONEY”, “SMARTEr COPS”, “WANTED”, “SECRETS”, “BILLION”, “TIED”.  
+**Emojis** – 🚨, ⚠️, 💰, 🤯, 🎮, 🔥 dão + click‑through.  
+**Duração** – Shorts entre 55 s e 71 s; picos de visualizações/dia > 150.  
+**Horário de postagem** – Maioria entre 09h‑13h BRT (pico às 11h).  
+**Engajamento** – Mesmo com engajamento moderado (2‑5 %) os vídeos curtos bombam por volume de views/dia.
 
 ## O que evitar  
-* Vídeos longos (>5 min) ainda não têm tração – visualizações diárias < 3.  
-* Títulos genéricos (“Top 5 Things…”, “Reviews Are In”) sem número ou promessa concreta.  
-* Emojis fora do padrão (ex.: nenhum ou emojis muito distantes do texto).  
-* Postagens depois das 16h – queda de “views/day”.  
-* Thumbnails sem contraste forte (não há dados, mas a baixa performance sugere falta de destaque visual).  
+- **Longos** > 500 s: quase nenhum view, apesar de alta taxa de engajamento (público muito pequeno).  
+- **Temas genéricos** (“Metacritic score”, “Gym is back”) que caem abaixo de 35 views/dia.  
+- **Títulos sem gatilho de urgência ou benefício direto** (ex.: “Hollow Stars Mean…”, “Story Might Spoil…”) geram poucos cliques.  
+- **Postar depois das 16h** diminui a taxa de visualizações/dia nos Shorts.  
 
 ## Fórmulas de título para amanhã  
 
 **Shorts (INGLÊS)**  
-1. “[X] MUST‑DO Trick in GTA 6 Before the Police Catch You 🚨”  
-2. “How to Find $[X] Hidden in Car Trunks Today 💰”  
-3. “The NEW 6‑Star Wanted System Explained – Play Smarter ⚠️”  
-4. “[X] Seconds to Unlock the Fastest Money Hack in GTA 6 💸”  
-5. “Why Everyone Is Dropping [X] in GTA 6 – Secret Revealed 🔥”  
-6. “Avoid This BIG Mistake on Day 1 of GTA 6 🚫”
+1. “Do THIS FIRST in GTA 6 or Lose [X] 💥”  
+2. “How to Steal $[X] from Car Trunks FAST 🚗💰”  
+3. “Cops Are Smarter Now – Avoid This [X] Mistake 🚨”  
+4. “Unlock the Secret [X] Weapon in GTA 6 🔓⚔️”  
+5. “Earn $[X] in 5 Minutes – GTA 6 Money Hack 💸”  
+6. “Why 6 Wanted Stars Are Back – What It Means for You 😱”
 
 **Vídeos longos (INGLÊS)**  
-1. “GTA 6 Day‑[X] Guide: All Secrets, Money Hacks & Police Tricks”  
-2. “The Ultimate GTA 6 Update Review – What Changed on Day [X]”
-
-*(Substitua **[X]** pelo número ou fato do dia: dinheiro encontrado, número de estrelas, etc.)*  
+1. “GTA 6 Complete Guide: How to Make $[X] Every Day (Full Walk‑through)”  
+2. “All Hidden Features in GTA 6 – What You Missed on Day 1 (Including $[X] Secrets)”
 
 ## Ajustes no vídeo longo  
-1. **Título** – Adote a fórmula curta + número + benefício (“Day‑[X] GTA 6 Money & Police Guide”).  
-2. **Capa** – Use foto de alta‑contraste (ex.: carro aberto com dinheiro visível) + emojis 🚨💰 e texto em caixa‑alta “$[X] IN 30 s”.  
-3. **Gancho (primeiros 30 s)** – Comece com uma frase de urgência: “Pare tudo o que está fazendo – nos próximos 30 s você vai descobrir como ganhar $[X] sem ser pego!”. Em seguida, mostre rapidamente a cena de ação (câmera rápida).  
+- **Título**: Use a mesma estrutura de urgência + número (“How to Make $[X] Fast in GTA 6”).  
+- **Thumbnail**: Imagem de valor visível (ex.: pilha de dinheiro + seta “+$[X]”). Use emojis grandes e cores contrastantes.  
+- **Gancho (0‑30 s)**: Comece com “Você quer ganhar $[X] hoje? Veja isso em 30 s!” e mostre rapidamente a recompensa. Repita a promessa ao longo do vídeo.
 
 ## O que testar a seguir  
-1. **Teste de horário** – Publique 3 Shorts idênticos (mesmo título, mesma thumbnail) às 09h, 12h e 15h BRT. Compare “views/day” para confirmar o pico matinal.  
-2. **Thumbnail vs. Texto** – Crie duas versões de thumbnail para um mesmo Short: (a) foto do carro com dinheiro visível, (b) captura de tela de polícia perseguindo. Meça CTR nos primeiros 12 h.  
+1. **Horário** – Publique Shorts às 09h, 11h e 13h (testar 3 slots em dias diferentes) para confirmar pico de visualizações.  
+2. **Formato “Lista + Número”** – Crie um Shorts “Top 3 Ways to Earn $[X] in GTA 6” e compare o desempenho com o formato “Do This FIRST”.  
 
-Esses ajustes alinham seu conteúdo ao que já está gerando resultados e permitem validar rapidamente os próximos passos. Boa produção!
+Essas mudanças focam nos gatilhos que já provaram gerar mais visualizações e ajudam a transformar o público dos Shorts em inscritos para os vídeos longos. Boa sorte!
