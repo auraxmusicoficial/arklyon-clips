@@ -168,5 +168,15 @@
       "https://www.pushsquare.com/news/2026/11/first-gta-6-ps5-patch-live-now-get-all-the-details-here"
     ],
     "urgente": false
+  },
+  {
+    "quando": "2026-11-24T14:50:00-03:00",
+    "noticia": "Sony confirmou (PlayStation Blog/X, 23/11) que GTA 6 é o maior lançamento da história do PlayStation: 39 mi+ de jogadores únicos no PS5, 683 mi de horas, média de 17,4 h, recorde de jogadores simultâneos e de PS5 novos conectados num dia (70%+ começaram pelo GTA 6). Short urgente u1 publicado (TikTok/Instagram; YouTube no limite de 24 h).",
+    "fontes": [
+      "https://kotaku.com/gta6-grand-theft-auto-6-ps5-playstation-sony-record-sales-2001000009",
+      "https://www.pushsquare.com/news/2026/11/gta-6-officially-the-biggest-launch-in-playstation-history-with-over-39-million-players",
+      "https://www.engadget.com/2326351/grand-theft-auto-6-is-the-biggest-playstation-launch-of-all-time/"
+    ],
+    "urgente": true
   }
 ]
