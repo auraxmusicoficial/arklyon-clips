@@ -32,6 +32,22 @@ def gerar(prompt, sistema="", max_tokens=2500, json_saida=False):
             except Exception as e:  # rede, timeout
                 ultimo = f"{modelo}: {e}"
             break
+    if os.environ.get("GEMINI_KEY"):   # reserva: Gemini (grátis, aceita textos bem maiores que o limite do Groq)
+        for mod in ("gemini-flash-latest", "gemini-3-flash-preview", "gemini-3.8-flash"):
+            corpo = {"contents": [{"role": "user", "parts": [{"text": prompt}]}],
+                     "generationConfig": {"maxOutputTokens": max(4000, max_tokens * 2), "temperature": 0.8,
+                                          **({"responseMimeType": "application/json"} if json_saida else {})}}
+            if sistema:
+                corpo["systemInstruction"] = {"parts": [{"text": sistema}]}
+            url = f"https://generativelanguage.googleapis.com/v1beta/models/{mod}:generateContent?key={os.environ['GEMINI_KEY']}"
+            try:
+                out = json.load(urllib.request.urlopen(urllib.request.Request(url, json.dumps(corpo).encode(),
+                                                                              {"Content-Type": "application/json"}), timeout=180))
+                txt = "".join(p.get("text", "") for p in out["candidates"][0]["content"]["parts"]).strip()
+                if txt:
+                    return txt
+            except Exception as e:
+                ultimo = f"{mod}: {e}"
     raise RuntimeError("todas as IAs grátis falharam: " + str(ultimo))
 
 
