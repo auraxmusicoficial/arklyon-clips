@@ -224,8 +224,17 @@ def agendar_carrossel(job, c, base, due_ig, due_tt=None, rascunho=False):
     imgs = [{"image": {"url": f"{base}/{n}"}} for n in nomes]
     leg = c.get("legenda", "") + ("\n\n" + c["hashtags"] if c.get("hashtags") else "")
     ids = {}
+    reel = job / "saida" / f"reel_{c['id']}.mp4"
+    if reel.exists() and not rascunho:   # Instagram (e Facebook pelo compartilhamento automático) recebe o post como REEL
+        try:
+            ids["instagram"] = criar("instagram", leg, f"{base}/{reel.name}", due_ig,
+                                     {"instagram": {"type": "reel", "shouldShareToFeed": True, "isAiGenerated": False}})
+        except Exception as e:
+            print("AVISO reel do post recusado, vai como carrossel:", e)
     for rede, meta, due in (("instagram", {"instagram": {"type": "post", "shouldShareToFeed": True, "isAiGenerated": False}}, due_ig),
                             ("tiktok", {"tiktok": {"title": c.get("tt_title", c["capa"][1])[:90], "isAiGenerated": False}}, due_tt or due_ig)):
+        if rede in ids:
+            continue
         inp = {"channelId": CANAIS[rede], "text": leg, "assets": imgs, "metadata": meta, "needsApproval": False}
         if rascunho:
             inp.update({"saveToDraft": True, "mode": "addToQueue", "schedulingType": "automatic"})

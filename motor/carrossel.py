@@ -310,6 +310,54 @@ def final(c, total):
     return img
 
 
+def video_reel(job, cid, saida=None, seg_slide=3.2, seg_capa=2.4):
+    """Transforma os slides de um post num REEL 9:16 (para o Instagram/Facebook: lá o post de imagem só chega a quem
+    já segue — 25/11: carrosséis com 6–25 views — e o Reel é que leva para gente nova). Slide sobre o fundo do estúdio,
+    zoom leve, whoosh nas trocas e trilha própria."""
+    import subprocess, zlib
+    from estudio import fundo
+    job = Path(job); out = job / "saida"; slides = sorted(out.glob(f"car_{cid}_*.jpg"))
+    if not slides:
+        return None
+    saida = Path(saida or out / f"reel_{cid}.mp4"); fpng = fundo(out / f"fundo_reel_{cid}.png", comparar=True)
+    try:   # título do post no topo e chamada para seguir embaixo (o slide fica no meio)
+        dados = json.loads((job / "carrossel.json").read_text())
+        c = next(x for x in dados["carrosseis"] if x["id"] == cid)
+        img = Image.open(fpng).convert("RGB"); d = ImageDraw.Draw(img, "RGBA")
+        tit = (c.get("capa") or [""])[1] if len(c.get("capa") or []) > 1 else (c.get("capa") or [""])[0]
+        degrade_texto(img, (540, 215), tit.upper(), caber(d, tit.upper(), F_GTA, 1000, 150))
+        d = ImageDraw.Draw(img, "RGBA")
+        texto_contorno(d, (540, 1700), "FOLLOW FOR DAILY", fonte(F_TXT, 64), (255, 255, 255), larg=5)
+        texto_contorno(d, (540, 1785), "GTA 6 SECRETS", fonte(F_GTA, 96), AMARELO, larg=7)
+        img.save(fpng, quality=95)
+    except Exception as e:
+        print("AVISO texto do fundo do reel:", e)
+    durs = [seg_capa] + [seg_slide] * (len(slides) - 1) if len(slides) > 1 else [6.0]
+    if len(slides) == 2:
+        durs = [3.0, 4.5]
+    ent = ["-loop", "1", "-framerate", "30", "-t", f"{sum(durs):.2f}", "-i", str(fpng)]
+    fc = "[0:v]scale=1080:1920,setsar=1[bg0];"; ant = "bg0"; t0 = 0.0; marcas = []
+    for k, (sl, d) in enumerate(zip(slides, durs)):
+        ent += ["-loop", "1", "-framerate", "30", "-t", f"{d:.2f}", "-i", str(sl)]
+        fc += (f"[{k+1}:v]scale=1020:1275,zoompan=z='min(1.0+0.0009*on,1.06)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
+               f":s=1020x1275:fps=30,setpts=PTS-STARTPTS+{t0:.2f}/TB[s{k}];"
+               f"[{ant}][s{k}]overlay=30:330:enable='between(t,{t0:.2f},{t0 + d:.2f})'[bg{k+1}];")
+        ant = f"bg{k+1}"; marcas.append(t0); t0 += d
+    fc += f"[{ant}]format=yuv420p[v]"
+    tmp = out / f"reel_{cid}_mudo.mp4"
+    subprocess.run(["ffmpeg", "-y", "-v", "error", *ent, "-f", "lavfi", "-t", f"{t0:.2f}", "-i", "anullsrc=r=44100:cl=stereo",
+                    "-filter_complex", fc, "-map", "[v]", "-map", f"{len(slides)+1}:a", "-t", f"{t0:.2f}",
+                    "-c:v", "libx264", "-preset", "veryfast", "-crf", "21", "-c:a", "aac", "-shortest", str(tmp)], check=True)
+    try:
+        from trilha import sonorizar
+        sonorizar(tmp, saida, marcas=marcas[1:], estilo="acao", semente=zlib.crc32(cid.encode()) % 1000, volume_db=-8)
+        tmp.unlink()
+    except Exception as e:
+        print("AVISO trilha do reel falhou:", e); tmp.replace(saida)
+    print("ok reel do post", cid, f"{t0:.1f}s")
+    return saida
+
+
 def gerar(job):
     job = Path(job); dados = json.loads((job / "carrossel.json").read_text())
     out = job / "saida"; out.mkdir(exist_ok=True); feitos = []
@@ -334,6 +382,10 @@ def gerar(job):
         for i, s in enumerate(slides, 1):
             p = out / f"car_{c['id']}_{i:02d}.jpg"; s.save(p, quality=92); nomes.append(p.name)
         feitos.append((c["id"], nomes)); print("ok carrossel", c["id"], len(nomes), "slides")
+        try:
+            video_reel(job, c["id"])
+        except Exception as e:
+            print("AVISO reel do post falhou (o Instagram recebe o carrossel):", e)
     return feitos
 
 
