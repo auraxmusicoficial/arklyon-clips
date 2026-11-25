@@ -1956,7 +1956,7 @@
   "quando": "2026-11-25T21:00:00-03:00",
   "upload": "2026-11-25T18:00:00-03:00",
   "yt_title": "TOP 4 SECRET Easter Eggs Hidden in GTA 6 (Ranked) 🔥",
-  "descricao": "4 GTA 6 easter eggs from old Rockstar games, ranked. Which one did you find first? #GTA6 #GTAVI #Shorts #EasterEgg",
+  "descricao": "4 GTA 6 easter eggs from old Rockstar games, ranked. Which one did you find first? #GTA6 #GTAVI #Shorts #EasterEgg\n\n🎬 Full guide 👉 https://youtu.be/eckKOgpnLrg",
   "tags": [
    "gta 6",
    "gta vi",
@@ -1975,9 +1975,9 @@
    "tiktok": "6b069aa5b6204bca46dcf0b5",
    "instagram": "6b069aa6d8874a038c069899"
   },
-  "ajustado": false,
+  "ajustado": true,
   "formato_yt": "rapido",
-  "comentario": "Rank them yourself: hat, egg, Eclipse or mystery house? 👇",
+  "comentario": "Rank them yourself: hat, egg, Eclipse or mystery house? 👇 Full guide here 👉 https://youtu.be/eckKOgpnLrg",
   "fb_textos": [],
   "playlist": "shorts",
   "urgente": false,
@@ -1986,7 +1986,18 @@
    "instagram": "20:00"
   },
   "yt_direto": "4in4d3QzqT0",
-  "video_id": "4in4d3QzqT0"
+  "video_id": "4in4d3QzqT0",
+  "traducoes": {
+   "es": {
+    "title": "TOP 4 EASTER EGGS SECRETOS en GTA 6 (Clasificado) 🔥",
+    "description": "4 Easter eggs de GTA 6 de viejos juegos de Rockstar, clasificados. ¿Cuál encontraste primero? #GTA6 #GTAVI #Shorts #EasterEgg\n\n🎬 Guía completa 👉 https://youtu.be/eckKOgpnLrg"
+   },
+   "pt": {
+    "title": "TOP 4 EASTER EGGS SECRETOS em GTA 6 (Classificado) 🔥",
+    "description": "4 Easter eggs de GTA 6 de jogos antigos da Rockstar, classificados. Qual você encontrou primeiro? #GTA6 #GTAVI #Shorts #EasterEgg\n\n🎬 Guia completa 👉 https://youtu.be/eckKOgpnLrg"
+   }
+  },
+  "na_playlist": true
  },
  {
   "tipo": "carrossel",
