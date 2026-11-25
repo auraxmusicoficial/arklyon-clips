@@ -4,6 +4,9 @@ Canal: **HQ Vault Clips** (YouTube) · TikTok **@thevaultclipsof** · Instagram 
 Meta diária (horário de Brasília): **12h vídeo longo** + Shorts em **13h · 16h · 21h**.
 **A partir de 23/11/2026: 3 Shorts por dia (13h · 16h · 21h, nas 3 redes) + 1 CARROSSEL por dia (19h, Instagram + TikTok modo foto). Vídeo longo em dias alternados** (o robô sabe o dia: faça longo se o último foi há 2+ dias). Confira com `python3 motor/publicar.py --slots <DATA>`.
 
+## 📰 NOTÍCIAS (25/11): o robô vigia sozinho
+O robô do GitHub (motor/vigia.py, Groq com busca na web, grátis) procura notícias de GTA 6 a cada 2 h e grava em `estado/noticias.json`. **Ao escolher o tema do dia, olhe primeiro as entradas com `"urgente": true` e `"produzido": false`**: notícia grande vira o 1º Short do dia (selo BREAKING/JUST IN) e depois marque `"produzido": true`.
+
 ## 🇺🇸 IDIOMA: TUDO QUE É PUBLICADO É EM INGLÊS
 Público principal = Estados Unidos e Reino Unido (dados do Instagram, 23/11). Narração, cartões, títulos, capas, slides do carrossel, legendas do TikTok/Instagram/YouTube, hashtags e primeiro comentário: **inglês americano, natural**. Português só nas notificações para o Felipe. Antes de agendar, releia legendas e slides: nada de rótulos como "Hook:", markdown ou palavras em português.
 

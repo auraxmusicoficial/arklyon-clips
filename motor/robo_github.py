@@ -142,6 +142,10 @@ def main():
         if hora < 20:   # resgate de flops 1x por dia (de manhã)
             import resgate
             _, out_r = etapa("Resgate de vídeos flopados (título novo)", resgate.main)
+    if hora % 2 == 0 and datetime.now(BRT).minute < 30:   # vigia de notícias sem Claude (Groq + busca na web), a cada 2 h
+        import vigia
+        msgs_v, _ = etapa("Vigia de notícias (IA grátis)", vigia.main)
+        avisos += msgs_v or []
     sc_f = Path(__file__).resolve().parent.parent / "estado" / "segunda_chance_dia.txt"
     if 9 <= hora <= 11 and (not sc_f.exists() or sc_f.read_text().strip() != datetime.now(BRT).strftime("%Y-%m-%d")):
         import segunda_chance   # 1x por dia, de manhã (depois que a produção agendou o dia)
