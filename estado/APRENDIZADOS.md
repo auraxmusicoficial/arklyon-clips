@@ -1,55 +1,45 @@
-# Aprendizados automáticos do canal — 25/11/2026 04:46
+# Aprendizados automáticos do canal — 25/11/2026 20:26
 
 _Gerado pelo robô a partir do desempenho real dos vídeos. A produção DEVE aplicar isto no longo e nos Shorts do dia._
 
 ## O que está funcionando  
-**Padrões dos Shorts com melhor performance**
-
-| Métrica | Valor médio dos Top 5 |
-|---|---|
-| Duração | **≈ 60 s** (55‑71 s) |
-| Horário de postagem | **09 h – 13 h BRT** (pico às 09 h) |
-| Emojis | 🚨, ⚠️, 🎮, 💰, 🔥 – 1 a 2 emojis, sempre antes do título |
-| Palavras‑chave | “**GTA 6**”, “**First**”, “**Back**”, “**$**”, “**Stars**”, “**Cheats**” – termos que indicam novidade ou benefício imediato |
-| Formato | “**[Ação] [Benefício] Em GTA 6**” (ex.: *Do This FIRST in GTA 6*) |
-| Engajamento | > 2 % nos Top 5, picos de 5 % quando o título promete “segredo” ou “dinheiro” |
-| Thumbnail | Texto grande, contraste forte (preto/branco) + emoji grande no canto superior |
+**Assuntos** – Dicas rápidas que o jogador pode aplicar imediatamente (ex.: “6 Wanted Stars Are Back…”, “Do This FIRST in GTA 6”).  
+**Palavras‑chave** – “First”, “Back”, “Free Money”, “Cheats”, “Secret”, “Tips”, “How To”.  
+**Emojis** – 🚨 ⚠️ 🤯 💰 🔥  aumentam a taxa de cliques.  
+**Duração** – Shorts entre **55 s e 71 s** geram o maior “views/day”.  
+**Horário de postagem** – Picos entre **09 h e 13 h BRT** (quando a maioria dos jogadores já está online após o trabalho/estudo).  
+**Engajamento** – Mesmo com engajamento moderado (2‑5 %), o volume de visualizações diárias é alto; foco maior em alcance que em likes.
 
 ## O que evitar  
-**Padrões dos Shorts com baixa performance**
-
-* Durações acima de 70 s (ex.: 80 s) → queda de visualizações diárias.  
-* Postagens após 18 h BRT – tráfego menor.  
-* Títulos genéricos sem gatilho (“TOP 5 CHEATS…”) ou que repetem o mesmo claim de outro vídeo.  
-* Baixa contagem de palavras‑chave “GTA 6” no título (ex.: “STOP: GTA 6’s ‘Crazy’ Mode…”) → menos descoberta.  
-* Thumbnails sem emoji ou sem texto de destaque → CTR reduzido.  
+- **Títulos muito genéricos** (“TOP 5 CHEATS…”, “NEVER BLOW UP a Safe”) têm < 30 views/dia.  
+- **Durações acima de 70 s** começam a perder impulso (ex.: 80 s, 73 s com < 100 views/dia).  
+- **Postagens muito tardias** (21 h‑22 h) apresentam queda acentuada de visualizações.  
+- **Vídeos longos** (≥ 5 min) ainda não geram tráfego; o canal ainda não tem autoridade para retenção longa.  
+- **Títulos sem gatilho de urgência ou curiosidade** (ex.: “GTA 6 Reviews Are In…”) não atraem cliques.
 
 ## Fórmulas de título para amanhã  
+### Shorts (INGLÊS)  
+1. **“[X] MUST‑DO Tips Right After Launch – Don’t Miss This! 🚀”**  
+2. **“How to Earn $[X] in 5 Minutes – Fast Money Hack in GTA 6 💰”**  
+3. **“The NEW 6‑Star Police AI – What Changes Everything! 🚨”**  
+4. **“Secret Car Trunk Loot Worth $[X] – Find It Now! 🔥”**  
+5. **“Avoid This Fatal Mistake When Robbing Stores – Pro Guide ⚠️”**  
+6. **“Top 3 Hidden Locations That Give Free Gear – GTA 6 Secrets 🤫”**  
 
-**Shorts (INGLÊS)**  
+### Vídeos longos (INGLÊS)  
+1. **“Ultimate GTA 6 Beginner’s Guide – All Tips & Secrets for Day 1 [X]”**  
+2. **“GTA 6 Money‑Making Masterclass – How I Made $[X] in One Session”**  
 
-1. “🚨 **[X]** New Police Tactics in GTA 6 – Stay One Step Ahead!”  
-2. “⚠️ **[X]** Must‑Do Before Your First Heist in GTA 6”  
-3. “💰 Hidden **[X]** Money Stash in Every GTA 6 Car Trunk!”  
-4. “🔥 **[X]** Ways to Max Out Wanted Level Without Getting Caught”  
-5. “🎮 **[X]** Pro Tips for Winning the First Race in GTA 6”  
-6. “🔓 Unlock **[X]** Secret Codes That Rockstar Forgot to Patch”
-
-**Vídeos longos (INGLÊS)**  
-
-1. “GTA 6 Ultimate Beginner Guide – Everything You Need on Day 1 ([X] Tips)”  
-2. “How to Make **[X]** Million Fast in GTA 6 – Complete Money‑Making Blueprint”
-
-*Substitua **[X]** pelo número, valor ou mecânica do dia (ex.: “5 Million”, “3 Minutes”, “2 Hidden”).*
+*(Substitua **[X]** pelo número/valor do dia ou pela mecânica específica que será mostrada.)*
 
 ## Ajustes no vídeo longo  
-1. **Título** – Adote a estrutura “**[Benefício] + [GTA 6] + [Gancho]**”, ex.: “Earn $500K in 30 Minutes – GTA 6 Money Hacks”.  
-2. **Thumbnail** – Use foto de ação (cena de roubo ou carro) + texto grande “$500K FAST” + emoji 💰.  
-3. **Gancho dos primeiros 30 s** – Comece com uma pergunta de alto impacto (“Want to walk out of a bank with half a million in 5 minutes?”) seguida de um teaser visual de um dos hacks que será mostrado.  
-4. **Inserir “short‑style” cuts** – Cada 1‑2 min, inserir clipes de 5‑10 s no estilo Shorts (emoji, texto rápido) para manter ritmo e melhorar retenção.  
+1. **Título** – Adote a estrutura “How to/Ultimate + número + benefício + [X]” (ex.: “How to Make $10K in 30 Minutes – GTA 6 Money Guide”).  
+2. **Thumbnail** – Use um frame de ação (câmera de carro, policial, dinheiro) com texto grande em **vermelho/ amarelo** e emojis “💰🚗”.  
+3. **Gancho (0‑30 s)** – Comece com uma frase de urgência: “Stop scrolling – in the next 30 seconds I’ll show you a trick that gives you $5 000 instantly!” seguido de um corte rápido para a primeira demonstração.  
+4. **Ritmo** – Insira “cutaways” de 5‑7 s a cada 45 s, replicando o ritmo dos Shorts.  
 
 ## O que testar a seguir  
-1. **Postagem às 09 h BRT vs 13 h BRT** – publique duas versões do mesmo Short (mesmo conteúdo, horários diferentes) e compare views/day e taxa de engajamento.  
-2. **Thumbnail com emoji vs sem emoji** – crie duas miniaturas para um novo Short; uma com emoji grande no canto, outra só texto. Meça CTR nas 48 h iniciais.  
+1. **Postar Shorts às 09 h e 12 h BRT** (duas versões do mesmo título) para medir qual horário gera maior “views/day”.  
+2. **Adicionar “countdown” nos títulos** (ex.: “Only 24 h Left to Grab This Money Hack!”) e comparar a taxa de cliques contra títulos sem contagem regressiva.  
 
-Esses ajustes alinham seu conteúdo ao que já está gerando mais visualizações e engajamento, maximizando o crescimento nos primeiros dias críticos pós‑lançamento. Boa sorte!
+Esses ajustes trazem os padrões vencedores dos Shorts para o conteúdo longo e aumentam a probabilidade de crescimento rápido de inscritos e visualizações. Boa produção!

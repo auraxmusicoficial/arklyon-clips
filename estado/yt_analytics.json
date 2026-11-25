@@ -35,6 +35,36 @@
    "insightTrafficSourceType": "NO_LINK_OTHER",
    "views": 0,
    "estimatedMinutesWatched": 0
+  },
+  {
+   "insightTrafficSourceType": "SHORTS",
+   "views": 4337,
+   "estimatedMinutesWatched": 1527
+  },
+  {
+   "insightTrafficSourceType": "YT_SEARCH",
+   "views": 736,
+   "estimatedMinutesWatched": 257
+  },
+  {
+   "insightTrafficSourceType": "YT_OTHER_PAGE",
+   "views": 88,
+   "estimatedMinutesWatched": 36
+  },
+  {
+   "insightTrafficSourceType": "YT_CHANNEL",
+   "views": 78,
+   "estimatedMinutesWatched": 26
+  },
+  {
+   "insightTrafficSourceType": "NO_LINK_OTHER",
+   "views": 2,
+   "estimatedMinutesWatched": 0
+  },
+  {
+   "insightTrafficSourceType": "NOTIFICATION",
+   "views": 1,
+   "estimatedMinutesWatched": 0
   }
  ],
  "tipos": [
@@ -55,6 +85,12 @@
    "views": 45,
    "averageViewPercentage": 7.71,
    "averageViewDuration": 53
+  },
+  {
+   "creatorContentType": "shorts",
+   "views": 5232,
+   "averageViewPercentage": 57.22999999999999,
+   "averageViewDuration": 35
   }
  ],
  "dias": [
@@ -104,6 +140,18 @@
    "day": "2026-11-22",
    "views": 292,
    "averageViewPercentage": 43.6,
+   "subscribersGained": 0
+  },
+  {
+   "day": "2026-11-21",
+   "views": 184,
+   "averageViewPercentage": 21.59,
+   "subscribersGained": 0
+  },
+  {
+   "day": "2026-11-23",
+   "views": 181,
+   "averageViewPercentage": 45.62,
    "subscribersGained": 0
   }
  ],
@@ -328,6 +376,69 @@
   {
    "video": "5kCCspaOdnE",
    "views": 0,
+   "averageViewDuration": 0,
+   "averageViewPercentage": 0,
+   "subscribersGained": 0
+  },
+  {
+   "video": "49tnnie3Jjo",
+   "views": 1401,
+   "averageViewDuration": 32,
+   "averageViewPercentage": 59.27,
+   "subscribersGained": 2
+  },
+  {
+   "video": "jBavJjK9HI8",
+   "views": 443,
+   "averageViewDuration": 32,
+   "averageViewPercentage": 45.74,
+   "subscribersGained": 0
+  },
+  {
+   "video": "xNhkjNYSKL0",
+   "views": 85,
+   "averageViewDuration": 45,
+   "averageViewPercentage": 62.38,
+   "subscribersGained": 0
+  },
+  {
+   "video": "Xz2vUTiSlk4",
+   "views": 43,
+   "averageViewDuration": 20,
+   "averageViewPercentage": 28.23,
+   "subscribersGained": 0
+  },
+  {
+   "video": "8ENKRnmz-9o",
+   "views": 22,
+   "averageViewDuration": 20,
+   "averageViewPercentage": 27.61,
+   "subscribersGained": 0
+  },
+  {
+   "video": "uvfhpIXMkX4",
+   "views": 18,
+   "averageViewDuration": 16,
+   "averageViewPercentage": 23.15,
+   "subscribersGained": 0
+  },
+  {
+   "video": "Kw5tDGk_Xv4",
+   "views": 4,
+   "averageViewDuration": 23,
+   "averageViewPercentage": 32.42,
+   "subscribersGained": 0
+  },
+  {
+   "video": "5xh1bWqi2nw",
+   "views": 3,
+   "averageViewDuration": 6,
+   "averageViewPercentage": 8.33,
+   "subscribersGained": 0
+  },
+  {
+   "video": "7g3X5Y8aYp8",
+   "views": 1,
    "averageViewDuration": 0,
    "averageViewPercentage": 0,
    "subscribersGained": 0
