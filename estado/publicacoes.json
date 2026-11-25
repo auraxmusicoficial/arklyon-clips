@@ -1848,5 +1848,161 @@
   "fb_textos": [],
   "playlist": "shorts",
   "urgente": true
+ },
+ {
+  "tipo": "short",
+  "id": "s1",
+  "quando": "2026-11-25T13:00:00-03:00",
+  "upload": "2026-11-25T10:00:00-03:00",
+  "yt_title": "FIGHT SATAN in GTA 6 for a Secret Shotgun 😈",
+  "descricao": "GTA 6 has a secret Hell side quest where you fight Satan for the Hellspawn Comshot 12 shotgun. Would you go in at midnight? #GTA6 #GTAVI #Shorts #GTA6Secrets",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "grand theft auto 6",
+   "gta 6 satan",
+   "gta 6 hell mission",
+   "gta 6 secret mission",
+   "hellspawn comshot 12",
+   "gta 6 port gellhorn",
+   "gta 6 easter egg",
+   "gta 6 secrets",
+   "rockstar games",
+   "gta6"
+  ],
+  "formato_yt": "rapido",
+  "playlist": "shorts",
+  "urgente": false,
+  "thumb": "https://raw.githubusercontent.com/auraxmusicoficial/arklyon-clips/64623b893f3550246373ea395d47f14a32fa2606/publicar/2026-11-25/thumb_s1.jpg",
+  "buffer": {
+   "youtube": "6b069a55d8874a038c066944",
+   "tiktok": "6b069a5640e1d58d12100065",
+   "instagram": "6b069a57c68d7845a494d434"
+  },
+  "ajustado": false,
+  "comentario": "Be honest: would you get in the van with Beelzebub at midnight? 😈",
+  "fb_textos": []
+ },
+ {
+  "tipo": "short",
+  "id": "s2",
+  "quando": "2026-11-25T16:00:00-03:00",
+  "upload": "2026-11-25T13:00:00-03:00",
+  "yt_title": "GTA 6 Has a Secret Portal Back to Vice City 🌴",
+  "descricao": "How to open the secret Vice City portal in GTA 6 and get Tommy Vercetti's shirt. Did you find all 12 LPL stations? #GTA6 #GTAVI #Shorts #ViceCity",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "grand theft auto 6",
+   "gta 6 vice city portal",
+   "gta 6 easter egg",
+   "tommy vercetti",
+   "gta 6 vice city",
+   "vice city",
+   "gta 6 secrets",
+   "kent paul",
+   "rockstar games",
+   "gta6"
+  ],
+  "formato_yt": "rapido",
+  "playlist": "shorts",
+  "urgente": false,
+  "thumb": "https://raw.githubusercontent.com/auraxmusicoficial/arklyon-clips/64623b893f3550246373ea395d47f14a32fa2606/publicar/2026-11-25/thumb_s2.jpg",
+  "buffer": {
+   "youtube": "6b069a589cddd8483ac10f59",
+   "tiktok": "6b069a59b6204bca46dcc64f",
+   "instagram": "6b069a5a22dfb7833a929ff6"
+  },
+  "ajustado": false,
+  "comentario": "Who else still remembers the original Vice City cheats? Drop your favorite 👇",
+  "fb_textos": [],
+  "quando_redes": {
+   "tiktok": "18:00",
+   "instagram": "16:00"
+  }
+ },
+ {
+  "tipo": "short",
+  "quando": "2026-11-25T21:00:00-03:00",
+  "upload": "2026-11-25T18:00:00-03:00",
+  "yt_title": "TOP 4 SECRET Easter Eggs Hidden in GTA 6 (Ranked) 🔥",
+  "descricao": "4 GTA 6 easter eggs from old Rockstar games, ranked. Which one did you find first? #GTA6 #GTAVI #Shorts #EasterEgg",
+  "tags": [
+   "gta 6",
+   "gta vi",
+   "grand theft auto 6",
+   "gta 6 easter eggs",
+   "gta 6 arthur morgan hat",
+   "gta 6 paul walker car",
+   "gta 6 mystery house",
+   "gta 6 secrets",
+   "rdr2",
+   "rockstar games",
+   "gta6"
+  ],
+  "thumb": "https://raw.githubusercontent.com/auraxmusicoficial/arklyon-clips/64623b893f3550246373ea395d47f14a32fa2606/publicar/2026-11-25/thumb_s3.jpg",
+  "buffer": {
+   "tiktok": "6b069aa5b6204bca46dcf0b5",
+   "instagram": "6b069aa6d8874a038c069899"
+  },
+  "ajustado": false,
+  "formato_yt": "rapido",
+  "comentario": "Rank them yourself: hat, egg, Eclipse or mystery house? 👇",
+  "fb_textos": [],
+  "playlist": "shorts",
+  "urgente": false,
+  "quando_redes": {
+   "tiktok": "20:00",
+   "instagram": "20:00"
+  },
+  "yt_direto": "4in4d3QzqT0",
+  "video_id": "4in4d3QzqT0"
+ },
+ {
+  "tipo": "carrossel",
+  "id": "c1",
+  "capa": [
+   "CAN YOU",
+   "FIGHT SATAN",
+   "IN GTA 6?"
+  ],
+  "yt_title": "CAN YOU FIGHT SATAN IN GTA 6?",
+  "buffer": {
+   "instagram": "6b069aa7c68d7845a4950400",
+   "tiktok": "6b069aa722dfb7833a92da9e"
+  },
+  "imagens": [
+   "car_c1_01.jpg",
+   "car_c1_02.jpg"
+  ],
+  "ajustado": true,
+  "quando": "2026-11-25T19:00:00-03:00"
+ },
+ {
+  "tipo": "carrossel",
+  "id": "c2",
+  "capa": [
+   "GTA 6",
+   "VICE CITY",
+   "PORTAL GUIDE"
+  ],
+  "yt_title": "GTA 6 VICE CITY PORTAL GUIDE",
+  "buffer": {
+   "instagram": "6b069aa8b6204bca46dcf11a",
+   "tiktok": "6b069aa9b6204bca46dcf16f"
+  },
+  "imagens": [
+   "car_c2_01.jpg",
+   "car_c2_02.jpg",
+   "car_c2_03.jpg",
+   "car_c2_04.jpg",
+   "car_c2_05.jpg",
+   "car_c2_06.jpg",
+   "car_c2_07.jpg",
+   "car_c2_08.jpg",
+   "car_c2_09.jpg"
+  ],
+  "ajustado": true,
+  "quando": "2026-11-25T10:30:00-03:00"
  }
 ]
