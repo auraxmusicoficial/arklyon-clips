@@ -59,7 +59,8 @@
   "titulo_antigo": "GTA 6 Is Secretly Judging How You Play 👀",
   "titulo_novo": "GTA 6 UNLOCK Hidden Secrets Before Anyone Else 🚀",
   "views_dia_antes": 0.3,
-  "mediana_tipo": 6.8
+  "mediana_tipo": 6.8,
+  "views_dia_agora": 0.2
  },
  "GfJxx6e3jUY": {
   "tipo": "short",
@@ -67,6 +68,31 @@
   "titulo_antigo": "This Story Might Spoil GTA 6's Ending 😳",
   "titulo_novo": "STOP Clicking! GTA 6 Ending Secret Revealed 🤫",
   "views_dia_antes": 0.5,
-  "mediana_tipo": 6.8
+  "mediana_tipo": 6.8,
+  "views_dia_agora": 0.4
+ },
+ "SS0zYQhOJ_w": {
+  "tipo": "longo",
+  "quando": "2026-11-25T04:46:07.781243-03:00",
+  "titulo_antigo": "🔴 GTA 6 LIVE — Every Secret, Tip & Hidden Detail So Far",
+  "titulo_novo": "UNVEILED GTA 6: Hidden Story Secrets & Real Gameplay Preview 🚀",
+  "views_dia_antes": 0.0,
+  "mediana_tipo": 0.6
+ },
+ "Kw5tDGk_Xv4": {
+  "tipo": "short",
+  "quando": "2026-11-25T04:46:10.266709-03:00",
+  "titulo_antigo": "GTA 6 vs GTA 5 Police: The Difference Is Insane 🚔",
+  "titulo_novo": "GTA 6 Cops Are DIFFERENT (You Will Miss These) 🚔",
+  "views_dia_antes": 0.0,
+  "mediana_tipo": 5.1
+ },
+ "NZstdWK7tMk": {
+  "tipo": "short",
+  "quando": "2026-11-25T04:46:31.641492-03:00",
+  "titulo_antigo": "HOLLOW STARS Mean Cops Don't Know You Yet in GTA 6 🚨",
+  "titulo_novo": "UNLOCK SECRET COPS IN GTA 6 – How to Hide Your Star Rating 🚨",
+  "views_dia_antes": 0.4,
+  "mediana_tipo": 5.1
  }
 }
