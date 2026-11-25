@@ -28,4 +28,5 @@ jobs:
           VAULT_SECRETS: ${{ secrets.VAULT_SECRETS }}
           GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          YT_REFRESH_TOKEN2: ${{ secrets.YT_REFRESH_TOKEN2 }}
         run: python3 motor/robo_github.py

@@ -217,13 +217,14 @@ def cartoes_do_roteiro(s, palavras):
     return [(a, marcas[k + 1][0] if k + 1 < len(marcas) else fim_total, txt) for k, (a, txt) in enumerate(marcas)]
 
 
-YT_MAX = 59.0   # 24/11: Shorts acima de 1 min com reivindicação de Content ID ficam bloqueados (e a onda de claims de GTA 6 começou)
+YT_MAX = 59.0   # limite duro; o alvo é YT_ALVO (25/11: retenção dos Shorts caiu de ~58% para 17–42% nos vídeos de ~70 s)
+YT_ALVO = 52.0  # 24/11: Shorts acima de 1 min com reivindicação de Content ID ficam bloqueados (e a onda de claims de GTA 6 começou)
 
 
 def versao_yt(final, saida, palavras, total):
     """Versão do YouTube com MENOS de 60 s. Até 12% mais rápido acelera o vídeo todo (fala ainda natural);
     acima disso, corta no fim de uma frase (35–57 s) e põe a capa no fim."""
-    f = total / (YT_MAX - 0.4)
+    f = total / YT_ALVO
     if f <= 1.12:
         run(["ffmpeg", "-y", "-v", "error", "-i", final, "-filter_complex",
              f"[0:v]setpts=PTS/{f:.4f}[v];[0:a]atempo={f:.4f}[a]", "-map", "[v]", "-map", "[a]",
@@ -231,7 +232,7 @@ def versao_yt(final, saida, palavras, total):
              "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", saida])
         print(f"  versão YouTube: {total / f:.1f}s (acelerada {f:.2f}x)")
     else:
-        corte_rapido(final, saida, palavras, total, minimo=35.0, maximo=YT_MAX - CAPA_S - 1.0)
+        corte_rapido(final, saida, palavras, total, minimo=32.0, maximo=YT_ALVO - CAPA_S)
 
 
 def corte_rapido(final, saida, palavras, total, minimo=22.0, maximo=40.0):
