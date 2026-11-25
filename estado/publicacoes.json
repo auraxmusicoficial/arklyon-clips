@@ -1947,7 +1947,9 @@
    }
   },
   "video_id": "yLr3-Puka6s",
-  "na_playlist": true
+  "na_playlist": true,
+  "publico_ok": true,
+  "comentou": true
  },
  {
   "tipo": "short",
