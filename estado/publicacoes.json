@@ -1895,7 +1895,8 @@
    }
   },
   "video_id": "asJ_iRztkus",
-  "na_playlist": true
+  "na_playlist": true,
+  "comentou": true
  },
  {
   "tipo": "short",
@@ -1903,7 +1904,7 @@
   "quando": "2026-11-25T16:00:00-03:00",
   "upload": "2026-11-25T13:00:00-03:00",
   "yt_title": "GTA 6 Has a Secret Portal Back to Vice City 🌴",
-  "descricao": "How to open the secret Vice City portal in GTA 6 and get Tommy Vercetti's shirt. Did you find all 12 LPL stations? #GTA6 #GTAVI #Shorts #ViceCity",
+  "descricao": "How to open the secret Vice City portal in GTA 6 and get Tommy Vercetti's shirt. Did you find all 12 LPL stations? #GTA6 #GTAVI #Shorts #ViceCity\n\n🎬 Full guide 👉 https://youtu.be/eckKOgpnLrg",
   "tags": [
    "gta 6",
    "gta vi",
@@ -1927,13 +1928,25 @@
    "tiktok": "6b069a59b6204bca46dcc64f",
    "instagram": "6b069a5a22dfb7833a929ff6"
   },
-  "ajustado": false,
-  "comentario": "Who else still remembers the original Vice City cheats? Drop your favorite 👇",
+  "ajustado": true,
+  "comentario": "Who else still remembers the original Vice City cheats? Drop your favorite 👇 Full guide here 👉 https://youtu.be/eckKOgpnLrg",
   "fb_textos": [],
   "quando_redes": {
    "tiktok": "18:00",
    "instagram": "16:00"
-  }
+  },
+  "traducoes": {
+   "es": {
+    "title": "GTA 6 tiene un portal secreto a Vice City 🌴",
+    "description": "Cómo abrir el portal secreto a Vice City en GTA 6 y conseguir la camisa de Tommy Vercetti. ¿Encontraste las 12 estaciones LPL? #GTA6 #GTAVI #Shorts #ViceCity\n\n🎬 Guía completa 👉 https://youtu.be/eckKOgpnLrg"
+   },
+   "pt": {
+    "title": "GTA 6 tem um portal secreto de volta a Vice City 🌴",
+    "description": "Como abrir o portal secreto de Vice City no GTA 6 e conseguir a camiseta do Tommy Vercetti. Você encontrou todas as 12 estações LPL? #GTA6 #GTAVI #Shorts #ViceCity\n\n🎬 Guia completa 👉 https://youtu.be/eckKOgpnLrg"
+   }
+  },
+  "video_id": "yLr3-Puka6s",
+  "na_playlist": true
  },
  {
   "tipo": "short",
