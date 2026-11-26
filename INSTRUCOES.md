@@ -10,6 +10,9 @@ O robô grava todo dia o que as pessoas DIGITAM no YouTube sobre GTA 6 (autocomp
 ## 🎬 LONGO DE "EXPLICAÇÃO" (26/11): 1 a cada 3 longos
 Alterne: 2 longos de BUSCA (BUSCAS.md) e 1 de EXPLICAÇÃO — mistérios, finais, segredos da história, teorias com base no que está no jogo ("GTA 6 Ending Explained", "Every Hidden Detail In ___ Mission", "The Truth About ___"). Veja em estado/publicacoes.json qual foi o tipo dos 2 últimos longos (campo "tipo_longo": "busca" ou "explicacao" — grave esse campo ao publicar). Regras: aviso de SPOILER claro nos primeiros 5 s e no título/capa quando houver ("SPOILERS"); só fatos do jogo e de fontes confiáveis, teoria sempre dita como teoria; estrutura com mistério no começo ("by the end you'll understand why ___") e revelação perto do fim para segurar a retenção; mesma regra de abertura forte dos longos.
 
+## 📺 PLAYLIST DO LONGO (26/11)
+No roteiro.json do longo, campo `"playlist"`: `cheats` (cheats, códigos de cofre, dinheiro), `tips` (como fazer, guias, rankings), `theories` (longo de explicação: história, finais, personagens), `secrets` (detalhes escondidos/easter eggs), `news` (notícia). Shorts vão sozinhos para `shorts`.
+
 ## 📰 NOTÍCIAS (25/11): o robô vigia sozinho
 O robô do GitHub (motor/vigia.py, Groq com busca na web, grátis) procura notícias de GTA 6 a cada 2 h e grava em `estado/noticias.json`. **Ao escolher o tema do dia, olhe primeiro as entradas com `"urgente": true` e `"produzido": false`**: notícia grande vira o 1º Short do dia (selo BREAKING/JUST IN) e depois marque `"produzido": true`.
 

@@ -17,6 +17,8 @@ PLAYLISTS = {
              "GTA 6 tips and tricks, beginner guides, best cars, weapons, missions and settings — ranked and explained."),
     "theories": ("GTA 6 Story, Characters & Theories",
                  "Jason and Lucia, the story of Leonida and the biggest GTA 6 fan theories, explained."),
+    "cheats": ("GTA 6 Cheats, Safe Codes & Money Guides",
+               "Every working GTA 6 cheat code, safe combination and money method — checked against trusted sources."),
     "shorts": ("GTA 6 Shorts — Quick Facts & Moments",
                "Fast GTA 6 facts, secrets and moments in under 2 minutes."),
 }
