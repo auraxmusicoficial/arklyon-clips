@@ -2093,14 +2093,15 @@
    }
   },
   "video_id": "OeScNTe9pfo",
-  "na_playlist": true
+  "na_playlist": true,
+  "comentou": true
  },
  {
   "tipo": "short",
   "quando": "2026-11-26T16:00:00-03:00",
   "upload": "2026-11-26T13:00:00-03:00",
   "yt_title": "GTA 6 Is Watching What You Eat (Your Body Changes) 🍔",
-  "descricao": "The GTA 6 weight and fitness system: food, gym and sleep change Jason and Lucia. Bulk or slim? #GTA6 #GTAVI #Shorts #GTA6Tips",
+  "descricao": "The GTA 6 weight and fitness system: food, gym and sleep change Jason and Lucia. Bulk or slim? #GTA6 #GTAVI #Shorts #GTA6Tips\n\n🎬 Full guide 👉 https://youtu.be/m_u7JSFtkCE",
   "tags": [
    "gta 6",
    "gta vi",
@@ -2120,16 +2121,28 @@
    "tiktok": "6b07f2987cb39d7aa3632f78",
    "instagram": "6b07f298aca8612480933f4f"
   },
-  "ajustado": false,
+  "ajustado": true,
   "formato_yt": "rapido",
-  "comentario": "Is your Jason buff or chunky right now? 💪🍔",
+  "comentario": "Is your Jason buff or chunky right now? 💪🍔 Full guide here 👉 https://youtu.be/m_u7JSFtkCE",
   "fb_textos": [],
   "playlist": "shorts",
   "urgente": false,
   "quando_redes": {
    "tiktok": "18:00",
    "instagram": "16:00"
-  }
+  },
+  "traducoes": {
+   "es": {
+    "title": "GTA 6 está observando lo que comes (Tu cuerpo cambia) 🍔",
+    "description": "El sistema de peso y fitness de GTA 6: comida, gimnasio y sueño cambian a Jason y Lucía. ¿Bulk o delgado? #GTA6 #GTAVI #Shorts #GTA6Tips 🎬 Guía completa 👉 https://youtu.be/m_u7JSFtkCE"
+   },
+   "pt": {
+    "title": "GTA 6 está observando o que você come (Seu corpo muda) 🍔",
+    "description": "O sistema de peso e fitness de GTA 6: comida, academia e sono mudam Jason e Lúcia. Bulk ou magro? #GTA6 #GTAVI #Shorts #GTA6Tips 🎬 Guia completa 👉 https://youtu.be/m_u7JSFtkCE"
+   }
+  },
+  "video_id": "SuaKea1iKJw",
+  "na_playlist": true
  },
  {
   "tipo": "short",
@@ -2274,6 +2287,7 @@
   },
   "na_playlist": true,
   "fb_feito": true,
-  "comentou": true
+  "comentou": true,
+  "publico_ok": true
  }
 ]
