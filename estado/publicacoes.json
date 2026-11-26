@@ -2143,7 +2143,9 @@
    }
   },
   "video_id": "SuaKea1iKJw",
-  "na_playlist": true
+  "na_playlist": true,
+  "publico_ok": true,
+  "comentou": true
  },
  {
   "tipo": "short",
