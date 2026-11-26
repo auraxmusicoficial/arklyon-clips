@@ -27,7 +27,7 @@ jobs:
         env:
           VAULT_SECRETS: ${{ secrets.VAULT_SECRETS }}
           GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
-        run: python3 motor/estudo.py
+        run: python3 motor/estudo.py && python3 motor/buscas.py
       - name: Salvar no GitHub
         if: always()
         run: |

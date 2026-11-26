@@ -4,6 +4,9 @@ Canal: **HQ Vault Clips** (YouTube) · TikTok **@thevaultclipsof** · Instagram 
 Meta diária (horário de Brasília): **12h vídeo longo** + Shorts em **13h · 16h · 21h**.
 **A partir de 23/11/2026: 3 Shorts por dia (13h · 16h · 21h, nas 3 redes) + 1 CARROSSEL por dia (19h, Instagram + TikTok modo foto). Vídeo longo em dias alternados** (o robô sabe o dia: faça longo se o último foi há 2+ dias). Confira com `python3 motor/publicar.py --slots <DATA>`.
 
+## 🔎 BUSCAS REAIS (26/11): leia estado/BUSCAS.md
+O robô grava todo dia o que as pessoas DIGITAM no YouTube sobre GTA 6 (autocompletar da busca, EUA). **Vídeo longo: escolha uma busca SEM ✓ e use a frase EXATA como título** (ex.: "GTA 6 How To Rob Jewelry Store"). Responda a pergunta nos primeiros 10 s, depois 2 dicas extras que a pessoa não sabia; corte tudo que é parado (menus, trajetos, carregamento). Capa: mostre a resposta (o lugar/carro/item) com uma SETA apontando (`seta=True` no thumb), sem entregar tudo. Shorts também podem responder buscas curtas da lista.
+
 ## 📰 NOTÍCIAS (25/11): o robô vigia sozinho
 O robô do GitHub (motor/vigia.py, Groq com busca na web, grátis) procura notícias de GTA 6 a cada 2 h e grava em `estado/noticias.json`. **Ao escolher o tema do dia, olhe primeiro as entradas com `"urgente": true` e `"produzido": false`**: notícia grande vira o 1º Short do dia (selo BREAKING/JUST IN) e depois marque `"produzido": true`.
 
