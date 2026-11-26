@@ -1,6 +1,6 @@
-# Desempenho por rede — 26/11/2026 07:13
+# Desempenho por rede — 26/11/2026 20:31
 
-Shorts com 1+ dia (37). Views: YouTube (API) e TikTok/Instagram (Buffer).
+Shorts com 1+ dia (39). Views: YouTube (API) e TikTok/Instagram (Buffer).
 
 ## Bombou numa rede só (conteúdo que combina com aquele público)
 - **Só no Youtube:** GTA 6 Just Tied the Highest Metacritic Score Ever 😳 — YT 112 · TT — · IG 122
@@ -8,88 +8,87 @@ Shorts com 1+ dia (37). Views: YouTube (API) e TikTok/Instagram (Buffer).
 
 ## Melhor horário por rede
 - Youtube: 11h (1152 views em média), 18h (282 views em média), 9h (256 views em média)
-- Tiktok: 20h (384 views em média), 14h (368 views em média), 13h (359 views em média)
-- Instagram: 21h (1398 views em média), 13h (1282 views em média), 16h (1248 views em média)
+- Tiktok: 20h (384 views em média), 14h (368 views em média), 18h (343 views em média)
+- Instagram: 21h (1400 views em média), 13h (1284 views em média), 16h (1198 views em média)
 
-### Youtube (mediana 16 views)
+### Youtube (mediana 9 views)
 - Melhores: Do This FIRST in GTA 6 (Before It's Too Late) ⚠️ (1152); GTA 6 Is Finally Out — Know This Before You Play 🎮 (773); GTA 6 Made $1.6 BILLION Before Launch 🤯 (760)
-- Piores: GTA 6 vs GTA 5 Police: The Difference Is Insane 🚔 (0); Top 5 Things GTA 6 Does That GTA 5 Never Could 🤯 (0); SAVE FIRST Before Using Cheats in GTA 6 ⚠️ (0)
+- Piores: Top 5 Things GTA 6 Does That GTA 5 Never Could 🤯 (0); LEAVE LUCIA BEHIND in GTA 6 and She Remembers 😳 (0); SAVE FIRST Before Using Cheats in GTA 6 ⚠️ (0)
 ### Tiktok (mediana 173 views)
 - Melhores: Never Lose Your Guns in GTA 6 — Do This ⚠️ (1404); GTA 6 Made $1.6 BILLION Before Launch 🤯 (834); GTA 6's FIRST PATCH Just Dropped - Autosave Fixed 🚨 (653)
 - Piores: 6 STARS in GTA 6 Can Turn the WHOLE MAP Against You 🤯 (24); Switch to Jason at the Wrong Time in GTA 6... 😳 (22); TOP 5 CHEATS to Unlock First in GTA 6 (Ranked) 🔥 (13)
-### Instagram (mediana 1225 views)
-- Melhores: STEAL THESE CARS First in GTA 6 for Fast Cash 🚗 (2035); CUT THE ALARM First When You Rob a Store in GTA 6 🚨 (1854); TOP 5 WAYS to Lose the Cops in GTA 6 (Ranked) 🚨 (1651)
+### Instagram (mediana 1228 views)
+- Melhores: STEAL THESE CARS First in GTA 6 for Fast Cash 🚗 (2035); CUT THE ALARM First When You Rob a Store in GTA 6 🚨 (1855); TOP 5 WAYS to Lose the Cops in GTA 6 (Ranked) 🚨 (1652)
 - Piores: GTA 6 Just Tied the Highest Metacritic Score Ever 😳 (122); GTA 6 Made $1.6 BILLION Before Launch 🤯 (116); GTA 6 Is Finally Out — Know This Before You Play 🎮 (0)
 
-## 📊 O que cada rede parece preferir (com base nos dados)
+## O que cada rede prefere (com base nos dados)
 
-| Rede | Assuntos que geram mais visualizações | Tipo de título/gancho que funciona | Duração do short (quando disponível) |
-|------|--------------------------------------|------------------------------------|--------------------------------------|
-| **TikTok** | • Dinheiro fácil (trunk money, bank jobs, free money)  <br>• “Como fazer” rápido (steal cars, hide tools, cheat tips) <br>• Curiosidades chocantes (billion‑dollar numbers, 99→2/10) | • Emojis “😳”, “⚠️”, “🚨” no início <br>• Perguntas ou “Do This FIRST/Before …” <br>• Números grandes em destaque (1.6 B, 24 M, 39 M) | Quando informado, a maioria dos vídeos tem **≈ 10‑20 s**. O maior pico foi 20 s (ex.: “Never Lose Your Guns”). |
-| **Instagram Reels** | • Conteúdo visual “show de carro” (steal cars, car snitch, ATM tow) <br>• Grandes cifras de receita/vendas <br>• Dicas de “primeiro passo” (SAVE FIRST, DO THIS FIRST) | • Títulos com emojis e caps lock <br>• Uso de “⚠️”, “🚗”, “🤯” para chamar atenção <br>• Frases que prometem “Secret”, “Hidden”, “First” | Duração medida apenas em alguns itens: entre **13‑38 s** (ex.: “FREE MONEY” 28.9 s, “STEAL THESE CARS” 23.8 s). |
-| **YouTube Shorts** | • Notícias de alta relevância (Metacritic score, launch, record players) <br>• “How‑to” simples (cheat, camera) | • Títulos curtos, diretos ao ponto, sem emojis na maioria <br>• Foco em “GTA 6 Is Finally Out”, “GTA 6 vs GTA 5” | Poucos dados de tempo (apenas alguns shorts têm “tempo” = 0 ou não registrado). Não há padrão claro de duração. |
+| Rede | Assunto que gera mais visualizações | Tipo de título/gancho que funciona melhor | Duração típica do short (segundos) | Observação de quantidade de dados |
+|------|-------------------------------------|--------------------------------------------|-----------------------------------|-----------------------------------|
+| **YouTube Shorts** | Notícias “big‑numbers” (ex.: faturamento, recordes) e curiosidades de gameplay | “X BILLION”, “Highest Metacritic Score”, “First Patch” – números grandes + emoji surpresa | 13 – 20 s (quando informado) | Dados limitados (alguns shorts têm 0 visualizações ou não têm tempo registrado). |
+| **TikTok** | Dicas rápidas de gameplay, “como fazer” e situações inesperadas (ex.: “Do This FIRST”, “FREE MONEY”, “Never Lose Your Guns”) | Ganchos de urgência/alerta (⚠️, 😳, 🚨) + promessa de benefício imediato | 6 – 20 s (tempo sempre informado) | Ampla amostra – tendência clara. |
+| **Instagram Reels** | Conteúdos visuais impactantes que podem ser consumidos sem som (ex.: “FREE MONEY”, “STEAL THESE CARS”, “TOP 5”) | Títulos curtos, emojis de surpresa/impacto, foco em “X BILLION” ou “TOP 5” | 13 – 38 s (quando informado) | Menos publicações que TikTok, mas ainda suficiente para identificar padrão. |
 
-**Observação:** há poucos dados de duração para YouTube (quase nenhum campo “tempo” preenchido), então a conclusão sobre tempo é limitada.
+### Resumo dos padrões
+
+- **TikTok** → prefere *dicas práticas* e *alertas de erro* que prometem “evitar perda” ou “ganhar rápido”. Ganchos de **urgência** (⚠️, 🚨) e **surpresa** (😳) são recorrentes.
+- **Instagram** → favorece *listicles* (TOP 5, “X BILLION”) e *revelações visuais* (dinheiro, carros). Emojis de choque (🤯) e números grandes atraem mais visualizações.
+- **YouTube Shorts** → tem melhor desempenho com *notícias de recordes* e *primeiras impressões* do jogo (ex.: “First Patch”, “Metacritic Score”). Quando o tempo é informado, costuma ficar entre 13‑20 s, indicando que o algoritmo favorece vídeos um pouco mais “longos” que o mínimo.
+
+> **Poucos dados**: alguns shorts têm visualizações “0” ou não apresentam tempo (ex.: “GTA 6 Is Secretly Judging How You Play 👀”). Nesses casos não é possível inferir padrão de duração.
 
 ---
 
-## 🚀 O que fazer diferente a partir de amanhã (3‑5 ações por rede)
+## O que fazer diferente por rede a partir de amanhã (3‑5 ações)
 
 ### TikTok
-1. **Explorar ainda mais “quick‑cash”** – crie mais shorts sobre dinheiro escondido, hacks de dinheiro e valores absurdos (ex.: “$X hidden in …”).  
-2. **Manter o formato “first‑step”** – comece o título com “Do This FIRST/Before …” + emoji de alerta.  
-3. **Apostar em vídeos de 12‑18 s** – a maioria dos melhores resultados está nesse intervalo.  
-4. **Usar contagem regressiva visual** (ex.: “3 segundos para…”) para aumentar o senso de urgência.  
-5. **Testar “duetos” com comentários de seguidores** sobre os números surpreendentes (ex.: “1.6 B before launch – you guessed?”).
+1. **Aumentar a frequência de “dicas de 15 s ou menos”** – o tempo médio está entre 6‑20 s; mantenha‑os ≤15 s para melhorar retenção.
+2. **Usar sempre um emoji de alerta (⚠️/🚨) no início do título** quando o conteúdo for “evitar erro” ou “ganhar dinheiro”.
+3. **Criar séries de “Antes de…/Depois de…”** (ex.: “Before You Play”, “After You Upgrade”) para gerar expectativa de sequência.
+4. **Inserir texto em tela nos primeiros 2 s** (ex.: “FREE MONEY”) para captar usuários que assistem sem som.
+5. **Testar micro‑clipes de “reação” (ex.: “OMG! 2 Hidden Tools”)** – títulos curtos + reação forte aumentam o CTR.
 
 ### Instagram Reels
-1. **Priorizar conteúdos visuais de carro e dinheiro** – reels que mostrem o carro em ação ou o dinheiro aparecendo na tela geram > 1 500 visualizações.  
-2. **Manter títulos com emojis e “First/Secret/Hidden”** – continue a fórmula que já funciona.  
-3. **Ajustar a duração para 20‑30 s** – os reels com mais de 20 s (ex.: 28.9 s) obtiveram alto engajamento.  
-4. **Adicionar “texto em tela” explicativo** (ex.: “Step 1 – Open trunk → Step 2 …”) para facilitar o consumo sem som.  
-5. **Publicar nos horários de pico identificados** – 13h‑16h (horário local) mostrou boas visualizações em vários posts.
+1. **Priorizar títulos com números grandes ou listas (TOP 5, X BILLION)** – eles já geram mais visualizações.
+2. **Manter a duração entre 20‑30 s** (a maioria dos reels de sucesso está em torno de 27‑38 s) para permitir mais detalhes visuais.
+3. **Adicionar legendas estilizadas** (bold, emojis) já nos primeiros 3 s, já que muitos usuários assistem sem áudio.
+4. **Usar thumbnails atrativas com “dinheiro” ou “carro” visíveis** – reforça o apelo visual que funciona bem no Instagram.
+5. **Publicar em horários de pico (entre 13 h‑20 h)** – a maioria dos reels de alta performance foi postada entre 13 h e 20 h.
 
 ### YouTube Shorts
-1. **Focar em notícias / recordes** – títulos como “GTA 6 BREAKS PlayStation Record” geram mais visualizações que tutoriais simples.  
-2. **Inserir emojis e caps lock** – embora não sejam tão comuns nos shorts atuais, podem aumentar a taxa de clique (ex.: “🚀 GTA 6 JUST TIED…”).  
-3. **Testar duração de 15‑25 s** – ainda não há dados, mas é o padrão de shorts bem‑sucedidos em outros nichos.  
-4. **Usar thumbnails estáticas com números grandes** (ex.: “$3.79 B”) para atrair cliques no feed.  
-5. **Sincronizar a publicação com os horários de TikTok/IG que já funcionam** (9h‑13h) para aproveitar a mesma audiência que segue o canal em várias plataformas.
+1. **Focar em notícias de “recordes” e “primeiras impressões”** (ex.: “First Patch”, “Highest Score”) – são os únicos títulos com visualizações acima de 1 000.
+2. **Manter a duração entre 13‑20 s** – o algoritmo parece favorecer esse intervalo.
+3. **Incluir “big numbers” no título** (ex.: “$1.6 BILLION”) para captar buscas por curiosidades financeiras.
+4. **Adicionar um “call‑to‑action” rápido ao final** (ex.: “Subscribe for more GTA 6 secrets”) – poucos shorts atuais têm CTA explícito.
+5. **Publicar nas manhãs (9 h‑12 h) nos dias úteis**, que são os horários onde os poucos shorts de sucesso apareceram.
 
---- 
-
-> **Resumo rápido:**  
-> - **TikTok** = dinheiro rápido + ganchos de urgência, 10‑20 s.  
-> - **Instagram** = visual de carros/dinheiro + emojis, 20‑30 s.  
-> - **YouTube** = notícias/recordes, títulos diretos, experimente 15‑25 s e emojis.  
-
-Aplique as ações acima a partir de amanhã e acompanhe os resultados nos próximos dias para ajustar finamente a estratégia. Boa sorte! 🎮🚀
+Implementando essas mudanças a partir de amanhã, cada rede receberá conteúdo afinado ao seu estilo de consumo, potencializando visualizações e engajamento sem necessidade de estimativas numéricas adicionais.
 
 ## Tabela
 | Short | YouTube | TikTok | Instagram |
 |---|---|---|---|
 | STEAL THESE CARS First in GTA 6 for Fast Cash 🚗 | — | 611 | 2035 |
-| CUT THE ALARM First When You Rob a Store in GTA 6 🚨 | 85 | 473 | 1854 |
-| TOP 5 WAYS to Lose the Cops in GTA 6 (Ranked) 🚨 | — | 259 | 1651 |
+| CUT THE ALARM First When You Rob a Store in GTA 6 🚨 | 85 | 473 | 1855 |
+| TOP 5 WAYS to Lose the Cops in GTA 6 (Ranked) 🚨 | — | 259 | 1652 |
 | GTA 6's FIRST PATCH Just Dropped - Autosave Fixed 🚨 | — | 653 | 1582 |
-| TOP 5 CHEATS to Unlock First in GTA 6 (Ranked) 🔥 | 77 | 13 | 1499 |
+| TOP 5 CHEATS to Unlock First in GTA 6 (Ranked) 🔥 | 82 | 13 | 1499 |
 | 6 STARS in GTA 6 Can Turn the WHOLE MAP Against You 🤯 | — | 24 | 1460 |
 | SPLIT UP Jason and Lucia to Lose the Cops in GTA 6 😳 | — | 313 | 1444 |
 | Never Lose Your Guns in GTA 6 — Do This ⚠️ | — | 1404 | — |
-| GTA 6 BREAKS PlayStation Record: 39 MILLION Players 🤯 | — | 82 | 1335 |
+| GTA 6 BREAKS PlayStation Record: 39 MILLION Players 🤯 | — | 82 | 1336 |
 | STEAL ATMs in GTA 6? 168 of Them Can Be Towed 😳 | 13 | 80 | 1319 |
-| LEAVE LUCIA BEHIND in GTA 6 and She Remembers 😳 | 1 | 323 | 1297 |
-| These GTA 6 Safe Codes Never Change 💰 | 5 | 173 | 1252 |
+| LEAVE LUCIA BEHIND in GTA 6 and She Remembers 😳 | 0 | 323 | 1300 |
+| FIGHT SATAN in GTA 6 for a Secret Shotgun 😈 | 1 | 45 | 1291 |
+| These GTA 6 Safe Codes Never Change 💰 | 5 | 173 | 1258 |
 | Top 5 Things GTA 6 Does That GTA 5 Never Could 🤯 | 0 | 28 | 1243 |
+| FREE MONEY Is Hiding in GTA 6 Car Trunks 💰 | 446 | 286 | 1214 |
 | SAVE FIRST Before Using Cheats in GTA 6 ⚠️ | 0 | 354 | 1207 |
-| NEVER BLOW UP a Safe in GTA 6 — Do This Instead 💰 | 71 | 415 | 1204 |
+| NEVER BLOW UP a Safe in GTA 6 — Do This Instead 💰 | 71 | 415 | 1205 |
 | Do This FIRST in GTA 6 (Before It's Too Late) ⚠️ | 1152 | 111 | 164 |
+| GTA 6 Has a Secret Portal Back to Vice City 🌴 | 1 | 318 | 1094 |
 | GTA 6 Made $1.6 BILLION Before Launch 🤯 | 760 | 834 | 116 |
 | GTA 6 Is Finally Out — Know This Before You Play 🎮 | 773 | 495 | 0 |
-| FREE MONEY Is Hiding in GTA 6 Car Trunks 💰 | 446 | 286 | 752 |
 | This GTA 6 Camera Can't Be Destroyed (Check First) ⚠️ | — | 585 | — |
 | 2 Hidden GTA 6 Tools Nobody Told You About 😳 | — | 398 | — |
 | GTA 6 Made $3.79 BILLION in ONE Day (Official) 🤯 | 0 | 363 | 127 |
 | Eat Too Much in GTA 6 and THIS Happens 😳 | — | 155 | 313 |
-| GTA 6 Sold an Estimated 24 MILLION in 1 Day 🤯 | — | 235 | 143 |
-| This GTA 6 Money Mistake Can Lock Your Missions ⚠️ | — | 206 | — |
