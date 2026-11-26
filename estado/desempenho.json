@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-25T23:26:11.424825+00:00",
+ "atualizado": "2026-11-26T10:13:20.836595+00:00",
  "historico": [
   {
    "data": "2026-11-17",
@@ -96,6 +96,12 @@
    "inscritos": 11,
    "views": 5318,
    "videos": 41
+  },
+  {
+   "data": "2026-11-26",
+   "inscritos": 11,
+   "views": 5361,
+   "videos": 42
   }
  ],
  "videos": [
@@ -107,10 +113,10 @@
    "views": 760,
    "likes": 34,
    "coments": 4,
-   "views_dia": 124.6,
+   "views_dia": 116.0,
    "engaj": 5.0,
    "hora_brt": "18",
-   "dias": 6.1
+   "dias": 6.6
   },
   {
    "id": "5kCCspaOdnE",
@@ -123,7 +129,7 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "12",
-   "dias": 6.3
+   "dias": 6.8
   },
   {
    "id": "kNzOszVFf70",
@@ -133,10 +139,10 @@
    "views": 1152,
    "likes": 22,
    "coments": 1,
-   "views_dia": 180.3,
+   "views_dia": 168.5,
    "engaj": 2.0,
    "hora_brt": "11",
-   "dias": 6.4
+   "dias": 6.8
   },
   {
    "id": "MI3JQ2je-FQ",
@@ -146,10 +152,10 @@
    "views": 773,
    "likes": 23,
    "coments": 4,
-   "views_dia": 119.4,
+   "views_dia": 111.7,
    "engaj": 3.5,
    "hora_brt": "09",
-   "dias": 6.5
+   "dias": 6.9
   },
   {
    "id": "-_O8FyG6qYg",
@@ -159,10 +165,10 @@
    "views": 176,
    "likes": 4,
    "coments": 6,
-   "views_dia": 25.2,
+   "views_dia": 23.7,
    "engaj": 5.7,
    "hora_brt": "21",
-   "dias": 7.0
+   "dias": 7.4
   },
   {
    "id": "y99xw4Mmuvg",
@@ -172,10 +178,10 @@
    "views": 148,
    "likes": 3,
    "coments": 2,
-   "views_dia": 20.6,
+   "views_dia": 19.4,
    "engaj": 3.4,
    "hora_brt": "16",
-   "dias": 7.2
+   "dias": 7.6
   },
   {
    "id": "ex3cGJ8APxQ",
@@ -185,10 +191,10 @@
    "views": 112,
    "likes": 2,
    "coments": 3,
-   "views_dia": 15.5,
+   "views_dia": 14.6,
    "engaj": 4.5,
    "hora_brt": "14",
-   "dias": 7.2
+   "dias": 7.7
   },
   {
    "id": "49tnnie3Jjo",
@@ -198,10 +204,10 @@
    "views": 1400,
    "likes": 31,
    "coments": 6,
-   "views_dia": 191.7,
+   "views_dia": 180.6,
    "engaj": 2.6,
    "hora_brt": "13",
-   "dias": 7.3
+   "dias": 7.8
   },
   {
    "id": "P5dyUUPJh04",
@@ -211,23 +217,23 @@
    "views": 13,
    "likes": 8,
    "coments": 9,
-   "views_dia": 1.8,
+   "views_dia": 1.7,
    "engaj": 130.8,
    "hora_brt": "12",
-   "dias": 7.3
+   "dias": 7.8
   },
   {
    "id": "psqeW0oueVU",
    "titulo": "GTA 6's Darkest Hint Yet 😶 \"These Are Your Glory Days\"",
    "tipo": "short",
    "dur": 36,
-   "views": 37,
+   "views": 38,
    "likes": 2,
    "coments": 4,
-   "views_dia": 4.6,
-   "engaj": 16.2,
+   "views_dia": 4.5,
+   "engaj": 15.8,
    "hora_brt": "21",
-   "dias": 8.0
+   "dias": 8.4
   },
   {
    "id": "pCJSmriKY50",
@@ -240,7 +246,7 @@
    "views_dia": 0.6,
    "engaj": 180.0,
    "hora_brt": "12",
-   "dias": 8.3
+   "dias": 8.8
   },
   {
    "id": "GfJxx6e3jUY",
@@ -250,10 +256,10 @@
    "views": 3,
    "likes": 1,
    "coments": 0,
-   "views_dia": 0.4,
+   "views_dia": 0.3,
    "engaj": 33.3,
    "hora_brt": "09",
-   "dias": 8.5
+   "dias": 8.9
   },
   {
    "id": "Zrug6PtEZzo",
@@ -263,10 +269,10 @@
    "views": 5,
    "likes": 3,
    "coments": 4,
-   "views_dia": 0.6,
+   "views_dia": 0.5,
    "engaj": 140.0,
    "hora_brt": "21",
-   "dias": 9.0
+   "dias": 9.4
   },
   {
    "id": "5v79bZYpaZY",
@@ -279,7 +285,7 @@
    "views_dia": 0.2,
    "engaj": 50.0,
    "hora_brt": "19",
-   "dias": 9.1
+   "dias": 9.5
   },
   {
    "id": "BZIopAaJ-4k",
@@ -292,7 +298,7 @@
    "views_dia": 0.3,
    "engaj": 100.0,
    "hora_brt": "19",
-   "dias": 10.0
+   "dias": 10.5
   },
   {
    "id": "6bSau3WJl-Y",
@@ -305,7 +311,7 @@
    "views_dia": 0.2,
    "engaj": 150.0,
    "hora_brt": "14",
-   "dias": 10.3
+   "dias": 10.7
   },
   {
    "id": "h-zUFcFzLfs",
@@ -318,7 +324,7 @@
    "views_dia": 0.2,
    "engaj": 50.0,
    "hora_brt": "11",
-   "dias": 10.4
+   "dias": 10.8
   },
   {
    "id": "6L_wWzXfH54",
@@ -331,7 +337,7 @@
    "views_dia": 0.3,
    "engaj": 33.3,
    "hora_brt": "11",
-   "dias": 10.4
+   "dias": 10.8
   },
   {
    "id": "Vm5YUmBRys0",
@@ -344,7 +350,7 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "18",
-   "dias": 5.1
+   "dias": 5.5
   },
   {
    "id": "BOQeEsESTug",
@@ -357,7 +363,7 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "16",
-   "dias": 5.2
+   "dias": 5.6
   },
   {
    "id": "xJacJXth4ac",
@@ -370,7 +376,7 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "12",
-   "dias": 5.3
+   "dias": 5.8
   },
   {
    "id": "JMY5qf_Pubg",
@@ -383,7 +389,7 @@
    "views_dia": 0.2,
    "engaj": 200.0,
    "hora_brt": "09",
-   "dias": 5.5
+   "dias": 5.9
   },
   {
    "id": "SS0zYQhOJ_w",
@@ -396,7 +402,7 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "08",
-   "dias": 3.5
+   "dias": 4.0
   },
   {
    "id": "xNhkjNYSKL0",
@@ -406,10 +412,10 @@
    "views": 85,
    "likes": 1,
    "coments": 1,
-   "views_dia": 20.7,
+   "views_dia": 18.7,
    "engaj": 2.4,
    "hora_brt": "18",
-   "dias": 4.1
+   "dias": 4.6
   },
   {
    "id": "I4Ne3Avq8FY",
@@ -419,10 +425,10 @@
    "views": 20,
    "likes": 1,
    "coments": 1,
-   "views_dia": 4.8,
+   "views_dia": 4.3,
    "engaj": 10.0,
    "hora_brt": "16",
-   "dias": 4.2
+   "dias": 4.6
   },
   {
    "id": "bKvMl3uqXt0",
@@ -432,10 +438,10 @@
    "views": 3,
    "likes": 1,
    "coments": 1,
-   "views_dia": 0.7,
+   "views_dia": 0.6,
    "engaj": 66.7,
    "hora_brt": "12",
-   "dias": 4.4
+   "dias": 4.8
   },
   {
    "id": "jBavJjK9HI8",
@@ -445,10 +451,10 @@
    "views": 446,
    "likes": 1,
    "coments": 1,
-   "views_dia": 99.6,
+   "views_dia": 90.5,
    "engaj": 0.4,
    "hora_brt": "09",
-   "dias": 4.5
+   "dias": 4.9
   },
   {
    "id": "8ENKRnmz-9o",
@@ -458,10 +464,10 @@
    "views": 13,
    "likes": 1,
    "coments": 1,
-   "views_dia": 3.3,
+   "views_dia": 3.0,
    "engaj": 15.4,
    "hora_brt": "22",
-   "dias": 3.9
+   "dias": 4.4
   },
   {
    "id": "Kw5tDGk_Xv4",
@@ -474,7 +480,7 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "16",
-   "dias": 3.2
+   "dias": 3.6
   },
   {
    "id": "uAr8e1CuA6k",
@@ -487,7 +493,7 @@
    "views_dia": 0.3,
    "engaj": 200.0,
    "hora_brt": "12",
-   "dias": 3.4
+   "dias": 3.8
   },
   {
    "id": "NZstdWK7tMk",
@@ -500,7 +506,7 @@
    "views_dia": 0.3,
    "engaj": 100.0,
    "hora_brt": "09",
-   "dias": 3.5
+   "dias": 3.9
   },
   {
    "id": "5xh1bWqi2nw",
@@ -513,20 +519,20 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "16",
-   "dias": 2.2
+   "dias": 2.6
   },
   {
    "id": "uvfhpIXMkX4",
    "titulo": "NEVER BLOW UP a Safe in GTA 6 — Do This Instead 💰",
    "tipo": "short",
    "dur": 70,
-   "views": 66,
+   "views": 71,
    "likes": 0,
    "coments": 1,
-   "views_dia": 28.6,
-   "engaj": 1.5,
+   "views_dia": 25.7,
+   "engaj": 1.4,
    "hora_brt": "13",
-   "dias": 2.3
+   "dias": 2.8
   },
   {
    "id": "Xz2vUTiSlk4",
@@ -536,10 +542,10 @@
    "views": 57,
    "likes": 1,
    "coments": 1,
-   "views_dia": 23.0,
+   "views_dia": 19.5,
    "engaj": 3.5,
    "hora_brt": "09",
-   "dias": 2.5
+   "dias": 2.9
   },
   {
    "id": "7g3X5Y8aYp8",
@@ -549,10 +555,10 @@
    "views": 1,
    "likes": 0,
    "coments": 1,
-   "views_dia": 0.5,
+   "views_dia": 0.4,
    "engaj": 100.0,
    "hora_brt": "21",
-   "dias": 2.0
+   "dias": 2.4
   },
   {
    "id": "xkyk5UYDW3M",
@@ -562,10 +568,10 @@
    "views": 5,
    "likes": 0,
    "coments": 1,
-   "views_dia": 4.2,
+   "views_dia": 3.1,
    "engaj": 20.0,
    "hora_brt": "16",
-   "dias": 1.2
+   "dias": 1.6
   },
   {
    "id": "vKYDSJ4UI7o",
@@ -578,7 +584,7 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "13",
-   "dias": 1.3
+   "dias": 1.8
   },
   {
    "id": "eckKOgpnLrg",
@@ -588,23 +594,23 @@
    "views": 1,
    "likes": 0,
    "coments": 1,
-   "views_dia": 0.7,
+   "views_dia": 0.6,
    "engaj": 100.0,
    "hora_brt": "12",
-   "dias": 1.4
+   "dias": 1.8
   },
   {
    "id": "Oj8OEjBUX84",
    "titulo": "TOP 5 CHEATS to Unlock First in GTA 6 (Ranked) 🔥",
    "tipo": "short",
    "dur": 80,
-   "views": 60,
+   "views": 77,
    "likes": 1,
    "coments": 1,
-   "views_dia": 61.5,
-   "engaj": 3.3,
+   "views_dia": 54.0,
+   "engaj": 2.6,
    "hora_brt": "21",
-   "dias": 1.0
+   "dias": 1.4
   },
   {
    "id": "yLr3-Puka6s",
@@ -614,23 +620,36 @@
    "views": 1,
    "likes": 0,
    "coments": 1,
-   "views_dia": 5.4,
+   "views_dia": 1.6,
    "engaj": 100.0,
    "hora_brt": "16",
-   "dias": 0.2
+   "dias": 0.6
   },
   {
    "id": "asJ_iRztkus",
    "titulo": "FIGHT SATAN in GTA 6 for a Secret Shotgun 😈",
    "tipo": "short",
    "dur": 50,
-   "views": 3,
+   "views": 4,
    "likes": 0,
    "coments": 1,
-   "views_dia": 9.7,
-   "engaj": 33.3,
+   "views_dia": 5.3,
+   "engaj": 25.0,
    "hora_brt": "13",
-   "dias": 0.3
+   "dias": 0.8
+  },
+  {
+   "id": "4in4d3QzqT0",
+   "titulo": "TOP 4 SECRET Easter Eggs Hidden in GTA 6 (Ranked) 🔥",
+   "tipo": "short",
+   "dur": 50,
+   "views": 12,
+   "likes": 0,
+   "coments": 1,
+   "views_dia": 28.2,
+   "engaj": 8.3,
+   "hora_brt": "21",
+   "dias": 0.4
   }
  ]
 }
