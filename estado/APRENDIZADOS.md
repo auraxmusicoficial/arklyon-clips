@@ -1,42 +1,53 @@
-# Aprendizados automáticos do canal — 27/11/2026 07:10
+# Aprendizados automáticos do canal — 27/11/2026 20:54
 
 _Gerado pelo robô a partir do desempenho real dos vídeos. A produção DEVE aplicar isto no longo e nos Shorts do dia._
 
 ## O que está funcionando  
-**Assuntos** – táticas imediatas que o jogador pode aplicar (ex.: “First thing to do”, “How to make money fast”, “Secret cops”, “Wanted stars”).  
-**Palavras‑chave** – uso de termos de urgência/curiosidade: **FIRST, FAST, SECRET, BACK, BEFORE, HOW TO, $X, #️⃣**.  
-**Emojis** – 🚨 ⚠️ 💰 🔥 🎮 🤯 dão destaque visual e aumentam a CTR.  
-**Duração** –  Shorts entre **50 – 70 s** geram o melhor “views / day” (1400 → 100 v/d).  
-**Horário de postagem** – picos entre **09h – 13h BRT** (quando a maioria dos gamers está online).  
-**Engajamento** – os melhores têm **≥ 2 %** (até 5 % nas mais curtas).  
+**Assuntos que puxam visualizações**  
+| Tema | Por que funciona |
+|------|-------------------|
+| Como fazer algo “primeiro” ou “antes que acabe” (ex.: *Do This FIRST in GTA 6*) | Cria urgência + sensação de descoberta. |
+| Guia rápido de mecânicas específicas (Key Cloner, Wanted Stars, Lower Criminal Profile) | Jogadores buscam soluções rápidas logo após o lançamento. |
+| Listas “TOP X” com promessa de ranking (Fastest Ways to Make Money, Fastest Cheats) | Formato familiar, fácil de consumir. |
+| Dicas de dinheiro / loot (car trunks, safe codes) | Monetização é prioridade dos novos players. |
+
+**Palavras‑chave que geram cliques**  
+- **VERBOS de ação**: *STEAL, LOWER, DO, MAKE, UNLOCK, KNOW*  
+- **ADJETIVOS de alerta**: *⚠️, 🚨, 🔥, 🤯*  
+- **NÚMEROS**: “6 Wanted Stars”, “TOP 5”, “$1.6 BILLION” – dão clareza instantânea.  
+
+**Formato**  
+- **Duração**: 45 – 70 s nos Shorts (ponto ideal entre retenção alta e tempo suficiente para explicar).  
+- **Horário de publicação**: 09 h – 16 h BRT (picos de visualização; a maioria dos melhores foi postada nesse intervalo).  
+- **Emoji**: Sempre 1‑2 no final do título, reforça a “vibe” de descoberta/alerta.  
 
 ## O que evitar  
-- Títulos genéricos ou “listas” que não prometem ação imediata (ex.: “TOP 5 FASTEST Ways to Make Money” – baixa visualizações).  
-- Emojis sem relação direta ao tema (ex.: ❤️ em romance).  
-- Durações > 80 s sem “hook” forte – queda brusca de visualizações.  
-- Postagens tarde da noite (≥ 18h BRT) apresentam menor “views / day”.  
-- Conteúdo já saturado (ex.: “Cheats to Unlock First”) – baixa performance.  
+- **Títulos muito genéricos ou “click‑bait” sem valor concreto** (ex.: “GTA 6 Is Finally Out — Know This Before You Play” – baixa retenção).  
+- **Duração > 70 s para Shorts** (queda de visualizações diárias).  
+- **Postagens muito tarde (21 h – 23 h BRT)** – poucos views/dia.  
+- **Temas muito amplos ou fora do foco “como ganhar/como evitar”** (ex.: “GTA 6’s Darkest Hint Yet”, “GTA 6 Reviews Are In”) – desempenho ruim.  
 
 ## Fórmulas de título para amanhã  
 
-### Shorts (INGLÊS)  
-1. **“[X] MUST‑DO Trick in GTA 6 RIGHT NOW 🚨”**  
-2. **“How to Earn $[X] in 5 Minutes – GTA 6 Money Hack 💰”**  
-3. **“Secret Cop Patrols Revealed – Stay ONE STAR Ahead ⚠️”**  
-4. **“Why You Should NEVER Use This Weapon in GTA 6 🔥”**  
-5. **“Unlock the Hidden $[X] Car Trunk Loot – No Cheats Needed 💸”**  
-6. **“GTA 6’s New Wanted System: How to Lose All Stars FAST 🚔”**  
+### Shorts (INGLÊS) – 6 modelos  
+1. **“How to Get [X] Cash in GTA 6 in 5 Minutes 💰”**  
+2. **“Unlock the Secret [X] in GTA 6 Before Everyone Else 🚀”**  
+3. **“Avoid This [X] Mistake in GTA 6 – Saves You Hours ⚠️”**  
+4. **“Top 5 Fastest Ways to Earn $[X] in GTA 6 (Ranked) 🔥”**  
+5. **“Steal Any [X] Car in GTA 6 – Full Key Cloner Guide 🚨”**  
+6. **“Wanted Level [X] Is Back – What the New Cops Do Differently 🕵️‍♂️”**  
 
-### Vídeos longos (INGLÊS)  
-1. **“Ultimate GTA 6 Money Guide 2026 – 8 Proven Methods Ranked”**  
-2. **“GTA 6 Gameplay Deep Dive: All Hidden Features You Missed on Day 1”**  
+### Vídeos longos (INGLÊS) – 2 modelos  
+1. **“GTA 6 Complete Money‑Making Blueprint – 8 Proven Methods (2026)”**  
+2. **“Everything You Need to Know About GTA 6’s New Wanted System – Tips & Tricks”**  
+
+*(Substitua **[X]** pelo dado do dia: valor de dinheiro, número de estrelas, nome da missão, etc.)*  
 
 ## Ajustes no vídeo longo  
-- **Título:** adotar a fórmula “Ultimate [GTA 6 Topic] – X Proven Methods Ranked”.  
-- **Thumbnail:** use uma imagem de ação (ex.: carro cheio de dinheiro) + texto em caixa‑alta “$ [Big Number] IN 5 MIN”.  
-- **Gancho (0‑30 s):** iniciar com uma pergunta de alta curiosidade (“Quer ganhar $10 k em 5 min? Veja como!”) + corte rápido para a primeira demonstração de ganho.  
-- **Inserir “short‑style” inserts:** cada 2‑3 min, mostrar um “quick tip” em formato de short (texto + emoji).  
+1. **Título** – Adote a estrutura “How to/Everything You Need to Know + número ou benefício concreto”. Ex.: *“GTA 6 Money‑Making Blueprint – Earn $250K in 30 Min”*.  
+2. **Thumbnail** – Use imagem de ação (ex.: carro roubado, barra de dinheiro) + texto grande “$250K” + emoji de explosão. Cores vibrantes (vermelho + amarelo).  
+3. **Gancho (primeiros 30 s)** – Comece com uma pergunta de impacto: *“Quer ganhar $250 k já na primeira hora? Eu mostro como, passo a passo.”* Em seguida, mostre rapidamente o resultado final (dinheiro na conta) e anuncie “Fique até o final para descobrir o truque #3 que ninguém revelou”.  
 
 ## O que testar a seguir  
-1. **Teste A/B de horário:** publique dois shorts semelhantes (mesmo título, mesma duração) às 10h BRT e às 19h BRT; compare “views / day” e taxa de retenção.  
-2. **Thumbnail com e sem emoji:** crie duas versões da capa do próximo vídeo longo – uma com emoji (🚀 💰) e outra sem; meça CTR e tempo médio de visualização.
+1. **Teste A/B de horário** – publique dois Shorts idênticos (mesmo título, thumbnail) às 10 h e às 19 h BRT por 3 dias; compare views/dia e taxa de retenção.  
+2. **Thumbnail com rosto vs. sem rosto** – para vídeos longos, faça duas versões: uma mostrando seu rosto reagindo ao loot, outra apenas o loot + texto; veja qual gera maior CTR nos primeiros 48 h.
