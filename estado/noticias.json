@@ -209,7 +209,8 @@
   "porque": "Highlights a controversy over child exposure to mature content in GTA 6, a topic that will affect many players’ families and parental control discussions.",
   "visto": "2026-11-26T18:27-03:00",
   "urgente": true,
-  "produzido": false,
-  "via": "robo-groq"
+  "produzido": true,
+  "via": "robo-groq",
+  "obs": "27/11: não virou Short — alerta regional (Emirados) sobre conteúdo adulto, pouco relevante para o público EUA/Reino Unido"
  }
 ]
