@@ -123,7 +123,17 @@ def main():
     n, _ = etapa("Comentários (IA grátis)", comentarios.auto)
     if os.environ.get("IG_TOKEN"):
         import comentarios_ig
+        antes = len(avisos)
         etapa("Comentários do Instagram (IA grátis)", comentarios_ig.auto)
+        # App da Meta bloqueado: avisa só 1x por dia em vez de a cada rodada
+        if len(avisos) > antes and "API access blocked" in avisos[-1]:
+            marca = Path(__file__).resolve().parent.parent / "estado" / "ig_bloqueado.txt"
+            hoje = datetime.now(BRT).strftime("%Y-%m-%d")
+            if marca.exists() and marca.read_text().strip() == hoje:
+                avisos.pop()
+            else:
+                marca.write_text(hoje)
+                avisos[-1] = "Respostas do Instagram pausadas: o app da Meta está bloqueado (aviso diário)."
     _, out = etapa("Kit de divulgação", divulgar.main)
     if "adicionados" in out:
         avisar("Kit de divulgação atualizado: github.com/auraxmusicoficial/arklyon-clips/blob/main/divulgar/README.md")
