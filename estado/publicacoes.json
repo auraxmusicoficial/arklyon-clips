@@ -2404,7 +2404,7 @@
   "quando": "2026-11-27T21:00:00-03:00",
   "upload": "2026-11-27T18:00:00-03:00",
   "yt_title": "5 THINGS You Can MISS FOREVER in GTA 6 (Ranked) ⚠️",
-  "descricao": "5 missable things in GTA 6 story mode, ranked, spoiler-free. Did you already lose one? #GTA6 #GTAVI #Shorts #GTA6Tips",
+  "descricao": "5 missable things in GTA 6 story mode, ranked, spoiler-free. Did you already lose one? #GTA6 #GTAVI #Shorts #GTA6Tips\n\n🎬 Full guide 👉 https://youtu.be/m_u7JSFtkCE",
   "tags": [
    "gta 6",
    "gta vi",
@@ -2424,9 +2424,9 @@
    "tiktok": "6b093e3e776ce21276fc8f3f",
    "instagram": "6b093e3f776ce21276fc8f7b"
   },
-  "ajustado": false,
+  "ajustado": true,
   "formato_yt": "rapido",
-  "comentario": "Which one did you already miss? I lost my pocket cash 😭",
+  "comentario": "Which one did you already miss? I lost my pocket cash 😭 Full guide here 👉 https://youtu.be/m_u7JSFtkCE",
   "fb_textos": [],
   "playlist": "shorts",
   "urgente": false,
@@ -2436,7 +2436,18 @@
   "quando_redes": {
    "tiktok": "20:00",
    "instagram": "20:00"
-  }
+  },
+  "traducoes": {
+   "es": {
+    "title": "5 COSAS que puedes PERDER para siempre en GTA 6 (Clasificado) ⚠️",
+    "description": "5 cosas que puedes perder en el modo historia de GTA 6, clasificadas, sin spoilers. ¿Ya perdiste alguna? #GTA6 #GTAVI #Shorts #GTA6Tips\n\n🎬 Guía completa 👉 https://youtu.be/m_u7JSFtkCE"
+   },
+   "pt": {
+    "title": "5 COISAS que você pode PERDER PARA SEMPRE em GTA 6 (Ranked) ⚠️",
+    "description": "5 coisas que você pode perder no modo história de GTA 6, classificadas, sem spoilers. Já perdeu alguma? #GTA6 #GTAVI #Shorts #GTA6Tips\n\n🎬 Guia completa 👉 https://youtu.be/m_u7JSFtkCE"
+   }
+  },
+  "na_playlist": true
  },
  {
   "tipo": "carrossel",
