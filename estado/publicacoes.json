@@ -2395,7 +2395,9 @@
    }
   },
   "video_id": "_-xILEeeWP0",
-  "na_playlist": true
+  "na_playlist": true,
+  "publico_ok": true,
+  "comentou": true
  },
  {
   "tipo": "short",
