@@ -98,8 +98,33 @@ def pesquisar(pergunta):
                 if r.strip():
                     return r.strip()
             except Exception as e:
-                log("pesquisa falhou:", modelo, str(e)[:150]); time.sleep(25)
+                log("pesquisa falhou:", modelo, str(e)[:150]); time.sleep(45)
+    # reserva: Gemini com Google Search (grátis, cota diária pequena)
+    for m in MODELOS_GEMINI:
+        corpo = {"contents": [{"role": "user", "parts": [{"text": pergunta}]}], "tools": [{"google_search": {}}],
+                 "generationConfig": {"maxOutputTokens": 3000, "temperature": 0.2}}
+        try:
+            d = json.load(urllib.request.urlopen(urllib.request.Request(
+                f"https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent?key={os.environ['GEMINI_KEY']}",
+                json.dumps(corpo).encode(), {"Content-Type": "application/json"}), timeout=200))
+            c = d["candidates"][0]
+            txt = "".join(p.get("text", "") for p in c["content"].get("parts", [])).strip()
+            sites = {ch.get("web", {}).get("title", "") for ch in (c.get("groundingMetadata") or {}).get("groundingChunks", [])}
+            if txt:
+                return txt + "\nSources consulted: " + ", ".join(x for x in sites if x)
+        except Exception as e:
+            log("pesquisa Gemini falhou:", m, str(e)[:150])
     return ""
+
+
+def verificado(txt):
+    """Só os trechos da pesquisa confirmados por 2+ fontes (tira os marcados [1 SOURCE])."""
+    blocos = re.split(r"\n(?=\s*(?:[-*•]|\d+\.)\s)|\n\s*\n", txt or "")
+    return "\n".join(b for b in blocos if "1 SOURCE" not in b.upper() and "SINGLE SOURCE" not in b.upper())
+
+
+def numeros(t):
+    return {n.replace(",", "") for n in re.findall(r"\d[\d,]*(?:\.\d+)?", t) if float(n.replace(",", "")) > 10}
 
 
 # ---------------------------------------------------------------- 1. fonte
@@ -342,9 +367,11 @@ def contem(narr, trecho):
     return bool(b) and any(a[i:i + len(b)] == b for i in range(len(a) - len(b) + 1))
 
 
-def validar(saida, n, d):
+def validar(saida, n, d, pesquisas=()):
     """Confere e conserta o que dá; devolve lista de problemas que precisam de reescrita."""
     prob = []
+    notas = [p for _, p in pesquisas]
+    tudo = " ".join(notas).replace(",", "")
     r = saida.get("roteiro") or {}
     sh_ = r.get("shorts") or []
     if len(sh_) < n:
@@ -366,6 +393,9 @@ def validar(saida, n, d):
             br = [[round(d * k / 7, 1), round(d * k / 7 + 10, 1)] for k in range(1, 6)]
         s["broll"] = br
         s["quote"] = None
+        fora = sorted(x for x in numeros(s["narracao"]) if x not in tudo)
+        if fora:
+            prob.append(f"{s['id']}: these numbers are NOT in the research notes, remove them or replace with verified ones: {fora}")
         s["cartoes"] = [c for c in s.get("cartoes", []) if c.get("quando") and contem(s["narracao"], c["quando"])]
         if len(s["cartoes"]) < 3:
             prob.append(f"{s['id']}: needs 3-5 cartoes whose 'quando' is copied EXACTLY from narracao")
@@ -377,6 +407,10 @@ def validar(saida, n, d):
             s["ranking"] = ok
         th = s["thumb"]; th["t"] = min(max(0, float(th.get("t", d / 2))), d - 1)
         th.setdefault("linhas", ["GTA 6"]); th.setdefault("foco", [0.5, 0.55]); th.setdefault("zoom", 1.3)
+        for k in ("titulo_tela", "yt_title", "tt_title", "texto_youtube", "texto_tiktok", "texto_instagram", "comentario_youtube"):
+            s[k] = re.sub(r"GTA Six", "GTA 6", s.get(k, ""), flags=re.I)   # "GTA Six" é só para a voz falar certo
+        s["thumb"]["linhas"] = [re.sub(r"GTA SIX", "GTA 6", x, flags=re.I) for x in s["thumb"].get("linhas", [])]
+        s["cartoes"] = [dict(c, texto=re.sub(r"GTA SIX", "GTA 6", c.get("texto", ""), flags=re.I)) for c in s.get("cartoes", [])]
         for k in ("texto_youtube", "texto_tiktok", "texto_instagram"):
             s[k] = re.sub(r"\*\*|__|^#+ |^(Hook|Caption|CTA|Description)\s*:\s*", "", s[k], flags=re.M | re.I).strip()
     cs = (saida.get("carrossel") or {}).get("carrosseis") or []
@@ -386,6 +420,18 @@ def validar(saida, n, d):
         c["id"] = f"c{j + 1}"
         if (not c.get("itens") and c.get("formato") not in ("teaser", "unico", "vs")) or not c.get("capa") or not c.get("legenda"):
             prob.append(f"{c['id']}: missing itens/capa/legenda")
+        nota = (notas[n + j] if len(notas) > n + j else "").replace(",", "")
+        if c.get("formato") == "lista":   # código/número/sequência só se estiver na pesquisa conferida
+            bons = [it for it in c.get("itens", []) if not str(it.get("valor", "")).strip()
+                    or str(it["valor"]).replace(",", "") in nota]
+            for it in bons:
+                if it.get("setas") and not all(x.lower() in nota.lower() for x in it["setas"]):
+                    it.pop("setas")
+            if len(bons) < len(c.get("itens", [])):
+                log(f"{c['id']}: tirei {len(c['itens']) - len(bons)} item(ns) sem fonte conferida")
+            c["itens"] = bons
+            if len(bons) < 3:
+                c["descartar"] = True
         f = c.get("fundo") or {}
         if f:
             c["fundo"] = {"video": "video.mp4", "t": min(max(0, float(f.get("t", d / 3))), d - 1)}
@@ -461,27 +507,29 @@ def main():
     temas = escolher_temas(n, ctx, cenas_txt)
     log("temas:", json.dumps(temas, ensure_ascii=False)[:1500])
     pesquisas = []
-    for t in (temas.get("shorts", [])[:n] + temas.get("posts", [])[:2]):
-        p = fatos(t["tema"], t.get("pesquisa", ""))
-        pesquisas.append((t["tema"], p or "NO VERIFIED FACTS FOUND — use only analysis/opinion, no specific claims."))
+    for i, t in enumerate(temas.get("shorts", [])[:n] + temas.get("posts", [])[:2]):
+        p = verificado(fatos(t["tema"], t.get("pesquisa", "")))
+        if len(p) < 300 and i >= n:   # post de imagem sem fatos conferidos -> vira "marque um amigo" (não precisa de fato)
+            t["formato"] = "tag"; t["tema"] += " (NO FACTS FOUND: make it a funny relatable 'tag a friend' post, no claims)"
+        pesquisas.append((t["tema"], p if len(p) >= 300 else "NO VERIFIED FACTS FOUND — use only analysis/opinion, no specific names/numbers/codes."))
         log("pesquisa:", t["tema"][:60], len(p), "chars")
-        time.sleep(8)
+        time.sleep(30)
 
     saida = escrever(temas, pesquisas, cenas_txt, vid, credito, n)
     for tent in range(3):
-        prob = validar(saida, n, d)
+        prob = validar(saida, n, d, pesquisas)
         if not prob:
             break
         log("corrigindo:", prob)
         saida = corrigir(saida, prob)
-    prob = validar(saida, n, d)
+    prob = validar(saida, n, d, pesquisas)
     if prob:
         log("AVISO: problemas restantes (seguindo assim mesmo):", prob)
     r = saida["roteiro"]; r["shorts"] = r["shorts"][:n]; r["longo"] = None
     r["video_id"] = vid; r["credito_fonte"] = credito
     r.setdefault("nomes_proprios", ["GTA Six", "Jason", "Lucia", "Leonida", "Vice City"])
     json.dump(r, open(job / "roteiro.json", "w"), ensure_ascii=False, indent=1)
-    json.dump({"carrosseis": saida["carrossel"]["carrosseis"][:2]}, open(job / "carrossel.json", "w"), ensure_ascii=False, indent=1)
+    json.dump({"carrosseis": [c for c in saida["carrossel"]["carrosseis"][:2] if not c.get("descartar")]}, open(job / "carrossel.json", "w"), ensure_ascii=False, indent=1)
     json.dump(pesquisas, open(job / "pesquisas.json", "w"), ensure_ascii=False, indent=1)
     json.dump({"palavras": []}, open(job / "transc.json", "w"))   # sem citações do áudio original (quote: null)
 
