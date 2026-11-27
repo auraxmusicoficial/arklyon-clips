@@ -2344,14 +2344,16 @@
    }
   },
   "video_id": "2Po_vJBzf88",
-  "na_playlist": true
+  "na_playlist": true,
+  "publico_ok": true,
+  "comentou": true
  },
  {
   "tipo": "short",
   "quando": "2026-11-27T16:00:00-03:00",
   "upload": "2026-11-27T13:00:00-03:00",
   "yt_title": "How To Lower Your Criminal Profile in GTA 6 ⚠️",
-  "descricao": "How to lower your Criminal Profile in GTA 6 before it turns permanent. What level is your Jason at right now? #GTA6 #GTAVI #Shorts #CriminalProfile",
+  "descricao": "How to lower your Criminal Profile in GTA 6 before it turns permanent. What level is your Jason at right now? #GTA6 #GTAVI #Shorts #CriminalProfile\n\n🎬 Full guide 👉 https://youtu.be/m_u7JSFtkCE",
   "tags": [
    "gta 6",
    "gta vi",
@@ -2372,16 +2374,28 @@
    "tiktok": "6b093dff1fd46e62e727a15f",
    "instagram": "6b093e00776ce21276fc7bd4"
   },
-  "ajustado": false,
+  "ajustado": true,
   "formato_yt": "rapido",
-  "comentario": "Drop your level: Professional, Hardened, Violent or Psycho? 👇",
+  "comentario": "Drop your level: Professional, Hardened, Violent or Psycho? 👇 Full guide here 👉 https://youtu.be/m_u7JSFtkCE",
   "fb_textos": [],
   "playlist": "shorts",
   "urgente": false,
   "quando_redes": {
    "tiktok": "18:00",
    "instagram": "16:00"
-  }
+  },
+  "traducoes": {
+   "es": {
+    "title": "Cómo bajar tu perfil criminal en GTA 6 ⚠️",
+    "description": "Cómo bajar tu perfil criminal en GTA 6 antes de que se vuelva permanente. ¿Qué nivel tiene tu Jason ahora? #GTA6 #GTAVI #Shorts #CriminalProfile\n\n🎬 Guía completa 👉 https://youtu.be/m_u7JSFtkCE"
+   },
+   "pt": {
+    "title": "Como diminuir seu Perfil Criminal no GTA 6 ⚠️",
+    "description": "Como diminuir seu Perfil Criminal no GTA 6 antes que fique permanente. Qual nível está seu Jason agora? #GTA6 #GTAVI #Shorts #CriminalProfile\n\n🎬 Guia completa 👉 https://youtu.be/m_u7JSFtkCE"
+   }
+  },
+  "video_id": "_-xILEeeWP0",
+  "na_playlist": true
  },
  {
   "tipo": "short",
