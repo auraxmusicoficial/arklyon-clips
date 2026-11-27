@@ -1,68 +1,42 @@
-# Aprendizados automáticos do canal — 26/11/2026 20:30
+# Aprendizados automáticos do canal — 27/11/2026 07:10
 
 _Gerado pelo robô a partir do desempenho real dos vídeos. A produção DEVE aplicar isto no longo e nos Shorts do dia._
 
-**## O que está funcionando (padrões dos melhores)**  
+## O que está funcionando  
+**Assuntos** – táticas imediatas que o jogador pode aplicar (ex.: “First thing to do”, “How to make money fast”, “Secret cops”, “Wanted stars”).  
+**Palavras‑chave** – uso de termos de urgência/curiosidade: **FIRST, FAST, SECRET, BACK, BEFORE, HOW TO, $X, #️⃣**.  
+**Emojis** – 🚨 ⚠️ 💰 🔥 🎮 🤯 dão destaque visual e aumentam a CTR.  
+**Duração** –  Shorts entre **50 – 70 s** geram o melhor “views / day” (1400 → 100 v/d).  
+**Horário de postagem** – picos entre **09h – 13h BRT** (quando a maioria dos gamers está online).  
+**Engajamento** – os melhores têm **≥ 2 %** (até 5 % nas mais curtas).  
 
-| Métrica | Shorts TOP 3 | Características comuns |
-|---|---|---|
-| **Views / dia** | 1400, 155.9, 107.0 | Título que promete **novidade** (“back”, “first”, “made $1.6 BILLION”) |
-| **Duração** | 55 s – 71 s | 50 – 70 s – tempo ideal para retenção no Shorts |
-| **Horário de postagem** | 09 h, 11 h, 13 h (BRT) | Manhã‑tarde (09‑13 h) gera mais visualizações nos primeiros 24 h |
-| **Emoji** | 🚨, ⚠️, 🤯 | Emojis de alerta, dinheiro, explosão → alta curiosidade |
-| **Palavras‑chave** | “back”, “first”, “made”, “know”, “free money” | Verbos de ação + número/valor chamativo |
-| **Engajamento** | 2‑5 % (picos 5 % em “Made $1.6 BILLION”) | CTA implícito (“do this”, “know this”) aumenta comentários e likes |
+## O que evitar  
+- Títulos genéricos ou “listas” que não prometem ação imediata (ex.: “TOP 5 FASTEST Ways to Make Money” – baixa visualizações).  
+- Emojis sem relação direta ao tema (ex.: ❤️ em romance).  
+- Durações > 80 s sem “hook” forte – queda brusca de visualizações.  
+- Postagens tarde da noite (≥ 18h BRT) apresentam menor “views / day”.  
+- Conteúdo já saturado (ex.: “Cheats to Unlock First”) – baixa performance.  
 
-**Padrões de conteúdo:**  
-- **Novidade ou “primeiro passo”** (ex.: “Do This FIRST in GTA 6”).  
-- **Dados impactantes** (bilhões, dinheiro escondido, estrelas de polícia).  
-- **Comparação/retro** (“6 Wanted Stars Are Back”).  
+## Fórmulas de título para amanhã  
 
----
+### Shorts (INGLÊS)  
+1. **“[X] MUST‑DO Trick in GTA 6 RIGHT NOW 🚨”**  
+2. **“How to Earn $[X] in 5 Minutes – GTA 6 Money Hack 💰”**  
+3. **“Secret Cop Patrols Revealed – Stay ONE STAR Ahead ⚠️”**  
+4. **“Why You Should NEVER Use This Weapon in GTA 6 🔥”**  
+5. **“Unlock the Hidden $[X] Car Trunk Loot – No Cheats Needed 💸”**  
+6. **“GTA 6’s New Wanted System: How to Lose All Stars FAST 🚔”**  
 
-**## O que evitar (padrões dos piores)**  
+### Vídeos longos (INGLÊS)  
+1. **“Ultimate GTA 6 Money Guide 2026 – 8 Proven Methods Ranked”**  
+2. **“GTA 6 Gameplay Deep Dive: All Hidden Features You Missed on Day 1”**  
 
-| Problema | Exemplos | Por quê |
-|---|---|---|
-| **Título vago / sem número** | “TOP 5 CHEATS to Unlock First” (baixo ≈ 41 v/dia) | Falta de gancho numérico forte. |
-| **Duração > 80 s** | 80 s, 93 s, 1496 s | Reduz retenção nos Shorts. |
-| **Postagem tarde/noite** | 21 h, 22 h | Menor tráfego orgânico nos primeiros 24 h. |
-| **Baixa relevância de emoji** | Sem emoji ou emojis irrelevantes | Diminui a taxa de clique (CTR). |
-| **Conteúdo “genérico”** | “STOP Clicking! GTA 6 Ending Secret” (3 v/dia) | Não entrega promessa clara de valor. |
-| **Mini‑vídeos quase sem visualizações** | Longos > 10 min com 0‑5 views | Falta de thumbnail atrativa e título “click‑bait”. |
+## Ajustes no vídeo longo  
+- **Título:** adotar a fórmula “Ultimate [GTA 6 Topic] – X Proven Methods Ranked”.  
+- **Thumbnail:** use uma imagem de ação (ex.: carro cheio de dinheiro) + texto em caixa‑alta “$ [Big Number] IN 5 MIN”.  
+- **Gancho (0‑30 s):** iniciar com uma pergunta de alta curiosidade (“Quer ganhar $10 k em 5 min? Veja como!”) + corte rápido para a primeira demonstração de ganho.  
+- **Inserir “short‑style” inserts:** cada 2‑3 min, mostrar um “quick tip” em formato de short (texto + emoji).  
 
----
-
-**## Fórmulas de título para amanhã**  
-
-### Shorts (inglês) – 6 modelos  
-1. **“[X] MUST‑DO Tips for GTA 6 – Don’t Miss This!”**  
-2. **“How [X] Changed GTA 6 Money Making (Live Test)”**  
-3. **“Unlock the Secret [X] in GTA 6 – Instant $500k!”**  
-4. **“Why the New Wanted System Is *Harder* – [X] Trick”**  
-5. **“First 5 Minutes in GTA 6: [X] Mistake to Avoid 🚨”**  
-6. **“GTA 6’s Biggest Glitch Revealed – [X] Happens Every 10 min!”**  
-
-### Vídeos longos – 2 modelos  
-1. **“GTA 6 Full Guide: 10 Proven Ways to Earn $[X] in One Hour (Ranked)”**  
-2. **“Deep Dive: All Hidden Features in GTA 6 – What Rockstar Didn’t Tell You (Day 1)”**  
-
-*(Substitua **[X]** pelo número, valor ou fato do dia – ex.: “$250 k”, “5 star police”, “Secret Car Trunk”.)*  
-
----
-
-**## Ajustes no vídeo longo**  
-
-1. **Título** – Use a mesma fórmula de urgência dos Shorts: “GTA 6 Full Guide: 10 Proven Ways to Earn $[X] in One Hour (Ranked)”.  
-2. **Thumbnail** – Imagem de alta‑contraste: número grande ($250 k) + emoji de dinheiro 💰 + rosto de surpresa.  
-3. **Gancho (0‑30 s)** – Comece com uma pergunta impactante (“Quer ganhar $250 k em 60 s? Aqui está como!”) seguida de **corte rápido** para a primeira dica visual.  
-4. **Segmentação** – Divida o longo em **10 blocos de 1‑2 min** cada, com mini‑títulos que replicam o estilo dos Shorts (“#1: The Secret Trunk”).  
-
----
-
-**## O que testar a seguir**  
-
-1. **Horário de postagem** – Publique todos os Shorts entre **09 h e 12 h BRT** nos próximos 7 dias e compare views/dia com os que foram postados às 21‑22 h.  
-2. **CTA nos primeiros 3 s** – Adicione uma frase curta (“Watch till the end for the $500k hack!”) e mensure a diferença de **retention (30 s)** e **engajamento** entre vídeos com/sem CTA.  
-
-Esses ajustes alinham o canal ao que já está gerando resultados, enquanto os testes validarão os horários e a força dos ganchos iniciais. Boa produção!
+## O que testar a seguir  
+1. **Teste A/B de horário:** publique dois shorts semelhantes (mesmo título, mesma duração) às 10h BRT e às 19h BRT; compare “views / day” e taxa de retenção.  
+2. **Thumbnail com e sem emoji:** crie duas versões da capa do próximo vídeo longo – uma com emoji (🚀 💰) e outra sem; meça CTR e tempo médio de visualização.

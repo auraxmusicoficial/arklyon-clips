@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-26T23:30:53.545430+00:00",
+ "atualizado": "2026-11-27T10:10:38.188226+00:00",
  "historico": [
   {
    "data": "2026-11-17",
@@ -108,6 +108,12 @@
    "inscritos": 11,
    "views": 5404,
    "videos": 45
+  },
+  {
+   "data": "2026-11-27",
+   "inscritos": 11,
+   "views": 5419,
+   "videos": 46
   }
  ],
  "videos": [
@@ -119,10 +125,10 @@
    "views": 760,
    "likes": 34,
    "coments": 4,
-   "views_dia": 107.0,
+   "views_dia": 100.7,
    "engaj": 5.0,
    "hora_brt": "18",
-   "dias": 7.1
+   "dias": 7.5
   },
   {
    "id": "5kCCspaOdnE",
@@ -135,7 +141,7 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "12",
-   "dias": 7.4
+   "dias": 7.8
   },
   {
    "id": "kNzOszVFf70",
@@ -145,10 +151,10 @@
    "views": 1152,
    "likes": 22,
    "coments": 1,
-   "views_dia": 155.9,
+   "views_dia": 147.0,
    "engaj": 2.0,
    "hora_brt": "11",
-   "dias": 7.4
+   "dias": 7.8
   },
   {
    "id": "MI3JQ2je-FQ",
@@ -158,10 +164,10 @@
    "views": 773,
    "likes": 23,
    "coments": 4,
-   "views_dia": 103.4,
+   "views_dia": 97.6,
    "engaj": 3.5,
    "hora_brt": "09",
-   "dias": 7.5
+   "dias": 7.9
   },
   {
    "id": "-_O8FyG6qYg",
@@ -171,10 +177,10 @@
    "views": 177,
    "likes": 4,
    "coments": 6,
-   "views_dia": 22.2,
+   "views_dia": 21.0,
    "engaj": 5.6,
    "hora_brt": "21",
-   "dias": 8.0
+   "dias": 8.4
   },
   {
    "id": "y99xw4Mmuvg",
@@ -184,10 +190,10 @@
    "views": 148,
    "likes": 3,
    "coments": 2,
-   "views_dia": 18.1,
+   "views_dia": 17.2,
    "engaj": 3.4,
    "hora_brt": "16",
-   "dias": 8.2
+   "dias": 8.6
   },
   {
    "id": "ex3cGJ8APxQ",
@@ -197,10 +203,10 @@
    "views": 112,
    "likes": 2,
    "coments": 3,
-   "views_dia": 13.6,
+   "views_dia": 12.9,
    "engaj": 4.5,
    "hora_brt": "14",
-   "dias": 8.2
+   "dias": 8.7
   },
   {
    "id": "49tnnie3Jjo",
@@ -210,10 +216,10 @@
    "views": 1400,
    "likes": 31,
    "coments": 6,
-   "views_dia": 168.5,
+   "views_dia": 160.0,
    "engaj": 2.6,
    "hora_brt": "13",
-   "dias": 8.3
+   "dias": 8.8
   },
   {
    "id": "P5dyUUPJh04",
@@ -223,10 +229,10 @@
    "views": 13,
    "likes": 8,
    "coments": 9,
-   "views_dia": 1.6,
+   "views_dia": 1.5,
    "engaj": 130.8,
    "hora_brt": "12",
-   "dias": 8.3
+   "dias": 8.8
   },
   {
    "id": "psqeW0oueVU",
@@ -236,10 +242,10 @@
    "views": 38,
    "likes": 2,
    "coments": 4,
-   "views_dia": 4.2,
+   "views_dia": 4.0,
    "engaj": 15.8,
    "hora_brt": "21",
-   "dias": 9.0
+   "dias": 9.4
   },
   {
    "id": "pCJSmriKY50",
@@ -252,7 +258,7 @@
    "views_dia": 0.5,
    "engaj": 180.0,
    "hora_brt": "12",
-   "dias": 9.3
+   "dias": 9.8
   },
   {
    "id": "GfJxx6e3jUY",
@@ -265,7 +271,7 @@
    "views_dia": 0.3,
    "engaj": 33.3,
    "hora_brt": "09",
-   "dias": 9.5
+   "dias": 9.9
   },
   {
    "id": "Zrug6PtEZzo",
@@ -278,7 +284,7 @@
    "views_dia": 0.5,
    "engaj": 140.0,
    "hora_brt": "21",
-   "dias": 10.0
+   "dias": 10.4
   },
   {
    "id": "5v79bZYpaZY",
@@ -291,7 +297,7 @@
    "views_dia": 0.2,
    "engaj": 50.0,
    "hora_brt": "19",
-   "dias": 10.1
+   "dias": 10.5
   },
   {
    "id": "BZIopAaJ-4k",
@@ -304,7 +310,7 @@
    "views_dia": 0.3,
    "engaj": 100.0,
    "hora_brt": "19",
-   "dias": 11.0
+   "dias": 11.5
   },
   {
    "id": "6bSau3WJl-Y",
@@ -317,7 +323,7 @@
    "views_dia": 0.2,
    "engaj": 150.0,
    "hora_brt": "14",
-   "dias": 11.3
+   "dias": 11.7
   },
   {
    "id": "h-zUFcFzLfs",
@@ -330,7 +336,7 @@
    "views_dia": 0.2,
    "engaj": 50.0,
    "hora_brt": "11",
-   "dias": 11.4
+   "dias": 11.8
   },
   {
    "id": "6L_wWzXfH54",
@@ -343,7 +349,7 @@
    "views_dia": 0.3,
    "engaj": 33.3,
    "hora_brt": "11",
-   "dias": 11.4
+   "dias": 11.8
   },
   {
    "id": "Vm5YUmBRys0",
@@ -356,7 +362,7 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "18",
-   "dias": 6.1
+   "dias": 6.5
   },
   {
    "id": "BOQeEsESTug",
@@ -369,7 +375,7 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "16",
-   "dias": 6.2
+   "dias": 6.6
   },
   {
    "id": "xJacJXth4ac",
@@ -382,7 +388,7 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "12",
-   "dias": 6.3
+   "dias": 6.8
   },
   {
    "id": "JMY5qf_Pubg",
@@ -392,10 +398,10 @@
    "views": 1,
    "likes": 1,
    "coments": 1,
-   "views_dia": 0.2,
+   "views_dia": 0.1,
    "engaj": 200.0,
    "hora_brt": "09",
-   "dias": 6.5
+   "dias": 6.9
   },
   {
    "id": "SS0zYQhOJ_w",
@@ -408,7 +414,7 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "08",
-   "dias": 4.5
+   "dias": 5.0
   },
   {
    "id": "xNhkjNYSKL0",
@@ -418,10 +424,10 @@
    "views": 85,
    "likes": 1,
    "coments": 1,
-   "views_dia": 16.7,
+   "views_dia": 15.3,
    "engaj": 2.4,
    "hora_brt": "18",
-   "dias": 5.1
+   "dias": 5.5
   },
   {
    "id": "I4Ne3Avq8FY",
@@ -431,23 +437,23 @@
    "views": 20,
    "likes": 1,
    "coments": 1,
-   "views_dia": 3.9,
+   "views_dia": 3.6,
    "engaj": 10.0,
    "hora_brt": "16",
-   "dias": 5.2
+   "dias": 5.6
   },
   {
    "id": "bKvMl3uqXt0",
    "titulo": "How To Make Money FAST in GTA 6 (Complete Beginner's Guide)",
    "tipo": "longo",
    "dur": 943,
-   "views": 3,
+   "views": 4,
    "likes": 1,
    "coments": 1,
-   "views_dia": 0.6,
-   "engaj": 66.7,
+   "views_dia": 0.7,
+   "engaj": 50.0,
    "hora_brt": "12",
-   "dias": 5.4
+   "dias": 5.8
   },
   {
    "id": "jBavJjK9HI8",
@@ -457,10 +463,10 @@
    "views": 446,
    "likes": 1,
    "coments": 1,
-   "views_dia": 81.4,
+   "views_dia": 75.3,
    "engaj": 0.4,
    "hora_brt": "09",
-   "dias": 5.5
+   "dias": 5.9
   },
   {
    "id": "8ENKRnmz-9o",
@@ -470,10 +476,10 @@
    "views": 13,
    "likes": 1,
    "coments": 1,
-   "views_dia": 2.6,
+   "views_dia": 2.4,
    "engaj": 15.4,
    "hora_brt": "22",
-   "dias": 4.9
+   "dias": 5.4
   },
   {
    "id": "Kw5tDGk_Xv4",
@@ -486,7 +492,7 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "16",
-   "dias": 4.2
+   "dias": 4.6
   },
   {
    "id": "uAr8e1CuA6k",
@@ -499,7 +505,7 @@
    "views_dia": 0.2,
    "engaj": 200.0,
    "hora_brt": "12",
-   "dias": 4.4
+   "dias": 4.8
   },
   {
    "id": "NZstdWK7tMk",
@@ -512,7 +518,7 @@
    "views_dia": 0.2,
    "engaj": 100.0,
    "hora_brt": "09",
-   "dias": 4.5
+   "dias": 4.9
   },
   {
    "id": "5xh1bWqi2nw",
@@ -525,7 +531,7 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "16",
-   "dias": 3.2
+   "dias": 3.6
   },
   {
    "id": "uvfhpIXMkX4",
@@ -535,23 +541,23 @@
    "views": 71,
    "likes": 0,
    "coments": 1,
-   "views_dia": 21.4,
+   "views_dia": 18.9,
    "engaj": 1.4,
    "hora_brt": "13",
-   "dias": 3.3
+   "dias": 3.8
   },
   {
    "id": "Xz2vUTiSlk4",
    "titulo": "DEAD EYE AIMING Is in GTA 6 — Aim for the Hands 🎯",
    "tipo": "short",
    "dur": 72,
-   "views": 57,
+   "views": 59,
    "likes": 1,
    "coments": 1,
-   "views_dia": 16.4,
-   "engaj": 3.5,
+   "views_dia": 15.0,
+   "engaj": 3.4,
    "hora_brt": "09",
-   "dias": 3.5
+   "dias": 3.9
   },
   {
    "id": "7g3X5Y8aYp8",
@@ -564,7 +570,7 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "21",
-   "dias": 3.0
+   "dias": 3.4
   },
   {
    "id": "xkyk5UYDW3M",
@@ -574,10 +580,10 @@
    "views": 5,
    "likes": 0,
    "coments": 1,
-   "views_dia": 2.3,
+   "views_dia": 1.9,
    "engaj": 20.0,
    "hora_brt": "16",
-   "dias": 2.2
+   "dias": 2.6
   },
   {
    "id": "vKYDSJ4UI7o",
@@ -590,20 +596,20 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "13",
-   "dias": 2.3
+   "dias": 2.8
   },
   {
    "id": "eckKOgpnLrg",
    "titulo": "GTA 6 Cheats: All 18 Working Codes & How To Unlock Them (PS5 & Xbox)",
    "tipo": "longo",
    "dur": 930,
-   "views": 4,
+   "views": 6,
    "likes": 0,
    "coments": 1,
-   "views_dia": 1.7,
-   "engaj": 25.0,
+   "views_dia": 2.1,
+   "engaj": 16.7,
    "hora_brt": "12",
-   "dias": 2.4
+   "dias": 2.8
   },
   {
    "id": "Oj8OEjBUX84",
@@ -613,10 +619,10 @@
    "views": 82,
    "likes": 1,
    "coments": 1,
-   "views_dia": 41.4,
+   "views_dia": 33.8,
    "engaj": 2.4,
    "hora_brt": "21",
-   "dias": 2.0
+   "dias": 2.4
   },
   {
    "id": "yLr3-Puka6s",
@@ -626,49 +632,49 @@
    "views": 1,
    "likes": 0,
    "coments": 1,
-   "views_dia": 0.8,
+   "views_dia": 0.6,
    "engaj": 100.0,
    "hora_brt": "16",
-   "dias": 1.2
+   "dias": 1.6
   },
   {
    "id": "asJ_iRztkus",
    "titulo": "FIGHT SATAN in GTA 6 for a Secret Shotgun 😈",
    "tipo": "short",
    "dur": 50,
-   "views": 1,
+   "views": 3,
    "likes": 0,
    "coments": 1,
-   "views_dia": 0.8,
-   "engaj": 100.0,
+   "views_dia": 1.7,
+   "engaj": 33.3,
    "hora_brt": "13",
-   "dias": 1.3
+   "dias": 1.8
   },
   {
    "id": "4in4d3QzqT0",
    "titulo": "TOP 4 SECRET Easter Eggs Hidden in GTA 6 (Ranked) 🔥",
    "tipo": "short",
    "dur": 50,
-   "views": 16,
+   "views": 17,
    "likes": 0,
    "coments": 1,
-   "views_dia": 16.3,
-   "engaj": 6.2,
+   "views_dia": 11.9,
+   "engaj": 5.9,
    "hora_brt": "21",
-   "dias": 1.0
+   "dias": 1.4
   },
   {
    "id": "SuaKea1iKJw",
    "titulo": "GTA 6 Is Watching What You Eat (Your Body Changes) 🍔",
    "tipo": "short",
    "dur": 51,
-   "views": 13,
+   "views": 15,
    "likes": 0,
    "coments": 1,
-   "views_dia": 69.2,
-   "engaj": 7.7,
+   "views_dia": 23.7,
+   "engaj": 6.7,
    "hora_brt": "16",
-   "dias": 0.2
+   "dias": 0.6
   },
   {
    "id": "OeScNTe9pfo",
@@ -681,19 +687,32 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "13",
-   "dias": 0.3
+   "dias": 0.8
   },
   {
    "id": "m_u7JSFtkCE",
    "titulo": "How To Make Money Fast In GTA 6 (8 Best Methods Ranked)",
    "tipo": "longo",
    "dur": 531,
-   "views": 1,
+   "views": 3,
    "likes": 0,
    "coments": 1,
-   "views_dia": 2.8,
-   "engaj": 100.0,
+   "views_dia": 3.8,
+   "engaj": 33.3,
    "hora_brt": "12",
+   "dias": 0.8
+  },
+  {
+   "id": "E5XQYsVYV2k",
+   "titulo": "TOP 5 FASTEST Ways to Make Money in GTA 6 (Ranked) 💰",
+   "tipo": "short",
+   "dur": 50,
+   "views": 39,
+   "likes": 1,
+   "coments": 1,
+   "views_dia": 92.0,
+   "engaj": 5.1,
+   "hora_brt": "21",
    "dias": 0.4
   }
  ]

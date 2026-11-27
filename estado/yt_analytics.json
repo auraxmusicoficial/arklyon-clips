@@ -1,5 +1,5 @@
 {
- "gerado": "2026-11-26",
+ "gerado": "2026-11-27",
  "fontes": [
   {
    "insightTrafficSourceType": "SHORTS",
@@ -105,6 +105,21 @@
    "insightTrafficSourceType": "SUBSCRIBER",
    "views": 6,
    "estimatedMinutesWatched": 0
+  },
+  {
+   "insightTrafficSourceType": "SHORTS",
+   "views": 4331,
+   "estimatedMinutesWatched": 1479
+  },
+  {
+   "insightTrafficSourceType": "YT_SEARCH",
+   "views": 836,
+   "estimatedMinutesWatched": 330
+  },
+  {
+   "insightTrafficSourceType": "YT_CHANNEL",
+   "views": 50,
+   "estimatedMinutesWatched": 22
   }
  ],
  "tipos": [
@@ -161,6 +176,18 @@
    "views": 37,
    "averageViewPercentage": 8.52,
    "averageViewDuration": 55
+  },
+  {
+   "creatorContentType": "shorts",
+   "views": 5294,
+   "averageViewPercentage": 57.24,
+   "averageViewDuration": 36
+  },
+  {
+   "creatorContentType": "videoOnDemand",
+   "views": 31,
+   "averageViewPercentage": 10.61,
+   "averageViewDuration": 62
   }
  ],
  "dias": [
@@ -240,6 +267,12 @@
    "day": "2026-11-24",
    "views": 110,
    "averageViewPercentage": 21.17,
+   "subscribersGained": 0
+  },
+  {
+   "day": "2026-11-22",
+   "views": 259,
+   "averageViewPercentage": 68.45,
    "subscribersGained": 0
   }
  ],
@@ -711,6 +744,48 @@
    "views": 0,
    "averageViewDuration": 27,
    "averageViewPercentage": 3.03,
+   "subscribersGained": 0
+  },
+  {
+   "video": "jBavJjK9HI8",
+   "views": 444,
+   "averageViewDuration": 32,
+   "averageViewPercentage": 46.45,
+   "subscribersGained": 0
+  },
+  {
+   "video": "8ENKRnmz-9o",
+   "views": 13,
+   "averageViewDuration": 33,
+   "averageViewPercentage": 44.81,
+   "subscribersGained": 0
+  },
+  {
+   "video": "Kw5tDGk_Xv4",
+   "views": 1,
+   "averageViewDuration": 4,
+   "averageViewPercentage": 5.48,
+   "subscribersGained": 0
+  },
+  {
+   "video": "NZstdWK7tMk",
+   "views": 1,
+   "averageViewDuration": 0,
+   "averageViewPercentage": 0,
+   "subscribersGained": 0
+  },
+  {
+   "video": "uAr8e1CuA6k",
+   "views": 1,
+   "averageViewDuration": 613,
+   "averageViewPercentage": 67.66,
+   "subscribersGained": 0
+  },
+  {
+   "video": "SS0zYQhOJ_w",
+   "views": 0,
+   "averageViewDuration": 0,
+   "averageViewPercentage": 0,
    "subscribersGained": 0
   }
  ]

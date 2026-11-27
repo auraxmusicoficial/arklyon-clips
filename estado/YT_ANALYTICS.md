@@ -1,21 +1,19 @@
-# YouTube Analytics (últimos 28 dias, dados até ~2 dias atrás) — gerado 2026-11-26
+# YouTube Analytics (últimos 28 dias, dados até ~2 dias atrás) — gerado 2026-11-27
 
 Retenção = % médio do vídeo que as pessoas assistem. Short bom: 60%+ (abaixo de 45% o YouTube para de mostrar). Longo bom: 35%+.
 
 ## De onde vêm as views
-- SHORTS: 4334 views
-- YT_SEARCH: 835 views
+- SHORTS: 4331 views
+- YT_SEARCH: 836 views
 - YT_OTHER_PAGE: 89 views
-- YT_CHANNEL: 57 views
+- YT_CHANNEL: 50 views
 - SUBSCRIBER: 6 views
-- NO_LINK_OTHER: 2 views
 - EXT_URL: 1 views
-- NOTIFICATION: 1 views
+- NO_LINK_OTHER: 0 views
 
 ## Por tipo
-- liveStream: 1 views, retenção 0%, 4s em média
-- shorts: 5320 views, retenção 57%, 35s em média
-- videoOnDemand: 37 views, retenção 9%, 55s em média
+- shorts: 5294 views, retenção 57%, 36s em média
+- videoOnDemand: 31 views, retenção 11%, 62s em média
 
 ## Países
 - US: 1458
@@ -35,7 +33,7 @@ Retenção = % médio do vídeo que as pessoas assistem. Short bom: 60%+ (abaixo
 - 2026-11-19: 4528 views, retenção 58%, +4 inscritos
 - 2026-11-20: 11 views, retenção 47%, +0 inscritos
 - 2026-11-21: 184 views, retenção 53%, +0 inscritos
-- 2026-11-22: 259 views, retenção 44%, +0 inscritos
+- 2026-11-22: 259 views, retenção 68%, +0 inscritos
 - 2026-11-23: 181 views, retenção 46%, +0 inscritos
 - 2026-11-24: 110 views, retenção 21%, +0 inscritos
 
@@ -46,7 +44,7 @@ Retenção = % médio do vídeo que as pessoas assistem. Short bom: 60%+ (abaixo
 | 2026-11-19 | 1152 | 65% | 42s | 0 | Do This FIRST in GTA 6 (Before It's Too Late) ⚠️ |
 | 2026-11-19 | 773 | 54% | 34s | 1 | GTA 6 Is Finally Out — Know This Before You Play 🎮 |
 | 2026-11-19 | 760 | 38% | 25s | 1 | GTA 6 Made $1.6 BILLION Before Launch 🤯 |
-| 2026-11-21 | 444 | 46% | 33s | 0 | FREE MONEY Is Hiding in GTA 6 Car Trunks 💰 |
+| 2026-11-21 | 444 | 46% | 32s | 0 | FREE MONEY Is Hiding in GTA 6 Car Trunks 💰 |
 | 2026-11-19 | 176 | 53% | 21s | 0 | The San Andreas Gym Is BACK in GTA 6 💪 |
 | 2026-11-18 | 148 | 46% | 17s | 0 | "A Professional Adapts" — Lucia Proves Herself in GTA 6 🔥 |
 | 2026-11-18 | 112 | 158% | 110s | 0 | GTA 6 Just Tied the Highest Metacritic Score Ever 😳 |
@@ -56,7 +54,7 @@ Retenção = % médio do vídeo que as pessoas assistem. Short bom: 60%+ (abaixo
 | 2026-11-18 | 37 | 64% | 23s | 0 | GTA 6's Darkest Hint Yet 😶 "These Are Your Glory Days" |
 | 2026-11-21 | 20 | 543% | 385s | 0 | This GTA 6 Bank Job Paid $140,000 in 10 Minutes 🤯 |
 | 2026-11-25 | 18 | 25% | 20s | 0 | TOP 5 CHEATS to Unlock First in GTA 6 (Ranked) 🔥 |
-| 2026-11-22 | 13 | 34% | 24s | 0 | STEAL ATMs in GTA 6? 168 of Them Can Be Towed 😳 |
+| 2026-11-22 | 13 | 45% | 33s | 0 | STEAL ATMs in GTA 6? 168 of Them Can Be Towed 😳 |
 | 2026-11-18 | 13 | 5% | 27s | 1 | GTA 6 Reviews Are In: A Masterpiece With One Big Catch |
 | 2026-11-24 | 6 | 7% | 5s | 0 | These GTA 6 Safe Codes Never Change 💰 |
 | 2026-11-17 | 5 | 7% | 22s | 0 | GTA 6 Extended Look: Everything It Reveals About the Story |
@@ -73,12 +71,11 @@ Retenção = % médio do vídeo que as pessoas assistem. Short bom: 60%+ (abaixo
 | 2026-11-15 | 2 | 11% | 4s | 0 | SHOCKING: GTA 6 Physics Break Reality 🤯 |
 | 2026-11-24 | 2 | 33% | 22s | 0 | SAVE FIRST Before Using Cheats in GTA 6 ⚠️ |
 | 2026-11-20 | 1 | 95% | 37s | 0 | GTA 6 UNLOCK Hidden Secrets Before Anyone Else 🚀 |
-| 2026-11-22 | 1 | 32% | 23s | 0 | GTA 6 Cops Are DIFFERENT (You Will Miss These) 🚔 |
-| 2026-11-22 | 1 | 17% | 11s | 0 | UNLOCK SECRET COPS IN GTA 6 – How to Hide Your Star Rating 🚨 |
-| 2026-11-22 | 1 | 13% | 121s | 0 | GTA 6 Wanted System Explained: How To Escape Cops EVERY Time |
+| 2026-11-22 | 1 | 5% | 4s | 0 | GTA 6 Cops Are DIFFERENT (You Will Miss These) 🚔 |
+| 2026-11-22 | 1 | 0% | 0s | 0 | UNLOCK SECRET COPS IN GTA 6 – How to Hide Your Star Rating 🚨 |
+| 2026-11-22 | 1 | 68% | 613s | 0 | GTA 6 Wanted System Explained: How To Escape Cops EVERY Time |
 | 2026-11-19 | 0 | 0% | 0s | 0 | GTA 6 BROKE ME: 3 Things You Must Know Before Playing 🎮 |
 | 2026-11-20 | 0 | 0% | 0s | 0 | STOP! GTA 6 Cops Track You Like This 👮 |
-| 2026-11-22 | 0 | 0% | 4s | 0 | UNVEILED GTA 6: Hidden Story Secrets & Real Gameplay Preview |
+| 2026-11-22 | 0 | 0% | 0s | 0 | UNVEILED GTA 6: Hidden Story Secrets & Real Gameplay Preview |
 | 2026-11-20 | 0 | 0% | 0s | 0 | GTA 6: Unlock Hidden $500k Car Trunk Loot – No Cheats Needed |
 | 2026-11-20 | 0 | 0% | 0s | 0 | GTA 6 HIDDEN FEATURE Most Players Missed On Day 1 🤫 |
-| 2026-11-22 | 0 | 3% | 27s | 0 | GTA 6 Wanted System Explained: How To Escape Cops EVERY Time |

@@ -60,7 +60,7 @@
   "titulo_novo": "GTA 6 UNLOCK Hidden Secrets Before Anyone Else 🚀",
   "views_dia_antes": 0.3,
   "mediana_tipo": 6.8,
-  "views_dia_agora": 0.2
+  "views_dia_agora": 0.1
  },
  "GfJxx6e3jUY": {
   "tipo": "short",
@@ -96,7 +96,7 @@
   "titulo_novo": "UNLOCK SECRET COPS IN GTA 6 – How to Hide Your Star Rating 🚨",
   "views_dia_antes": 0.4,
   "mediana_tipo": 5.1,
-  "views_dia_agora": 0.3
+  "views_dia_agora": 0.2
  },
  "5xh1bWqi2nw": {
   "tipo": "short",
@@ -104,7 +104,8 @@
   "titulo_antigo": "Top 5 Things GTA 6 Does That GTA 5 Never Could 🤯",
   "titulo_novo": "STOP DOING THIS in GTA 6 (You're Wasting Time) 🛑",
   "views_dia_antes": 0.0,
-  "mediana_tipo": 3.1
+  "mediana_tipo": 3.1,
+  "views_dia_agora": 0.0
  },
  "7g3X5Y8aYp8": {
   "tipo": "short",
@@ -112,6 +113,15 @@
   "titulo_antigo": "LEAVE LUCIA BEHIND in GTA 6 and She Remembers 😳",
   "titulo_novo": "GTA 6: Why Leaving Lucia Changes Everything 😳",
   "views_dia_antes": 0.4,
-  "mediana_tipo": 3.1
+  "mediana_tipo": 3.1,
+  "views_dia_agora": 0.0
+ },
+ "vKYDSJ4UI7o": {
+  "tipo": "short",
+  "quando": "2026-11-27T07:11:08.628605-03:00",
+  "titulo_antigo": "SAVE FIRST Before Using Cheats in GTA 6 ⚠️",
+  "titulo_novo": "DON’T MISS GTA 6 Save Trick Before Using Cheats ⚠️",
+  "views_dia_antes": 0.0,
+  "mediana_tipo": 2.4
  }
 }
