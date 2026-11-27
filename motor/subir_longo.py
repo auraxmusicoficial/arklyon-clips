@@ -68,7 +68,7 @@ def main(job, data, sha, hora="12:00"):
                     print("AVISO legenda", lg, "falhou:", e)
         except Exception as e:
             print("AVISO legendas falharam:", e)
-    base = f"https://raw.githubusercontent.com/auraxmusicoficial/arklyon-clips/{sha}/publicar/{data}"
+    base = os.environ.get("PUB_BASE") or f"https://raw.githubusercontent.com/auraxmusicoficial/arklyon-clips/{sha}/publicar/{data}"
     entrada = {"tipo": "longo", "quando": quando.isoformat(), "upload": datetime.now(BRT).isoformat(), "yt_title": L["titulo"][:100],
                "descricao": desc, "tags": L.get("tags", []), "thumb": f"{base}/thumb_longo.jpg", "video_id": vid,
                "ajustado": False, "comentario": L.get("comentario_youtube", ""), "fb_textos": L.get("fb_textos", []),

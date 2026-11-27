@@ -129,7 +129,7 @@ def criar(rede, texto, url, due, meta, capa_ms=None):
 
 def main(job, data, sha, pular=(), urgente=False):
     job = Path(job); r = ler_json(job / "roteiro.json"); L0 = r.get("longo") or {}
-    base = f"https://raw.githubusercontent.com/{REPO}/{sha}/publicar/{data}"
+    base = os.environ.get("PUB_BASE") or f"https://raw.githubusercontent.com/{REPO}/{sha}/publicar/{data}"
     agora = datetime.now(BRT); plano = []
     if urgente:
         return publicar_urgente(job, r, data, base)
@@ -194,10 +194,16 @@ def agendar_short(job, s, base, due, dt, due_yt, privacidade="unlisted", instagr
         from comum import dur as _dur
         capa = max(100, int(_dur(job / "saida" / f"short_{s['id']}.mp4") * 1000) - 250)   # capa fica no fim do vídeo
         tx = {r_: s.get(f"texto_{r_}", s.get("texto_post", "")) for r_ in ("youtube", "tiktok", "instagram")}
+        yt_direto = None
         if youtube:
-            ids["youtube"] = criar("youtube", tx["youtube"], url_yt, due_yt,
-                                   {"youtube": {"title": s["yt_title"][:100], "privacy": privacidade, "categoryId": "20", "madeForKids": False,
-                                                "isAiGenerated": False}})
+            try:
+                ids["youtube"] = criar("youtube", tx["youtube"], url_yt, due_yt,
+                                       {"youtube": {"title": s["yt_title"][:100], "privacy": privacidade, "categoryId": "20", "madeForKids": False,
+                                                    "isAiGenerated": False}})
+            except Exception as e:   # Buffer grátis: limite de envios ao YouTube por dia → manda direto pela API
+                print("Buffer recusou o YouTube, enviando direto:", str(e)[:150])
+                arq = job / "saida" / f"short_{s['id']}{'_yt' if rapido else ''}.mp4"
+                yt_direto = youtube_direto(arq, s["yt_title"], tx["youtube"], s.get("tags", []), dt)
         ids["tiktok"] = criar("tiktok", tx["tiktok"], url, due_tt or due, {"tiktok": {"title": s["tt_title"][:90], "isAiGenerated": False}}, capa_ms=capa)
         ig = {"type": "reel", "shouldShareToFeed": True, "isAiGenerated": False}
         if s.get("primeiro_comentario_instagram"):
@@ -215,7 +221,31 @@ def agendar_short(job, s, base, due, dt, due_yt, privacidade="unlisted", instagr
         return {"tipo": "short", "quando": dt.isoformat(), "upload": (dt - ANTECEDENCIA_YT).isoformat(), "yt_title": s["yt_title"][:100], "descricao": tx["youtube"],
                       "tags": s["tags"], "thumb": f"{base}/thumb_{s['id']}.jpg", "buffer": ids, "ajustado": False if "youtube" in ids else True, "formato_yt": "rapido" if rapido else "completo",
                       "comentario": s.get("comentario_youtube", ""), "fb_textos": s.get("fb_textos", []),
-                "playlist": "shorts", "urgente": privacidade == "public"}
+                "playlist": "shorts", "urgente": privacidade == "public", **({"yt_direto": yt_direto, "video_id": yt_direto} if yt_direto else {})}
+
+
+def youtube_direto(arq, titulo, desc, tags, dt):
+    """Envia o Short direto pela API do YouTube (privado com estreia em dt). Devolve o ID do vídeo."""
+    import subprocess
+    import youtube_ajustes as ya
+    status = {"privacyStatus": "private", "selfDeclaredMadeForKids": False, "publicStatsViewable": True}
+    if dt > datetime.now(BRT) + timedelta(minutes=15):
+        status["publishAt"] = dt.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    else:
+        status["privacyStatus"] = "public"
+    meta = {"snippet": {"title": titulo[:100], "description": desc[:4900], "tags": tags[:30], "categoryId": "20",
+                        "defaultLanguage": "en", "defaultAudioLanguage": "en"}, "status": status}
+    tok = ya.token(); tam = Path(arq).stat().st_size
+    h = subprocess.run(["curl", "-sS", "-D", "-", "-o", "/dev/null", "-X", "POST",
+                        "https://www.googleapis.com/upload/youtube/v3/videos?uploadType=resumable&part=snippet,status",
+                        "-H", f"Authorization: Bearer {tok}", "-H", "Content-Type: application/json; charset=UTF-8",
+                        "-H", "X-Upload-Content-Type: video/mp4", "-H", f"X-Upload-Content-Length: {tam}",
+                        "-d", json.dumps(meta)], capture_output=True, text=True).stdout
+    loc = [l.split(":", 1)[1].strip() for l in h.splitlines() if l.lower().startswith("location:")][0]
+    r = json.loads(subprocess.run(["curl", "-sS", "-X", "PUT", loc, "-H", "Content-Type: video/mp4", "--data-binary", f"@{arq}"],
+                                  capture_output=True, text=True).stdout)
+    print("YouTube direto ok:", r["id"])
+    return r["id"]
 
 
 def agendar_carrossel(job, c, base, due_ig, due_tt=None, rascunho=False):

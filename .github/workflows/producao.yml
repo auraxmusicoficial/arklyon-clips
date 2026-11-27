@@ -1,0 +1,62 @@
+name: "Robô — produção diária do GTA 6 (sem Claude)"
+on:
+  schedule:
+    - cron: "17 8 * * *"    # 5h17 de Brasília (logo depois que a cota grátis do Gemini renova)
+    - cron: "47 9 * * *"    # reserva: se o GitHub pular a primeira (o script não repete o que já foi feito)
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "teste = gera tudo mas não publica"
+        default: "normal"
+permissions:
+  contents: write
+concurrency:
+  group: robo-producao
+  cancel-in-progress: false
+jobs:
+  producao:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Segredos
+        env:
+          VAULT_SECRETS: ${{ secrets.VAULT_SECRETS }}
+          GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
+        run: |
+          python3 -c "import json,os;[print('::add-mask::'+v) for v in json.loads(os.environ['VAULT_SECRETS']).values()]"
+      - name: Preparar (ffmpeg, vozes, fontes, rclone)
+        env:
+          RCLONE_CONF: ${{ secrets.RCLONE_CONF }}
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg rclone >/dev/null
+          pip install -q pillow
+          bash motor/setup.sh
+          mkdir -p ~/.config/rclone && printf '%s\n' "$RCLONE_CONF" > ~/.config/rclone/rclone.conf
+      - name: Produzir e agendar
+        env:
+          VAULT_SECRETS: ${{ secrets.VAULT_SECRETS }}
+          GEMINI_KEY: ${{ secrets.GEMINI_KEY }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git pull -q --rebase || true
+          if [ "${{ github.event.inputs.modo }}" = "teste" ]; then python3 motor/produzir.py --teste; else python3 motor/produzir.py; fi
+      - name: Guardar o trabalho de teste
+        if: always() && github.event.inputs.modo == 'teste'
+        uses: actions/upload-artifact@v4
+        with:
+          name: teste-producao
+          path: |
+            /tmp/job/*/roteiro.json
+            /tmp/job/*/carrossel.json
+            /tmp/job/*/pesquisas.json
+            /tmp/job/*/cenas.json
+            /tmp/job/*/saida/*.jpg
+            /tmp/job/*/saida/short_s1.mp4
+          retention-days: 3
+      - name: Salvar no GitHub
+        if: always() && github.event.inputs.modo != 'teste'
+        run: |
+          cd motor && python3 -c "import sincronizar; sincronizar.main('robô - produção do dia')"
