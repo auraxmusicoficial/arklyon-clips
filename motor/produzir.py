@@ -98,7 +98,7 @@ def pesquisar(pergunta):
                 if r.strip():
                     return r.strip()
             except Exception as e:
-                log("pesquisa falhou:", modelo, str(e)[:150]); time.sleep(45)
+                log("pesquisa falhou:", modelo, str(e)[:150]); time.sleep(65)
     # reserva: Gemini com Google Search (grátis, cota diária pequena)
     for m in MODELOS_GEMINI:
         corpo = {"contents": [{"role": "user", "parts": [{"text": pergunta}]}], "tools": [{"google_search": {}}],
@@ -438,10 +438,29 @@ def validar(saida, n, d, pesquisas=()):
     return prob
 
 
-def corrigir(saida, prob):
-    pedido = ("Fix this JSON so it satisfies ALL the problems listed. Keep everything else the same; return the full corrected JSON only.\n"
-              f"PROBLEMS: {json.dumps(prob)}\nJSON:\n{json.dumps(saida, ensure_ascii=False)}")
-    return json_de(gemini([{"text": pedido}], json_saida=True, max_saida=30000, temp=0.4))
+def corrigir(saida, prob, pesquisas=()):
+    """Reescreve só o que tem problema (um Short por vez = resposta pequena, sem JSON cortado)."""
+    r = saida.get("roteiro") or {}
+    shorts = r.get("shorts") or []
+    for i, s in enumerate(shorts):
+        meus = [x for x in prob if x.startswith(s.get("id", "?") + ":")]
+        if not meus:
+            continue
+        nota = pesquisas[i][1] if i < len(pesquisas) else ""
+        pedido = ("Fix this GTA 6 Short JSON object so it satisfies ALL problems listed. Keep the same topic, keys and style; "
+                  "narracao 210-240 words; 'quando' of cartoes and 'inicio' of ranking copied EXACTLY from narracao. "
+                  "Only facts from the research notes. Return ONLY the corrected JSON object.\n"
+                  f"PROBLEMS: {json.dumps(meus)}\nRESEARCH NOTES:\n{nota[:4000]}\nJSON:\n{json.dumps(s, ensure_ascii=False)}")
+        for tent in range(2):
+            try:
+                novo = json_de(gemini([{"text": pedido}], json_saida=True, max_saida=8000, temp=0.4))
+                if isinstance(novo, dict) and novo.get("narracao"):
+                    shorts[i] = novo; break
+            except Exception as e:
+                log("correção falhou:", s.get("id"), str(e)[:120])
+    if any(x.startswith(("only", "carrossel")) for x in prob):
+        log("AVISO: faltou Short/post — seguindo com o que tem")
+    return saida
 
 
 # ---------------------------------------------------------------- 6. release + git
@@ -513,18 +532,29 @@ def main():
             t["formato"] = "tag"; t["tema"] += " (NO FACTS FOUND: make it a funny relatable 'tag a friend' post, no claims)"
         pesquisas.append((t["tema"], p if len(p) >= 300 else "NO VERIFIED FACTS FOUND — use only analysis/opinion, no specific names/numbers/codes."))
         log("pesquisa:", t["tema"][:60], len(p), "chars")
-        time.sleep(30)
+        time.sleep(65)   # limite por minuto do Groq grátis (a busca na web gasta muitos tokens)
 
-    saida = escrever(temas, pesquisas, cenas_txt, vid, credito, n)
+    for tent in range(3):
+        try:
+            saida = escrever(temas, pesquisas, cenas_txt, vid, credito, n); break
+        except (ValueError, json.JSONDecodeError) as e:
+            log("roteiro veio quebrado, escrevendo de novo:", e)
+            if tent == 2:
+                raise
     for tent in range(3):
         prob = validar(saida, n, d, pesquisas)
         if not prob:
             break
         log("corrigindo:", prob)
-        saida = corrigir(saida, prob)
+        saida = corrigir(saida, prob, pesquisas)
     prob = validar(saida, n, d, pesquisas)
     if prob:
-        log("AVISO: problemas restantes (seguindo assim mesmo):", prob)
+        log("AVISO: problemas restantes:", prob)
+        ruins = {x.split(":")[0] for x in prob if "NOT in the research" in x}
+        bons = [x for x in saida["roteiro"]["shorts"] if x["id"] not in ruins]
+        if ruins and bons:   # dado sem fonte conferida não vai ao ar: melhor 1 Short a menos que 1 fato inventado
+            log("tirei os Shorts com número sem fonte:", ruins)
+            saida["roteiro"]["shorts"] = bons; n = len(bons)
     r = saida["roteiro"]; r["shorts"] = r["shorts"][:n]; r["longo"] = None
     r["video_id"] = vid; r["credito_fonte"] = credito
     r.setdefault("nomes_proprios", ["GTA Six", "Jason", "Lucia", "Leonida", "Vice City"])
