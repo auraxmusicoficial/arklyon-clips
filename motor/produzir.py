@@ -61,7 +61,7 @@ def gemini(partes, json_saida=False, max_saida=16000, temp=0.8):
             req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent?key={k}",
                                          json.dumps(corpo).encode(), {"Content-Type": "application/json"})
             try:
-                d = json.load(urllib.request.urlopen(req, timeout=400))
+                d = json.load(urllib.request.urlopen(req, timeout=240))
                 txt = "".join(p.get("text", "") for p in d["candidates"][0]["content"].get("parts", [])).strip()
                 if txt:
                     return txt
@@ -98,7 +98,7 @@ def pesquisar(pergunta):
                 if r.strip():
                     return r.strip()
             except Exception as e:
-                log("pesquisa falhou:", modelo, str(e)[:150]); time.sleep(65)
+                log("pesquisa falhou:", modelo, str(e)[:150]); time.sleep(100)
     # reserva: Gemini com Google Search (grátis, cota diária pequena)
     for m in MODELOS_GEMINI:
         corpo = {"contents": [{"role": "user", "parts": [{"text": pergunta}]}], "tools": [{"google_search": {}}],
@@ -182,7 +182,12 @@ def obter_fonte(job):
     if lista:
         vid, titulo, canal = lista[0]
         pedir_download(vid)
-        limite = time.time() + (5 * 60 if TESTE else 70 * 60)
+        # celular parado há mais de 36 h (último vídeo velho) -> espera só 20 min em vez de 70
+        velho = not recentes or (datetime.now(timezone.utc) - datetime.fromisoformat(recentes[0]["ModTime"].replace("Z", "+00:00"))) > timedelta(hours=36)
+        if velho:
+            avisar("⚠️ O celular não baixa vídeo-fonte desde " + (recentes[0]["ModTime"][:10] if recentes else "?") +
+                   ". Confira se o app de download está aberto no celular (economia de bateria pode ter fechado).")
+        limite = time.time() + (5 * 60 if TESTE else (20 if velho else 70) * 60)
         while time.time() < limite:
             achou = [f for f in drive_videos() if f["Name"].startswith(vid + "__video")]
             if achou:
@@ -209,9 +214,14 @@ def cenas(job):
     v = job / "video.mp4"; d = dur(v)
     passo = max(6, d / 96)
     fr = job / "quadros"; fr.mkdir(exist_ok=True)
-    sh(["ffmpeg", "-v", "error", "-y", "-i", str(v), "-vf", f"fps=1/{passo:.2f},scale=320:-2", str(fr / "q%04d.jpg")])
-    arqs = sorted(fr.glob("q*.jpg"))
-    tempos = [i * passo for i in range(len(arqs))]
+    tempos, arqs = [], []
+    t = 1.0
+    while t < d - 1:   # um quadro por busca (rápido até em vídeo 4K longo)
+        a = fr / f"q{len(arqs):04d}.jpg"
+        subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", f"{t:.1f}", "-i", str(v), "-frames:v", "1", "-vf", "scale=320:-2", str(a)])
+        if a.exists():
+            arqs.append(a); tempos.append(t)
+        t += passo
     fonte = ImageFont.truetype(str(RAIZ / "motor" / "fontes" / "Anton-Regular.ttf"), 28)
     folhas, partes = [], []
     for k in range(0, len(arqs), 16):
@@ -317,7 +327,7 @@ Each Short object MUST have exactly these keys:
  id ("s1","s2",...), titulo_tela ("LINE 1\\\\NLINE 2", max 2 short lines), yt_title (with 1 emoji, true and catchy, <=70 chars),
  tt_title (no emoji), texto_youtube, texto_tiktok (hook + question + 4-6 hashtags), texto_instagram (no hashtags, CTA save/share),
  primeiro_comentario_instagram (8-15 hashtags), comentario_youtube (short question), tags (10-15),
- narracao (210-240 words, English, write 'GTA Six' instead of GTA 6, numbers in digits when they are the shocking data, hook in first 3 s,
+ narracao (230-250 words — count them, short scripts get rejected, English, write 'GTA Six' instead of GTA 6, numbers in digits when they are the shocking data, hook in first 3 s,
    curiosity loops, >=40% own analysis/opinion, ends with a follow CTA), trilha ("acao"|"noite"|"sol"),
  broll: [[start,end], ...] 5-8 ranges in seconds from the SCENE LIST that match what is said (each 6-15 s, all different, inside the video),
  quote: null, cartoes: 3-5 objects {"quando": "first 2-4 words of the narration sentence where it appears, EXACTLY as written in narracao", "texto": "LINE1\\\\NLINE2" (<=22 chars per line)},
@@ -382,7 +392,7 @@ def validar(saida, n, d, pesquisas=()):
         if faltam:
             prob.append(f"{s['id']}: missing {faltam}"); continue
         npal = len(palavras(s["narracao"]))
-        if npal < 200 or npal > 260:
+        if npal < 195 or npal > 275:
             prob.append(f"{s['id']}: narracao has {npal} words, must be 210-240")
         br = []
         for a, b in s["broll"]:
@@ -446,6 +456,22 @@ def corrigir(saida, prob, pesquisas=()):
         meus = [x for x in prob if x.startswith(s.get("id", "?") + ":")]
         if not meus:
             continue
+        curto = [x for x in meus if "words, must be" in x]
+        if curto:   # narração curta/longa: ajusta só o texto (resposta simples, sem JSON)
+            npal = len(palavras(s["narracao"]))
+            ped = ("Rewrite this GTA 6 Short narration to EXACTLY about 235 words. "
+                   + ("Keep every existing sentence word for word and ADD 2-4 new sentences of analysis/opinion (no new facts)."
+                      if npal < 235 else "Remove the weakest sentences; keep the rest word for word.")
+                   + " Return only the narration text.\n\n" + s["narracao"])
+            try:
+                novo = gemini([{"text": ped}], max_saida=3000, temp=0.5).strip().strip('"')
+                if 195 <= len(palavras(novo)) <= 275:
+                    s["narracao"] = novo
+            except Exception as e:
+                log("ajuste de tamanho falhou:", s.get("id"), str(e)[:120])
+            meus = [x for x in meus if x not in curto]
+            if not meus:
+                continue
         nota = pesquisas[i][1] if i < len(pesquisas) else ""
         pedido = ("Fix this GTA 6 Short JSON object so it satisfies ALL problems listed. Keep the same topic, keys and style; "
                   "narracao 210-240 words; 'quando' of cartoes and 'inicio' of ranking copied EXACTLY from narracao. "
@@ -532,7 +558,7 @@ def main():
             t["formato"] = "tag"; t["tema"] += " (NO FACTS FOUND: make it a funny relatable 'tag a friend' post, no claims)"
         pesquisas.append((t["tema"], p if len(p) >= 300 else "NO VERIFIED FACTS FOUND — use only analysis/opinion, no specific names/numbers/codes."))
         log("pesquisa:", t["tema"][:60], len(p), "chars")
-        time.sleep(65)   # limite por minuto do Groq grátis (a busca na web gasta muitos tokens)
+        time.sleep(120)   # limite por minuto do Groq grátis (a busca na web gasta muitos tokens)
 
     for tent in range(3):
         try:
