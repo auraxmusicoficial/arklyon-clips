@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-27T23:54:33.145850+00:00",
+ "atualizado": "2026-11-28T03:31:11.960026+00:00",
  "historico": [
   {
    "data": "2026-11-17",
@@ -120,6 +120,12 @@
    "inscritos": 11,
    "views": 5483,
    "videos": 48
+  },
+  {
+   "data": "2026-11-28",
+   "inscritos": 11,
+   "views": 5483,
+   "videos": 49
   }
  ],
  "videos": [
@@ -131,10 +137,10 @@
    "views": 760,
    "likes": 34,
    "coments": 1,
-   "views_dia": 93.6,
+   "views_dia": 91.9,
    "engaj": 4.6,
    "hora_brt": "18",
-   "dias": 8.1
+   "dias": 8.3
   },
   {
    "id": "5kCCspaOdnE",
@@ -147,7 +153,7 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "12",
-   "dias": 8.4
+   "dias": 8.5
   },
   {
    "id": "kNzOszVFf70",
@@ -157,10 +163,10 @@
    "views": 1152,
    "likes": 22,
    "coments": 1,
-   "views_dia": 137.0,
+   "views_dia": 134.6,
    "engaj": 2.0,
    "hora_brt": "11",
-   "dias": 8.4
+   "dias": 8.6
   },
   {
    "id": "MI3JQ2je-FQ",
@@ -170,10 +176,10 @@
    "views": 773,
    "likes": 23,
    "coments": 4,
-   "views_dia": 91.0,
+   "views_dia": 89.4,
    "engaj": 3.5,
    "hora_brt": "09",
-   "dias": 8.5
+   "dias": 8.6
   },
   {
    "id": "-_O8FyG6qYg",
@@ -183,10 +189,10 @@
    "views": 177,
    "likes": 4,
    "coments": 6,
-   "views_dia": 19.7,
+   "views_dia": 19.4,
    "engaj": 5.6,
    "hora_brt": "21",
-   "dias": 9.0
+   "dias": 9.1
   },
   {
    "id": "y99xw4Mmuvg",
@@ -196,10 +202,10 @@
    "views": 149,
    "likes": 3,
    "coments": 2,
-   "views_dia": 16.2,
+   "views_dia": 15.9,
    "engaj": 3.4,
    "hora_brt": "16",
-   "dias": 9.2
+   "dias": 9.4
   },
   {
    "id": "ex3cGJ8APxQ",
@@ -209,10 +215,10 @@
    "views": 112,
    "likes": 2,
    "coments": 3,
-   "views_dia": 12.1,
+   "views_dia": 11.9,
    "engaj": 4.5,
    "hora_brt": "14",
-   "dias": 9.3
+   "dias": 9.4
   },
   {
    "id": "49tnnie3Jjo",
@@ -222,10 +228,10 @@
    "views": 1400,
    "likes": 31,
    "coments": 6,
-   "views_dia": 150.2,
+   "views_dia": 147.8,
    "engaj": 2.6,
    "hora_brt": "13",
-   "dias": 9.3
+   "dias": 9.5
   },
   {
    "id": "P5dyUUPJh04",
@@ -238,7 +244,7 @@
    "views_dia": 1.4,
    "engaj": 130.8,
    "hora_brt": "12",
-   "dias": 9.4
+   "dias": 9.5
   },
   {
    "id": "psqeW0oueVU",
@@ -248,10 +254,10 @@
    "views": 38,
    "likes": 2,
    "coments": 4,
-   "views_dia": 3.8,
+   "views_dia": 3.7,
    "engaj": 15.8,
    "hora_brt": "21",
-   "dias": 10.0
+   "dias": 10.1
   },
   {
    "id": "pCJSmriKY50",
@@ -264,7 +270,7 @@
    "views_dia": 0.5,
    "engaj": 180.0,
    "hora_brt": "12",
-   "dias": 10.4
+   "dias": 10.5
   },
   {
    "id": "GfJxx6e3jUY",
@@ -277,7 +283,7 @@
    "views_dia": 0.3,
    "engaj": 33.3,
    "hora_brt": "09",
-   "dias": 10.5
+   "dias": 10.6
   },
   {
    "id": "Zrug6PtEZzo",
@@ -287,10 +293,10 @@
    "views": 5,
    "likes": 3,
    "coments": 4,
-   "views_dia": 0.5,
+   "views_dia": 0.4,
    "engaj": 140.0,
    "hora_brt": "21",
-   "dias": 11.0
+   "dias": 11.1
   },
   {
    "id": "5v79bZYpaZY",
@@ -303,7 +309,7 @@
    "views_dia": 0.2,
    "engaj": 50.0,
    "hora_brt": "19",
-   "dias": 11.1
+   "dias": 11.2
   },
   {
    "id": "BZIopAaJ-4k",
@@ -316,7 +322,7 @@
    "views_dia": 0.2,
    "engaj": 100.0,
    "hora_brt": "19",
-   "dias": 12.1
+   "dias": 12.2
   },
   {
    "id": "6bSau3WJl-Y",
@@ -329,7 +335,7 @@
    "views_dia": 0.2,
    "engaj": 150.0,
    "hora_brt": "14",
-   "dias": 12.3
+   "dias": 12.4
   },
   {
    "id": "h-zUFcFzLfs",
@@ -342,7 +348,7 @@
    "views_dia": 0.2,
    "engaj": 50.0,
    "hora_brt": "11",
-   "dias": 12.4
+   "dias": 12.5
   },
   {
    "id": "6L_wWzXfH54",
@@ -355,7 +361,7 @@
    "views_dia": 0.2,
    "engaj": 33.3,
    "hora_brt": "11",
-   "dias": 12.4
+   "dias": 12.5
   },
   {
    "id": "Vm5YUmBRys0",
@@ -368,7 +374,7 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "18",
-   "dias": 7.1
+   "dias": 7.2
   },
   {
    "id": "BOQeEsESTug",
@@ -381,7 +387,7 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "16",
-   "dias": 7.2
+   "dias": 7.4
   },
   {
    "id": "xJacJXth4ac",
@@ -394,7 +400,7 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "12",
-   "dias": 7.4
+   "dias": 7.5
   },
   {
    "id": "JMY5qf_Pubg",
@@ -407,7 +413,7 @@
    "views_dia": 0.1,
    "engaj": 200.0,
    "hora_brt": "09",
-   "dias": 7.5
+   "dias": 7.6
   },
   {
    "id": "SS0zYQhOJ_w",
@@ -420,7 +426,7 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "08",
-   "dias": 5.5
+   "dias": 5.7
   },
   {
    "id": "xNhkjNYSKL0",
@@ -430,10 +436,10 @@
    "views": 85,
    "likes": 1,
    "coments": 1,
-   "views_dia": 13.9,
+   "views_dia": 13.6,
    "engaj": 2.4,
    "hora_brt": "18",
-   "dias": 6.1
+   "dias": 6.3
   },
   {
    "id": "I4Ne3Avq8FY",
@@ -443,10 +449,10 @@
    "views": 20,
    "likes": 1,
    "coments": 1,
-   "views_dia": 3.2,
+   "views_dia": 3.1,
    "engaj": 10.0,
    "hora_brt": "16",
-   "dias": 6.2
+   "dias": 6.4
   },
   {
    "id": "bKvMl3uqXt0",
@@ -459,20 +465,20 @@
    "views_dia": 0.6,
    "engaj": 50.0,
    "hora_brt": "12",
-   "dias": 6.4
+   "dias": 6.5
   },
   {
    "id": "jBavJjK9HI8",
    "titulo": "FREE MONEY Is Hiding in GTA 6 Car Trunks 💰",
    "tipo": "short",
    "dur": 71,
-   "views": 447,
+   "views": 450,
    "likes": 1,
    "coments": 1,
-   "views_dia": 68.8,
+   "views_dia": 67.7,
    "engaj": 0.4,
    "hora_brt": "09",
-   "dias": 6.5
+   "dias": 6.6
   },
   {
    "id": "8ENKRnmz-9o",
@@ -482,10 +488,10 @@
    "views": 13,
    "likes": 1,
    "coments": 1,
-   "views_dia": 2.2,
+   "views_dia": 2.1,
    "engaj": 15.4,
    "hora_brt": "22",
-   "dias": 6.0
+   "dias": 6.1
   },
   {
    "id": "Kw5tDGk_Xv4",
@@ -498,7 +504,7 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "16",
-   "dias": 5.2
+   "dias": 5.4
   },
   {
    "id": "uAr8e1CuA6k",
@@ -511,7 +517,7 @@
    "views_dia": 0.2,
    "engaj": 200.0,
    "hora_brt": "12",
-   "dias": 5.4
+   "dias": 5.5
   },
   {
    "id": "NZstdWK7tMk",
@@ -524,7 +530,7 @@
    "views_dia": 0.2,
    "engaj": 100.0,
    "hora_brt": "09",
-   "dias": 5.5
+   "dias": 5.6
   },
   {
    "id": "5xh1bWqi2nw",
@@ -537,33 +543,33 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "16",
-   "dias": 4.2
+   "dias": 4.4
   },
   {
    "id": "uvfhpIXMkX4",
    "titulo": "NEVER BLOW UP a Safe in GTA 6 — Do This Instead 💰",
    "tipo": "short",
    "dur": 70,
-   "views": 74,
+   "views": 76,
    "likes": 1,
    "coments": 1,
-   "views_dia": 17.1,
-   "engaj": 2.7,
+   "views_dia": 17.0,
+   "engaj": 2.6,
    "hora_brt": "13",
-   "dias": 4.3
+   "dias": 4.5
   },
   {
    "id": "Xz2vUTiSlk4",
    "titulo": "DEAD EYE AIMING Is in GTA 6 — Aim for the Hands 🎯",
    "tipo": "short",
    "dur": 72,
-   "views": 61,
+   "views": 62,
    "likes": 1,
    "coments": 1,
-   "views_dia": 13.6,
-   "engaj": 3.3,
+   "views_dia": 13.3,
+   "engaj": 3.2,
    "hora_brt": "09",
-   "dias": 4.5
+   "dias": 4.6
   },
   {
    "id": "7g3X5Y8aYp8",
@@ -576,7 +582,7 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "21",
-   "dias": 4.0
+   "dias": 4.1
   },
   {
    "id": "xkyk5UYDW3M",
@@ -586,10 +592,10 @@
    "views": 5,
    "likes": 0,
    "coments": 1,
-   "views_dia": 1.6,
+   "views_dia": 1.5,
    "engaj": 20.0,
    "hora_brt": "16",
-   "dias": 3.2
+   "dias": 3.4
   },
   {
    "id": "vKYDSJ4UI7o",
@@ -602,7 +608,7 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "13",
-   "dias": 3.3
+   "dias": 3.5
   },
   {
    "id": "eckKOgpnLrg",
@@ -612,10 +618,10 @@
    "views": 12,
    "likes": 0,
    "coments": 1,
-   "views_dia": 3.6,
+   "views_dia": 3.4,
    "engaj": 8.3,
    "hora_brt": "12",
-   "dias": 3.4
+   "dias": 3.5
   },
   {
    "id": "Oj8OEjBUX84",
@@ -625,10 +631,10 @@
    "views": 82,
    "likes": 1,
    "coments": 1,
-   "views_dia": 27.4,
+   "views_dia": 26.1,
    "engaj": 2.4,
    "hora_brt": "21",
-   "dias": 3.0
+   "dias": 3.1
   },
   {
    "id": "yLr3-Puka6s",
@@ -641,7 +647,7 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "16",
-   "dias": 2.2
+   "dias": 2.4
   },
   {
    "id": "asJ_iRztkus",
@@ -651,36 +657,36 @@
    "views": 4,
    "likes": 0,
    "coments": 1,
-   "views_dia": 1.7,
+   "views_dia": 1.6,
    "engaj": 25.0,
    "hora_brt": "13",
-   "dias": 2.3
+   "dias": 2.5
   },
   {
    "id": "4in4d3QzqT0",
    "titulo": "TOP 4 SECRET Easter Eggs Hidden in GTA 6 (Ranked) 🔥",
    "tipo": "short",
    "dur": 50,
-   "views": 16,
+   "views": 17,
    "likes": 0,
    "coments": 1,
-   "views_dia": 8.0,
-   "engaj": 6.2,
+   "views_dia": 7.9,
+   "engaj": 5.9,
    "hora_brt": "21",
-   "dias": 2.0
+   "dias": 2.1
   },
   {
    "id": "SuaKea1iKJw",
    "titulo": "GTA 6 Is Watching What You Eat (Your Body Changes) 🍔",
    "tipo": "short",
    "dur": 51,
-   "views": 15,
+   "views": 16,
    "likes": 0,
    "coments": 1,
-   "views_dia": 12.5,
-   "engaj": 6.7,
+   "views_dia": 11.8,
+   "engaj": 6.2,
    "hora_brt": "16",
-   "dias": 1.2
+   "dias": 1.4
   },
   {
    "id": "OeScNTe9pfo",
@@ -693,7 +699,7 @@
    "views_dia": 0.0,
    "engaj": 0.0,
    "hora_brt": "13",
-   "dias": 1.3
+   "dias": 1.5
   },
   {
    "id": "m_u7JSFtkCE",
@@ -703,49 +709,62 @@
    "views": 3,
    "likes": 0,
    "coments": 1,
-   "views_dia": 2.2,
+   "views_dia": 2.0,
    "engaj": 33.3,
    "hora_brt": "12",
-   "dias": 1.4
+   "dias": 1.5
   },
   {
    "id": "E5XQYsVYV2k",
    "titulo": "TOP 5 FASTEST Ways to Make Money in GTA 6 (Ranked) 💰",
    "tipo": "short",
    "dur": 50,
-   "views": 98,
+   "views": 103,
    "likes": 2,
    "coments": 1,
-   "views_dia": 98.4,
-   "engaj": 3.1,
+   "views_dia": 89.8,
+   "engaj": 2.9,
    "hora_brt": "21",
-   "dias": 1.0
+   "dias": 1.1
   },
   {
    "id": "_-xILEeeWP0",
    "titulo": "How To Lower Your Criminal Profile in GTA 6 ⚠️",
    "tipo": "short",
    "dur": 46,
-   "views": 35,
+   "views": 43,
    "likes": 0,
    "coments": 1,
-   "views_dia": 171.4,
-   "engaj": 2.9,
+   "views_dia": 121.3,
+   "engaj": 2.3,
    "hora_brt": "16",
-   "dias": 0.2
+   "dias": 0.4
   },
   {
    "id": "2Po_vJBzf88",
    "titulo": "STEAL ANY KEYLESS CAR in GTA 6 (Key Cloner Guide) 🚨",
    "tipo": "short",
    "dur": 50,
-   "views": 87,
+   "views": 117,
    "likes": 1,
    "coments": 1,
-   "views_dia": 264.1,
-   "engaj": 2.3,
+   "views_dia": 243.8,
+   "engaj": 1.7,
    "hora_brt": "13",
-   "dias": 0.3
+   "dias": 0.5
+  },
+  {
+   "id": "CxgY_7dX86Q",
+   "titulo": "5 THINGS You Can MISS FOREVER in GTA 6 (Ranked) ⚠️",
+   "tipo": "short",
+   "dur": 52,
+   "views": 3,
+   "likes": 0,
+   "coments": 1,
+   "views_dia": 20.5,
+   "engaj": 33.3,
+   "hora_brt": "21",
+   "dias": 0.1
   }
  ]
 }
